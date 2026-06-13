@@ -1,0 +1,632 @@
+[
+  {
+    "id": "circuits-electronics-t1-q1",
+    "topicId": "circuits-electronics",
+    "tier": 1,
+    "question": "What is an electrical circuit?",
+    "choices": [
+      "A complete loop or path that electricity can flow through, from a power source and back",
+      "A type of computer screen",
+      "A robot's outer shell",
+      "A type of battery that never runs out"
+    ],
+    "answerIndex": 0,
+    "explanation": "A circuit is a closed loop — electricity flows from the power source, through wires and components, and back to the source. If the loop is broken, electricity stops flowing."
+  },
+  {
+    "id": "circuits-electronics-t1-q2",
+    "topicId": "circuits-electronics",
+    "tier": 1,
+    "question": "What does a switch do in a circuit?",
+    "choices": [
+      "It stores extra electricity for later",
+      "It opens or closes the circuit, turning the flow of electricity on or off",
+      "It makes the wires a different color",
+      "It increases the voltage of the battery"
+    ],
+    "answerIndex": 1,
+    "explanation": "A switch is like a gate in the circuit's path — closing it completes the loop so electricity can flow, and opening it breaks the loop so it can't."
+  },
+  {
+    "id": "circuits-electronics-t1-q3",
+    "topicId": "circuits-electronics",
+    "tier": 1,
+    "question": "What is a breadboard mainly used for?",
+    "choices": [
+      "Baking bread",
+      "Building and testing electronic circuits without soldering, by plugging components into holes connected by metal strips",
+      "Charging batteries",
+      "Programming a computer's operating system"
+    ],
+    "answerIndex": 1,
+    "explanation": "A breadboard has rows of connected holes that let you plug in wires and components to build circuits temporarily — perfect for testing ideas before making something permanent."
+  },
+  {
+    "id": "circuits-electronics-t2-q1",
+    "topicId": "circuits-electronics",
+    "tier": 2,
+    "question": "What is the difference between voltage and current?",
+    "choices": [
+      "They are exactly the same thing with different names",
+      "Voltage is the 'push' or pressure that drives electricity through a circuit, while current is the actual flow (rate) of electricity through it",
+      "Voltage only exists in robots, while current only exists in batteries",
+      "Current is measured in volts, and voltage is measured in amps"
+    ],
+    "answerIndex": 1,
+    "explanation": "Voltage is often compared to water pressure in a pipe — it's the force that pushes electricity along. Current is like the flow rate of water — how much electricity actually moves through the circuit."
+  },
+  {
+    "id": "circuits-electronics-t2-q2",
+    "topicId": "circuits-electronics",
+    "tier": 2,
+    "question": "What happens in an 'open circuit'?",
+    "choices": [
+      "Electricity flows even faster than normal",
+      "The path is broken somewhere, so electricity cannot flow through it",
+      "The circuit becomes permanently damaged and can never work again",
+      "The battery instantly recharges"
+    ],
+    "answerIndex": 1,
+    "explanation": "An open circuit has a gap or break in its path — like a switch that's turned off — so no current can flow, and connected components (like an LED) won't work."
+  },
+  {
+    "id": "circuits-electronics-t2-q3",
+    "topicId": "circuits-electronics",
+    "tier": 2,
+    "question": "What is the job of a resistor in a circuit?",
+    "choices": [
+      "To store large amounts of energy for days",
+      "To limit or control how much current flows through part of a circuit, protecting components like LEDs from too much current",
+      "To make the circuit glow brightly on its own",
+      "To convert electricity into sound"
+    ],
+    "answerIndex": 1,
+    "explanation": "Resistors 'resist' the flow of current, reducing it to a safe level — without one, components like LEDs can receive too much current and burn out."
+  },
+  {
+    "id": "circuits-electronics-t3-q1",
+    "topicId": "circuits-electronics",
+    "tier": 3,
+    "question": "What's the key difference between a series circuit and a parallel circuit?",
+    "choices": [
+      "In a series circuit, components are connected one after another along a single path; in a parallel circuit, components are connected along separate branching paths",
+      "Series circuits only work with solar power",
+      "Parallel circuits cannot contain a battery",
+      "There is no real difference between them"
+    ],
+    "answerIndex": 0,
+    "explanation": "In series, current has only one path through all components in a row — if one breaks, the whole circuit stops. In parallel, current can take multiple paths, so each branch can work independently."
+  },
+  {
+    "id": "circuits-electronics-t3-q2",
+    "topicId": "circuits-electronics",
+    "tier": 3,
+    "question": "Why do LEDs (light-emitting diodes) almost always need a resistor in their circuit?",
+    "choices": [
+      "LEDs don't actually need any electricity to light up",
+      "Without a resistor, too much current can flow through the LED and burn it out, since LEDs have very little natural resistance",
+      "Resistors make LEDs change color",
+      "Resistors are only needed for motors, never for LEDs"
+    ],
+    "answerIndex": 1,
+    "explanation": "LEDs have very low resistance on their own, so connecting one directly to a battery can let too much current flow through, damaging it. A resistor limits the current to a safe amount."
+  },
+  {
+    "id": "circuits-electronics-t3-q3",
+    "topicId": "circuits-electronics",
+    "tier": 3,
+    "question": "What is a 'short circuit,' and why can it be dangerous?",
+    "choices": [
+      "A circuit that is physically very small in size — it poses no danger",
+      "An unintended path that lets current flow directly between the positive and negative terminals with very little resistance, which can cause overheating, damage, or fires",
+      "A circuit that only works for a short time before stopping safely",
+      "A type of switch used to turn off robots"
+    ],
+    "answerIndex": 1,
+    "explanation": "A short circuit creates a low-resistance shortcut for current, causing a surge of current that can generate a lot of heat very quickly — potentially damaging components, draining batteries fast, or even starting a fire."
+  },
+  {
+    "id": "circuits-electronics-t4-q1",
+    "topicId": "circuits-electronics",
+    "tier": 4,
+    "question": "Ohm's Law describes the relationship between voltage (V), current (I), and resistance (R) as V = I × R. If the resistance in a circuit increases while the voltage stays the same, what happens to the current?",
+    "choices": [
+      "The current increases",
+      "The current decreases",
+      "The current stays exactly the same",
+      "The voltage automatically becomes zero"
+    ],
+    "answerIndex": 1,
+    "explanation": "Rearranging V = I × R gives I = V / R. If voltage stays constant and resistance goes up, current must go down — more resistance means less current flows for the same voltage."
+  },
+  {
+    "id": "circuits-electronics-t4-q2",
+    "topicId": "circuits-electronics",
+    "tier": 4,
+    "question": "On a simple circuit diagram, you see a battery, a switch, a resistor, and an LED all connected in a single loop. What can you conclude?",
+    "choices": [
+      "The components are connected in series, so current flows through all of them one after another when the switch is closed",
+      "The components are not connected to each other at all",
+      "The LED will light up even if the switch is open",
+      "The resistor is unnecessary because a switch is present"
+    ],
+    "answerIndex": 0,
+    "explanation": "A single loop containing all the components means they're in series — current must pass through the switch, then the resistor, then the LED, and back to the battery, all in one path."
+  },
+  {
+    "id": "circuits-electronics-t4-q3",
+    "topicId": "circuits-electronics",
+    "tier": 4,
+    "question": "Why does 'polarity' matter when connecting components like LEDs and batteries in a circuit?",
+    "choices": [
+      "Polarity is just a label and has no real effect",
+      "Many components, like LEDs and batteries, only work correctly when connected in the right direction — connecting them backwards can prevent them from working or even damage them",
+      "Polarity only matters for wireless devices",
+      "Polarity determines the color of the wires only"
+    ],
+    "answerIndex": 1,
+    "explanation": "An LED only lets current flow (and light up) in one direction — connect it backwards and it simply won't light up. Batteries also have positive and negative terminals that must be connected correctly for circuits to work as intended."
+  },
+  {
+    "id": "circuits-electronics-t5-q1",
+    "topicId": "circuits-electronics",
+    "tier": 5,
+    "question": "You build a circuit with a battery, switch, resistor, and LED, but the LED doesn't light up when you close the switch. What is the BEST first step to troubleshoot?",
+    "choices": [
+      "Immediately throw away all the components and buy new ones",
+      "Check each connection and component one at a time — battery charge, switch position, wiring, resistor value, and LED orientation — to find the broken link in the loop",
+      "Assume the breadboard itself is permanently broken with no further checking",
+      "Add a second LED to fix the problem"
+    ],
+    "answerIndex": 1,
+    "explanation": "Since a circuit is a loop, any single broken connection, dead battery, open switch, or backwards LED can stop the whole thing from working. Systematically checking each part is the most effective way to find the issue."
+  },
+  {
+    "id": "circuits-electronics-t5-q2",
+    "topicId": "circuits-electronics",
+    "tier": 5,
+    "question": "A robot's microcontroller pin can only safely provide a small amount of current, but a motor needs much more current to spin. How do robot builders commonly solve this?",
+    "choices": [
+      "They connect the motor directly to the microcontroller pin and hope it works",
+      "They use a transistor (or a motor driver chip containing transistors) so the microcontroller's small signal can switch a separate, larger power source on and off for the motor",
+      "They remove the motor entirely",
+      "They increase the microcontroller's voltage to dangerous levels"
+    ],
+    "answerIndex": 1,
+    "explanation": "A transistor acts like an electronically controlled switch: a small current from the microcontroller can control a much larger current flowing to the motor from its own power supply — protecting the microcontroller while still controlling the motor."
+  },
+  {
+    "id": "circuits-electronics-t5-q3",
+    "topicId": "circuits-electronics",
+    "tier": 5,
+    "question": "An LED needs about 2 volts and 20 milliamps (0.02 amps) to light up safely, but your battery supplies 5 volts. Using Ohm's Law (V = I × R), roughly what resistor value should you add to drop the extra 3 volts safely?",
+    "choices": [
+      "About 0.15 ohms",
+      "About 150 ohms (3 volts ÷ 0.02 amps = 150 ohms)",
+      "About 1.5 ohms",
+      "Resistors aren't needed if the battery voltage is higher than the LED needs"
+    ],
+    "answerIndex": 1,
+    "explanation": "The resistor needs to 'absorb' the extra voltage (5V − 2V = 3V) at the LED's operating current (0.02A). Using R = V ÷ I gives 3 ÷ 0.02 = 150 ohms — a common resistor value for LEDs."
+  },
+  {
+    "id": "sensors-input-t1-q1",
+    "topicId": "sensors-input",
+    "tier": 1,
+    "question": "What is the purpose of an 'input' device on a robot, like a sensor?",
+    "choices": [
+      "To move the robot's wheels",
+      "To gather information from the environment and send it to the controller",
+      "To store extra batteries",
+      "To make noise for fun"
+    ],
+    "answerIndex": 1,
+    "explanation": "Input devices like sensors collect information — light levels, distance, temperature, sound, and more — and send that data to the controller so it can make decisions."
+  },
+  {
+    "id": "sensors-input-t1-q2",
+    "topicId": "sensors-input",
+    "tier": 1,
+    "question": "Which sensor would help a robot know how far away an object is?",
+    "choices": [
+      "A microphone",
+      "An ultrasonic or infrared distance sensor",
+      "A speaker",
+      "A motor"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ultrasonic sensors send out sound waves (and infrared sensors send out light) and measure how long it takes to bounce back, which tells the robot how far away an object is."
+  },
+  {
+    "id": "sensors-input-t1-q3",
+    "topicId": "sensors-input",
+    "tier": 1,
+    "question": "What does a light sensor (like a photoresistor) detect?",
+    "choices": [
+      "The temperature of the room",
+      "The amount of light hitting it",
+      "The robot's exact location on a map",
+      "The robot's battery voltage"
+    ],
+    "answerIndex": 1,
+    "explanation": "A photoresistor changes its electrical resistance based on how much light falls on it, letting a robot detect bright versus dark areas."
+  },
+  {
+    "id": "sensors-input-t2-q1",
+    "topicId": "sensors-input",
+    "tier": 2,
+    "question": "A line-following robot uses light sensors pointed at the floor. How does it use these sensors to follow a dark line on a light floor?",
+    "choices": [
+      "The sensors detect the difference in reflected light between the dark line and the light floor, and the robot adjusts its direction to keep the line centered",
+      "The sensors directly control the robot's battery level",
+      "The sensors play music when they see the line",
+      "The sensors have no connection to the robot's movement"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dark surfaces reflect less light than light surfaces. By comparing readings from sensors on either side, the robot can tell which way it's drifting and steer to stay centered on the line."
+  },
+  {
+    "id": "sensors-input-t2-q2",
+    "topicId": "sensors-input",
+    "tier": 2,
+    "question": "What is a proximity sensor used for?",
+    "choices": [
+      "Detecting how close an object is, without needing to physically touch it",
+      "Measuring the robot's exact weight",
+      "Playing recorded sounds",
+      "Charging the robot's battery wirelessly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proximity sensors detect nearby objects without contact, often using infrared, ultrasonic, or magnetic methods — useful for obstacle detection and safety stops."
+  },
+  {
+    "id": "sensors-input-t2-q3",
+    "topicId": "sensors-input",
+    "tier": 2,
+    "question": "Why might a robot use a microphone as a sensor?",
+    "choices": [
+      "To detect sound, such as voice commands or specific noises in its environment",
+      "To make the robot heavier",
+      "To measure distance to walls",
+      "To detect light levels"
+    ],
+    "answerIndex": 0,
+    "explanation": "A microphone converts sound waves into electrical signals the controller can process — useful for voice commands, detecting alarms, or responding to claps and other sounds."
+  },
+  {
+    "id": "sensors-input-t3-q1",
+    "topicId": "sensors-input",
+    "tier": 3,
+    "question": "A robot uses a touch (bump) sensor on its front bumper. What is a likely use for this sensor?",
+    "choices": [
+      "Detecting when the robot physically contacts an obstacle, so it can stop or change direction",
+      "Measuring the brightness of the room",
+      "Detecting sounds from far away",
+      "Charging the robot's battery"
+    ],
+    "answerIndex": 0,
+    "explanation": "A bump sensor provides simple, reliable feedback: when it's pressed, the robot knows it has touched something and can react — like backing up and turning."
+  },
+  {
+    "id": "sensors-input-t3-q2",
+    "topicId": "sensors-input",
+    "tier": 3,
+    "question": "An infrared (IR) distance sensor and an ultrasonic distance sensor both measure distance, but in different ways. What's a key difference between them?",
+    "choices": [
+      "IR sensors use light, while ultrasonic sensors use sound waves to estimate distance",
+      "IR sensors only work underwater",
+      "Ultrasonic sensors cannot detect any objects",
+      "There is no difference — they always give identical readings in every situation"
+    ],
+    "answerIndex": 0,
+    "explanation": "IR sensors typically send out infrared light and measure its reflection, while ultrasonic sensors send out sound pulses (often beyond human hearing) and time how long the echo takes to return — each has strengths depending on surfaces and lighting conditions."
+  },
+  {
+    "id": "sensors-input-t3-q3",
+    "topicId": "sensors-input",
+    "tier": 3,
+    "question": "A robot's distance sensor sometimes gives strange, jumpy readings even when nothing is moving. What might explain this?",
+    "choices": [
+      "Sensors are always perfectly accurate and this could never happen",
+      "Sensor 'noise' — small, random variations in readings — is common, and robots are often programmed to average multiple readings or filter out outliers",
+      "The robot's battery has nothing to do with sensor readings ever",
+      "The robot must be broken beyond repair"
+    ],
+    "answerIndex": 1,
+    "explanation": "Real-world sensors are rarely perfectly precise — small fluctuations ('noise') are normal. Engineers often use techniques like averaging several readings over time to get more reliable data."
+  },
+  {
+    "id": "sensors-input-t4-q1",
+    "topicId": "sensors-input",
+    "tier": 4,
+    "question": "A robot uses both a camera and an ultrasonic sensor to detect obstacles. In low-light conditions, the camera struggles, but the ultrasonic sensor keeps working normally. What does this illustrate?",
+    "choices": [
+      "Cameras are always better than ultrasonic sensors in every situation",
+      "Different sensors have different strengths and weaknesses, and combining sensor types (sensor fusion) can make a robot more reliable across different conditions",
+      "Ultrasonic sensors only work in bright light",
+      "Combining sensors always makes a robot less reliable"
+    ],
+    "answerIndex": 1,
+    "explanation": "Cameras rely on light, so they perform poorly in darkness, while ultrasonic sensors use sound and aren't affected by lighting. Using multiple sensor types — called sensor fusion — helps a robot handle a wider range of situations."
+  },
+  {
+    "id": "sensors-input-t4-q2",
+    "topicId": "sensors-input",
+    "tier": 4,
+    "question": "What does 'calibrating' a sensor mean, and why is it important?",
+    "choices": [
+      "Calibration means painting the sensor a specific color",
+      "Calibration means adjusting or testing a sensor so its readings accurately reflect real-world values, which is important because raw sensor readings can vary between devices or environments",
+      "Calibration means permanently disabling the sensor",
+      "Calibration has no effect on sensor accuracy"
+    ],
+    "answerIndex": 1,
+    "explanation": "Two identical sensor models might give slightly different readings in the same conditions due to manufacturing differences. Calibration — like testing a light sensor in known bright and dark conditions — helps the robot interpret readings correctly."
+  },
+  {
+    "id": "sensors-input-t4-q3",
+    "topicId": "sensors-input",
+    "tier": 4,
+    "question": "A robot's line-following sensors work great on a sunny day but behave erratically indoors under fluorescent lights. What is the most likely cause?",
+    "choices": [
+      "The robot's battery changed shape",
+      "Ambient light conditions affect how light sensors read the floor's reflectivity, so a sensor calibrated for one lighting condition may not work well in another",
+      "Fluorescent lights have no effect on light sensors",
+      "The robot's wheels are the problem, not the sensors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Light sensors measure reflected light, and the amount and type of ambient light changes what 'bright' and 'dark' readings look like — robots often need to be recalibrated or use sensors less sensitive to ambient light changes."
+  },
+  {
+    "id": "sensors-input-t5-q1",
+    "topicId": "sensors-input",
+    "tier": 5,
+    "question": "A delivery robot needs to detect both nearby obstacles (within centimeters) and distant ones (several meters away) to plan a safe path. How might engineers approach this?",
+    "choices": [
+      "Use a single sensor type for everything, since all sensors have identical ranges",
+      "Combine multiple sensors with different ranges and types — for example, short-range bump or IR sensors for close objects and longer-range ultrasonic or camera-based sensors for distant ones",
+      "Avoid using any sensors and rely only on a fixed schedule",
+      "Use only a microphone, since sound detects all obstacles equally well"
+    ],
+    "answerIndex": 1,
+    "explanation": "No single sensor excels at every range and situation. Combining sensors with complementary strengths — short-range and long-range, different sensing methods — gives the robot a more complete picture for planning safe movement."
+  },
+  {
+    "id": "sensors-input-t5-q2",
+    "topicId": "sensors-input",
+    "tier": 5,
+    "question": "A robot is programmed to stop immediately if its distance sensor reads less than 10 cm. Occasionally, sensor noise causes a single misleading reading of 5 cm even when nothing is close, making the robot stop unnecessarily. What is a good engineering solution?",
+    "choices": [
+      "Remove the distance sensor entirely",
+      "Require multiple consecutive readings below 10 cm before stopping, or average several readings, to reduce the effect of occasional noisy values",
+      "Make the robot stop permanently the first time this happens",
+      "Ignore all sensor data from then on"
+    ],
+    "answerIndex": 1,
+    "explanation": "Requiring confirmation across multiple readings (or averaging) is a common way to make decisions more robust against occasional sensor noise, without ignoring genuinely important readings."
+  },
+  {
+    "id": "sensors-input-t5-q3",
+    "topicId": "sensors-input",
+    "tier": 5,
+    "question": "Why is it important for robotics engineers to understand the limitations of their sensors, not just their capabilities?",
+    "choices": [
+      "Limitations don't matter because all sensors work perfectly in all conditions",
+      "Understanding limitations (like range, lighting sensitivity, or noise) helps engineers design robots that behave safely and predictably even when sensors give imperfect information",
+      "Sensors have no limitations once installed correctly",
+      "Limitations only matter for very expensive robots"
+    ],
+    "answerIndex": 1,
+    "explanation": "Every sensor has limits — range, accuracy, environmental sensitivity, and noise. Designing a robot that accounts for these limitations (through combinations of sensors, filtering, and careful programming) leads to safer, more reliable behavior in the real world."
+  },
+  {
+    "id": "programming-basics-robotics-t1-q1",
+    "topicId": "programming-basics-robotics",
+    "tier": 1,
+    "question": "Why does a robot need a program (code) to follow?",
+    "choices": [
+      "Robots don't need programs — they work automatically with no instructions",
+      "A program gives the robot step-by-step instructions for how to respond to sensor input and control its actuators",
+      "Programs are only used to change a robot's color",
+      "Programs are only needed for robots that can talk"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without a program, a robot's controller wouldn't know what to do with sensor data or how to command its motors — code provides the instructions that connect sensing to action."
+  },
+  {
+    "id": "programming-basics-robotics-t1-q2",
+    "topicId": "programming-basics-robotics",
+    "tier": 1,
+    "question": "In simple robot pseudocode, what does a 'loop' allow a robot to do?",
+    "choices": [
+      "Run a set of instructions over and over, such as continuously checking sensors",
+      "Run a program exactly one time and then permanently shut down",
+      "Change the robot's physical shape",
+      "Delete all of its sensors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Loops let a robot repeat instructions — for example, 'repeat forever: check the distance sensor, then move forward if it's clear' — which is essential since robots must continuously sense and respond."
+  },
+  {
+    "id": "programming-basics-robotics-t1-q3",
+    "topicId": "programming-basics-robotics",
+    "tier": 1,
+    "question": "What is the purpose of an 'if' statement in robot programming?",
+    "choices": [
+      "To make the robot run faster no matter what",
+      "To let the robot choose different actions depending on a condition, like sensor readings",
+      "To permanently turn off the robot",
+      "To connect the robot to the internet"
+    ],
+    "answerIndex": 1,
+    "explanation": "An 'if' statement lets a robot make decisions: 'if the distance sensor reads less than 10, then stop; otherwise, keep moving' — this is how robots react differently to different situations."
+  },
+  {
+    "id": "programming-basics-robotics-t2-q1",
+    "topicId": "programming-basics-robotics",
+    "tier": 2,
+    "question": "```\nrepeat forever:\n  distance = read_distance_sensor()\n  if distance < 15:\n    stop_motors()\n  else:\n    move_forward()\n```\nWhat does this pseudocode describe?",
+    "choices": [
+      "A robot that always moves forward no matter what",
+      "A robot that continuously checks the distance ahead and stops if something is closer than 15 units, otherwise keeps moving forward",
+      "A robot that turns off its sensors permanently",
+      "A robot that only checks its sensor one time, at the very start"
+    ],
+    "answerIndex": 1,
+    "explanation": "The 'repeat forever' loop keeps checking the sensor, and the 'if/else' decides the action: stop when something is close (distance < 15), or keep moving forward otherwise."
+  },
+  {
+    "id": "programming-basics-robotics-t2-q2",
+    "topicId": "programming-basics-robotics",
+    "tier": 2,
+    "question": "Why is it useful to break a robot's program into named steps, like move_forward() and turn_left(), instead of writing one giant block of instructions?",
+    "choices": [
+      "It makes the program slower on purpose",
+      "Named steps (functions) make the code easier to read, reuse, and fix, since each one handles a specific, clearly labeled job",
+      "Named steps prevent the robot from moving at all",
+      "It has no benefit compared to one giant block of code"
+    ],
+    "answerIndex": 1,
+    "explanation": "Breaking code into clearly named pieces — like move_forward() or turn_left() — makes it easier to understand what each part does, reuse it elsewhere, and fix problems without rewriting everything."
+  },
+  {
+    "id": "programming-basics-robotics-t2-q3",
+    "topicId": "programming-basics-robotics",
+    "tier": 2,
+    "question": "A robot's program reads a light sensor and stores the result in a variable called brightness. What is a 'variable' in this context?",
+    "choices": [
+      "A physical part of the robot, like a wheel",
+      "A named place in the program's memory that holds a value, which can change as the robot runs",
+      "A type of motor",
+      "A permanent setting that can never change once written"
+    ],
+    "answerIndex": 1,
+    "explanation": "A variable is like a labeled box that holds a value — here, brightness stores whatever number the light sensor currently reports, and that value can update each time the sensor is read."
+  },
+  {
+    "id": "programming-basics-robotics-t3-q1",
+    "topicId": "programming-basics-robotics",
+    "tier": 3,
+    "question": "```\nrepeat forever:\n  left = read_left_sensor()\n  right = read_right_sensor()\n  if left < right:\n    turn_left()\n  elif right < left:\n    turn_right()\n  else:\n    move_forward()\n```\nWhat kind of robot behavior does this pseudocode most likely describe?",
+    "choices": [
+      "A robot that ignores both sensors completely",
+      "A wall-following or obstacle-avoiding robot that steers away from whichever side has a closer obstacle",
+      "A robot that can only move backward",
+      "A robot with no sensors at all"
+    ],
+    "answerIndex": 1,
+    "explanation": "By comparing left and right sensor readings (likely distances), the robot turns away from the side with the smaller value (closer obstacle) — a simple steering strategy for avoiding walls or obstacles."
+  },
+  {
+    "id": "programming-basics-robotics-t3-q2",
+    "topicId": "programming-basics-robotics",
+    "tier": 3,
+    "question": "Why might a robot's program include a short 'wait' or 'delay' after giving a motor command?",
+    "choices": [
+      "Delays are never useful in robot programs",
+      "A short delay can give the motor time to actually move before the program checks sensors again or issues a new command, preventing the program from reacting too quickly to outdated information",
+      "Delays permanently stop the robot",
+      "Delays make the robot's sensors more accurate automatically"
+    ],
+    "answerIndex": 1,
+    "explanation": "Motors and sensors take a small amount of real time to respond. A brief delay can help the robot's actions and sensor readings stay in sync, avoiding jittery or overly reactive behavior."
+  },
+  {
+    "id": "programming-basics-robotics-t3-q3",
+    "topicId": "programming-basics-robotics",
+    "tier": 3,
+    "question": "A student writes a program where the robot checks its distance sensor only once, at the very beginning, and then drives forward forever based on that single reading. What's the main problem with this approach?",
+    "choices": [
+      "There is no problem — checking once is always enough",
+      "The robot won't respond to anything that happens after that first check, like new obstacles appearing — it needs to keep sensing inside its main loop",
+      "The program will refuse to run at all",
+      "The sensor will be permanently damaged"
+    ],
+    "answerIndex": 1,
+    "explanation": "Real environments change continuously. A robot that only senses once can't react to new obstacles, so most robot programs put sensor checks inside a repeating loop to stay responsive."
+  },
+  {
+    "id": "programming-basics-robotics-t4-q1",
+    "topicId": "programming-basics-robotics",
+    "tier": 4,
+    "question": "```\nrepeat forever:\n  if button_pressed():\n    mode = \"follow_line\"\n  if mode == \"follow_line\":\n    follow_line()\n  else:\n    wait_idle()\n```\nWhat does this pseudocode demonstrate?",
+    "choices": [
+      "A robot with no way to change its behavior",
+      "A robot that switches between different 'modes' of behavior — idle and line-following — based on input, using a variable to remember the current mode",
+      "A robot that can only follow lines and do nothing else, ever",
+      "A program that never checks for any input"
+    ],
+    "answerIndex": 1,
+    "explanation": "The variable mode lets the robot remember which behavior it should be performing. Pressing the button changes the mode, and the rest of the loop acts differently depending on that stored state — a simple form of a state machine."
+  },
+  {
+    "id": "programming-basics-robotics-t4-q2",
+    "topicId": "programming-basics-robotics",
+    "tier": 4,
+    "question": "Why do robotics programmers often test small pieces of code (like 'make the motor spin for 1 second') before combining them into a full program?",
+    "choices": [
+      "Testing small pieces wastes time and should be avoided",
+      "Testing small, isolated pieces makes it easier to find and fix problems before they get buried inside a larger, more complex program",
+      "Small pieces of code can never contain bugs",
+      "Robots can only run code that has never been tested"
+    ],
+    "answerIndex": 1,
+    "explanation": "If a complex program doesn't work, it can be hard to tell which part is broken. Testing small pieces individually — like checking that a single motor command works — helps isolate and fix issues early."
+  },
+  {
+    "id": "programming-basics-robotics-t4-q3",
+    "topicId": "programming-basics-robotics",
+    "tier": 4,
+    "question": "A robot's code has this flaw:\n```\nif distance < 10\n  stop_motors()\n```\nWhat is wrong with this code if the programming language requires a colon after conditions, like Python does?",
+    "choices": [
+      "Nothing — this code is perfectly correct in every language",
+      "The line is missing a colon (:) after the condition, which would cause a syntax error in Python",
+      "The variable distance is spelled incorrectly",
+      "The function stop_motors() does not exist in any language"
+    ],
+    "answerIndex": 1,
+    "explanation": "In Python, conditions in if statements must end with a colon: `if distance < 10:`. Missing it causes a syntax error — a common mistake even experienced programmers catch by reading error messages carefully."
+  },
+  {
+    "id": "programming-basics-robotics-t5-q1",
+    "topicId": "programming-basics-robotics",
+    "tier": 5,
+    "question": "A robot is supposed to back away and turn when it bumps into something, then continue forward. Here's the code:\n```\nrepeat forever:\n  if bump_sensor():\n    move_backward()\n    turn_right()\n  move_forward()\n```\nWhat is the flaw in this code?",
+    "choices": [
+      "There is no flaw — this code works exactly as intended",
+      "Even after detecting a bump and backing away, the next line always calls move_forward() in the same loop pass, immediately undoing the backward movement — it should be in an else block or followed by 'continue'",
+      "The bump_sensor() function can never return true",
+      "move_backward() and turn_right() are not real actions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Because move_forward() runs every time regardless of the if condition, the robot backs away and then immediately drives forward again in the same loop iteration — likely right back into the obstacle. The forward command should be in an 'else' branch (or skipped that loop) so it only runs when there's no bump."
+  },
+  {
+    "id": "programming-basics-robotics-t5-q2",
+    "topicId": "programming-basics-robotics",
+    "tier": 5,
+    "question": "A team writes robot code that works perfectly in their classroom but fails when tested in the school gym. The robot's light sensors behave differently under the gym's bright skylights. What does this best illustrate?",
+    "choices": [
+      "Code that works in one environment will always work identically everywhere",
+      "Real-world conditions (like different lighting) can affect sensor readings, so robust robot programs often need testing across different environments and may need calibration or adjustable thresholds",
+      "The gym's skylights have no possible effect on a robot's sensors",
+      "The robot's code must be completely rewritten from scratch every time the location changes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sensor readings depend on real-world conditions like lighting, surfaces, and temperature. Good robot programs are often designed with adjustable thresholds or calibration steps so they can adapt to different environments rather than relying on values that only work in one specific place."
+  },
+  {
+    "id": "programming-basics-robotics-t5-q3",
+    "topicId": "programming-basics-robotics",
+    "tier": 5,
+    "question": "Why might a robotics programmer add a 'timeout' to a loop like 'repeat until the robot reaches the target, but no more than 30 seconds'?",
+    "choices": [
+      "Timeouts serve no purpose in robot programs",
+      "A timeout prevents the robot from getting stuck forever in a loop if something unexpected happens (like the target never being detected), making the program more robust",
+      "Timeouts make sensors more accurate",
+      "Timeouts are only used to make programs run slower on purpose"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without a timeout, a robot waiting for a condition that never becomes true (due to a sensor issue, an unreachable target, or a bug) could get stuck indefinitely. Adding a timeout gives the program a safe way to move on or report a problem."
+  }
+]

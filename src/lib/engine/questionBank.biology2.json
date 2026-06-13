@@ -1,0 +1,902 @@
+[
+  {
+    "id": "genetics-t1-q1",
+    "topicId": "genetics",
+    "tier": 1,
+    "question": "What is heredity?",
+    "choices": ["The study of weather patterns", "The passing of traits from parents to offspring", "The process of cell division", "The study of ecosystems"],
+    "answerIndex": 1,
+    "explanation": "Heredity is the passing down of traits from parents to their offspring through genes."
+  },
+  {
+    "id": "genetics-t1-q2",
+    "topicId": "genetics",
+    "tier": 1,
+    "question": "Gregor Mendel, often called the 'father of genetics,' studied inheritance patterns in which plant?",
+    "choices": ["Roses", "Pea plants", "Corn", "Oak trees"],
+    "answerIndex": 1,
+    "explanation": "Mendel's experiments crossbreeding pea plants in the mid-1800s revealed the basic patterns of inheritance."
+  },
+  {
+    "id": "genetics-t1-q3",
+    "topicId": "genetics",
+    "tier": 1,
+    "question": "An inherited characteristic, such as eye color or flower color, is called a:",
+    "choices": ["Gene", "Trait", "Allele", "Genome"],
+    "answerIndex": 1,
+    "explanation": "A trait is an observable characteristic, like eye color, that can be passed from parents to offspring."
+  },
+  {
+    "id": "genetics-t1-q4",
+    "topicId": "genetics",
+    "tier": 1,
+    "question": "Offspring inherit their genetic information from:",
+    "choices": ["Only their mother", "Only their father", "Both parents", "Neither parent"],
+    "answerIndex": 2,
+    "explanation": "Offspring receive a combination of genetic material from both their mother and father."
+  },
+  {
+    "id": "genetics-t2-q1",
+    "topicId": "genetics",
+    "tier": 2,
+    "question": "A segment of DNA that contains the instructions for a specific trait is called a:",
+    "choices": ["Allele", "Gene", "Chromosome", "Phenotype"],
+    "answerIndex": 1,
+    "explanation": "A gene is a section of DNA that codes for a particular trait."
+  },
+  {
+    "id": "genetics-t2-q2",
+    "topicId": "genetics",
+    "tier": 2,
+    "question": "Different versions of the same gene are called:",
+    "choices": ["Genes", "Alleles", "Genomes", "Traits"],
+    "answerIndex": 1,
+    "explanation": "Alleles are different forms of the same gene, such as the alleles for brown or blue eye color."
+  },
+  {
+    "id": "genetics-t2-q3",
+    "topicId": "genetics",
+    "tier": 2,
+    "question": "A dominant allele is one that:",
+    "choices": ["Is always recessive", "Masks the effect of a recessive allele when both are present", "Never appears in offspring", "Only appears in females"],
+    "answerIndex": 1,
+    "explanation": "When a dominant allele and a recessive allele are both present, the dominant allele's trait is the one expressed."
+  },
+  {
+    "id": "genetics-t2-q4",
+    "topicId": "genetics",
+    "tier": 2,
+    "question": "If a recessive allele is represented by a lowercase letter, a dominant allele for the same gene is usually represented by:",
+    "choices": ["The same lowercase letter", "An uppercase version of the same letter", "A number", "A Roman numeral"],
+    "answerIndex": 1,
+    "explanation": "By convention, dominant alleles are written as uppercase letters and recessive alleles as lowercase letters of the same letter."
+  },
+  {
+    "id": "genetics-t3-q1",
+    "topicId": "genetics",
+    "tier": 3,
+    "question": "An organism's genotype refers to:",
+    "choices": ["Its physical appearance", "Its genetic makeup — the alleles it carries", "The environment it lives in", "Its age"],
+    "answerIndex": 1,
+    "explanation": "Genotype describes the specific combination of alleles an organism has for a trait."
+  },
+  {
+    "id": "genetics-t3-q2",
+    "topicId": "genetics",
+    "tier": 3,
+    "question": "An organism's phenotype refers to:",
+    "choices": ["Its genetic code only", "Its observable physical traits", "Its species name", "The number of chromosomes it has"],
+    "answerIndex": 1,
+    "explanation": "Phenotype is the physical expression of an organism's genes, such as flower color or height."
+  },
+  {
+    "id": "genetics-t3-q3",
+    "topicId": "genetics",
+    "tier": 3,
+    "question": "An organism with two identical alleles for a trait (such as 'TT' or 'tt') is described as:",
+    "choices": ["Heterozygous", "Homozygous", "Hybrid", "Mutant"],
+    "answerIndex": 1,
+    "explanation": "Homozygous means an organism has two copies of the same allele for a gene."
+  },
+  {
+    "id": "genetics-t3-q4",
+    "topicId": "genetics",
+    "tier": 3,
+    "question": "In a Punnett square cross between two heterozygous parents (Tt x Tt), what fraction of offspring are expected to show the recessive phenotype?",
+    "choices": ["1/4", "1/2", "3/4", "All of them"],
+    "answerIndex": 0,
+    "explanation": "A Tt x Tt cross produces genotypes TT, Tt, Tt, and tt — only the tt combination (1 out of 4) shows the recessive phenotype."
+  },
+  {
+    "id": "genetics-t4-q1",
+    "topicId": "genetics",
+    "tier": 4,
+    "question": "Mendel's Law of Independent Assortment states that:",
+    "choices": ["Genes for different traits are always inherited together", "Genes for different traits separate independently during gamete formation", "Only dominant traits are passed on", "Traits skip every other generation"],
+    "answerIndex": 1,
+    "explanation": "During meiosis, alleles for different genes are sorted into gametes independently of one another."
+  },
+  {
+    "id": "genetics-t4-q2",
+    "topicId": "genetics",
+    "tier": 4,
+    "question": "In incomplete dominance, a cross between a red flower (RR) and a white flower (rr) produces offspring that are:",
+    "choices": ["All red", "All white", "Pink — a blend of both colors", "Striped red and white"],
+    "answerIndex": 2,
+    "explanation": "Incomplete dominance produces a blended phenotype, such as pink flowers from red and white parents."
+  },
+  {
+    "id": "genetics-t4-q3",
+    "topicId": "genetics",
+    "tier": 4,
+    "question": "A trait controlled by a gene located on the X chromosome, such as red-green color blindness in humans, is called:",
+    "choices": ["An autosomal trait", "A sex-linked trait", "A trait that is always dominant", "A trait with no genetic basis"],
+    "answerIndex": 1,
+    "explanation": "Sex-linked traits are controlled by genes on the X or Y chromosomes and are often inherited differently in males and females."
+  },
+  {
+    "id": "genetics-t4-q4",
+    "topicId": "genetics",
+    "tier": 4,
+    "question": "Codominance occurs when:",
+    "choices": ["One allele completely hides the other", "Both alleles are expressed fully and separately, as in human AB blood type", "Neither allele is expressed", "Only the recessive allele is expressed"],
+    "answerIndex": 1,
+    "explanation": "In codominance, both alleles contribute visibly to the phenotype, such as a person with both A and B markers in blood type AB."
+  },
+  {
+    "id": "genetics-t5-q1",
+    "topicId": "genetics",
+    "tier": 5,
+    "question": "Two parents who are both carriers (heterozygous, Aa) for a recessive genetic disorder have a child. What is the probability the child will have the disorder (aa)?",
+    "choices": ["0%", "25%", "50%", "100%"],
+    "answerIndex": 1,
+    "explanation": "An Aa x Aa cross produces AA, Aa, Aa, and aa in equal proportions, so there is a 25% (1 in 4) chance of an aa offspring."
+  },
+  {
+    "id": "genetics-t5-q2",
+    "topicId": "genetics",
+    "tier": 5,
+    "question": "A pedigree chart is used to:",
+    "choices": ["Predict the weather", "Track the inheritance of a trait through generations of a family", "Measure the size of chromosomes", "Show the food chain in an ecosystem"],
+    "answerIndex": 1,
+    "explanation": "Pedigree charts show family relationships and how traits, especially genetic disorders, are passed down across generations."
+  },
+  {
+    "id": "genetics-t5-q3",
+    "topicId": "genetics",
+    "tier": 5,
+    "question": "Gregor Mendel's pea plant experiments in the mid-1800s laid the foundation for genetics, but the double-helix structure of DNA was not discovered until:",
+    "choices": ["Ancient times, long before Mendel", "The 1950s, by Watson and Crick, building on Rosalind Franklin's work", "Mendel discovered DNA's structure himself", "DNA's structure has never been discovered"],
+    "answerIndex": 1,
+    "explanation": "Mendel established the rules of inheritance without knowing about DNA; the molecule's double-helix structure was described about a century later, in the 1950s."
+  },
+  {
+    "id": "genetics-t5-q4",
+    "topicId": "genetics",
+    "tier": 5,
+    "question": "A woman with blood type AB has a child with a man with blood type O. Which blood types could their child have?",
+    "choices": ["Only AB", "Only O", "A or B", "AB or O only"],
+    "answerIndex": 2,
+    "explanation": "The AB parent can pass on either an A or a B allele, while the O parent can only pass on an O allele, so the child will be type A or type B."
+  },
+  {
+    "id": "evolution-t1-q1",
+    "topicId": "evolution",
+    "tier": 1,
+    "question": "Evolution refers to:",
+    "choices": ["The instant transformation of one species into another", "The change in a population's traits over many generations", "The way an individual organism grows during its lifetime", "The process of digestion"],
+    "answerIndex": 1,
+    "explanation": "Evolution describes how the traits of a population change gradually over many generations."
+  },
+  {
+    "id": "evolution-t1-q2",
+    "topicId": "evolution",
+    "tier": 1,
+    "question": "Charles Darwin is best known for proposing the theory of:",
+    "choices": ["Cell theory", "Natural selection", "Genetics", "Plate tectonics"],
+    "answerIndex": 1,
+    "explanation": "Darwin proposed that natural selection drives the process of evolution in populations."
+  },
+  {
+    "id": "evolution-t1-q3",
+    "topicId": "evolution",
+    "tier": 1,
+    "question": "A population is a group of:",
+    "choices": ["Different species living in the same area", "The same species living in the same area and able to interbreed", "All living things on Earth", "Organs working together"],
+    "answerIndex": 1,
+    "explanation": "A population consists of individuals of one species living together and capable of breeding with one another."
+  },
+  {
+    "id": "evolution-t1-q4",
+    "topicId": "evolution",
+    "tier": 1,
+    "question": "Within a population, individuals show variation, meaning:",
+    "choices": ["They are all exactly identical", "They differ slightly from one another in their traits", "Only one individual exists in the population", "They have no traits at all"],
+    "answerIndex": 1,
+    "explanation": "Variation refers to the small differences in traits among individuals of the same population."
+  },
+  {
+    "id": "evolution-t2-q1",
+    "topicId": "evolution",
+    "tier": 2,
+    "question": "An inherited trait that helps an organism survive and reproduce in its environment is called an:",
+    "choices": ["Mutation only", "Adaptation", "Extinction", "Habitat"],
+    "answerIndex": 1,
+    "explanation": "An adaptation is a heritable trait that improves an organism's chances of survival and reproduction."
+  },
+  {
+    "id": "evolution-t2-q2",
+    "topicId": "evolution",
+    "tier": 2,
+    "question": "'Survival of the fittest' means that organisms best suited to their environment are more likely to:",
+    "choices": ["Live forever", "Survive and reproduce, passing their traits to offspring", "Become extinct first", "Stay exactly the same forever"],
+    "answerIndex": 1,
+    "explanation": "Individuals with traits well-suited to their environment tend to survive longer and have more offspring, passing those traits on."
+  },
+  {
+    "id": "evolution-t2-q3",
+    "topicId": "evolution",
+    "tier": 2,
+    "question": "A population of beetles includes both green and brown beetles. Birds eat the green beetles more easily because they stand out against the brown bark. Over many generations, the population will likely:",
+    "choices": ["Have more green beetles", "Have more brown beetles", "Stay exactly 50/50 forever", "Go extinct immediately"],
+    "answerIndex": 1,
+    "explanation": "Because brown beetles are camouflaged and survive predation better, they are more likely to reproduce, increasing their proportion over time."
+  },
+  {
+    "id": "evolution-t2-q4",
+    "topicId": "evolution",
+    "tier": 2,
+    "question": "Where does the genetic variation that natural selection acts on ultimately come from?",
+    "choices": ["Mutations and genetic recombination", "Organisms choosing their own traits", "The environment directly rewriting DNA on purpose", "Variation never changes within a population"],
+    "answerIndex": 0,
+    "explanation": "New genetic variation arises through mutations and through the recombination of alleles during sexual reproduction."
+  },
+  {
+    "id": "evolution-t3-q1",
+    "topicId": "evolution",
+    "tier": 3,
+    "question": "Fossils provide evidence for evolution by showing:",
+    "choices": ["That all species have always looked exactly the same", "How species have changed over long periods of time", "That rocks are alive", "Nothing useful about the past"],
+    "answerIndex": 1,
+    "explanation": "The fossil record shows a sequence of organisms changing gradually over millions of years."
+  },
+  {
+    "id": "evolution-t3-q2",
+    "topicId": "evolution",
+    "tier": 3,
+    "question": "Homologous structures, like the forelimbs of humans, whales, and bats, suggest that these organisms:",
+    "choices": ["Have no relation to each other", "Share a common ancestor", "Were all created with no connection", "Evolved completely independently with identical results"],
+    "answerIndex": 1,
+    "explanation": "Similar underlying bone structures, even when used for different purposes, suggest these species descended from a shared ancestor."
+  },
+  {
+    "id": "evolution-t3-q3",
+    "topicId": "evolution",
+    "tier": 3,
+    "question": "Which of these is the BEST example of a vestigial structure?",
+    "choices": ["A bird's wing used for flight", "The human appendix, which has a reduced function compared to ancestral organisms", "A shark's gills used for breathing", "A human's eyes used for seeing"],
+    "answerIndex": 1,
+    "explanation": "Vestigial structures are remnants of features that had a function in an ancestor but have reduced or lost their function over time, like the human appendix."
+  },
+  {
+    "id": "evolution-t3-q4",
+    "topicId": "evolution",
+    "tier": 3,
+    "question": "Species that live in different places but evolve similar traits because they face similar environmental pressures show:",
+    "choices": ["Homologous structures", "Convergent evolution", "Identical DNA", "No relationship at all"],
+    "answerIndex": 1,
+    "explanation": "Convergent evolution happens when unrelated species independently evolve similar traits in response to similar environments."
+  },
+  {
+    "id": "evolution-t4-q1",
+    "topicId": "evolution",
+    "tier": 4,
+    "question": "Speciation is the process by which:",
+    "choices": ["A single species splits into two or more distinct species", "Two species merge into one", "An organism changes species during its lifetime", "A species' population size stays exactly constant"],
+    "answerIndex": 0,
+    "explanation": "Speciation occurs when populations of a species become different enough that they can no longer interbreed, forming new species."
+  },
+  {
+    "id": "evolution-t4-q2",
+    "topicId": "evolution",
+    "tier": 4,
+    "question": "A geographic barrier, like a new mountain range, splitting a population into two groups that can no longer interbreed is an example of a cause of:",
+    "choices": ["Genetic drift only", "Speciation through geographic isolation", "Extinction", "Cloning"],
+    "answerIndex": 1,
+    "explanation": "When populations are geographically separated for long enough, they can evolve independently and become separate species."
+  },
+  {
+    "id": "evolution-t4-q3",
+    "topicId": "evolution",
+    "tier": 4,
+    "question": "Antibiotic resistance in bacteria is a real-world example of:",
+    "choices": ["Natural selection acting on a population over generations", "Bacteria choosing to become resistant on purpose", "A process that has nothing to do with evolution", "Bacteria becoming a new kingdom of life"],
+    "answerIndex": 0,
+    "explanation": "Bacteria with resistance mutations survive antibiotic exposure and reproduce, increasing resistance in the population — a clear example of natural selection."
+  },
+  {
+    "id": "evolution-t4-q4",
+    "topicId": "evolution",
+    "tier": 4,
+    "question": "In a population of moths, a sudden environmental change favors moths with a trait that was previously rare. Over time, this trait becomes common. This is an example of:",
+    "choices": ["Stabilizing selection", "Directional selection", "No selection at all", "Artificial selection only"],
+    "answerIndex": 1,
+    "explanation": "Directional selection shifts a population's traits toward one extreme when that trait becomes favorable."
+  },
+  {
+    "id": "evolution-t5-q1",
+    "topicId": "evolution",
+    "tier": 5,
+    "question": "Darwin observed that finches on different Galápagos Islands had different beak shapes suited to different food sources. This observation supports the idea that:",
+    "choices": ["All finches are identical everywhere", "Natural selection shaped beak traits to match each island's available food", "Finches can change their beak shape instantly at will", "Beak shape has nothing to do with survival"],
+    "answerIndex": 1,
+    "explanation": "Different food sources on each island favored different beak shapes, leading to the diversity of finch species Darwin observed."
+  },
+  {
+    "id": "evolution-t5-q2",
+    "topicId": "evolution",
+    "tier": 5,
+    "question": "Comparing DNA sequences between species is a powerful tool for studying evolution because:",
+    "choices": ["More similar DNA sequences generally suggest a more recent common ancestor", "DNA never changes between species", "DNA comparisons can't tell us anything about relationships", "Only fossils can show evolutionary relationships"],
+    "answerIndex": 0,
+    "explanation": "Species that share a more recent common ancestor tend to have more similar DNA sequences, which helps scientists build evolutionary trees."
+  },
+  {
+    "id": "evolution-t5-q3",
+    "topicId": "evolution",
+    "tier": 5,
+    "question": "A population of plants has flowers ranging from very short to very tall stems. Pollinators only visit medium-height flowers, and very short or very tall plants are damaged by wind. Over time, which type of selection is most likely occurring?",
+    "choices": ["Directional selection toward taller plants", "Disruptive selection favoring both extremes", "Stabilizing selection favoring medium-height plants", "No selection is occurring"],
+    "answerIndex": 2,
+    "explanation": "When intermediate traits are favored and both extremes are selected against, the result is stabilizing selection, which reduces variation around the average."
+  },
+  {
+    "id": "evolution-t5-q4",
+    "topicId": "evolution",
+    "tier": 5,
+    "question": "Antibiotic resistance can spread quickly in bacterial populations partly because bacteria:",
+    "choices": ["Reproduce slowly and rarely mutate", "Reproduce rapidly, giving many chances for beneficial mutations to arise and spread", "Cannot pass on traits to offspring", "Are not affected by selection pressure"],
+    "answerIndex": 1,
+    "explanation": "Bacteria reproduce very quickly, so even rare beneficial mutations can spread through a population in a short time under selection pressure."
+  },
+  {
+    "id": "classification-t1-q1",
+    "topicId": "classification",
+    "tier": 1,
+    "question": "The science of classifying and naming living things is called:",
+    "choices": ["Ecology", "Taxonomy", "Genetics", "Physiology"],
+    "answerIndex": 1,
+    "explanation": "Taxonomy is the branch of biology concerned with classifying and naming organisms."
+  },
+  {
+    "id": "classification-t1-q2",
+    "topicId": "classification",
+    "tier": 1,
+    "question": "Why do scientists classify living things into groups?",
+    "choices": ["To make organisms easier to study and to show relationships between them", "To make biology more confusing", "Because all organisms are identical", "To replace the need for naming organisms"],
+    "answerIndex": 0,
+    "explanation": "Classification organizes the diversity of life and reveals how organisms are related to one another."
+  },
+  {
+    "id": "classification-t1-q3",
+    "topicId": "classification",
+    "tier": 1,
+    "question": "The two-part naming system that gives every species a genus name and a species name is called:",
+    "choices": ["Common naming", "Binomial nomenclature", "Random naming", "Alphabet naming"],
+    "answerIndex": 1,
+    "explanation": "Binomial nomenclature gives each species a unique two-part scientific name, such as Homo sapiens."
+  },
+  {
+    "id": "classification-t1-q4",
+    "topicId": "classification",
+    "tier": 1,
+    "question": "Who is often credited with developing the modern system of classifying organisms with two-part scientific names?",
+    "choices": ["Charles Darwin", "Carl Linnaeus", "Gregor Mendel", "Isaac Newton"],
+    "answerIndex": 1,
+    "explanation": "Carl Linnaeus developed the system of binomial nomenclature still used to name species today."
+  },
+  {
+    "id": "classification-t2-q1",
+    "topicId": "classification",
+    "tier": 2,
+    "question": "From broadest to most specific, which is the correct order of classification levels?",
+    "choices": ["Species, Genus, Kingdom, Domain", "Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species", "Genus, Species, Domain, Kingdom", "Family, Domain, Species, Kingdom"],
+    "answerIndex": 1,
+    "explanation": "The standard taxonomic hierarchy goes from the broadest group (Domain) down to the most specific (Species)."
+  },
+  {
+    "id": "classification-t2-q2",
+    "topicId": "classification",
+    "tier": 2,
+    "question": "The largest, broadest level of classification is the:",
+    "choices": ["Species", "Genus", "Domain", "Family"],
+    "answerIndex": 2,
+    "explanation": "Domain is the highest, most inclusive level of classification, above kingdom."
+  },
+  {
+    "id": "classification-t2-q3",
+    "topicId": "classification",
+    "tier": 2,
+    "question": "The most specific level of classification, below which organisms can typically interbreed and produce fertile offspring, is the:",
+    "choices": ["Kingdom", "Phylum", "Species", "Class"],
+    "answerIndex": 2,
+    "explanation": "Species is the most specific taxonomic group, generally defined by the ability to interbreed and produce fertile offspring."
+  },
+  {
+    "id": "classification-t2-q4",
+    "topicId": "classification",
+    "tier": 2,
+    "question": "In the scientific name 'Homo sapiens', 'Homo' represents the organism's:",
+    "choices": ["Species", "Genus", "Kingdom", "Phylum"],
+    "answerIndex": 1,
+    "explanation": "The first part of a scientific name is the genus; the second part, 'sapiens', is the species."
+  },
+  {
+    "id": "classification-t3-q1",
+    "topicId": "classification",
+    "tier": 3,
+    "question": "Many classification systems traditionally recognize the kingdoms Animalia, Plantae, Fungi, Protista, and which other kingdom?",
+    "choices": ["Bacteria (or Monera)", "Reptilia", "Mammalia", "Insecta"],
+    "answerIndex": 0,
+    "explanation": "Bacteria (sometimes called Monera) is traditionally listed alongside Animalia, Plantae, Fungi, and Protista as one of the major kingdoms."
+  },
+  {
+    "id": "classification-t3-q2",
+    "topicId": "classification",
+    "tier": 3,
+    "question": "Which domain includes organisms with a true, membrane-bound nucleus, such as plants, animals, fungi, and protists?",
+    "choices": ["Bacteria", "Archaea", "Eukarya", "Virus"],
+    "answerIndex": 2,
+    "explanation": "Eukarya is the domain of organisms whose cells contain a nucleus enclosed by a membrane."
+  },
+  {
+    "id": "classification-t3-q3",
+    "topicId": "classification",
+    "tier": 3,
+    "question": "Mushrooms and molds belong to which kingdom?",
+    "choices": ["Plantae", "Animalia", "Fungi", "Protista"],
+    "answerIndex": 2,
+    "explanation": "Mushrooms and molds are classified in the kingdom Fungi."
+  },
+  {
+    "id": "classification-t3-q4",
+    "topicId": "classification",
+    "tier": 3,
+    "question": "Which of these organisms would most likely be classified in the kingdom Plantae?",
+    "choices": ["A mushroom", "An oak tree", "A bacterium", "A jellyfish"],
+    "answerIndex": 1,
+    "explanation": "An oak tree is a multicellular, photosynthetic organism, placing it in the kingdom Plantae."
+  },
+  {
+    "id": "classification-t4-q1",
+    "topicId": "classification",
+    "tier": 4,
+    "question": "A dichotomous key helps identify an organism by:",
+    "choices": ["Guessing randomly", "Asking a series of either/or questions about traits to narrow down the identification", "Only looking at the organism's color", "Measuring the organism's age"],
+    "answerIndex": 1,
+    "explanation": "A dichotomous key uses a sequence of paired choices about characteristics to guide identification to a specific organism."
+  },
+  {
+    "id": "classification-t4-q2",
+    "topicId": "classification",
+    "tier": 4,
+    "question": "Two organisms are placed in the same genus. This means they are likely:",
+    "choices": ["Completely unrelated", "Very closely related, more so than organisms only sharing the same kingdom", "In different domains", "The exact same species"],
+    "answerIndex": 1,
+    "explanation": "Sharing a genus indicates a close evolutionary relationship, much closer than organisms that only share a broader group like kingdom."
+  },
+  {
+    "id": "classification-t4-q3",
+    "topicId": "classification",
+    "tier": 4,
+    "question": "Which pair of classification levels would you expect to share the MOST traits in common?",
+    "choices": ["Two organisms in the same kingdom", "Two organisms in the same domain", "Two organisms in the same genus", "Two organisms in the same phylum"],
+    "answerIndex": 2,
+    "explanation": "The more specific the shared classification level, the more closely related — and the more traits in common — the organisms are likely to have."
+  },
+  {
+    "id": "classification-t4-q4",
+    "topicId": "classification",
+    "tier": 4,
+    "question": "A whale and a human are both classified in the class Mammalia because they both:",
+    "choices": ["Live in water", "Share traits like having hair, being warm-blooded, and nursing young with milk", "Have identical body shapes", "Eat the same food"],
+    "answerIndex": 1,
+    "explanation": "Mammals share defining traits such as hair or fur, warm-bloodedness, and producing milk to feed their young, regardless of habitat."
+  },
+  {
+    "id": "classification-t5-q1",
+    "topicId": "classification",
+    "tier": 5,
+    "question": "A phylogenetic tree (cladogram) shows:",
+    "choices": ["The geographic location of species", "The evolutionary relationships between organisms based on shared characteristics", "How many offspring a species produces", "The diet of each species"],
+    "answerIndex": 1,
+    "explanation": "Phylogenetic trees diagram how species are related through common ancestry, based on shared traits or DNA evidence."
+  },
+  {
+    "id": "classification-t5-q2",
+    "topicId": "classification",
+    "tier": 5,
+    "question": "Modern classification increasingly relies on which type of evidence, in addition to physical traits?",
+    "choices": ["DNA and molecular evidence", "Astronomy", "Weather patterns", "Population size alone"],
+    "answerIndex": 0,
+    "explanation": "Comparing DNA sequences allows scientists to refine classification based on actual evolutionary relationships."
+  },
+  {
+    "id": "classification-t5-q3",
+    "topicId": "classification",
+    "tier": 5,
+    "question": "On a phylogenetic tree, two species that share a more recent common ancestor (a branch point closer to the tips) are considered:",
+    "choices": ["More distantly related than species sharing an older common ancestor", "More closely related than species sharing an older common ancestor", "Unrelated", "Automatically members of different domains"],
+    "answerIndex": 1,
+    "explanation": "A more recent shared branch point means the species diverged more recently and are therefore more closely related."
+  },
+  {
+    "id": "classification-t5-q4",
+    "topicId": "classification",
+    "tier": 5,
+    "question": "Birds were once classified separately from reptiles, but molecular and fossil evidence now shows birds evolved from a group of dinosaurs. This is an example of how:",
+    "choices": ["Classification systems never change", "Classification can be revised as new evidence about evolutionary relationships emerges", "Birds are not living things", "DNA evidence is always ignored in classification"],
+    "answerIndex": 1,
+    "explanation": "Taxonomy is updated as scientists gather new fossil and genetic evidence about how organisms are related."
+  },
+  {
+    "id": "body-and-plant-systems-t1-q1",
+    "topicId": "body-and-plant-systems",
+    "tier": 1,
+    "question": "The human digestive system's main job is to:",
+    "choices": ["Pump blood throughout the body", "Break down food into nutrients the body can use", "Control thoughts and emotions", "Filter air for breathing"],
+    "answerIndex": 1,
+    "explanation": "The digestive system breaks down food so the body can absorb and use its nutrients."
+  },
+  {
+    "id": "body-and-plant-systems-t1-q2",
+    "topicId": "body-and-plant-systems",
+    "tier": 1,
+    "question": "The main function of the respiratory system is to:",
+    "choices": ["Bring oxygen into the body and remove carbon dioxide", "Digest food", "Send electrical signals to muscles", "Produce hormones only"],
+    "answerIndex": 0,
+    "explanation": "The respiratory system exchanges gases — taking in oxygen and expelling carbon dioxide."
+  },
+  {
+    "id": "body-and-plant-systems-t1-q3",
+    "topicId": "body-and-plant-systems",
+    "tier": 1,
+    "question": "Which organ pumps blood throughout the body in the circulatory system?",
+    "choices": ["Lungs", "Liver", "Heart", "Stomach"],
+    "answerIndex": 2,
+    "explanation": "The heart is a muscular organ that pumps blood through the blood vessels to the rest of the body."
+  },
+  {
+    "id": "body-and-plant-systems-t1-q4",
+    "topicId": "body-and-plant-systems",
+    "tier": 1,
+    "question": "In a plant, which structure is mainly responsible for absorbing water and minerals from the soil?",
+    "choices": ["Leaves", "Flowers", "Roots", "Stem"],
+    "answerIndex": 2,
+    "explanation": "Roots anchor the plant and absorb water and dissolved minerals from the soil."
+  },
+  {
+    "id": "body-and-plant-systems-t2-q1",
+    "topicId": "body-and-plant-systems",
+    "tier": 2,
+    "question": "The nervous system's main role is to:",
+    "choices": ["Store fat for energy", "Send and receive electrical signals to control body functions and responses", "Produce seeds", "Filter waste from blood"],
+    "answerIndex": 1,
+    "explanation": "The nervous system uses electrical signals to coordinate the body's actions and responses to stimuli."
+  },
+  {
+    "id": "body-and-plant-systems-t2-q2",
+    "topicId": "body-and-plant-systems",
+    "tier": 2,
+    "question": "The skeletal system provides the body with:",
+    "choices": ["Structure, support, and protection for internal organs", "A way to digest food", "A way to see light", "Hormones only"],
+    "answerIndex": 0,
+    "explanation": "Bones give the body its shape, support its weight, and protect organs like the brain and heart."
+  },
+  {
+    "id": "body-and-plant-systems-t2-q3",
+    "topicId": "body-and-plant-systems",
+    "tier": 2,
+    "question": "Muscles work with the skeletal system to:",
+    "choices": ["Produce blood cells only", "Allow movement by contracting and pulling on bones", "Filter the blood", "Store memories"],
+    "answerIndex": 1,
+    "explanation": "Muscles contract and pull on bones across joints, producing movement."
+  },
+  {
+    "id": "body-and-plant-systems-t2-q4",
+    "topicId": "body-and-plant-systems",
+    "tier": 2,
+    "question": "In a plant, xylem tissue mainly transports:",
+    "choices": ["Sugars from leaves to roots", "Water and minerals from roots to the rest of the plant", "Pollen between flowers", "Oxygen out of the leaves only"],
+    "answerIndex": 1,
+    "explanation": "Xylem carries water and dissolved minerals upward from the roots to stems and leaves."
+  },
+  {
+    "id": "body-and-plant-systems-t3-q1",
+    "topicId": "body-and-plant-systems",
+    "tier": 3,
+    "question": "The excretory system, which includes the kidneys, mainly functions to:",
+    "choices": ["Remove waste products and excess water from the blood", "Pump blood through the body", "Digest large food particles", "Produce new bone cells"],
+    "answerIndex": 0,
+    "explanation": "The kidneys filter the blood, removing wastes and excess water, which become urine."
+  },
+  {
+    "id": "body-and-plant-systems-t3-q2",
+    "topicId": "body-and-plant-systems",
+    "tier": 3,
+    "question": "The immune system's primary job is to:",
+    "choices": ["Defend the body against pathogens like bacteria and viruses", "Move the body from place to place", "Digest carbohydrates", "Regulate body temperature only"],
+    "answerIndex": 0,
+    "explanation": "The immune system identifies and fights off harmful pathogens to protect the body."
+  },
+  {
+    "id": "body-and-plant-systems-t3-q3",
+    "topicId": "body-and-plant-systems",
+    "tier": 3,
+    "question": "In a plant, phloem tissue transports:",
+    "choices": ["Water only, from roots to leaves", "Sugars (food) produced in the leaves to other parts of the plant", "Air into the stem", "Soil nutrients directly into flowers"],
+    "answerIndex": 1,
+    "explanation": "Phloem carries the sugars made during photosynthesis from the leaves to other parts of the plant for use or storage."
+  },
+  {
+    "id": "body-and-plant-systems-t3-q4",
+    "topicId": "body-and-plant-systems",
+    "tier": 3,
+    "question": "A leaf's broad, flat shape and high surface area mainly help it to:",
+    "choices": ["Capture more sunlight for photosynthesis", "Store more water than the roots", "Anchor the plant in the soil", "Produce seeds faster"],
+    "answerIndex": 0,
+    "explanation": "A broad, flat shape maximizes the leaf's exposed surface area for absorbing sunlight used in photosynthesis."
+  },
+  {
+    "id": "body-and-plant-systems-t4-q1",
+    "topicId": "body-and-plant-systems",
+    "tier": 4,
+    "question": "The endocrine system controls body processes mainly by releasing:",
+    "choices": ["Hormones into the bloodstream", "Electrical nerve impulses", "Digestive enzymes only", "Red blood cells"],
+    "answerIndex": 0,
+    "explanation": "The endocrine system uses glands that secrete hormones into the blood to regulate processes throughout the body."
+  },
+  {
+    "id": "body-and-plant-systems-t4-q2",
+    "topicId": "body-and-plant-systems",
+    "tier": 4,
+    "question": "During exercise, the respiratory and circulatory systems work together to:",
+    "choices": ["Slow down oxygen delivery to muscles", "Increase oxygen delivery to muscles and remove carbon dioxide more quickly", "Stop producing energy", "Shut down digestion permanently"],
+    "answerIndex": 1,
+    "explanation": "Faster breathing and heart rate during exercise increase oxygen supply to muscles and speed up carbon dioxide removal."
+  },
+  {
+    "id": "body-and-plant-systems-t4-q3",
+    "topicId": "body-and-plant-systems",
+    "tier": 4,
+    "question": "In flowering plants, the structure responsible for producing seeds after fertilization is the:",
+    "choices": ["Root", "Leaf", "Flower, specifically the ovary, which can develop into fruit", "Stem"],
+    "answerIndex": 2,
+    "explanation": "After fertilization, the ovary within the flower develops into fruit containing the seeds."
+  },
+  {
+    "id": "body-and-plant-systems-t4-q4",
+    "topicId": "body-and-plant-systems",
+    "tier": 4,
+    "question": "Stomata, small openings on the underside of leaves, primarily allow a plant to:",
+    "choices": ["Absorb sunlight directly", "Exchange gases (carbon dioxide and oxygen) and release water vapor", "Anchor itself to the ground", "Produce flowers"],
+    "answerIndex": 1,
+    "explanation": "Stomata open and close to let carbon dioxide in and oxygen and water vapor out."
+  },
+  {
+    "id": "body-and-plant-systems-t5-q1",
+    "topicId": "body-and-plant-systems",
+    "tier": 5,
+    "question": "If the circulatory system fails to deliver enough oxygen to tissues, which process would be directly affected first?",
+    "choices": ["Bone growth in the skeletal system", "Cellular respiration in the body's cells, since they need oxygen to produce ATP efficiently", "Hair color", "Nothing would be affected"],
+    "answerIndex": 1,
+    "explanation": "Cells rely on a steady oxygen supply for aerobic cellular respiration; without it, ATP production drops quickly."
+  },
+  {
+    "id": "body-and-plant-systems-t5-q2",
+    "topicId": "body-and-plant-systems",
+    "tier": 5,
+    "question": "A plant wilts when it doesn't get enough water. This is most directly related to a failure in the function of the:",
+    "choices": ["Xylem, which can no longer transport enough water to maintain cell turgor pressure", "Flower's petals", "Seeds", "Pollen"],
+    "answerIndex": 0,
+    "explanation": "Without enough water moving through the xylem, plant cells lose turgor pressure, causing the plant to wilt."
+  },
+  {
+    "id": "body-and-plant-systems-t5-q3",
+    "topicId": "body-and-plant-systems",
+    "tier": 5,
+    "question": "The nervous and endocrine systems both help maintain homeostasis, but they differ mainly in that:",
+    "choices": ["The nervous system uses hormones while the endocrine system uses electrical signals", "The nervous system sends fast electrical signals while the endocrine system sends slower, longer-lasting hormone signals", "Only the endocrine system can respond to the environment", "Only the nervous system affects the whole body"],
+    "answerIndex": 1,
+    "explanation": "Nerve signals act quickly and briefly, while hormones travel through the blood and tend to produce slower, longer-lasting effects."
+  },
+  {
+    "id": "body-and-plant-systems-t5-q4",
+    "topicId": "body-and-plant-systems",
+    "tier": 5,
+    "question": "Unlike animals, plants don't have a circulatory system with a heart, but they still transport water, minerals, and sugars using:",
+    "choices": ["Lungs and blood vessels", "Xylem and phloem tissues", "A nervous system", "Muscle contractions"],
+    "answerIndex": 1,
+    "explanation": "Plants move materials through specialized vascular tissues — xylem for water and minerals, and phloem for sugars — without a pumping heart."
+  },
+  {
+    "id": "ecology-t1-q1",
+    "topicId": "ecology",
+    "tier": 1,
+    "question": "Ecology is the study of:",
+    "choices": ["How cells divide", "How organisms interact with each other and their environment", "The history of life on Earth only", "How to classify organisms"],
+    "answerIndex": 1,
+    "explanation": "Ecology focuses on the relationships between living things and their environment."
+  },
+  {
+    "id": "ecology-t1-q2",
+    "topicId": "ecology",
+    "tier": 1,
+    "question": "A living part of an ecosystem, such as a plant, animal, or bacterium, is called a(n):",
+    "choices": ["Abiotic factor", "Biotic factor", "Climate factor", "Mineral"],
+    "answerIndex": 1,
+    "explanation": "Biotic factors are the living components of an ecosystem."
+  },
+  {
+    "id": "ecology-t1-q3",
+    "topicId": "ecology",
+    "tier": 1,
+    "question": "A non-living part of an environment, such as water, sunlight, or temperature, is called a(n):",
+    "choices": ["Biotic factor", "Abiotic factor", "Producer", "Consumer"],
+    "answerIndex": 1,
+    "explanation": "Abiotic factors are the non-living physical and chemical parts of an environment."
+  },
+  {
+    "id": "ecology-t1-q4",
+    "topicId": "ecology",
+    "tier": 1,
+    "question": "The place where an organism lives, which provides the food, water, and shelter it needs, is called its:",
+    "choices": ["Niche", "Habitat", "Population", "Community"],
+    "answerIndex": 1,
+    "explanation": "A habitat is the natural environment where an organism lives and finds what it needs to survive."
+  },
+  {
+    "id": "ecology-t2-q1",
+    "topicId": "ecology",
+    "tier": 2,
+    "question": "All the members of one species living in the same area at the same time make up a:",
+    "choices": ["Community", "Population", "Biome", "Ecosystem"],
+    "answerIndex": 1,
+    "explanation": "A population consists of all individuals of a single species living in a given area."
+  },
+  {
+    "id": "ecology-t2-q2",
+    "topicId": "ecology",
+    "tier": 2,
+    "question": "All the different populations of different species living and interacting in the same area form a:",
+    "choices": ["Population", "Community", "Organism", "Niche"],
+    "answerIndex": 1,
+    "explanation": "A community is made up of all the interacting populations of different species in an area."
+  },
+  {
+    "id": "ecology-t2-q3",
+    "topicId": "ecology",
+    "tier": 2,
+    "question": "A community of organisms together with the abiotic factors they interact with (like soil, water, and climate) make up an:",
+    "choices": ["Ecosystem", "Organism", "Species", "Cell"],
+    "answerIndex": 0,
+    "explanation": "An ecosystem includes both the living community and the non-living environment it interacts with."
+  },
+  {
+    "id": "ecology-t2-q4",
+    "topicId": "ecology",
+    "tier": 2,
+    "question": "Put these levels of ecological organization in order from smallest to largest: ecosystem, population, organism, community.",
+    "choices": ["Organism, population, community, ecosystem", "Ecosystem, community, population, organism", "Population, organism, ecosystem, community", "Community, ecosystem, organism, population"],
+    "answerIndex": 0,
+    "explanation": "The levels build up from a single organism, to a population of that species, to a community of species, to an ecosystem including the environment."
+  },
+  {
+    "id": "ecology-t3-q1",
+    "topicId": "ecology",
+    "tier": 3,
+    "question": "A relationship in which both organisms benefit is called:",
+    "choices": ["Parasitism", "Mutualism", "Predation", "Competition"],
+    "answerIndex": 1,
+    "explanation": "Mutualism is a symbiotic relationship where both species gain a benefit, like bees and flowering plants."
+  },
+  {
+    "id": "ecology-t3-q2",
+    "topicId": "ecology",
+    "tier": 3,
+    "question": "A relationship in which one organism benefits and the other is harmed, such as a tick feeding on a dog, is called:",
+    "choices": ["Mutualism", "Commensalism", "Parasitism", "Predation"],
+    "answerIndex": 2,
+    "explanation": "Parasitism is a relationship where one organism (the parasite) benefits at the expense of another (the host)."
+  },
+  {
+    "id": "ecology-t3-q3",
+    "topicId": "ecology",
+    "tier": 3,
+    "question": "A relationship in which one organism benefits while the other is neither helped nor harmed is called:",
+    "choices": ["Commensalism", "Mutualism", "Parasitism", "Competition"],
+    "answerIndex": 0,
+    "explanation": "Commensalism is a relationship where one species benefits and the other is largely unaffected."
+  },
+  {
+    "id": "ecology-t3-q4",
+    "topicId": "ecology",
+    "tier": 3,
+    "question": "When two organisms compete for the same limited resource, such as food or space, this interaction is called:",
+    "choices": ["Mutualism", "Competition", "Commensalism", "Symbiosis only"],
+    "answerIndex": 1,
+    "explanation": "Competition occurs when organisms struggle against one another for the same limited resources."
+  },
+  {
+    "id": "ecology-t4-q1",
+    "topicId": "ecology",
+    "tier": 4,
+    "question": "A resource that limits the growth of a population, such as food, water, or space, is called a:",
+    "choices": ["Niche", "Limiting factor", "Habitat", "Community"],
+    "answerIndex": 1,
+    "explanation": "A limiting factor is any resource or condition that restricts the size of a population."
+  },
+  {
+    "id": "ecology-t4-q2",
+    "topicId": "ecology",
+    "tier": 4,
+    "question": "The maximum population size that an environment can support over time, given its resources, is called the:",
+    "choices": ["Carrying capacity", "Population density", "Biodiversity", "Food web"],
+    "answerIndex": 0,
+    "explanation": "Carrying capacity is the largest population an environment's resources can sustain long-term."
+  },
+  {
+    "id": "ecology-t4-q3",
+    "topicId": "ecology",
+    "tier": 4,
+    "question": "An organism's specific role in its ecosystem, including what it eats, where it lives, and how it interacts with other species, is called its:",
+    "choices": ["Habitat", "Niche", "Biome", "Population"],
+    "answerIndex": 1,
+    "explanation": "A niche describes the full role an organism plays within its ecosystem."
+  },
+  {
+    "id": "ecology-t4-q4",
+    "topicId": "ecology",
+    "tier": 4,
+    "question": "After a forest fire destroys an area, the gradual, predictable process by which an ecosystem rebuilds and changes over time is called:",
+    "choices": ["Migration", "Hibernation", "Ecological succession", "Photosynthesis"],
+    "answerIndex": 2,
+    "explanation": "Ecological succession describes the orderly process of community change after a disturbance, eventually leading toward a stable ecosystem."
+  },
+  {
+    "id": "ecology-t5-q1",
+    "topicId": "ecology",
+    "tier": 5,
+    "question": "A population of deer grows quickly when resources are abundant, but growth slows and levels off as the population approaches the environment's carrying capacity. This pattern best describes:",
+    "choices": ["Exponential growth that never slows down", "Logistic growth", "Population decline only", "No growth at all"],
+    "answerIndex": 1,
+    "explanation": "Logistic growth describes a population that grows quickly at first but levels off as it nears the carrying capacity of its environment."
+  },
+  {
+    "id": "ecology-t5-q2",
+    "topicId": "ecology",
+    "tier": 5,
+    "question": "A large region characterized by its climate and the plants and animals adapted to live there (such as a desert, rainforest, or tundra) is called a:",
+    "choices": ["Niche", "Biome", "Habitat only", "Population"],
+    "answerIndex": 1,
+    "explanation": "A biome is a large-scale community type defined by its climate and characteristic organisms."
+  },
+  {
+    "id": "ecology-t5-q3",
+    "topicId": "ecology",
+    "tier": 5,
+    "question": "Two species of birds eat the same insects in the same forest. Over time, one species starts feeding mainly in the treetops while the other feeds mainly near the ground. This shift likely helps both species by:",
+    "choices": ["Increasing competition between them", "Reducing competition by allowing each species to occupy a slightly different niche", "Causing both species to go extinct", "Making them the same species"],
+    "answerIndex": 1,
+    "explanation": "By dividing up the resource (feeding at different heights), both species reduce direct competition — an example of niche differentiation."
+  },
+  {
+    "id": "ecology-t5-q4",
+    "topicId": "ecology",
+    "tier": 5,
+    "question": "Removing a keystone species — a species that has a large effect on its ecosystem relative to its abundance — would most likely:",
+    "choices": ["Have no effect on the rest of the ecosystem", "Cause significant, cascading changes to the structure of the community", "Immediately create a new biome", "Only affect that one species and nothing else"],
+    "answerIndex": 1,
+    "explanation": "Keystone species have outsized effects on their ecosystems, so removing them can trigger major changes throughout the community."
+  }
+]

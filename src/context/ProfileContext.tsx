@@ -1,6 +1,13 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import type { TopicProgress, UserProfile } from '../types';
-import { ensureTopicsInitialized, loadProfile, saveProfile, setAge } from '../lib/storage/progress';
+import type { Question, TopicProgress, UserProfile } from '../types';
+import {
+  ensureTopicsInitialized,
+  loadProfile,
+  removeNote,
+  saveNote,
+  saveProfile,
+  setAge,
+} from '../lib/storage/progress';
 
 type ProfileContextValue = {
   profile: UserProfile;
@@ -9,6 +16,8 @@ type ProfileContextValue = {
   updateTopicProgress: (topicId: string, progress: TopicProgress) => void;
   setVoiceEnabled: (enabled: boolean) => void;
   setModelSize: (size: UserProfile['modelSize']) => void;
+  saveQuestionNote: (question: Question, text: string) => void;
+  deleteNote: (noteId: string) => void;
 };
 
 const ProfileContext = createContext<ProfileContextValue | null>(null);
@@ -46,9 +55,26 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     setProfile((prev) => ({ ...prev, modelSize: size }));
   };
 
+  const saveQuestionNote = (question: Question, text: string) => {
+    setProfile((prev) => saveNote(prev, question, text));
+  };
+
+  const deleteNote = (noteId: string) => {
+    setProfile((prev) => removeNote(prev, noteId));
+  };
+
   return (
     <ProfileContext.Provider
-      value={{ profile, setUserAge, updateAge, updateTopicProgress, setVoiceEnabled, setModelSize }}
+      value={{
+        profile,
+        setUserAge,
+        updateAge,
+        updateTopicProgress,
+        setVoiceEnabled,
+        setModelSize,
+        saveQuestionNote,
+        deleteNote,
+      }}
     >
       {children}
     </ProfileContext.Provider>

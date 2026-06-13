@@ -11,8 +11,14 @@
   --color-star-500: #ffd23f;
   --color-comet-400: #5eead4;
   --color-comet-500: #2dd4bf;
+  --color-circuit-300: #a5f3fc;
+  --color-circuit-400: #67e8f9;
+  --color-circuit-500: #22d3ee;
+  --color-circuit-600: #0891b2;
+  --color-circuit-magenta: #f472b6;
   --animate-bounce-slow: bounce-slow 3s ease-in-out infinite;
   --animate-pop: pop 0.4s ease-out;
+  --animate-scan: scan 6s linear infinite;
 }
 
 @keyframes bounce-slow {
@@ -36,6 +42,45 @@
   100% {
     transform: scale(1);
   }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/** Futuristic grid + glow backdrop used by the Robotics module map and lessons. */
+.bg-robotics {
+  position: relative;
+  isolation: isolate;
+  background-color: #050a14;
+  background-image:
+    linear-gradient(rgba(103, 232, 249, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(103, 232, 249, 0.12) 1px, transparent 1px),
+    radial-gradient(circle at 50% -10%, rgba(34, 211, 238, 0.35), transparent 55%);
+  background-size: 42px 42px, 42px 42px, 100% 100%;
+}
+
+.bg-robotics::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, transparent, rgba(34, 211, 238, 0.08), transparent);
+  animation: var(--animate-scan);
+  pointer-events: none;
+}
+
+.glow-circuit {
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.8), 0 0 18px rgba(34, 211, 238, 0.35);
+}
+
+.border-glow-circuit {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4), 0 0 24px rgba(34, 211, 238, 0.2);
 }
 
 html,

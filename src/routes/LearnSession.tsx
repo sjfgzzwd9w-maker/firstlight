@@ -4,6 +4,7 @@ import type { InitProgressReport } from '@mlc-ai/web-llm';
 import Mascot, { type MascotMood } from '../components/Mascot';
 import QuestionCard from '../components/QuestionCard';
 import LevelUpModal from '../components/LevelUpModal';
+import NoteEditor from '../components/NoteEditor';
 import { useProfile } from '../context/ProfileContext';
 import { ALL_TOPICS, SUBJECT_LABELS, SUBJECT_PATHS } from '../lib/engine/topics';
 import { createTopicProgress, pickQuestion, placementTier, recordAnswer } from '../lib/engine/adaptiveEngine';
@@ -11,7 +12,7 @@ import type { Question } from '../types';
 import { isWebGPUAvailable } from '../lib/webllm/client';
 import { explainMistake, generateQuestion, mascotLine } from '../lib/webllm/prompts';
 import { FALLBACK_EXPLANATION_HINT, randomFallbackLine } from '../lib/webllm/fallbacks';
-import { MATH_TRIVIA, BIOLOGY_TRIVIA, randomTrivia } from '../lib/engine/trivia';
+import { MATH_TRIVIA, BIOLOGY_TRIVIA, PYTHON_TRIVIA, ROBOTICS_TRIVIA, randomTrivia } from '../lib/engine/trivia';
 import { speak, stopSpeaking } from '../lib/voice/tts';
 
 type Phase = 'loading' | 'question' | 'feedback';
@@ -26,7 +27,15 @@ export default function LearnSession() {
   const topic = ALL_TOPICS.find((t) => t.id === topicId) ?? ALL_TOPICS[0];
   const subjectLabel = SUBJECT_LABELS[topic.subject];
   const mapPath = SUBJECT_PATHS[topic.subject];
-  const topicTrivia = topic.subject === 'biology' ? BIOLOGY_TRIVIA : MATH_TRIVIA;
+  const topicTrivia =
+    topic.subject === 'biology'
+      ? BIOLOGY_TRIVIA
+      : topic.subject === 'python'
+        ? PYTHON_TRIVIA
+        : topic.subject === 'robotics'
+          ? ROBOTICS_TRIVIA
+          : MATH_TRIVIA;
+  const isRobotics = topic.subject === 'robotics';
   const progress = profile.topics[topicId] ?? createTopicProgress(placementTier(profile.age));
   const webGPU = isWebGPUAvailable();
 
@@ -184,7 +193,7 @@ export default function LearnSession() {
   useEffect(() => stopSpeaking, []);
 
   return (
-    <div className="flex-1 flex flex-col items-center px-6 py-8 max-w-2xl mx-auto w-full">
+    <div className={`flex-1 flex flex-col items-center px-6 py-8 max-w-2xl mx-auto w-full ${isRobotics ? 'bg-robotics' : ''}`}>
       <div className="flex w-full items-center justify-between text-sm text-white/60">
         <button
           type="button"
@@ -196,7 +205,7 @@ export default function LearnSession() {
         >
           ← Exit
         </button>
-        <span>
+        <span className={isRobotics ? 'glow-circuit text-circuit-300' : ''}>
           {topic.name} · Tier {progress.tier}/5
         </span>
         <button
@@ -242,7 +251,12 @@ export default function LearnSession() {
             selectedIndex={selectedIndex}
             revealed={phase === 'feedback'}
             onSelect={(i) => phase === 'question' && setSelectedIndex(i)}
+            codeMode={topic.subject === 'python'}
           />
+        )}
+
+        {question && phase !== 'loading' && !question.generated && (
+          <NoteEditor key={question.id} question={question} circuit={isRobotics} />
         )}
 
         {phase === 'feedback' && (

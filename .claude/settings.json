@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /Users/saitanikonda/stardance/.claude/hooks/wakatime-heartbeat.sh",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}

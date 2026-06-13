@@ -1,0 +1,632 @@
+[
+  {
+    "id": "control-systems-t1-q1",
+    "topicId": "control-systems",
+    "tier": 1,
+    "question": "In robotics, what does 'control' mean?",
+    "choices": [
+      "The process of directing a robot's actions so it achieves a goal, like staying on a path or reaching a target",
+      "Painting the robot a certain color",
+      "Charging the robot's battery",
+      "Naming the robot"
+    ],
+    "answerIndex": 0,
+    "explanation": "Control is about deciding what actions a robot should take — like how fast to spin a motor — so that it achieves a desired outcome, such as following a line or holding a steady position."
+  },
+  {
+    "id": "control-systems-t1-q2",
+    "topicId": "control-systems",
+    "tier": 1,
+    "question": "What is the basic difference between 'open-loop' and 'closed-loop' control?",
+    "choices": [
+      "Open-loop control doesn't check the result of its actions, while closed-loop control uses feedback (like sensor readings) to check and adjust",
+      "Open-loop and closed-loop are exactly the same thing",
+      "Closed-loop control never uses sensors",
+      "Open-loop control is only used by robots with no motors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Open-loop control runs a fixed set of actions without checking the result (like a timer-based toy). Closed-loop control continuously checks feedback from sensors and adjusts its actions in response."
+  },
+  {
+    "id": "control-systems-t1-q3",
+    "topicId": "control-systems",
+    "tier": 1,
+    "question": "What is 'feedback' in a control system?",
+    "choices": [
+      "A robot's opinion about its own design",
+      "Information from sensors about the current result of an action, used to adjust future actions",
+      "A type of battery",
+      "A robot's top speed"
+    ],
+    "answerIndex": 1,
+    "explanation": "Feedback is information that flows back into the system — like a sensor reading telling the robot how close it now is to a wall — which the controller can use to make better decisions going forward."
+  },
+  {
+    "id": "control-systems-t2-q1",
+    "topicId": "control-systems",
+    "tier": 2,
+    "question": "A toy robot is programmed to drive forward for exactly 5 seconds and then stop, no matter what happens during those 5 seconds. This is an example of:",
+    "choices": [
+      "Closed-loop control",
+      "Open-loop control — it follows a fixed plan without checking sensors to adjust",
+      "Artificial intelligence",
+      "A feedback loop"
+    ],
+    "answerIndex": 1,
+    "explanation": "Since the robot doesn't check any sensors to confirm where it actually is or adjust its plan, it's running open-loop — following pre-set instructions regardless of what actually happens."
+  },
+  {
+    "id": "control-systems-t2-q2",
+    "topicId": "control-systems",
+    "tier": 2,
+    "question": "A home thermostat turns the heater on when the room is too cold and off when it reaches the target temperature, constantly checking a temperature sensor. This is an example of:",
+    "choices": [
+      "Open-loop control",
+      "Closed-loop control — it uses sensor feedback to continuously adjust its behavior toward a goal",
+      "A robot with no sensors",
+      "A system with no goal at all"
+    ],
+    "answerIndex": 1,
+    "explanation": "The thermostat continuously checks the actual temperature (feedback) and compares it to the target, adjusting the heater accordingly — the defining feature of closed-loop control."
+  },
+  {
+    "id": "control-systems-t2-q3",
+    "topicId": "control-systems",
+    "tier": 2,
+    "question": "Why is closed-loop control generally more reliable than open-loop control for tasks like driving in a straight line?",
+    "choices": [
+      "Closed-loop control can correct for unexpected factors (like uneven floors or motor differences) by checking sensors, while open-loop control just follows a fixed plan and can't adjust",
+      "Closed-loop control never requires any sensors",
+      "Open-loop control is always more accurate in every situation",
+      "There is no difference in reliability between the two"
+    ],
+    "answerIndex": 0,
+    "explanation": "Real-world conditions (friction, motor differences, slopes) can cause a robot to drift off course. Closed-loop control detects this drift through sensors and corrects it, while open-loop control has no way to notice or fix the error."
+  },
+  {
+    "id": "control-systems-t3-q1",
+    "topicId": "control-systems",
+    "tier": 3,
+    "question": "A line-following robot constantly reads its light sensors and steers to keep the line centered. What type of control system is this?",
+    "choices": [
+      "Open-loop, because it uses motors",
+      "Closed-loop, because it continuously uses sensor feedback (the line's position) to adjust its steering",
+      "Neither open-loop nor closed-loop — line following doesn't involve control systems",
+      "A type of battery management system"
+    ],
+    "answerIndex": 1,
+    "explanation": "The robot's steering decisions depend on real-time sensor readings of the line's position — that continuous sense-and-adjust cycle is the hallmark of closed-loop control."
+  },
+  {
+    "id": "control-systems-t3-q2",
+    "topicId": "control-systems",
+    "tier": 3,
+    "question": "What happens to a closed-loop control system if its feedback sensor stops working correctly (for example, gives a constant wrong reading)?",
+    "choices": [
+      "The system will work even better than before",
+      "The controller may make incorrect adjustments based on bad data, potentially causing the robot to behave erratically or fail at its task",
+      "Closed-loop systems are immune to sensor problems",
+      "The robot will automatically switch to a brand new sensor on its own"
+    ],
+    "answerIndex": 1,
+    "explanation": "Closed-loop control depends on accurate feedback. If the sensor gives bad data, the controller's 'corrections' may actually make things worse — which is why sensor reliability and error-checking matter so much."
+  },
+  {
+    "id": "control-systems-t3-q3",
+    "topicId": "control-systems",
+    "tier": 3,
+    "question": "In a basic 'proportional' control approach, how does the size of the robot's correction relate to its error (how far off-target it is)?",
+    "choices": [
+      "The correction is always the same size, no matter how big the error is",
+      "The correction is larger when the error is larger, and smaller when the error is smaller — proportional to the error",
+      "The correction has no relationship to the error at all",
+      "The correction gets smaller as the error gets bigger"
+    ],
+    "answerIndex": 1,
+    "explanation": "In proportional control, the correction scales with the error: a robot that's way off the line steers more sharply, while a robot that's only slightly off makes a gentler adjustment."
+  },
+  {
+    "id": "control-systems-t4-q1",
+    "topicId": "control-systems",
+    "tier": 4,
+    "question": "A line-following robot using proportional control swings back and forth across the line repeatedly instead of smoothly following it. What is this behavior called, and what might cause it?",
+    "choices": [
+      "This is called 'oscillation,' and it can happen when the correction strength (how sharply the robot reacts) is too high, causing it to repeatedly overcorrect",
+      "This is called 'calibration,' and it means the robot is working perfectly",
+      "This behavior has no name and cannot be explained",
+      "This only happens when the robot has no sensors at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "If a control system reacts too strongly to small errors, it can overshoot the target repeatedly, swinging back and forth — called oscillation. Reducing the correction strength often helps smooth this out."
+  },
+  {
+    "id": "control-systems-t4-q2",
+    "topicId": "control-systems",
+    "tier": 4,
+    "question": "What does it mean to 'tune' a control system?",
+    "choices": [
+      "Adjusting the robot's color scheme",
+      "Adjusting parameters (like how strongly the robot reacts to errors) to get smooth, accurate behavior without too much overshoot or sluggishness",
+      "Permanently disabling all sensors",
+      "Replacing the robot's battery"
+    ],
+    "answerIndex": 1,
+    "explanation": "Tuning means finding the right balance of correction strength and timing so the robot responds quickly enough to stay on target, but not so aggressively that it overshoots and oscillates."
+  },
+  {
+    "id": "control-systems-t4-q3",
+    "topicId": "control-systems",
+    "tier": 4,
+    "question": "A robot's control system reacts very slowly to errors, taking a long time to correct course after drifting off a line. What is a likely effect of this 'sluggish' control?",
+    "choices": [
+      "The robot will instantly snap back to the line with no delay",
+      "The robot may drift far off course before correcting, potentially losing the line entirely on sharp turns",
+      "Sluggish control has no downsides at all",
+      "The robot's battery will instantly drain"
+    ],
+    "answerIndex": 1,
+    "explanation": "If a control system is too slow to react, errors can build up before any correction happens — on a winding path, the robot might wander off the line entirely before the controller catches up."
+  },
+  {
+    "id": "control-systems-t5-q1",
+    "topicId": "control-systems",
+    "tier": 5,
+    "question": "A 'PID controller' uses three parts: Proportional (P), Integral (I), and Derivative (D). What does each part roughly respond to?",
+    "choices": [
+      "P responds to the current error, I responds to accumulated past error over time, and D responds to how quickly the error is changing",
+      "P, I, and D are three different types of batteries",
+      "All three parts do exactly the same thing and are redundant",
+      "P controls color, I controls sound, and D controls weight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Proportional reacts to the present error, Integral accounts for errors that have built up over time (helping eliminate persistent small errors), and Derivative reacts to how fast the error is changing (helping reduce overshoot) — together they make a more refined controller than any one alone."
+  },
+  {
+    "id": "control-systems-t5-q2",
+    "topicId": "control-systems",
+    "tier": 5,
+    "question": "A line-following robot using only proportional control oscillates noticeably on straight sections. Engineers add a derivative (D) term to the controller. What is the most likely intended effect?",
+    "choices": [
+      "The derivative term should make the oscillation much worse",
+      "The derivative term reacts to how quickly the error is changing, helping to dampen sudden swings and reduce oscillation",
+      "The derivative term has no effect on oscillation at all",
+      "The derivative term will disable the robot's motors"
+    ],
+    "answerIndex": 1,
+    "explanation": "A derivative term effectively 'predicts' where the error is heading by looking at its rate of change, allowing the controller to ease off corrections before overshooting — often reducing oscillation."
+  },
+  {
+    "id": "control-systems-t5-q3",
+    "topicId": "control-systems",
+    "tier": 5,
+    "question": "A robot's control loop runs (reads sensors and updates motors) only 2 times per second, but the robot moves quickly enough that conditions change much faster than that. What problem could this cause?",
+    "choices": [
+      "No problem — control loop speed never matters",
+      "The robot may react too slowly to changing conditions, since it only 'notices' changes twice per second, potentially missing fast events or overshooting targets",
+      "The robot will become more accurate the slower its control loop runs",
+      "This will make the robot's battery last forever"
+    ],
+    "answerIndex": 1,
+    "explanation": "A control loop needs to run fast enough relative to how quickly the robot's situation changes. If it updates too infrequently, the robot is essentially 'blind' between updates, which can cause delayed reactions, overshoot, or missed events."
+  },
+  {
+    "id": "kinematics-movement-t1-q1",
+    "topicId": "kinematics-movement",
+    "tier": 1,
+    "question": "What does 'kinematics' study in robotics?",
+    "choices": [
+      "How robots are painted",
+      "How parts of a robot move — their positions, angles, and motion — without worrying about the forces that cause the motion",
+      "How much electricity a robot uses",
+      "How robots communicate over the internet"
+    ],
+    "answerIndex": 1,
+    "explanation": "Kinematics focuses on describing motion — where things are and how they move — such as how a robotic arm's joints relate to where its 'hand' ends up."
+  },
+  {
+    "id": "kinematics-movement-t1-q2",
+    "topicId": "kinematics-movement",
+    "tier": 1,
+    "question": "What does 'degrees of freedom' (DOF) describe for a robot?",
+    "choices": [
+      "How many batteries the robot has",
+      "The number of independent ways a robot (or one of its parts) can move",
+      "How many sensors a robot has",
+      "How fast a robot can travel"
+    ],
+    "answerIndex": 1,
+    "explanation": "Degrees of freedom count the independent directions or rotations something can move in — for example, a simple hinge joint that only opens and closes has 1 degree of freedom."
+  },
+  {
+    "id": "kinematics-movement-t1-q3",
+    "topicId": "kinematics-movement",
+    "tier": 1,
+    "question": "Which of these is a common way for robots to move across the ground?",
+    "choices": [
+      "Wheels, tracks (like tank treads), or legs",
+      "Only by flying, with no other options",
+      "Only by floating in water",
+      "Robots cannot move at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "Wheels, tracks, and legs are all common locomotion methods, each suited to different terrains — wheels for smooth surfaces, tracks for rough or soft ground, and legs for stepping over obstacles."
+  },
+  {
+    "id": "kinematics-movement-t2-q1",
+    "topicId": "kinematics-movement",
+    "tier": 2,
+    "question": "A simple robotic arm joint that can only rotate back and forth, like a door hinge, has how many degrees of freedom?",
+    "choices": [
+      "Zero — hinge joints can't move at all",
+      "One — it can rotate in a single way (open or closed)",
+      "Three — hinges always move in three directions",
+      "An unlimited number"
+    ],
+    "answerIndex": 1,
+    "explanation": "A hinge-like joint typically allows rotation around a single axis, giving it 1 degree of freedom. A robotic arm with several such joints adds up its degrees of freedom from each one."
+  },
+  {
+    "id": "kinematics-movement-t2-q2",
+    "topicId": "kinematics-movement",
+    "tier": 2,
+    "question": "A 'differential drive' robot has two independently powered wheels (left and right). How does it turn?",
+    "choices": [
+      "By spinning the two wheels at different speeds (or directions), causing the robot to rotate toward the slower or reverse side",
+      "It cannot turn at all",
+      "By changing its color",
+      "By using a sail to catch the wind"
+    ],
+    "answerIndex": 0,
+    "explanation": "If both wheels spin at the same speed, the robot drives straight. If one wheel spins slower (or in reverse) than the other, the robot turns toward that side — a simple but effective steering method."
+  },
+  {
+    "id": "kinematics-movement-t2-q3",
+    "topicId": "kinematics-movement",
+    "tier": 2,
+    "question": "What is an advantage of tracks (like tank treads) compared to wheels?",
+    "choices": [
+      "Tracks spread a robot's weight over a larger area, which can help with traction on soft or uneven ground like mud, sand, or snow",
+      "Tracks are always faster than wheels on smooth pavement",
+      "Tracks never need any motors",
+      "Tracks make a robot lighter than wheels in every case"
+    ],
+    "answerIndex": 0,
+    "explanation": "Because tracks contact the ground over a larger surface area, they distribute weight more evenly and grip better on loose or uneven terrain — though they're often heavier and less efficient on smooth, hard surfaces."
+  },
+  {
+    "id": "kinematics-movement-t3-q1",
+    "topicId": "kinematics-movement",
+    "tier": 3,
+    "question": "'Forward kinematics' for a robotic arm answers which question?",
+    "choices": [
+      "Given the angles of all the arm's joints, where is the tip (hand) of the arm located?",
+      "Given where you want the tip to go, what angles should the joints be?",
+      "How much does the robotic arm weigh?",
+      "What color should the robotic arm be painted?"
+    ],
+    "answerIndex": 0,
+    "explanation": "Forward kinematics starts from known joint angles and calculates the resulting position (and orientation) of the arm's end — like figuring out where your hand ends up if you know the angles of your shoulder, elbow, and wrist."
+  },
+  {
+    "id": "kinematics-movement-t3-q2",
+    "topicId": "kinematics-movement",
+    "tier": 3,
+    "question": "Why does adding more degrees of freedom to a robotic arm make it more versatile but also more complex to control?",
+    "choices": [
+      "More degrees of freedom let the arm reach more positions and orientations, but the controller has to coordinate more joints at once, which requires more complex calculations",
+      "More degrees of freedom always make a robot simpler to control",
+      "Degrees of freedom have no effect on what positions an arm can reach",
+      "Adding degrees of freedom always makes a robot less useful"
+    ],
+    "answerIndex": 0,
+    "explanation": "Each additional joint adds flexibility — more ways to position and orient the arm's end — but also adds another variable the controller must figure out, increasing the complexity of planning and control."
+  },
+  {
+    "id": "kinematics-movement-t3-q3",
+    "topicId": "kinematics-movement",
+    "tier": 3,
+    "question": "What is special about 'omni-directional' wheels (like Mecanum wheels), compared to standard wheels?",
+    "choices": [
+      "They allow a robot to move sideways and diagonally, not just forward, backward, and turning, by using small rollers angled around the wheel's circumference",
+      "They can only move in a perfectly straight line forever",
+      "They eliminate the need for any motors",
+      "They are identical to standard wheels in every way"
+    ],
+    "answerIndex": 0,
+    "explanation": "Omni-directional wheels have small rollers around their edge, allowing forces in multiple directions. By spinning several such wheels at different speeds, a robot can move sideways or diagonally without turning its body first."
+  },
+  {
+    "id": "kinematics-movement-t4-q1",
+    "topicId": "kinematics-movement",
+    "tier": 4,
+    "question": "'Inverse kinematics' for a robotic arm answers which question?",
+    "choices": [
+      "Given a desired position for the arm's tip, what joint angles are needed to get there?",
+      "Given the joint angles, what position is the tip at?",
+      "How heavy is the robot's battery?",
+      "What color is the robot's arm?"
+    ],
+    "answerIndex": 0,
+    "explanation": "Inverse kinematics works backward from forward kinematics: starting with a target position (and sometimes orientation) for the arm's end, it calculates what joint angles would place the arm there — essential for tasks like 'pick up this object at this location.'"
+  },
+  {
+    "id": "kinematics-movement-t4-q2",
+    "topicId": "kinematics-movement",
+    "tier": 4,
+    "question": "What is the 'workspace' of a robotic arm?",
+    "choices": [
+      "The desk where the robot was built",
+      "The complete set of positions (and sometimes orientations) that the arm's end can physically reach, given its joint limits and lengths",
+      "The amount of code stored in the robot's memory",
+      "The robot's power consumption per hour"
+    ],
+    "answerIndex": 1,
+    "explanation": "A robotic arm can't reach everywhere — its workspace is the region of space its end effector (like a gripper) can actually reach, determined by the arm's segment lengths and how far each joint can rotate."
+  },
+  {
+    "id": "kinematics-movement-t4-q3",
+    "topicId": "kinematics-movement",
+    "tier": 4,
+    "question": "A search-and-rescue team needs a robot to navigate through rubble with uneven surfaces, gaps, and debris. Compared to a simple wheeled robot, what advantage might a legged robot offer here?",
+    "choices": [
+      "Legged robots can step over gaps and adjust each leg's placement individually to handle uneven terrain, which wheels often cannot do as effectively",
+      "Legged robots are always faster than wheeled robots on flat pavement",
+      "Legged robots never require any power",
+      "Wheeled robots are always better in rubble than legged robots"
+    ],
+    "answerIndex": 0,
+    "explanation": "Legs allow a robot to place each foot individually, stepping over gaps and adapting to uneven surfaces — capabilities that are difficult for wheels, which generally need continuous contact with relatively smooth ground."
+  },
+  {
+    "id": "kinematics-movement-t5-q1",
+    "topicId": "kinematics-movement",
+    "tier": 5,
+    "question": "A robotic arm with 6 degrees of freedom is often described as able to position its gripper at any point within its workspace AND orient it in any direction. Why are 6 degrees of freedom often associated with this kind of full flexibility?",
+    "choices": [
+      "Because position in 3D space requires 3 degrees of freedom (up/down, left/right, forward/back), and orientation in 3D space requires another 3 (rotations around three axes) — together, 6",
+      "Because 6 is simply a traditional, arbitrary number with no connection to 3D space",
+      "Because each degree of freedom controls a different color light on the robot",
+      "Because more than 6 degrees of freedom is physically impossible for any robot"
+    ],
+    "answerIndex": 0,
+    "explanation": "Describing where something is in 3D space takes 3 numbers (its x, y, z position), and describing which way it's facing takes another 3 (rotation around each axis) — so 6 degrees of freedom can, in principle, achieve any position and orientation within reach."
+  },
+  {
+    "id": "kinematics-movement-t5-q2",
+    "topicId": "kinematics-movement",
+    "tier": 5,
+    "question": "A differential drive robot's left wheel spins at 50 RPM and its right wheel spins at 100 RPM, both moving forward. What will the robot most likely do?",
+    "choices": [
+      "Drive in a perfectly straight line",
+      "Curve toward the left side, since the slower wheel causes that side to act like the inside of a turn",
+      "Drive backward",
+      "Spin in place at extremely high speed"
+    ],
+    "answerIndex": 1,
+    "explanation": "When one wheel moves slower than the other (both still moving forward), the robot curves toward the slower wheel's side — similar to how a person walking with one foot taking smaller steps would veer toward that side."
+  },
+  {
+    "id": "kinematics-movement-t5-q3",
+    "topicId": "kinematics-movement",
+    "tier": 5,
+    "question": "A team is choosing a locomotion method for two different missions: (1) a flat, climate-controlled warehouse, and (2) the rocky, unpredictable surface of Mars. What would be a reasonable design choice?",
+    "choices": [
+      "Use identical wheel designs for both missions, since terrain never matters",
+      "Use simple, efficient wheels for the smooth warehouse floor, and a more robust system — like larger wheels with suspension or even a rocker-bogie system — for the rough, unpredictable Martian terrain",
+      "Use legs for the warehouse and wheels for Mars, since legs are always better indoors",
+      "Avoid any locomotion system entirely for both missions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Warehouse floors are flat and predictable, so simple efficient wheels work well. Mars terrain is rocky and uneven, which is why real Mars rovers use specialized suspension systems (like the rocker-bogie design) to handle obstacles that would stop ordinary wheels."
+  },
+  {
+    "id": "ai-robotics-future-t1-q1",
+    "topicId": "ai-robotics-future",
+    "tier": 1,
+    "question": "What does 'artificial intelligence' (AI) mean in the context of robots?",
+    "choices": [
+      "Software that allows a robot to make decisions or recognize patterns, sometimes by learning from data rather than following only fixed, hand-written rules",
+      "A type of battery used only in space robots",
+      "The paint used on a robot's exterior",
+      "A robot that has no computer inside it"
+    ],
+    "answerIndex": 0,
+    "explanation": "AI gives robots the ability to handle more complex or uncertain situations — like recognizing objects in images — often by learning patterns from examples instead of relying only on rules a programmer wrote by hand."
+  },
+  {
+    "id": "ai-robotics-future-t1-q2",
+    "topicId": "ai-robotics-future",
+    "tier": 1,
+    "question": "What is 'machine learning'?",
+    "choices": [
+      "A way for computer programs to improve at a task by learning patterns from data and examples, rather than being explicitly programmed for every situation",
+      "A method for charging robot batteries faster",
+      "A type of physical gear used in robot arms",
+      "A robot that can only follow pre-written rules and never learns anything"
+    ],
+    "answerIndex": 0,
+    "explanation": "Machine learning is a branch of AI where a program 'learns' from examples — for instance, after seeing thousands of pictures of cats and dogs, a machine learning model can learn to tell them apart in new pictures."
+  },
+  {
+    "id": "ai-robotics-future-t1-q3",
+    "topicId": "ai-robotics-future",
+    "tier": 1,
+    "question": "Why might a robot benefit from using AI to recognize objects, rather than simple fixed rules?",
+    "choices": [
+      "Objects in the real world vary a lot in appearance, so AI trained on many examples can often recognize objects more flexibly than a short list of fixed rules",
+      "AI always makes robots heavier and slower with no benefit",
+      "Fixed rules can handle every possible object perfectly, so AI is never useful",
+      "Robots using AI no longer need any sensors"
+    ],
+    "answerIndex": 0,
+    "explanation": "Real objects come in many shapes, sizes, colors, and lighting conditions. AI models trained on lots of examples can often generalize to recognize new variations better than a programmer could anticipate with simple fixed rules."
+  },
+  {
+    "id": "ai-robotics-future-t2-q1",
+    "topicId": "ai-robotics-future",
+    "tier": 2,
+    "question": "What is the key difference between traditional rule-based programming and machine learning?",
+    "choices": [
+      "In rule-based programming, a human writes explicit instructions for every situation; in machine learning, a model learns patterns from data and examples instead",
+      "Rule-based programming and machine learning are exactly the same thing",
+      "Machine learning never involves any programming at all",
+      "Rule-based programs can learn from new data automatically, while machine learning cannot"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rule-based code follows instructions a human wrote directly ('if the sensor reads X, do Y'). Machine learning instead trains a model on examples, letting it discover patterns that may be too complex to write by hand."
+  },
+  {
+    "id": "ai-robotics-future-t2-q2",
+    "topicId": "ai-robotics-future",
+    "tier": 2,
+    "question": "A warehouse robot uses a trained AI model to sort packages by recognizing labels and shapes on a conveyor belt. What is this an example of?",
+    "choices": [
+      "A robot using AI (specifically, a trained model) to perform a recognition task as part of its overall behavior",
+      "A robot with no sensors at all",
+      "A robot that uses no programming whatsoever",
+      "A purely mechanical task with no decision-making involved"
+    ],
+    "answerIndex": 0,
+    "explanation": "Recognizing varied packages by their labels and shapes is a pattern-recognition task well-suited to AI — the robot combines this AI-based recognition with its sensors and actuators to sort packages."
+  },
+  {
+    "id": "ai-robotics-future-t2-q3",
+    "topicId": "ai-robotics-future",
+    "tier": 2,
+    "question": "What is 'training data' in machine learning?",
+    "choices": [
+      "The electricity used to charge a robot",
+      "The set of examples (like labeled images or sensor recordings) used to teach a machine learning model to recognize patterns",
+      "A type of physical robot part",
+      "The final answer a robot gives to a user"
+    ],
+    "answerIndex": 1,
+    "explanation": "Training data is the collection of examples — often labeled by humans — that a machine learning model studies to learn patterns, such as thousands of images labeled 'cat' or 'dog' used to teach an image classifier."
+  },
+  {
+    "id": "ai-robotics-future-t3-q1",
+    "topicId": "ai-robotics-future",
+    "tier": 3,
+    "question": "Why does a robot's AI model usually need a large number of varied examples to learn a task well, like recognizing different types of fruit?",
+    "choices": [
+      "More examples help the model learn the wide range of appearances (different colors, sizes, lighting, angles) that real fruit can have, so it generalizes better to new situations",
+      "More examples always make the model slower with no other benefit",
+      "A single example is always enough for any task",
+      "Training data has no effect on how well a model performs"
+    ],
+    "answerIndex": 0,
+    "explanation": "If a model only sees a few examples, it might learn quirks specific to those examples rather than the general pattern. A larger, more varied dataset helps the model recognize the underlying pattern across many real-world variations."
+  },
+  {
+    "id": "ai-robotics-future-t3-q2",
+    "topicId": "ai-robotics-future",
+    "tier": 3,
+    "question": "If a robot's AI is trained mostly on images taken in bright daylight, what might happen when the robot is used at night or in dim lighting?",
+    "choices": [
+      "The AI will perform exactly the same as in daylight, with no issues",
+      "The AI may perform worse, because the lighting conditions are very different from what it was trained on — this is a risk of biased or limited training data",
+      "The robot will automatically switch to a completely different AI model on its own",
+      "Lighting has no relationship to how AI models perform"
+    ],
+    "answerIndex": 1,
+    "explanation": "Machine learning models tend to perform best on data similar to what they were trained on. If training data doesn't represent the conditions the robot will actually face (like nighttime use), performance can suffer — a reason engineers test AI across many real conditions."
+  },
+  {
+    "id": "ai-robotics-future-t3-q3",
+    "topicId": "ai-robotics-future",
+    "tier": 3,
+    "question": "A self-driving car is a robot that combines sensors (cameras, radar), AI (for recognizing pedestrians, signs, and other vehicles), and actuators (steering, brakes, throttle). What does this combination best represent?",
+    "choices": [
+      "A purely mechanical device with no decision-making at all",
+      "A real-world application of the full sense-think-act robotics loop, enhanced with AI for the 'think' step in complex, unpredictable environments",
+      "A device that has nothing to do with robotics",
+      "A simple open-loop control system with no feedback"
+    ],
+    "answerIndex": 1,
+    "explanation": "Self-driving cars sense the world with multiple sensors, use AI to interpret that information and make driving decisions, and act through steering and pedals — a large-scale, high-stakes example of the sense-think-act loop."
+  },
+  {
+    "id": "ai-robotics-future-t4-q1",
+    "topicId": "ai-robotics-future",
+    "tier": 4,
+    "question": "Why do robots that work near humans (like collaborative robotic arms in factories) often include 'fail-safes,' such as automatically stopping if a person gets too close?",
+    "choices": [
+      "Fail-safes are decorative and have no real function",
+      "Fail-safes help prevent accidents by making the robot stop or slow down if something unexpected or unsafe happens, protecting people working nearby",
+      "Fail-safes make robots move faster around people",
+      "Robots near humans never need any safety features"
+    ],
+    "answerIndex": 1,
+    "explanation": "Even well-designed robots can behave unpredictably if sensors fail or situations change unexpectedly. Fail-safes — like automatic stops when a person is detected nearby — are a critical safety layer for robots sharing space with people."
+  },
+  {
+    "id": "ai-robotics-future-t4-q2",
+    "topicId": "ai-robotics-future",
+    "tier": 4,
+    "question": "Robots and automation can take over some tasks that people used to do. What is a balanced way to think about this?",
+    "choices": [
+      "Automation only ever causes harm, with no positive effects whatsoever",
+      "Automation can increase efficiency and take over dangerous or repetitive tasks, but it also raises real questions about how workers are supported, retrained, and how the benefits are shared",
+      "Automation has no effect on jobs or society at all",
+      "Every job that can be automated should be automated immediately with no consideration of consequences"
+    ],
+    "answerIndex": 1,
+    "explanation": "Robotics and automation bring real benefits (safety, efficiency, new jobs in tech fields) alongside real challenges (job changes, the need for retraining). Thinking about robotics responsibly means considering both sides."
+  },
+  {
+    "id": "ai-robotics-future-t4-q3",
+    "topicId": "ai-robotics-future",
+    "tier": 4,
+    "question": "Why is human oversight often kept in place for AI-powered robots making important decisions, like in healthcare or transportation?",
+    "choices": [
+      "Because AI is always 100% correct and oversight is purely decorative",
+      "Because AI systems can make mistakes or encounter situations outside their training, so human oversight provides a check, especially when decisions affect people's safety",
+      "Because robots are not allowed to use any AI in these fields",
+      "Because human oversight makes AI systems run faster"
+    ],
+    "answerIndex": 1,
+    "explanation": "AI models are not perfect and can fail in unfamiliar situations. In high-stakes fields, keeping a human in the loop — to review, confirm, or override decisions — adds an important layer of safety and accountability."
+  },
+  {
+    "id": "ai-robotics-future-t5-q1",
+    "topicId": "ai-robotics-future",
+    "tier": 5,
+    "question": "An autonomous delivery robot has to make a quick decision when a pedestrian unexpectedly steps into its path. Who is generally considered responsible for ensuring the robot handles this situation safely?",
+    "choices": [
+      "No one — once a robot is autonomous, responsibility disappears entirely",
+      "The designers, programmers, and operators of the robot share responsibility for building in safe behaviors, thorough testing, and appropriate fail-safes before the robot is deployed",
+      "Only the pedestrian is responsible, regardless of the robot's design",
+      "Responsibility is determined randomly after each incident"
+    ],
+    "answerIndex": 1,
+    "explanation": "Even though a robot may act 'autonomously' in the moment, the humans who design, program, test, and deploy it share responsibility for anticipating risks and building in safe, well-tested behaviors — autonomy doesn't remove human accountability."
+  },
+  {
+    "id": "ai-robotics-future-t5-q2",
+    "topicId": "ai-robotics-future",
+    "tier": 5,
+    "question": "Some experts describe the future of robotics as 'human-robot collaboration' rather than 'robots replacing humans.' What does this perspective emphasize?",
+    "choices": [
+      "That robots should never be used for any task a human could do",
+      "That robots and humans often work best together — robots handling repetitive, dangerous, or precise tasks while humans provide judgment, creativity, and oversight",
+      "That humans should be completely removed from all workplaces",
+      "That collaboration between humans and robots is impossible"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many real-world systems pair robots' strengths (precision, repetition, handling hazards) with human strengths (judgment, adaptability, ethical reasoning) — viewing robots as tools that work alongside people rather than simple replacements."
+  },
+  {
+    "id": "ai-robotics-future-t5-q3",
+    "topicId": "ai-robotics-future",
+    "tier": 5,
+    "question": "Why might a robotics team test their AI-powered robot in many different environments and conditions — including unusual or 'edge case' situations — before releasing it for real-world use?",
+    "choices": [
+      "Testing in unusual conditions is a waste of time, since real life never produces unusual situations",
+      "Thorough testing, including rare or unexpected situations, helps the team find and fix weaknesses in the robot's behavior before those weaknesses could cause harm in the real world",
+      "Edge cases only matter for robots that never move",
+      "AI models behave identically in every possible condition, so testing variety doesn't matter"
+    ],
+    "answerIndex": 1,
+    "explanation": "Real-world environments are full of rare and unexpected situations — unusual lighting, strange obstacles, or surprising human behavior. Testing across a wide range of conditions, including edge cases, helps engineers find weaknesses and improve safety before deployment, reflecting responsible robotics design."
+  }
+]

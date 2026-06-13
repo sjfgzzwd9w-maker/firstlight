@@ -2,8 +2,27 @@ import type { AnswerEvent, Question, TopicProgress } from '../../types';
 import { MAX_TIER, MIN_TIER } from '../../types';
 import mathQuestionBank from './questionBank.algebra2.json';
 import biologyQuestionBank from './questionBank.biology.json';
+import biology2QuestionBank from './questionBank.biology2.json';
+import python1QuestionBank from './questionBank.python1.json';
+import python2QuestionBank from './questionBank.python2.json';
+import python3QuestionBank from './questionBank.python3.json';
+import robotics1QuestionBank from './questionBank.robotics1.json';
+import robotics2QuestionBank from './questionBank.robotics2.json';
+import robotics3QuestionBank from './questionBank.robotics3.json';
+import robotics4QuestionBank from './questionBank.robotics4.json';
 
-const BANK = [...(mathQuestionBank as Question[]), ...(biologyQuestionBank as Question[])];
+const BANK = [
+  ...(mathQuestionBank as Question[]),
+  ...(biologyQuestionBank as Question[]),
+  ...(biology2QuestionBank as Question[]),
+  ...(python1QuestionBank as Question[]),
+  ...(python2QuestionBank as Question[]),
+  ...(python3QuestionBank as Question[]),
+  ...(robotics1QuestionBank as Question[]),
+  ...(robotics2QuestionBank as Question[]),
+  ...(robotics3QuestionBank as Question[]),
+  ...(robotics4QuestionBank as Question[]),
+];
 
 export function createTopicProgress(startTier = MIN_TIER): TopicProgress {
   return {

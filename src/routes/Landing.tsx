@@ -21,7 +21,7 @@ export default function Landing() {
         advanced stuff — leveling up or down as you go.
       </p>
 
-      <div className="mt-10 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="mt-10 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <SubjectCard
           emoji="🧮"
           title="Math"
@@ -34,8 +34,19 @@ export default function Landing() {
           description="Biology: cells, DNA, ecosystems & more"
           onClick={() => navigate('/learn/science')}
         />
+        <SubjectCard
+          emoji="💻"
+          title="Coding"
+          description="Python: variables, loops, functions, OOP & debugging — zero to hero"
+          onClick={() => navigate('/learn/coding')}
+        />
+        <SubjectCard
+          emoji="🤖"
+          title="Robotics"
+          description="Robots, sensors, circuits, control systems & AI — build real-world skills"
+          onClick={() => navigate('/learn/robotics')}
+        />
         <SubjectCard emoji="🚀" title="Space" description="Coming soon" comingSoon />
-        <SubjectCard emoji="💻" title="Coding" description="Coming soon" comingSoon />
       </div>
     </div>
   );

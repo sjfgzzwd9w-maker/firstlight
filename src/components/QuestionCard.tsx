@@ -5,12 +5,47 @@ type QuestionCardProps = {
   selectedIndex: number | null;
   revealed: boolean;
   onSelect: (index: number) => void;
+  /** When true, choices are rendered in a monospace code style (for Python code-flaw questions). */
+  codeMode?: boolean;
 };
 
-export default function QuestionCard({ question, selectedIndex, revealed, onSelect }: QuestionCardProps) {
+/** Splits text on ``` fences and renders code sections in a monospace block. */
+function QuestionPrompt({ text }: { text: string }) {
+  const parts = text.split('```');
+  if (parts.length === 1) {
+    return <p className="text-lg font-semibold text-white whitespace-pre-wrap">{text}</p>;
+  }
+
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) {
+          return part.trim() ? (
+            <p key={i} className="text-lg font-semibold text-white whitespace-pre-wrap">
+              {part.trim()}
+            </p>
+          ) : null;
+        }
+        // Drop an optional leading language tag (e.g. "python\n...") on its own first line.
+        const lines = part.split('\n');
+        const code = /^[a-zA-Z0-9]*$/.test(lines[0].trim()) && lines.length > 1 ? lines.slice(1).join('\n') : part;
+        return (
+          <pre
+            key={i}
+            className="mt-3 overflow-x-auto rounded-xl border border-white/10 bg-space-950/80 p-3 text-left text-sm text-comet-200"
+          >
+            <code className="font-mono">{code.replace(/\n$/, '')}</code>
+          </pre>
+        );
+      })}
+    </>
+  );
+}
+
+export default function QuestionCard({ question, selectedIndex, revealed, onSelect, codeMode }: QuestionCardProps) {
   return (
     <div className="w-full max-w-lg rounded-2xl border border-white/10 bg-white/5 p-6">
-      <p className="text-lg font-semibold text-white">{question.question}</p>
+      <QuestionPrompt text={question.question} />
       <div className="mt-4 flex flex-col gap-2">
         {question.choices.map((choice, i) => {
           let style = 'border-white/10 bg-white/5 hover:bg-white/10';
@@ -34,7 +69,11 @@ export default function QuestionCard({ question, selectedIndex, revealed, onSele
               onClick={() => onSelect(i)}
               className={`rounded-xl border px-4 py-3 text-left text-white transition-colors ${style}`}
             >
-              {choice}
+              {codeMode ? (
+                <code className="font-mono text-sm whitespace-pre-wrap">{choice}</code>
+              ) : (
+                choice
+              )}
             </button>
           );
         })}

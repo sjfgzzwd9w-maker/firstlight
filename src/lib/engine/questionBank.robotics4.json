@@ -1,0 +1,842 @@
+[
+  {
+    "id": "vex-gear-ratios-t1-q1",
+    "topicId": "vex-gear-ratios",
+    "tier": 1,
+    "question": "What is a 'gear ratio'?",
+    "choices": [
+      "The comparison between the number of teeth on two connected gears, which determines how their speeds and turning forces relate",
+      "The color of the gears on a robot",
+      "How much a gear weighs",
+      "The total number of gears in a robot"
+    ],
+    "answerIndex": 0,
+    "explanation": "A gear ratio compares the teeth counts of two meshed gears (or gear systems) — for example, a 1:3 ratio means one gear turns once for every three turns of the other, which affects both speed and turning force (torque)."
+  },
+  {
+    "id": "vex-gear-ratios-t1-q2",
+    "topicId": "vex-gear-ratios",
+    "tier": 1,
+    "question": "What does 'mechanical advantage' mean?",
+    "choices": [
+      "Using a mechanism (like gears or levers) to change the size of a force or motion, often making it easier to do work",
+      "A robot that looks more advanced than another",
+      "The number of batteries a robot has",
+      "A type of programming language"
+    ],
+    "answerIndex": 0,
+    "explanation": "Mechanical advantage is the benefit gained by using a mechanism — like gears — to trade speed for force (or vice versa), making certain tasks (like lifting heavy objects) easier."
+  },
+  {
+    "id": "vex-gear-ratios-t1-q3",
+    "topicId": "vex-gear-ratios",
+    "tier": 1,
+    "question": "In a simple gear train, a small gear (the 'driver') turns a larger gear (the 'driven' gear). What generally happens to the speed of the larger gear?",
+    "choices": [
+      "It spins faster than the small gear",
+      "It spins slower than the small gear",
+      "It spins at exactly the same speed as the small gear, always",
+      "It stops spinning completely"
+    ],
+    "answerIndex": 1,
+    "explanation": "When a small gear drives a larger gear, the larger gear has more teeth to move per rotation of the small gear, so it rotates more slowly — but with more turning force (torque)."
+  },
+  {
+    "id": "vex-gear-ratios-t2-q1",
+    "topicId": "vex-gear-ratios",
+    "tier": 2,
+    "question": "A 12-tooth gear drives a 36-tooth gear. What is the gear ratio (driver:driven), in simplest form?",
+    "choices": [
+      "1:3",
+      "3:1",
+      "12:36, which cannot be simplified",
+      "1:12"
+    ],
+    "answerIndex": 0,
+    "explanation": "Divide both tooth counts by their greatest common factor: 12:36 simplifies to 1:3. This means for every 1 rotation of the driver gear, the driven gear makes 1/3 of a rotation."
+  },
+  {
+    "id": "vex-gear-ratios-t2-q2",
+    "topicId": "vex-gear-ratios",
+    "tier": 2,
+    "question": "If you change a robot's drivetrain gearing so the output shaft spins slower but with more torque, what happened to the gear ratio?",
+    "choices": [
+      "It was changed to increase torque at the cost of speed — a common trade-off in gear systems",
+      "Nothing changed; gear ratios don't affect torque",
+      "The ratio was changed to make the robot lighter",
+      "The robot's battery voltage was increased"
+    ],
+    "answerIndex": 0,
+    "explanation": "Gear ratios let you trade speed for torque or torque for speed. Gearing 'down' (output spins slower than input) increases torque, which is useful for mechanisms that need to lift or push hard."
+  },
+  {
+    "id": "vex-gear-ratios-t2-q3",
+    "topicId": "vex-gear-ratios",
+    "tier": 2,
+    "question": "What is a 'compound gear train'?",
+    "choices": [
+      "A series of gears connected so that one gear's rotation drives the next, often using multiple gear stages to multiply the overall ratio",
+      "A single gear with extra teeth added",
+      "A gear made from a special compound material",
+      "A gear train that only works underwater"
+    ],
+    "answerIndex": 0,
+    "explanation": "In a compound gear train, multiple gear pairs are connected in sequence (often sharing axles), so the overall gear ratio is the product of each individual stage's ratio — allowing very large speed or torque changes."
+  },
+  {
+    "id": "vex-gear-ratios-t3-q1",
+    "topicId": "vex-gear-ratios",
+    "tier": 3,
+    "question": "A motor spins at 200 RPM and drives a gear train with a 1:5 ratio (output turns 1/5 as fast as input). What is the output speed?",
+    "choices": [
+      "1000 RPM",
+      "40 RPM",
+      "200 RPM",
+      "5 RPM"
+    ],
+    "answerIndex": 1,
+    "explanation": "Output speed = input speed × ratio = 200 RPM × (1/5) = 40 RPM. The output shaft turns slower than the motor, but with more torque."
+  },
+  {
+    "id": "vex-gear-ratios-t3-q2",
+    "topicId": "vex-gear-ratios",
+    "tier": 3,
+    "question": "Why does a gear ratio that increases output speed (compared to input) also decrease output torque?",
+    "choices": [
+      "Because of energy conservation — the power (a combination of torque and speed) transferred through gears stays roughly the same, so gaining speed means losing torque, and vice versa",
+      "Because faster-spinning gears weigh less",
+      "Because gears that spin fast generate electricity that powers the motor",
+      "There is no real relationship between speed and torque in gears"
+    ],
+    "answerIndex": 0,
+    "explanation": "Ignoring friction losses, the power transmitted through a gear train is roughly constant. Since power relates to torque multiplied by speed, increasing speed through gearing means torque must decrease proportionally, and vice versa."
+  },
+  {
+    "id": "vex-gear-ratios-t3-q3",
+    "topicId": "vex-gear-ratios",
+    "tier": 3,
+    "question": "An 'idler gear' is placed between two other gears, simply meshing with both but not connected to anything else. What effect does adding an idler gear have on the overall gear ratio?",
+    "choices": [
+      "It doesn't change the overall ratio — it only changes the direction of rotation (or allows gears to be spaced farther apart)",
+      "It always doubles the overall gear ratio",
+      "It reverses the direction of torque but not rotation",
+      "It makes the gear train spin twice as fast automatically"
+    ],
+    "answerIndex": 0,
+    "explanation": "An idler gear's teeth count cancels out in the overall ratio calculation — its main effects are reversing rotation direction (compared to not having it) and/or bridging a physical gap between two gears."
+  },
+  {
+    "id": "vex-gear-ratios-t4-q1",
+    "topicId": "vex-gear-ratios",
+    "tier": 4,
+    "question": "A compound gear train has two stages: the first stage has a ratio of 1:3, and the second stage has a ratio of 1:4. What is the overall gear ratio?",
+    "choices": [
+      "1:7 (the ratios are added together)",
+      "1:12 (the ratios are multiplied together)",
+      "1:1 (the ratios cancel out)",
+      "3:4 (only the second stage matters)"
+    ],
+    "answerIndex": 1,
+    "explanation": "For compound gear trains, the overall ratio is the product of each stage's ratio: (1/3) × (1/4) = 1/12, so the overall ratio is 1:12 — the output shaft turns once for every 12 turns of the input."
+  },
+  {
+    "id": "vex-gear-ratios-t4-q2",
+    "topicId": "vex-gear-ratios",
+    "tier": 4,
+    "question": "You're designing a lift mechanism that needs to raise a heavy arm against gravity, but it doesn't need to move quickly. Which gearing choice makes the most sense?",
+    "choices": [
+      "Gear the output to spin slower than the motor, increasing torque so the mechanism has enough force to lift the heavy arm",
+      "Gear the output to spin much faster than the motor, since speed always helps with lifting heavy objects",
+      "Gearing has no effect on a lift mechanism's ability to lift weight",
+      "Remove all gears so the motor connects directly with no ratio at all, which is always best for lifting"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lifting heavy objects requires torque more than speed. Gearing 'down' (reducing output speed relative to the motor) increases the torque available at the output, giving the mechanism the force needed to lift heavy loads."
+  },
+  {
+    "id": "vex-gear-ratios-t4-q3",
+    "topicId": "vex-gear-ratios",
+    "tier": 4,
+    "question": "A motor produces 1 unit of torque. It drives a gear train with a ratio of 1:4 (output spins 1/4 as fast as the input). Roughly how much torque is available at the output (ignoring friction losses)?",
+    "choices": [
+      "About 4 units of torque — the output gains torque in roughly the same proportion that it loses speed",
+      "About 1/4 unit of torque",
+      "Exactly 1 unit of torque, unchanged",
+      "Torque cannot be affected by gearing"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since power is roughly conserved through gears, if the output spins at 1/4 the input speed, the output torque is roughly 4 times the input torque — gearing down trades speed for torque."
+  },
+  {
+    "id": "vex-gear-ratios-t5-q1",
+    "topicId": "vex-gear-ratios",
+    "tier": 5,
+    "question": "A motor spinning at 300 RPM drives a compound gear train. Stage 1 has a ratio of 1:2, and stage 2 (driven by stage 1's output) has a ratio of 1:3. What is the final output speed?",
+    "choices": [
+      "50 RPM",
+      "100 RPM",
+      "1800 RPM",
+      "150 RPM"
+    ],
+    "answerIndex": 0,
+    "explanation": "Overall ratio = (1/2) × (1/3) = 1/6. Output speed = 300 RPM × (1/6) = 50 RPM. Multiplying each stage's ratio together gives the combined effect on the final output shaft."
+  },
+  {
+    "id": "vex-gear-ratios-t5-q2",
+    "topicId": "vex-gear-ratios",
+    "tier": 5,
+    "question": "A robot needs its drivetrain to move quickly across the field, but its lift arm needs lots of torque to raise heavy game pieces. Both use the same type of motor. How can a team meet both needs?",
+    "choices": [
+      "Use a single shared gear ratio for both the drivetrain and the lift, since all mechanisms on a robot must use identical gearing",
+      "Apply different gear ratios to each subsystem — gearing the drivetrain toward more speed and the lift toward more torque, since each mechanism's ratio is independent",
+      "It's impossible to have both speed and torque anywhere on the same robot",
+      "Remove gears entirely from both subsystems"
+    ],
+    "answerIndex": 1,
+    "explanation": "Each mechanism on a robot can have its own gear ratio tailored to its job — a fast drivetrain ratio for mobility, and a high-torque (geared down) ratio for the lift — because gear ratios are independent per subsystem."
+  },
+  {
+    "id": "vex-gear-ratios-t5-q3",
+    "topicId": "vex-gear-ratios",
+    "tier": 5,
+    "question": "A motor spins at 600 RPM and drives an output shaft through a 1:5 gear ratio. The output shaft needs to complete 20 full rotations to finish a task. About how long will that take?",
+    "choices": [
+      "The output spins at 120 RPM (600 ÷ 5), so 20 rotations take 20/120 minutes = 1/6 minute ≈ 10 seconds",
+      "20 minutes, since gear ratios don't affect timing",
+      "The output spins at 3000 RPM (600 × 5), so the task takes less than a second",
+      "It's impossible to estimate this without knowing the robot's color"
+    ],
+    "answerIndex": 0,
+    "explanation": "Output speed = 600 RPM ÷ 5 = 120 RPM (120 rotations per minute). To complete 20 rotations: 20 ÷ 120 = 1/6 of a minute, which is 10 seconds — combining gear ratio math with simple rate calculations."
+  },
+  {
+    "id": "vex-drivetrains-t1-q1",
+    "topicId": "vex-drivetrains",
+    "tier": 1,
+    "question": "What is a 'drivetrain' on a robot?",
+    "choices": [
+      "The system of motors, gears, and wheels (or tracks) that lets the robot move around",
+      "The part of the robot that holds the battery",
+      "A type of sensor that detects light",
+      "The robot's programming code"
+    ],
+    "answerIndex": 0,
+    "explanation": "The drivetrain is everything involved in making the robot move — typically motors connected through gears to wheels or tracks, which push the robot across the ground."
+  },
+  {
+    "id": "vex-drivetrains-t1-q2",
+    "topicId": "vex-drivetrains",
+    "tier": 1,
+    "question": "In a basic 'tank drive' (also called differential drive), how many independently controlled sides does the robot typically have?",
+    "choices": [
+      "Two — a left side and a right side, each with its own motor(s)",
+      "One — all wheels are always locked together",
+      "Four, each controlled completely independently in every direction",
+      "Tank drive robots have no wheels at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tank drive splits the robot into a left side and a right side, each powered by its own motor(s). Driving both sides at the same speed moves the robot straight; differing speeds make it turn."
+  },
+  {
+    "id": "vex-drivetrains-t1-q3",
+    "topicId": "vex-drivetrains",
+    "tier": 1,
+    "question": "What is the basic difference between a 'traction wheel' and an 'omni wheel'?",
+    "choices": [
+      "A traction wheel grips the ground firmly in all directions, while an omni wheel has small rollers that let it slide sideways easily",
+      "Traction wheels are always square, while omni wheels are always triangular",
+      "There is no difference — they are two names for the same wheel",
+      "Omni wheels cannot be used on any robot"
+    ],
+    "answerIndex": 0,
+    "explanation": "Traction wheels (like rubber tires) grip well in every direction, resisting sideways sliding. Omni wheels have small rollers around their edge that let them slide sideways freely while still driving forward/backward."
+  },
+  {
+    "id": "vex-drivetrains-t2-q1",
+    "topicId": "vex-drivetrains",
+    "tier": 2,
+    "question": "On a tank drive robot, both left and right side motors spin forward, but the left side spins slower than the right side. What will the robot do?",
+    "choices": [
+      "Curve toward the left, since the slower side acts like the inside of a turn",
+      "Drive in a perfectly straight line",
+      "Spin in place at top speed",
+      "Drive backward"
+    ],
+    "answerIndex": 0,
+    "explanation": "Just like a tank or wheelchair, when one side moves slower than the other (both still moving forward), the robot curves toward the slower side."
+  },
+  {
+    "id": "vex-drivetrains-t2-q2",
+    "topicId": "vex-drivetrains",
+    "tier": 2,
+    "question": "Why might a team put omni wheels on the back of a tank drive robot while keeping traction wheels on the front?",
+    "choices": [
+      "The omni wheels let the back of the robot slide sideways slightly when turning, reducing scrubbing/friction against the field tiles while the front traction wheels still provide grip for driving",
+      "Omni wheels are required by every robotics competition regardless of design",
+      "Mixing wheel types is never done in real robot designs",
+      "Omni wheels make the robot impossible to turn"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tank drive robots turn by skidding their wheels sideways slightly. Placing omni wheels (which slide sideways easily) on part of the drivetrain can reduce friction and wear during turns while traction wheels elsewhere maintain driving grip."
+  },
+  {
+    "id": "vex-drivetrains-t2-q3",
+    "topicId": "vex-drivetrains",
+    "tier": 2,
+    "question": "A wheel has a diameter of 4 inches. About how far does the robot travel for ONE full rotation of that wheel? (Use circumference ≈ π × diameter, and π ≈ 3.14)",
+    "choices": [
+      "About 12.6 inches",
+      "About 4 inches",
+      "About 8 inches",
+      "About 25.1 inches"
+    ],
+    "answerIndex": 0,
+    "explanation": "Circumference = π × diameter ≈ 3.14 × 4 ≈ 12.6 inches. One full wheel rotation moves the robot forward by approximately its wheel's circumference."
+  },
+  {
+    "id": "vex-drivetrains-t3-q1",
+    "topicId": "vex-drivetrains",
+    "tier": 3,
+    "question": "A wheel has a diameter of 3.25 inches. Using circumference ≈ π × diameter (π ≈ 3.14), about how far does the robot travel after the wheel makes 4 full rotations?",
+    "choices": [
+      "About 40.8 inches",
+      "About 10.2 inches",
+      "About 3.25 inches",
+      "About 13 inches"
+    ],
+    "answerIndex": 0,
+    "explanation": "Circumference ≈ 3.14 × 3.25 ≈ 10.2 inches per rotation. Over 4 rotations: 10.2 × 4 ≈ 40.8 inches. Wheel size directly determines how far each rotation moves the robot."
+  },
+  {
+    "id": "vex-drivetrains-t3-q2",
+    "topicId": "vex-drivetrains",
+    "tier": 3,
+    "question": "What makes mecanum wheels special compared to standard wheels?",
+    "choices": [
+      "Each mecanum wheel has rollers mounted at a 45-degree angle around its edge, and combining four of them (in mirrored pairs) lets the robot drive in any direction — including straight sideways — without turning",
+      "Mecanum wheels are simply larger versions of traction wheels with no other differences",
+      "Mecanum wheels can only move a robot backward, never forward",
+      "Mecanum wheels eliminate the need for any motors"
+    ],
+    "answerIndex": 0,
+    "explanation": "The angled rollers on mecanum wheels redirect some of each wheel's force sideways. By carefully combining the speeds and directions of four mecanum wheels, a robot can move forward, sideways, diagonally, or rotate — true holonomic movement."
+  },
+  {
+    "id": "vex-drivetrains-t3-q3",
+    "topicId": "vex-drivetrains",
+    "tier": 3,
+    "question": "What is the basic difference between an 'X-drive' and an 'H-drive' robot?",
+    "choices": [
+      "An X-drive uses four wheels (often omni or mecanum) mounted diagonally so all four can contribute to any direction of movement, while an H-drive uses a standard tank drive plus a separate sideways-facing wheel for strafing",
+      "X-drive robots have no wheels, while H-drive robots have eight wheels",
+      "X-drive and H-drive are two names for the exact same design",
+      "H-drive robots cannot move forward or backward at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "X-drive mounts all four wheels at 45-degree angles (forming an 'X') so each wheel contributes to every direction of motion. H-drive keeps a standard tank drive for forward/backward and turning, and adds one extra wheel (often raised/lowered) for direct sideways movement."
+  },
+  {
+    "id": "vex-drivetrains-t4-q1",
+    "topicId": "vex-drivetrains",
+    "tier": 4,
+    "question": "A robot's drivetrain motor spins at 150 RPM, and an external gear ratio of 1:1 (no change) connects it to a wheel with a 4-inch diameter. About how far (in inches) does the robot travel in one minute, assuming the wheel doesn't slip? (circumference ≈ π × diameter ≈ 12.6 inches)",
+    "choices": [
+      "About 1884 inches",
+      "About 150 inches",
+      "About 12.6 inches",
+      "About 600 inches"
+    ],
+    "answerIndex": 0,
+    "explanation": "At 150 RPM with a 1:1 ratio, the wheel also spins 150 times per minute. Distance per minute ≈ 150 × 12.6 ≈ 1884 inches — combining rotational speed with wheel circumference to find linear speed."
+  },
+  {
+    "id": "vex-drivetrains-t4-q2",
+    "topicId": "vex-drivetrains",
+    "tier": 4,
+    "question": "Why do larger-diameter wheels generally give a robot a higher top speed but less effective torque (pushing force) at the wheel, for the same motor and gearing?",
+    "choices": [
+      "A larger wheel covers more ground per rotation (higher speed for the same RPM), but the same torque is now spread over a longer lever arm (the wheel radius), reducing the effective pushing force at the ground",
+      "Larger wheels always make a robot heavier with no effect on speed or torque",
+      "Wheel size has no relationship to speed or torque — only gear ratio matters",
+      "Larger wheels always spin faster than smaller wheels regardless of motor speed"
+    ],
+    "answerIndex": 0,
+    "explanation": "For the same rotational speed (RPM) and torque, a larger wheel travels farther per rotation (more speed) but the torque is distributed over a larger radius, resulting in less force pushing the robot forward — a similar trade-off to gear ratios."
+  },
+  {
+    "id": "vex-drivetrains-t4-q3",
+    "topicId": "vex-drivetrains",
+    "tier": 4,
+    "question": "A competition requires a robot to quickly slide sideways into a scoring zone without turning its whole body. Which drivetrain choice would best support this?",
+    "choices": [
+      "A holonomic drivetrain like X-drive or mecanum wheels, which can move sideways directly",
+      "A standard tank drive with traction wheels only, which cannot move sideways without turning",
+      "Removing all wheels and dragging the robot by hand",
+      "Drivetrain choice has no effect on whether a robot can move sideways"
+    ],
+    "answerIndex": 0,
+    "explanation": "Holonomic drivetrains (X-drive, mecanum) are specifically designed to allow direct sideways or diagonal movement without rotating the robot's body — useful when quick lateral repositioning matters."
+  },
+  {
+    "id": "vex-drivetrains-t5-q1",
+    "topicId": "vex-drivetrains",
+    "tier": 5,
+    "question": "A drivetrain motor spins at 200 RPM. It connects through a 1:2 gear ratio (output spins twice as fast as the motor) to a wheel with a 3.25-inch diameter (circumference ≈ 10.2 inches). About how far does the robot travel in one minute?",
+    "choices": [
+      "About 4080 inches (output spins at 400 RPM, ×10.2 inches ≈ 4080)",
+      "About 2040 inches (output spins at 200 RPM, ×10.2 ≈ 2040)",
+      "About 1020 inches (output spins at 100 RPM, ×10.2 ≈ 1020)",
+      "About 10.2 inches, since gear ratio doesn't affect distance"
+    ],
+    "answerIndex": 0,
+    "explanation": "With a 1:2 'speed up' ratio, the wheel spins at 200 × 2 = 400 RPM. Distance per minute ≈ 400 × 10.2 ≈ 4080 inches — gear ratio changes the wheel's rotation speed, which directly scales the robot's travel distance."
+  },
+  {
+    "id": "vex-drivetrains-t5-q2",
+    "topicId": "vex-drivetrains",
+    "tier": 5,
+    "question": "On a crowded competition field with lots of other robots and game pieces nearby, what is a potential downside of a holonomic (mecanum or X-drive) drivetrain compared to a simple tank drive?",
+    "choices": [
+      "Holonomic drivetrains often have less raw pushing power/traction and can be more complex to build and program, even though they gain the ability to move in any direction",
+      "Holonomic drivetrains are always completely immobile",
+      "Tank drives can never move in a straight line",
+      "There are no downsides to holonomic drivetrains in any situation"
+    ],
+    "answerIndex": 0,
+    "explanation": "The rollers on mecanum/X-drive wheels reduce overall grip compared to traction wheels, often resulting in less pushing power and more complex control — a real trade-off against the benefit of omnidirectional movement."
+  },
+  {
+    "id": "vex-drivetrains-t5-q3",
+    "topicId": "vex-drivetrains",
+    "tier": 5,
+    "question": "A team wants their robot to autonomously drive forward exactly 36 inches. Their wheels have a 4-inch diameter (circumference ≈ 12.6 inches) connected directly to the motor (1:1 ratio) with encoders that count motor rotations. About how many wheel rotations are needed, and how could the team use this?",
+    "choices": [
+      "About 2.86 rotations (36 ÷ 12.6); the team can program the robot to stop once its encoder counts this many rotations",
+      "Exactly 36 rotations, since distance always equals the number of rotations directly",
+      "Exactly 12.6 rotations, since circumference doesn't relate to the target distance",
+      "This cannot be calculated without knowing the robot's weight"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rotations needed = target distance ÷ circumference = 36 ÷ 12.6 ≈ 2.86 rotations. By tracking motor/wheel rotations with an encoder, the robot can stop driving once it detects it has completed approximately this many rotations — turning a distance goal into a rotation count."
+  },
+  {
+    "id": "vex-motors-power-t1-q1",
+    "topicId": "vex-motors-power",
+    "tier": 1,
+    "question": "What is the main job of a motor in a VEX robot?",
+    "choices": [
+      "To convert electrical energy from the battery into rotational (spinning) motion that can drive wheels, arms, or other mechanisms",
+      "To store extra battery power for later",
+      "To send Wi-Fi signals to the controller",
+      "To measure the temperature of the field"
+    ],
+    "answerIndex": 0,
+    "explanation": "Motors take electrical energy and turn it into mechanical motion — spinning a shaft that, through gears and other parts, can drive wheels, lift arms, or power other mechanisms."
+  },
+  {
+    "id": "vex-motors-power-t1-q2",
+    "topicId": "vex-motors-power",
+    "tier": 1,
+    "question": "What does 'RPM' stand for, and what does it measure?",
+    "choices": [
+      "Revolutions Per Minute — how many full rotations something makes in one minute",
+      "Robot Power Meter — how much battery a robot has left",
+      "Remote Pilot Mode — a way of driving the robot wirelessly",
+      "Resistance Per Motor — how much electrical resistance a motor has"
+    ],
+    "answerIndex": 0,
+    "explanation": "RPM (Revolutions Per Minute) measures rotational speed — how many complete rotations a shaft, wheel, or gear makes in one minute."
+  },
+  {
+    "id": "vex-motors-power-t1-q3",
+    "topicId": "vex-motors-power",
+    "tier": 1,
+    "question": "True or False: VEX V5 Smart Motors can come with different internal gear cartridges that change their speed and torque characteristics.",
+    "choices": [
+      "True — different cartridges (often called red, green, and blue) trade off speed for torque differently",
+      "False — every VEX Smart Motor always spins at exactly the same speed with no options",
+      "False — VEX motors have no internal gears at all",
+      "True, but the cartridge only changes the motor's color, not its performance"
+    ],
+    "answerIndex": 0,
+    "explanation": "VEX V5 Smart Motors support interchangeable internal gear cartridges, commonly identified by color, each giving a different balance of maximum speed (RPM) versus torque — letting builders tune motors for specific mechanisms."
+  },
+  {
+    "id": "vex-motors-power-t2-q1",
+    "topicId": "vex-motors-power",
+    "tier": 2,
+    "question": "VEX Smart Motor cartridges are often described as: red (high torque, lower top speed), green (balanced), and blue (high top speed, lower torque). Which cartridge would generally be best for a mechanism that needs to lift a heavy weight slowly?",
+    "choices": [
+      "Red — it provides the most torque, which helps with lifting heavy loads",
+      "Blue — its high top speed is the most important factor for lifting anything",
+      "Cartridge choice never matters for lifting mechanisms",
+      "Green is always required by competition rules for lifts"
+    ],
+    "answerIndex": 0,
+    "explanation": "The red cartridge sacrifices top speed for higher torque, making it well-suited for mechanisms — like lift arms — that need to move heavier loads, even if more slowly."
+  },
+  {
+    "id": "vex-motors-power-t2-q2",
+    "topicId": "vex-motors-power",
+    "tier": 2,
+    "question": "What typically happens if a motor draws too much electrical current for too long (for example, because it's straining against something stuck)?",
+    "choices": [
+      "The motor may heat up and its built-in protection can temporarily reduce power or shut it down to prevent damage",
+      "The motor will permanently speed up beyond its normal maximum",
+      "Nothing happens — motors are unaffected by how much current they draw",
+      "The robot's controller will automatically rewrite the robot's code"
+    ],
+    "answerIndex": 0,
+    "explanation": "Motors that draw excessive current for extended periods (often from being mechanically jammed or overloaded) can overheat. Many motors, including VEX Smart Motors, include thermal protection that reduces power output or temporarily disables the motor to prevent damage."
+  },
+  {
+    "id": "vex-motors-power-t2-q3",
+    "topicId": "vex-motors-power",
+    "tier": 2,
+    "question": "Why might a team put two or three motors on a single mechanism, like a lift arm, instead of just one?",
+    "choices": [
+      "Combining multiple motors increases the total torque and power available, helping the mechanism move heavier loads or move more reliably, and spreads the workload across motors",
+      "Using more motors always makes a mechanism move in the opposite direction",
+      "Extra motors are purely decorative and don't affect performance",
+      "Competition rules require every mechanism to have exactly one motor"
+    ],
+    "answerIndex": 0,
+    "explanation": "Multiple motors working together on one mechanism combine their torque and power output, which can help lift heavier objects, move faster, or operate more reliably than a single motor alone — though it also uses more of the robot's total current budget."
+  },
+  {
+    "id": "vex-motors-power-t3-q1",
+    "topicId": "vex-motors-power",
+    "tier": 3,
+    "question": "A team is building a mechanism that needs to hold a heavy game piece in place against gravity for a long time without slipping. Which motor cartridge choice fits best, and why?",
+    "choices": [
+      "The red (high-torque) cartridge, because more torque helps the mechanism resist being pushed back down by the weight it's holding",
+      "The blue (high-speed) cartridge, because higher speed always means more holding strength",
+      "Cartridge choice doesn't matter for holding weight in place",
+      "No motor cartridge can ever hold weight without slipping"
+    ],
+    "answerIndex": 0,
+    "explanation": "Holding a heavy load against gravity is primarily a torque problem — the motor must produce enough turning force to resist the load's weight trying to rotate the mechanism back down. The high-torque (red) cartridge is best suited for this."
+  },
+  {
+    "id": "vex-motors-power-t3-q2",
+    "topicId": "vex-motors-power",
+    "tier": 3,
+    "question": "A team is building a flywheel-based launcher that needs to spin very fast to launch game pieces a long distance. Which motor cartridge generally fits best?",
+    "choices": [
+      "The blue (high-speed) cartridge, because the flywheel's launching power depends heavily on how fast it can spin",
+      "The red (high-torque) cartridge, because torque alone determines launch distance regardless of speed",
+      "Any cartridge works identically for flywheels",
+      "Flywheel launchers should never use motors at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "Flywheel launchers store energy in a fast-spinning wheel; their performance depends heavily on rotational speed. The blue (high-speed) cartridge prioritizes RPM, making it a common choice for flywheel mechanisms."
+  },
+  {
+    "id": "vex-motors-power-t3-q3",
+    "topicId": "vex-motors-power",
+    "tier": 3,
+    "question": "What is 'current draw,' and why does it matter for a robot's battery and motors?",
+    "choices": [
+      "Current draw is the amount of electrical current flowing to a motor (or other device); high current draw across many devices can drain the battery faster and may cause voltage drops that affect performance",
+      "Current draw is how far a robot has driven, measured in amps",
+      "Current draw only matters for the robot's display screen, not its motors",
+      "Current draw is a measurement of a motor's color and has no electrical meaning"
+    ],
+    "answerIndex": 0,
+    "explanation": "Current draw is the electrical current a component pulls from the battery. When many motors draw high current simultaneously (e.g., driving and lifting at the same time), it can strain the battery, cause voltage drops, and potentially trigger thermal or current limits."
+  },
+  {
+    "id": "vex-motors-power-t4-q1",
+    "topicId": "vex-motors-power",
+    "tier": 4,
+    "question": "A team uses a red (high-torque, lower-speed) motor cartridge for their lift, but the lift still moves too slowly for their liking, even though it has enough strength. Without changing the motor cartridge, what could they do?",
+    "choices": [
+      "Add an external gear ratio that increases output speed (at some cost to torque), since the lift currently has torque to spare",
+      "Nothing can be done without buying entirely new motors",
+      "Remove all gears from the mechanism, which always makes mechanisms faster regardless of motor type",
+      "Increase the robot's weight to make the lift move faster"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since gear ratios trade speed for torque, and the lift already has more torque than it needs, the team can add an external 'gear up' ratio to increase speed at the cost of some torque — fine-tuning the balance beyond what the cartridge alone provides."
+  },
+  {
+    "id": "vex-motors-power-t4-q2",
+    "topicId": "vex-motors-power",
+    "tier": 4,
+    "question": "Why might a robot experience a 'brownout' (sudden loss of power to motors or controller) if too many high-current mechanisms run at the exact same time?",
+    "choices": [
+      "If total current demand exceeds what the battery and electrical system can reliably supply at once, voltage can dip too low, causing motors or the controller to temporarily lose power or reset",
+      "Brownouts are caused by the robot's color scheme being too bright",
+      "Brownouts only happen if the robot has too few motors",
+      "Running multiple mechanisms at once has no effect on electrical performance"
+    ],
+    "answerIndex": 0,
+    "explanation": "Every component draws current from a shared battery and electrical system. If combined demand spikes too high (e.g., driving hard while also running a lift and a launcher), voltage can sag enough to cause a brownout, temporarily disrupting power to the controller or motors."
+  },
+  {
+    "id": "vex-motors-power-t4-q3",
+    "topicId": "vex-motors-power",
+    "tier": 4,
+    "question": "A red cartridge motor spins at a maximum of 100 RPM. The team adds an external gear ratio of 1:2 that doubles the output speed (and roughly halves the torque). What is the new approximate maximum output speed?",
+    "choices": [
+      "200 RPM",
+      "50 RPM",
+      "100 RPM, unchanged",
+      "400 RPM"
+    ],
+    "answerIndex": 0,
+    "explanation": "A 1:2 'gear up' ratio doubles the output speed relative to the input: 100 RPM × 2 = 200 RPM. As expected, this comes at the cost of roughly half the original torque."
+  },
+  {
+    "id": "vex-motors-power-t5-q1",
+    "topicId": "vex-motors-power",
+    "tier": 5,
+    "question": "A team is designing a lift arm. They want it to move reasonably fast AND have enough torque to lift a heavy game piece. They've already chosen the green (balanced) cartridge. What additional design step could help them fine-tune the balance between speed and torque?",
+    "choices": [
+      "Add an external gear ratio on top of the cartridge's built-in characteristics, adjusting the final speed/torque balance to better match the lift's specific requirements",
+      "It's impossible to adjust speed or torque any further once a cartridge is chosen",
+      "Switch to a completely different type of robot entirely",
+      "Paint the motor a different color to change its torque output"
+    ],
+    "answerIndex": 0,
+    "explanation": "Motor cartridges set a baseline speed/torque characteristic, but external gear ratios can further adjust the final output to match a mechanism's exact needs — combining cartridge choice and external gearing gives fine control over the speed/torque trade-off."
+  },
+  {
+    "id": "vex-motors-power-t5-q2",
+    "topicId": "vex-motors-power",
+    "tier": 5,
+    "question": "How does a motor's torque relate to the maximum weight it can hold in place against gravity (for example, in a lift arm)?",
+    "choices": [
+      "The motor must produce at least enough torque to counteract the turning force created by the weight at its distance from the pivot point — if torque is too low, the arm will be pushed back down by the weight",
+      "Torque has no relationship to holding weight; only motor color matters",
+      "Any motor can hold any amount of weight regardless of torque",
+      "More torque always means the arm will move faster, but never affects how much weight it can hold"
+    ],
+    "answerIndex": 0,
+    "explanation": "An arm holding a weight experiences a turning force (torque) from gravity, proportional to the weight and its distance from the pivot. The motor (through any gearing) must produce at least as much torque to prevent the arm from being pushed down — this is a key consideration when designing lift mechanisms."
+  },
+  {
+    "id": "vex-motors-power-t5-q3",
+    "topicId": "vex-motors-power",
+    "tier": 5,
+    "question": "A robot has a limited total current budget shared across its drivetrain, lift, and intake mechanisms. During a match, the driver tries to drive at full speed, raise the lift, and run the intake all at the same time, and the robot starts acting sluggish. What is a reasonable design or strategy response?",
+    "choices": [
+      "Recognize that running all high-current mechanisms simultaneously can strain the power system, and consider either sequencing actions (e.g., raise the lift, then drive) or adjusting gearing/cartridges so mechanisms need less current for the same performance",
+      "Ignore the issue, since current budgets never actually limit robot performance",
+      "Permanently disable two of the three mechanisms for the rest of the season",
+      "Add more batteries beyond what competition rules allow"
+    ],
+    "answerIndex": 0,
+    "explanation": "When multiple high-current mechanisms run simultaneously, they compete for the same limited power budget, which can cause sluggish performance or brownouts. Reasonable responses include sequencing actions to avoid overlapping peak demands, or adjusting gearing/cartridges to reduce current needs — balancing mechanical design with strategy and electrical limits."
+  },
+  {
+    "id": "vex-build-design-t1-q1",
+    "topicId": "vex-build-design",
+    "tier": 1,
+    "question": "What is the 'chassis' of a robot?",
+    "choices": [
+      "The main frame or structure that everything else (motors, wheels, mechanisms) is attached to",
+      "The robot's computer program",
+      "A type of sensor used for detecting colors",
+      "The battery that powers the robot"
+    ],
+    "answerIndex": 0,
+    "explanation": "The chassis is the robot's structural backbone — typically a frame made of metal or plastic parts — that holds the drivetrain, motors, and other mechanisms together."
+  },
+  {
+    "id": "vex-build-design-t1-q2",
+    "topicId": "vex-build-design",
+    "tier": 1,
+    "question": "What does 'center of gravity' mean for a robot?",
+    "choices": [
+      "The average location of a robot's weight — roughly the point where the robot would balance if you could support it from underneath at that single spot",
+      "The exact center of the robot's controller",
+      "The location of the robot's main computer chip",
+      "A measurement of how fast the robot can spin"
+    ],
+    "answerIndex": 0,
+    "explanation": "The center of gravity is the balance point of an object's weight distribution. For a robot, where this point is located (especially how high or low, and how centered) strongly affects stability."
+  },
+  {
+    "id": "vex-build-design-t1-q3",
+    "topicId": "vex-build-design",
+    "tier": 1,
+    "question": "In many robotics competitions, what is the basic difference between the 'autonomous' period and the 'driver control' period?",
+    "choices": [
+      "During autonomous, the robot follows pre-written code with no human input; during driver control, a human driver operates the robot using a controller",
+      "During autonomous, a human drives the robot manually, and during driver control, the robot runs on its own",
+      "There is no difference between the two periods",
+      "Autonomous means the robot is turned off completely"
+    ],
+    "answerIndex": 0,
+    "explanation": "In the autonomous period, the robot must act entirely on its own using only its pre-programmed instructions and sensors — no driver input is allowed. In driver control, a human operates the robot in real time using a controller."
+  },
+  {
+    "id": "vex-build-design-t2-q1",
+    "topicId": "vex-build-design",
+    "tier": 2,
+    "question": "Why is a low center of gravity generally helpful for a robot's stability?",
+    "choices": [
+      "A lower center of gravity makes it harder for the robot to tip over, especially when turning quickly, climbing ramps, or carrying objects",
+      "A low center of gravity makes the robot invisible to sensors",
+      "Center of gravity has no effect on whether a robot tips over",
+      "A low center of gravity always makes a robot move faster"
+    ],
+    "answerIndex": 0,
+    "explanation": "Objects with their weight concentrated lower to the ground are harder to tip over — the same principle that makes a wide, low car more stable than a tall, narrow one. Robots benefit similarly, especially during quick turns or on ramps."
+  },
+  {
+    "id": "vex-build-design-t2-q2",
+    "topicId": "vex-build-design",
+    "tier": 2,
+    "question": "In VEX building, what are 'standoffs' typically used for?",
+    "choices": [
+      "Acting as spacers and structural connectors that hold two parts of the robot's frame apart at a fixed distance while keeping them firmly connected",
+      "Generating electrical power for the robot",
+      "Sending wireless signals to the controller",
+      "Measuring how far the robot has traveled"
+    ],
+    "answerIndex": 0,
+    "explanation": "Standoffs are small metal or plastic rods (often threaded) used to space out and connect structural parts, helping build rigid 3D frames and mount components at specific distances from each other."
+  },
+  {
+    "id": "vex-build-design-t2-q3",
+    "topicId": "vex-build-design",
+    "tier": 2,
+    "question": "Why do robot builders often add bearings (or bearing flats) where a rotating shaft passes through the frame?",
+    "choices": [
+      "Bearings reduce friction between the spinning shaft and the frame, letting the shaft turn more smoothly while also helping support its weight and keep it aligned",
+      "Bearings make a shaft stop spinning completely",
+      "Bearings are purely decorative and have no functional purpose",
+      "Bearings increase the electrical resistance of a shaft"
+    ],
+    "answerIndex": 0,
+    "explanation": "Without bearings, a metal shaft rubbing directly against a frame hole creates friction, wears down parts, and can wobble. Bearings reduce this friction and help keep the shaft properly aligned, making mechanisms run more smoothly and last longer."
+  },
+  {
+    "id": "vex-build-design-t3-q1",
+    "topicId": "vex-build-design",
+    "tier": 3,
+    "question": "A robot tips forward whenever its lift arm raises a heavy game piece high into the air. What is a likely cause, and what could help fix it?",
+    "choices": [
+      "Raising a heavy weight high up shifts the robot's center of gravity upward and forward, making it less stable; widening the robot's base or adding weight toward the back can help counterbalance this",
+      "The robot tips because its battery is the wrong color, and replacing the battery will fix it",
+      "Tipping is unrelated to weight or center of gravity and cannot be addressed through design",
+      "The only fix is to never lift anything with the robot"
+    ],
+    "answerIndex": 0,
+    "explanation": "Lifting a heavy object high raises and shifts the combined center of gravity, making the robot more prone to tipping in that direction. Common fixes include widening the base of support, lowering other heavy components, or adding counterweight on the opposite side."
+  },
+  {
+    "id": "vex-build-design-t3-q2",
+    "topicId": "vex-build-design",
+    "tier": 3,
+    "question": "Why is reducing friction in moving mechanisms (like a lift's pivot points) generally a good design goal?",
+    "choices": [
+      "Lower friction means mechanisms need less torque/power to move, run more smoothly, wear out more slowly, and waste less energy as heat",
+      "Reducing friction always makes a mechanism heavier",
+      "Friction has no effect on how much torque a motor needs to move a mechanism",
+      "High friction always improves a robot's speed"
+    ],
+    "answerIndex": 0,
+    "explanation": "Friction resists motion and converts useful energy into heat. Reducing friction (with bearings, lubrication, proper alignment) means motors can move mechanisms more efficiently, with less wasted power and less wear over time."
+  },
+  {
+    "id": "vex-build-design-t3-q3",
+    "topicId": "vex-build-design",
+    "tier": 3,
+    "question": "For a robot to follow a useful autonomous routine (acting without a driver), what does it generally need?",
+    "choices": [
+      "Pre-written code with a sequence of actions, often combined with sensor data (like encoders, gyroscopes, or distance sensors) to know its position or surroundings and adjust accordingly",
+      "A driver controlling it in real time the entire period",
+      "No code or sensors at all — autonomous robots move randomly",
+      "A direct internet connection to a remote server during the match"
+    ],
+    "answerIndex": 0,
+    "explanation": "Autonomous routines rely on code written in advance, often using sensor feedback (like wheel encoders for distance, or a gyroscope for heading) so the robot can reliably perform a sequence of actions — like driving a set distance and turning — without a driver's input."
+  },
+  {
+    "id": "vex-build-design-t4-q1",
+    "topicId": "vex-build-design",
+    "tier": 4,
+    "question": "Two robots are on the same alliance in a match. One robot is fast and good at scoring quickly but isn't very sturdy, while the other is slower but can carry heavy loads reliably. What is a reasonable strategic approach?",
+    "choices": [
+      "Divide responsibilities so each robot focuses on tasks that match its strengths — for example, the fast robot handles quick scoring while the sturdy robot handles heavier or more demanding tasks",
+      "Both robots should attempt to do every single task identically, ignoring their different strengths",
+      "Only one robot should be allowed to move during the entire match",
+      "Strategy has no relationship to a robot's design strengths and weaknesses"
+    ],
+    "answerIndex": 0,
+    "explanation": "Good alliance strategy takes advantage of each robot's strengths — assigning tasks based on what each robot does best (speed vs. strength, for example) tends to produce better overall results than ignoring those differences."
+  },
+  {
+    "id": "vex-build-design-t4-q2",
+    "topicId": "vex-build-design",
+    "tier": 4,
+    "question": "Why does adding diagonal bracing (triangulating) to a robot's frame typically make it more rigid?",
+    "choices": [
+      "Triangles are a naturally rigid shape — once their side lengths are fixed, their angles cannot change without bending a side, unlike rectangles which can flex into parallelograms",
+      "Diagonal braces always make a frame heavier with no effect on rigidity",
+      "Rigidity is determined only by the color of the frame parts",
+      "Adding any extra part to a frame always makes it less stable"
+    ],
+    "answerIndex": 0,
+    "explanation": "A rectangle can flex into a parallelogram shape under force because its angles can change while its side lengths stay the same. Adding a diagonal brace turns the rectangle into two triangles — a shape that can't change angles without changing a side length — greatly increasing rigidity."
+  },
+  {
+    "id": "vex-build-design-t4-q3",
+    "topicId": "vex-build-design",
+    "tier": 4,
+    "question": "A team wants to program their robot to drive forward exactly 24 inches during autonomous. Their wheels have a 4-inch diameter (circumference ≈ 12.6 inches) with a 1:1 gear ratio. What information and approach would help them achieve this?",
+    "choices": [
+      "Calculate the needed wheel rotations (24 ÷ 12.6 ≈ 1.9 rotations), then use the motor's encoder to track rotations and stop the drivetrain once that target is reached",
+      "Simply guess how long to run the motors with no calculation or sensor feedback",
+      "Distance traveled cannot be controlled through code in any way",
+      "Use the robot's color sensor to measure distance traveled in inches directly"
+    ],
+    "answerIndex": 0,
+    "explanation": "Combining wheel circumference (from diameter) with the target distance gives the number of rotations needed. Using a motor's built-in encoder to track actual rotations lets the code reliably stop the drivetrain at approximately the right distance — connecting mechanical design with autonomous programming."
+  },
+  {
+    "id": "vex-build-design-t5-q1",
+    "topicId": "vex-build-design",
+    "tier": 5,
+    "question": "A competition's scoring rules give significant points for both completing autonomous tasks reliably AND for driver-controlled scoring during the rest of the match. A team has limited time to build and program. How might they reasonably prioritize their design effort?",
+    "choices": [
+      "Consider which areas offer the most reliable point gains for the effort required — for example, a simple, highly reliable autonomous routine might be worth prioritizing over a complex one that often fails, while also ensuring the core driver-controlled scoring mechanism works well",
+      "Spend all available time only on appearance and paint, since scoring rules don't matter",
+      "Ignore autonomous entirely, since points from driver control always outweigh autonomous points",
+      "Prioritization doesn't matter because every design choice affects the score equally"
+    ],
+    "answerIndex": 0,
+    "explanation": "Good engineering strategy weighs the point value of different tasks against the reliability and effort required to achieve them. A simple, highly reliable routine often scores better in practice than a complex, fragile one — teams must balance ambition with reliability given limited build/programming time."
+  },
+  {
+    "id": "vex-build-design-t5-q2",
+    "topicId": "vex-build-design",
+    "tier": 5,
+    "question": "Why is an 'iterative design process' — build, test, find problems, redesign, test again — valuable in robotics, even though it takes more time than building something once and hoping it works?",
+    "choices": [
+      "Testing reveals real-world problems (like unexpected friction, tipping, or weak points) that are hard to predict on paper; fixing these issues through repeated cycles usually results in a more reliable final robot than a single untested design",
+      "Iterative design is only useful for software, never for physical robots",
+      "Testing a robot multiple times always makes it worse over time",
+      "Iteration means building the exact same design repeatedly without any changes"
+    ],
+    "answerIndex": 0,
+    "explanation": "Real-world behavior (friction, balance, structural weak points, autonomous accuracy) is hard to fully predict without testing. Iterative design — building, testing, identifying problems, and improving — helps teams catch and fix issues that wouldn't be obvious from planning alone, leading to a more robust final robot."
+  },
+  {
+    "id": "vex-build-design-t5-q3",
+    "topicId": "vex-build-design",
+    "tier": 5,
+    "question": "A team's robot has a high center of gravity because its lift arm and battery are both mounted near the top of the frame. Their autonomous routine also needs to drive fast and turn sharply. How do these design and programming concerns interact?",
+    "choices": [
+      "A high center of gravity combined with fast, sharp autonomous turns increases the risk of the robot tipping over during the routine; the team might need to lower heavy components, widen the base, or design the autonomous routine to turn more gently",
+      "Center of gravity and autonomous programming are completely unrelated and never affect each other",
+      "The only solution is to remove the lift arm entirely, regardless of its importance to scoring",
+      "Faster autonomous turns always make a robot more stable, regardless of its center of gravity"
+    ],
+    "answerIndex": 0,
+    "explanation": "Mechanical design choices (like component placement affecting center of gravity) directly impact what the robot can safely do in autonomous (like sharp, fast turns). Teams often need to balance these concerns together — for example, by repositioning heavy parts lower in the frame, widening the wheelbase, or tuning autonomous movements to stay within safe limits."
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "modules-files-t1-q1",
+    "topicId": "modules-files",
+    "tier": 1,
+    "question": "Which statement lets you use code from Python's math module?",
+    "choices": ["include math", "import math", "use math", "require math"],
+    "answerIndex": 1,
+    "explanation": "import module_name brings in a module so you can use its functions and values, e.g. import math then math.sqrt(16)."
+  },
+  {
+    "id": "modules-files-t1-q2",
+    "topicId": "modules-files",
+    "tier": 1,
+    "question": "What does math.sqrt(16) return after import math?",
+    "choices": ["4", "4.0", "16", "8"],
+    "answerIndex": 1,
+    "explanation": "math.sqrt() always returns a float, so math.sqrt(16) is 4.0 (not the int 4)."
+  },
+  {
+    "id": "modules-files-t1-q3",
+    "topicId": "modules-files",
+    "tier": 1,
+    "question": "Which function opens a file for reading in Python?",
+    "choices": ["open(\"file.txt\")", "read(\"file.txt\")", "load(\"file.txt\")", "file(\"file.txt\")"],
+    "answerIndex": 0,
+    "explanation": "open(\"file.txt\") returns a file object that you can read from (the default mode is \"r\" for reading text)."
+  },
+  {
+    "id": "modules-files-t2-q1",
+    "topicId": "modules-files",
+    "tier": 2,
+    "question": "What is the benefit of writing `from random import randint` instead of `import random`?",
+    "choices": ["randint can be called directly as randint(...) instead of random.randint(...)", "It makes the random module faster", "It imports every function from random automatically renamed", "There is no difference at all"],
+    "answerIndex": 0,
+    "explanation": "from module import name brings that specific name into your code directly, so you call randint(1, 10) instead of random.randint(1, 10)."
+  },
+  {
+    "id": "modules-files-t2-q2",
+    "topicId": "modules-files",
+    "tier": 2,
+    "question": "What does the with statement do when working with files?",
+    "choices": ["It makes the file read-only", "It automatically closes the file when the block ends, even if an error occurs", "It opens the file in a new window", "It deletes the file afterward"],
+    "answerIndex": 1,
+    "explanation": "with open(\"file.txt\") as f: ... automatically closes the file once the block finishes, which is safer than calling f.close() manually and forgetting it."
+  },
+  {
+    "id": "modules-files-t2-q3",
+    "topicId": "modules-files",
+    "tier": 2,
+    "question": "```python\nwith open(\"notes.txt\", \"w\") as f:\n    f.write(\"Hello\")\n```\nWhat does the \"w\" mode do?",
+    "choices": ["Opens the file for reading only", "Opens the file for writing, creating it if needed and overwriting existing content", "Opens the file for appending without overwriting", "Opens the file in binary mode only"],
+    "answerIndex": 1,
+    "explanation": "\"w\" mode opens a file for writing. If the file doesn't exist, it's created; if it does exist, its existing contents are erased and replaced."
+  },
+  {
+    "id": "modules-files-t3-q1",
+    "topicId": "modules-files",
+    "tier": 3,
+    "question": "```python\nimport random\nprint(random.randin(1, 10))\n```\nThis raises an AttributeError. What's wrong?",
+    "choices": ["randin is misspelled — it should be randint", "random can't be imported", "1 and 10 must be floats", "print() can't display random numbers"],
+    "answerIndex": 0,
+    "explanation": "The random module has a function called randint, not randin. Calling random.randin(...) raises AttributeError: module 'random' has no attribute 'randin'."
+  },
+  {
+    "id": "modules-files-t3-q2",
+    "topicId": "modules-files",
+    "tier": 3,
+    "question": "What is the output of:\n```python\nwith open(\"data.txt\", \"w\") as f:\n    f.write(\"Line1\\nLine2\")\n\nwith open(\"data.txt\", \"r\") as f:\n    lines = f.readlines()\nprint(len(lines))\n```",
+    "choices": ["1", "2", "0", "Error: readlines() doesn't exist"],
+    "answerIndex": 1,
+    "explanation": "readlines() splits the file's contents into a list of lines, one per \\n. \"Line1\\nLine2\" has one newline, producing two lines: ['Line1\\n', 'Line2'], so len(lines) is 2."
+  },
+  {
+    "id": "modules-files-t3-q3",
+    "topicId": "modules-files",
+    "tier": 3,
+    "question": "Which import statement gives access to Python's date and time tools?",
+    "choices": ["import datetime", "import time.date", "import clock", "include datetime"],
+    "answerIndex": 0,
+    "explanation": "The datetime module provides classes for working with dates and times, e.g. datetime.date.today()."
+  },
+  {
+    "id": "modules-files-t4-q1",
+    "topicId": "modules-files",
+    "tier": 4,
+    "question": "```python\nf = open(\"log.txt\", \"a\")\nf.write(\"event happened\\n\")\n```\nWhat does mode \"a\" do, and what's a risk of this code compared to using with?",
+    "choices": ["\"a\" appends to the end of the file without erasing it; without with, the file might never get closed if an error occurs", "\"a\" means 'all', reading the entire file at once", "\"a\" automatically closes the file after writing", "There's no difference — \"a\" and with behave identically"],
+    "answerIndex": 0,
+    "explanation": "\"a\" (append) mode adds new content to the end of an existing file rather than overwriting it. Opening with open() directly means you must remember to call f.close() — if an exception happens first, the file may stay open. with open(...) as f: handles closing automatically."
+  },
+  {
+    "id": "modules-files-t4-q2",
+    "topicId": "modules-files",
+    "tier": 4,
+    "question": "What does this code print?\n```python\nimport math\nprint(math.floor(7.8), math.ceil(7.2))\n```",
+    "choices": ["8 7", "7 8", "7 7", "8 8"],
+    "answerIndex": 1,
+    "explanation": "math.floor() rounds down to the nearest integer (7.8 -> 7), and math.ceil() rounds up (7.2 -> 8), so the output is \"7 8\"."
+  },
+  {
+    "id": "modules-files-t4-q3",
+    "topicId": "modules-files",
+    "tier": 4,
+    "question": "What does `import numpy as np` accomplish?",
+    "choices": ["It imports numpy and gives it the alias np, so you write np.array(...) instead of numpy.array(...)", "It only imports part of numpy called 'np'", "It renames numpy permanently on your computer", "It is invalid syntax"],
+    "answerIndex": 0,
+    "explanation": "The as keyword creates an alias for an imported module, letting you refer to it with a shorter name — np is a very common convention for numpy."
+  },
+  {
+    "id": "modules-files-t5-q1",
+    "topicId": "modules-files",
+    "tier": 5,
+    "question": "```python\ntry:\n    f = open(\"missing.txt\", \"r\")\n    content = f.read()\nexcept FileNotFoundError:\n    print(\"File not found\")\nfinally:\n    f.close()\n```\nThis code can raise a second error (NameError or UnboundLocalError) when the file is missing. Why?",
+    "choices": ["If open() fails, f is never assigned, so f.close() in finally fails because f doesn't exist", "finally blocks can't call methods", "FileNotFoundError can't be caught", "close() only works inside with blocks"],
+    "answerIndex": 0,
+    "explanation": "If open(\"missing.txt\") raises FileNotFoundError, the line f = open(...) never finishes, so f is never created. The finally block still runs and tries f.close(), but f doesn't exist, causing another error. Using with open(...) as f: avoids this entirely since it only manages files that opened successfully."
+  },
+  {
+    "id": "modules-files-t5-q2",
+    "topicId": "modules-files",
+    "tier": 5,
+    "question": "What is the output of:\n```python\nfrom collections import Counter\nwords = [\"a\", \"b\", \"a\", \"c\", \"b\", \"a\"]\ncounts = Counter(words)\nprint(counts[\"a\"])\n```",
+    "choices": ["1", "2", "3", "Error: Counter is not part of Python"],
+    "answerIndex": 2,
+    "explanation": "Counter (from the collections module) counts how many times each item appears. \"a\" appears 3 times in the list, so counts[\"a\"] is 3."
+  },
+  {
+    "id": "modules-files-t5-q3",
+    "topicId": "modules-files",
+    "tier": 5,
+    "question": "What does `if __name__ == \"__main__\":` at the bottom of a Python file typically do?",
+    "choices": ["It causes a syntax error in modern Python", "It marks code that should only run when the file is executed directly, not when it's imported as a module", "It defines the main function's name", "It is required at the top of every file"],
+    "answerIndex": 1,
+    "explanation": "When a file is run directly, Python sets __name__ to \"__main__\". When the same file is imported elsewhere, __name__ is the module's name instead. This check lets a file provide reusable functions and also run as a standalone script."
+  },
+  {
+    "id": "oop-t1-q1",
+    "topicId": "oop",
+    "tier": 1,
+    "question": "Which keyword is used to define a class in Python?",
+    "choices": ["class", "object", "struct", "define"],
+    "answerIndex": 0,
+    "explanation": "class ClassName: starts a class definition, which acts as a blueprint for creating objects."
+  },
+  {
+    "id": "oop-t1-q2",
+    "topicId": "oop",
+    "tier": 1,
+    "question": "```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n\nd = Dog(\"Rex\")\nprint(d.name)\n```\nWhat does this print?",
+    "choices": ["Dog", "Rex", "self.name", "Error"],
+    "answerIndex": 1,
+    "explanation": "__init__ runs automatically when Dog(\"Rex\") creates a new object, storing \"Rex\" in self.name. d.name then accesses that stored value, printing \"Rex\"."
+  },
+  {
+    "id": "oop-t1-q3",
+    "topicId": "oop",
+    "tier": 1,
+    "question": "What does self refer to inside a class's methods?",
+    "choices": ["The class itself", "The specific object (instance) the method is being called on", "A global variable", "Nothing — it's optional and unused"],
+    "answerIndex": 1,
+    "explanation": "self is the conventional name for the first parameter of instance methods — it refers to the particular object the method was called on, e.g. d in d.name."
+  },
+  {
+    "id": "oop-t2-q1",
+    "topicId": "oop",
+    "tier": 2,
+    "question": "```python\nclass Circle:\n    def __init__(self, radius):\n        self.radius = radius\n\n    def area(self):\n        return 3.14 * self.radius ** 2\n\nc = Circle(2)\nprint(c.area())\n```\nWhat is printed?",
+    "choices": ["12.56", "6.28", "4", "Error"],
+    "answerIndex": 0,
+    "explanation": "c.area() computes 3.14 * 2 ** 2. ** binds tighter than *, so this is 3.14 * 4 = 12.56."
+  },
+  {
+    "id": "oop-t2-q2",
+    "topicId": "oop",
+    "tier": 2,
+    "question": "How do you create a new instance of a class named Cat?",
+    "choices": ["Cat.new()", "new Cat()", "Cat()", "create Cat"],
+    "answerIndex": 2,
+    "explanation": "Calling the class like a function, e.g. Cat(), creates a new instance — Python automatically runs __init__ to set it up."
+  },
+  {
+    "id": "oop-t2-q3",
+    "topicId": "oop",
+    "tier": 2,
+    "question": "```python\nclass Counter:\n    def __init__(self):\n        self.count = 0\n\n    def increment(self):\n        self.count += 1\n\nc = Counter()\nc.increment()\nc.increment()\nprint(c.count)\n```\nWhat is printed?",
+    "choices": ["0", "1", "2", "Error"],
+    "answerIndex": 2,
+    "explanation": "Each call to c.increment() adds 1 to self.count, which starts at 0. After two calls, c.count is 2."
+  },
+  {
+    "id": "oop-t3-q1",
+    "topicId": "oop",
+    "tier": 3,
+    "question": "```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n\n    def bark():\n        return \"Woof!\"\n\nd = Dog(\"Rex\")\nprint(d.bark())\n```\nThis raises a TypeError. What's wrong?",
+    "choices": ["bark() is missing the self parameter that Python passes automatically when called on an instance", "Dog needs two __init__ parameters", "bark should be defined outside the class", "d.bark() should be Dog.bark()"],
+    "answerIndex": 0,
+    "explanation": "Every instance method needs self as its first parameter, because d.bark() is really shorthand for Dog.bark(d). Without self, Python passes d as an unexpected extra argument, raising TypeError: bark() takes 0 positional arguments but 1 was given."
+  },
+  {
+    "id": "oop-t3-q2",
+    "topicId": "oop",
+    "tier": 3,
+    "question": "```python\nclass Animal:\n    def speak(self):\n        return \"...\"\n\nclass Dog(Animal):\n    def speak(self):\n        return \"Woof!\"\n\na = Animal()\nd = Dog()\nprint(a.speak(), d.speak())\n```\nWhat is printed, and what concept does this demonstrate?",
+    "choices": ["... Woof! — inheritance and method overriding", "Woof! ... — Dog runs before Animal", "... ... — Dog inherits Animal's speak unchanged", "Error: Dog can't redefine speak"],
+    "answerIndex": 0,
+    "explanation": "Dog(Animal) inherits from Animal but overrides speak() with its own version. a.speak() uses Animal's version (\"...\"), while d.speak() uses Dog's overridden version (\"Woof!\")."
+  },
+  {
+    "id": "oop-t3-q3",
+    "topicId": "oop",
+    "tier": 3,
+    "question": "What does the __str__ method control on a class?",
+    "choices": ["How instances are compared with ==", "How an object is converted to a string, e.g. for print()", "How many instances can be created", "Whether the class can be inherited"],
+    "answerIndex": 1,
+    "explanation": "__str__ defines what print(obj) or str(obj) shows. Without it, printing an object shows a default like <__main__.Dog object at 0x...>."
+  },
+  {
+    "id": "oop-t4-q1",
+    "topicId": "oop",
+    "tier": 4,
+    "question": "```python\nclass Animal:\n    def __init__(self, name):\n        self.name = name\n\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)\n        self.breed = breed\n\nd = Dog(\"Rex\", \"Labrador\")\nprint(d.name, d.breed)\n```\nWhat is printed?",
+    "choices": ["Rex Labrador", "Error: super() is invalid", "None Labrador", "Rex None"],
+    "answerIndex": 0,
+    "explanation": "super().__init__(name) calls Animal's __init__ to set self.name, then Dog's __init__ also sets self.breed. Both attributes end up on d, so d.name is \"Rex\" and d.breed is \"Labrador\"."
+  },
+  {
+    "id": "oop-t4-q2",
+    "topicId": "oop",
+    "tier": 4,
+    "question": "```python\nclass BankAccount:\n    def __init__(self, balance):\n        self.balance = balance\n\n    def withdraw(self, amount):\n        if amount > self.balance:\n            print(\"Insufficient funds\")\n        else:\n            self.balance -= amount\n\nacc = BankAccount(100)\nacc.withdraw(30)\nacc.withdraw(1000)\nprint(acc.balance)\n```\nWhat is printed?",
+    "choices": ["100", "70", "-900", "Error"],
+    "answerIndex": 1,
+    "explanation": "withdraw(30) succeeds, leaving balance at 70. withdraw(1000) checks 1000 > 70, prints \"Insufficient funds\", and does not change balance, which stays 70."
+  },
+  {
+    "id": "oop-t4-q3",
+    "topicId": "oop",
+    "tier": 4,
+    "question": "Which dunder (double-underscore) method is automatically called when you write print(my_object)?",
+    "choices": ["__init__", "__call__", "__str__", "__print__"],
+    "answerIndex": 2,
+    "explanation": "print() converts its argument to a string using str(), which calls the object's __str__ method if defined. There is no __print__ method in Python."
+  },
+  {
+    "id": "oop-t5-q1",
+    "topicId": "oop",
+    "tier": 5,
+    "question": "```python\nclass Wallet:\n    balance = 0\n\n    def __init__(self, owner):\n        self.owner = owner\n\nw1 = Wallet(\"Ana\")\nw2 = Wallet(\"Bo\")\nWallet.balance = 100\nprint(w1.balance, w2.balance)\n```\nWhat is printed, and why?",
+    "choices": ["100 100 — balance is a class attribute shared by all instances unless overridden on the instance", "0 0 — class attributes can't be changed", "100 0 — only w1 sees the update", "Error: balance must be set in __init__"],
+    "answerIndex": 0,
+    "explanation": "balance is defined directly on the class (a class attribute), so it's shared across every instance that hasn't set its own instance attribute with the same name. Changing Wallet.balance affects both w1.balance and w2.balance, printing \"100 100\"."
+  },
+  {
+    "id": "oop-t5-q2",
+    "topicId": "oop",
+    "tier": 5,
+    "question": "```python\nclass Stack:\n    def __init__(self):\n        self.items = []\n\n    def push(self, item):\n        self.items.append(item)\n\n    def pop(self):\n        return self.items.pop()\n\ns = Stack()\ns.push(1)\ns.push(2)\ns.push(3)\nprint(s.pop(), s.pop())\n```\nWhat is printed?",
+    "choices": ["1 2", "3 2", "1 3", "Error"],
+    "answerIndex": 1,
+    "explanation": "list.pop() removes and returns the last item. After pushing 1, 2, 3, the items list is [1, 2, 3]. The first pop() removes 3, the second removes 2, printing \"3 2\" — a stack is last-in, first-out."
+  },
+  {
+    "id": "oop-t5-q3",
+    "topicId": "oop",
+    "tier": 5,
+    "question": "```python\nclass Pet:\n    def __init__(self, name, tricks=[]):\n        self.name = name\n        self.tricks = tricks\n\n    def add_trick(self, trick):\n        self.tricks.append(trick)\n\nrex = Pet(\"Rex\")\nrex.add_trick(\"sit\")\n\nmilo = Pet(\"Milo\")\nprint(milo.tricks)\n```\nWhat is printed, and what's the bug?",
+    "choices": ["['sit'] — tricks=[] as a default argument is shared by every Pet that doesn't pass its own list, so rex's trick leaks into milo", "[] — each Pet gets its own empty list", "Error: tricks can't be a list", "['sit'] — but this is the intended, correct behavior"],
+    "answerIndex": 0,
+    "explanation": "Just like with regular functions, a mutable default argument (tricks=[]) is created once and shared by every call that doesn't supply its own value. rex.add_trick(\"sit\") mutates that shared list, so milo — which also uses the default — sees ['sit'] too. The fix is tricks=None, then self.tricks = tricks if tricks is not None else []."
+  }
+]

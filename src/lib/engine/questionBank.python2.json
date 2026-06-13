@@ -1,0 +1,677 @@
+[
+  {
+    "id": "lists-tuples-t1-q1",
+    "topicId": "lists-tuples",
+    "tier": 1,
+    "question": "Which of these correctly creates a list with three numbers?",
+    "choices": ["[1, 2, 3]", "(1, 2, 3)", "{1, 2, 3}", "<1, 2, 3>"],
+    "answerIndex": 0,
+    "explanation": "Square brackets [] define a list in Python — an ordered, changeable collection. Parentheses () define a tuple, and {} defines a set or dict."
+  },
+  {
+    "id": "lists-tuples-t1-q2",
+    "topicId": "lists-tuples",
+    "tier": 1,
+    "question": "If fruits = [\"apple\", \"banana\", \"cherry\"], what is fruits[1]?",
+    "choices": ["apple", "banana", "cherry", "Error"],
+    "answerIndex": 1,
+    "explanation": "List indexing starts at 0, so fruits[0] is \"apple\" and fruits[1] is \"banana\"."
+  },
+  {
+    "id": "lists-tuples-t1-q3",
+    "topicId": "lists-tuples",
+    "tier": 1,
+    "question": "What does len([10, 20, 30]) return?",
+    "choices": ["2", "3", "30", "Error"],
+    "answerIndex": 1,
+    "explanation": "len() returns the number of items in the list. [10, 20, 30] has 3 items."
+  },
+  {
+    "id": "lists-tuples-t2-q1",
+    "topicId": "lists-tuples",
+    "tier": 2,
+    "question": "Which method adds a single item to the end of a list?",
+    "choices": ["list.add(item)", "list.append(item)", "list.insert(item)", "list.push(item)"],
+    "answerIndex": 1,
+    "explanation": "append(item) adds item to the end of the list in place. insert(index, item) adds at a specific position; add() and push() aren't list methods."
+  },
+  {
+    "id": "lists-tuples-t2-q2",
+    "topicId": "lists-tuples",
+    "tier": 2,
+    "question": "What is the key difference between a list and a tuple?",
+    "choices": ["Lists use [], tuples use (), and tuples cannot be changed after creation", "Tuples can only hold numbers", "Lists can only hold strings", "There is no difference"],
+    "answerIndex": 0,
+    "explanation": "Lists ([1, 2]) are mutable — you can change, add, or remove items. Tuples ((1, 2)) are immutable — once created, their contents can't change."
+  },
+  {
+    "id": "lists-tuples-t2-q3",
+    "topicId": "lists-tuples",
+    "tier": 2,
+    "question": "What does [1, 2, 3][-1] return?",
+    "choices": ["1", "3", "Error", "-1"],
+    "answerIndex": 1,
+    "explanation": "Negative indices count from the end of the list. -1 refers to the last item, which is 3."
+  },
+  {
+    "id": "lists-tuples-t3-q1",
+    "topicId": "lists-tuples",
+    "tier": 3,
+    "question": "```python\nnums = [1, 2, 3]\nnums[5] = 10\nprint(nums)\n```\nWhat happens when this code runs?",
+    "choices": ["It prints [1, 2, 3, 10]", "It raises an IndexError: list assignment index out of range", "It extends the list with None values up to index 5", "It does nothing"],
+    "answerIndex": 1,
+    "explanation": "Unlike append(), you can't assign to an index that doesn't exist yet — nums only has indices 0-2, so nums[5] = 10 raises IndexError. Use append() to add new items."
+  },
+  {
+    "id": "lists-tuples-t3-q2",
+    "topicId": "lists-tuples",
+    "tier": 3,
+    "question": "What does [1, 2, 3, 4, 5][1:3] return?",
+    "choices": ["[1, 2, 3]", "[2, 3]", "[2, 3, 4]", "[1, 2]"],
+    "answerIndex": 1,
+    "explanation": "Slicing [1:3] includes indices 1 and 2 but stops before index 3, returning [2, 3]."
+  },
+  {
+    "id": "lists-tuples-t3-q3",
+    "topicId": "lists-tuples",
+    "tier": 3,
+    "question": "What does sorted([3, 1, 2]) return?",
+    "choices": ["[3, 1, 2]", "[1, 2, 3]", "[3, 2, 1]", "None"],
+    "answerIndex": 1,
+    "explanation": "sorted() returns a new list with the items in ascending order by default, without modifying the original list."
+  },
+  {
+    "id": "lists-tuples-t4-q1",
+    "topicId": "lists-tuples",
+    "tier": 4,
+    "question": "```python\noriginal = [1, 2, 3]\ncopy = original\ncopy.append(4)\nprint(original)\n```\nWhat does this print, and why?",
+    "choices": ["[1, 2, 3] — copy is a separate list", "[1, 2, 3, 4] — copy and original refer to the same list in memory", "[1, 2, 3] — append() doesn't affect the original", "Error — you can't append to a copied list"],
+    "answerIndex": 1,
+    "explanation": "copy = original doesn't create a new list — it makes copy point to the exact same list object as original. Changing one through append() changes both. A real copy needs original.copy() or original[:]."
+  },
+  {
+    "id": "lists-tuples-t4-q2",
+    "topicId": "lists-tuples",
+    "tier": 4,
+    "question": "What is the output of:\n```python\npoint = (3, 4)\nprint(point[0] + point[1])\n```",
+    "choices": ["34", "7", "(3, 4)", "Error"],
+    "answerIndex": 1,
+    "explanation": "Tuples support indexing just like lists. point[0] is 3 and point[1] is 4, and they're both ints, so + adds them to get 7."
+  },
+  {
+    "id": "lists-tuples-t4-q3",
+    "topicId": "lists-tuples",
+    "tier": 4,
+    "question": "What does \"-\".join([\"2026\", \"06\", \"13\"]) return?",
+    "choices": ["2026-06-13", "['2026', '06', '13']", "2026 06 13", "Error"],
+    "answerIndex": 0,
+    "explanation": "str.join(iterable) joins the items of an iterable into a single string, placing the string it's called on between each item: \"-\".join([...]) gives \"2026-06-13\"."
+  },
+  {
+    "id": "lists-tuples-t5-q1",
+    "topicId": "lists-tuples",
+    "tier": 5,
+    "question": "```python\ndef add_item(item, basket=[]):\n    basket.append(item)\n    return basket\n\nprint(add_item(\"apple\"))\nprint(add_item(\"banana\"))\n```\nWhat does the second call print, and why might this surprise you?",
+    "choices": ["['banana'] — each call gets a fresh empty list", "['apple', 'banana'] — the default list is created once and shared across calls", "['banana'] — basket resets every time", "An error, because default arguments can't be lists"],
+    "answerIndex": 1,
+    "explanation": "Mutable default arguments like [] are created only once, when the function is defined — not each time it's called. Every call that uses the default shares and mutates the same list, a classic Python gotcha."
+  },
+  {
+    "id": "lists-tuples-t5-q2",
+    "topicId": "lists-tuples",
+    "tier": 5,
+    "question": "```python\na = [1, 2, 3]\nb = a[:]\nb.append(4)\nprint(a)\nprint(b)\n```\nWhat is printed?",
+    "choices": ["[1, 2, 3] then [1, 2, 3, 4]", "[1, 2, 3, 4] then [1, 2, 3, 4]", "[1, 2, 3, 4] then [1, 2, 3]", "Error"],
+    "answerIndex": 0,
+    "explanation": "a[:] creates a shallow copy — a new list with the same items. Appending to b doesn't affect a, so a stays [1, 2, 3] while b becomes [1, 2, 3, 4]."
+  },
+  {
+    "id": "lists-tuples-t5-q3",
+    "topicId": "lists-tuples",
+    "tier": 5,
+    "question": "```python\nscores = [70, 85, 90]\nnames = (\"Ana\", \"Bo\", \"Cy\")\nnames[0] = \"Al\"\n```\nThis code raises a TypeError. Why?",
+    "choices": ["Tuples are immutable, so individual elements cannot be reassigned", "Names must be strings", "scores must be the same length as names", "You can't mix lists and tuples in one program"],
+    "answerIndex": 0,
+    "explanation": "Once a tuple is created, its elements can't be changed, added, or removed. names[0] = \"Al\" raises TypeError: 'tuple' object does not support item assignment. To change it, you'd need to create a new tuple."
+  },
+  {
+    "id": "dicts-sets-t1-q1",
+    "topicId": "dicts-sets",
+    "tier": 1,
+    "question": "Which of these correctly creates a dictionary?",
+    "choices": ["{\"name\": \"Cosmo\", \"age\": 5}", "[\"name\": \"Cosmo\"]", "(\"name\", \"Cosmo\")", "<name: Cosmo>"],
+    "answerIndex": 0,
+    "explanation": "Dictionaries use curly braces with key: value pairs separated by commas, e.g. {\"name\": \"Cosmo\", \"age\": 5}."
+  },
+  {
+    "id": "dicts-sets-t1-q2",
+    "topicId": "dicts-sets",
+    "tier": 1,
+    "question": "If person = {\"name\": \"Cosmo\", \"age\": 5}, how do you get the value \"Cosmo\"?",
+    "choices": ["person[0]", "person[\"name\"]", "person.name", "person(\"name\")"],
+    "answerIndex": 1,
+    "explanation": "Dictionary values are accessed by key using square brackets: person[\"name\"] returns \"Cosmo\". Dictionaries don't use numeric positions like lists do."
+  },
+  {
+    "id": "dicts-sets-t1-q3",
+    "topicId": "dicts-sets",
+    "tier": 1,
+    "question": "What makes a set different from a list?",
+    "choices": ["A set can only hold numbers", "A set cannot contain duplicate values", "A set is always sorted alphabetically", "A set cannot be created with {}"],
+    "answerIndex": 1,
+    "explanation": "Sets automatically discard duplicates — adding the same value twice has no extra effect. Lists allow duplicates and keep order; sets don't guarantee order."
+  },
+  {
+    "id": "dicts-sets-t2-q1",
+    "topicId": "dicts-sets",
+    "tier": 2,
+    "question": "```python\nperson = {\"name\": \"Cosmo\"}\nperson[\"age\"] = 5\nprint(person)\n```\nWhat does this print?",
+    "choices": ["{\"name\": \"Cosmo\"}", "{\"name\": \"Cosmo\", \"age\": 5}", "Error: can't add new keys", "{\"age\": 5}"],
+    "answerIndex": 1,
+    "explanation": "Assigning to a new key, like person[\"age\"] = 5, adds that key-value pair to the dictionary. Dictionaries can grow after creation."
+  },
+  {
+    "id": "dicts-sets-t2-q2",
+    "topicId": "dicts-sets",
+    "tier": 2,
+    "question": "What does {1, 2, 2, 3}.pop != set() check, and what is len({1, 2, 2, 3})?",
+    "choices": ["4, because duplicates are kept", "3, because sets remove duplicates automatically", "2, because only unique pairs count", "Error, sets can't contain duplicates at all"],
+    "answerIndex": 1,
+    "explanation": "{1, 2, 2, 3} is automatically reduced to the unique values {1, 2, 3}, so its length is 3."
+  },
+  {
+    "id": "dicts-sets-t2-q3",
+    "topicId": "dicts-sets",
+    "tier": 2,
+    "question": "Which method safely gets a value from a dictionary, returning a default instead of an error if the key is missing?",
+    "choices": ["dict.find(key)", "dict.get(key, default)", "dict[key, default]", "dict.fetch(key)"],
+    "answerIndex": 1,
+    "explanation": "get(key, default) returns the value for key if it exists, or default (commonly None or a fallback you choose) if it doesn't — without raising an error."
+  },
+  {
+    "id": "dicts-sets-t3-q1",
+    "topicId": "dicts-sets",
+    "tier": 3,
+    "question": "```python\nperson = {\"name\": \"Cosmo\", \"age\": 5}\nprint(person[\"height\"])\n```\nWhat happens?",
+    "choices": ["It prints None", "It raises a KeyError because \"height\" is not a key", "It prints an empty string", "It adds \"height\" with value 0"],
+    "answerIndex": 1,
+    "explanation": "Accessing a missing key with [] raises KeyError: 'height'. To avoid this, use person.get(\"height\") which returns None instead of crashing."
+  },
+  {
+    "id": "dicts-sets-t3-q2",
+    "topicId": "dicts-sets",
+    "tier": 3,
+    "question": "What does list({\"a\": 1, \"b\": 2}.keys()) return?",
+    "choices": ["[1, 2]", "['a', 'b']", "{'a', 'b'}", "[('a', 1), ('b', 2)]"],
+    "answerIndex": 1,
+    "explanation": "dict.keys() returns a view of the dictionary's keys. Wrapping it in list() gives a list of those keys: ['a', 'b']."
+  },
+  {
+    "id": "dicts-sets-t3-q3",
+    "topicId": "dicts-sets",
+    "tier": 3,
+    "question": "```python\nfor key, value in {\"a\": 1, \"b\": 2}.items():\n    print(key, value)\n```\nWhat does this print?",
+    "choices": ["a 1 then b 2 (each on its own line)", "('a', 1) ('b', 2)", "a b then 1 2", "Error: dicts can't be looped over"],
+    "answerIndex": 0,
+    "explanation": "items() returns key-value pairs, which the for loop unpacks into key and value. It prints \"a 1\" on one line and \"b 2\" on the next."
+  },
+  {
+    "id": "dicts-sets-t4-q1",
+    "topicId": "dicts-sets",
+    "tier": 4,
+    "question": "```python\ncounts = {}\nwords = [\"cat\", \"dog\", \"cat\"]\nfor w in words:\n    counts[w] = counts[w] + 1\nprint(counts)\n```\nThis code is meant to count word occurrences but raises a KeyError on the first word. What's the fix?",
+    "choices": ["Initialize each new key first, e.g. counts[w] = counts.get(w, 0) + 1", "Use a list instead of a dictionary", "words should be a set", "Remove the for loop"],
+    "answerIndex": 0,
+    "explanation": "counts[w] doesn't exist yet for a word seen for the first time, so counts[w] + 1 raises KeyError. counts.get(w, 0) returns 0 for unseen words, letting + 1 work correctly."
+  },
+  {
+    "id": "dicts-sets-t4-q2",
+    "topicId": "dicts-sets",
+    "tier": 4,
+    "question": "What does {1, 2, 3} & {2, 3, 4} return?",
+    "choices": ["{1, 2, 3, 4}", "{2, 3}", "{1, 4}", "{}"],
+    "answerIndex": 1,
+    "explanation": "& computes the intersection of two sets — the elements common to both. {1, 2, 3} and {2, 3, 4} share 2 and 3, so the result is {2, 3}."
+  },
+  {
+    "id": "dicts-sets-t4-q3",
+    "topicId": "dicts-sets",
+    "tier": 4,
+    "question": "What is the output of:\n```python\nd = {\"a\": 1, \"b\": 2}\nd[\"a\"] = 100\nprint(d)\n```",
+    "choices": ["{'a': 1, 'b': 2, 'a': 100}", "{'a': 100, 'b': 2}", "Error: key already exists", "{'a': 1, 'b': 2}"],
+    "answerIndex": 1,
+    "explanation": "Assigning to an existing key updates its value rather than adding a duplicate — dictionaries can't have repeated keys, so d becomes {'a': 100, 'b': 2}."
+  },
+  {
+    "id": "dicts-sets-t5-q1",
+    "topicId": "dicts-sets",
+    "tier": 5,
+    "question": "```python\ninventory = {\"apples\": 3, \"bananas\": 5}\nfor fruit in inventory:\n    if inventory[fruit] < 4:\n        del inventory[fruit]\nprint(inventory)\n```\nThis code raises a RuntimeError: dictionary changed size during iteration. Why?",
+    "choices": ["You can't delete keys from a dictionary while looping over it directly", "del only works on lists", "fruit is not a valid variable name", "inventory[fruit] < 4 is invalid syntax"],
+    "answerIndex": 0,
+    "explanation": "Python doesn't allow changing a dict's size (adding or removing keys) while a for loop is iterating over it. The fix is to loop over a copy, e.g. for fruit in list(inventory):."
+  },
+  {
+    "id": "dicts-sets-t5-q2",
+    "topicId": "dicts-sets",
+    "tier": 5,
+    "question": "What is the output of:\n```python\na = {\"x\": 1, \"y\": 2}\nb = {\"y\": 3, \"z\": 4}\nmerged = {**a, **b}\nprint(merged)\n```",
+    "choices": ["{'x': 1, 'y': 2, 'z': 4}", "{'x': 1, 'y': 3, 'z': 4}", "Error: dicts can't be merged with **", "{'x': 1, 'y': 2, 'y': 3, 'z': 4}"],
+    "answerIndex": 1,
+    "explanation": "The ** unpacking operator merges dictionaries into a new one. When the same key appears in both, the later dictionary's value wins — so 'y' ends up as 3, from b."
+  },
+  {
+    "id": "dicts-sets-t5-q3",
+    "topicId": "dicts-sets",
+    "tier": 5,
+    "question": "```python\nseen = set()\nitems = [1, 2, 2, 3, 1]\nunique = []\nfor i in items:\n    if i not in seen:\n        unique.append(i)\n    seen.add(i)\nprint(unique)\n```\nWhat is printed, and why is a set used here instead of a list for seen?",
+    "choices": ["[1, 2, 3] — checking 'in' on a set is much faster than on a list for large data", "[1, 2, 2, 3, 1] — sets don't filter anything", "[1, 2, 3, 1] — sets only block the second duplicate", "Error: sets can't use 'in'"],
+    "answerIndex": 0,
+    "explanation": "The loop builds unique by skipping values already seen. A set is used because checking membership (in) in a set is much faster (roughly constant time) than scanning a list. The output preserves first-seen order: [1, 2, 3]."
+  },
+  {
+    "id": "functions-t1-q1",
+    "topicId": "functions",
+    "tier": 1,
+    "question": "Which keyword is used to define a function in Python?",
+    "choices": ["function", "def", "func", "define"],
+    "answerIndex": 1,
+    "explanation": "def starts a function definition, followed by the function name, parentheses for parameters, and a colon: def greet():."
+  },
+  {
+    "id": "functions-t1-q2",
+    "topicId": "functions",
+    "tier": 1,
+    "question": "```python\ndef square(n):\n    return n * n\n\nprint(square(4))\n```\nWhat does this print?",
+    "choices": ["4", "8", "16", "n * n"],
+    "answerIndex": 2,
+    "explanation": "Calling square(4) runs the function with n = 4, and return n * n gives 4 * 4 = 16, which print() then displays."
+  },
+  {
+    "id": "functions-t1-q3",
+    "topicId": "functions",
+    "tier": 1,
+    "question": "What does a function return if it has no return statement?",
+    "choices": ["0", "An empty string", "None", "It causes an error"],
+    "answerIndex": 2,
+    "explanation": "If a function never hits a return statement (or uses return with no value), Python automatically returns None."
+  },
+  {
+    "id": "functions-t2-q1",
+    "topicId": "functions",
+    "tier": 2,
+    "question": "```python\ndef greet(name=\"friend\"):\n    return \"Hello, \" + name\n\nprint(greet())\nprint(greet(\"Cosmo\"))\n```\nWhat is printed?",
+    "choices": ["Hello, friend then Hello, Cosmo", "Hello, name then Hello, Cosmo", "Error: greet() needs an argument", "Hello, friend twice"],
+    "answerIndex": 0,
+    "explanation": "name=\"friend\" is a default value used only if no argument is given. greet() uses the default \"friend\"; greet(\"Cosmo\") overrides it with \"Cosmo\"."
+  },
+  {
+    "id": "functions-t2-q2",
+    "topicId": "functions",
+    "tier": 2,
+    "question": "How many arguments does this function require when called?\n```python\ndef add(a, b, c):\n    return a + b + c\n```",
+    "choices": ["1", "2", "3", "It can take any number"],
+    "answerIndex": 2,
+    "explanation": "The function defines three parameters (a, b, c) with no default values, so it must be called with exactly three arguments, e.g. add(1, 2, 3)."
+  },
+  {
+    "id": "functions-t2-q3",
+    "topicId": "functions",
+    "tier": 2,
+    "question": "What is the output of:\n```python\ndef shout(word):\n    print(word.upper())\n\nresult = shout(\"hi\")\nprint(result)\n```",
+    "choices": ["HI then None", "HI then HI", "hi then HI", "Error"],
+    "answerIndex": 0,
+    "explanation": "shout(\"hi\") prints \"HI\" but has no return statement, so it returns None. result is then None, and print(result) prints \"None\"."
+  },
+  {
+    "id": "functions-t3-q1",
+    "topicId": "functions",
+    "tier": 3,
+    "question": "```python\ndef add(a, b):\n    total = a + b\n\nprint(add(2, 3))\nprint(total)\n```\nWhat happens when this code runs?",
+    "choices": ["Prints 5 then 5", "Prints None, then raises a NameError because total only exists inside add()", "Prints 5 then None", "Prints None twice"],
+    "answerIndex": 1,
+    "explanation": "total is a local variable — it only exists while add() is running and is not returned. print(add(2, 3)) prints None (no return), and print(total) raises NameError: name 'total' is not defined."
+  },
+  {
+    "id": "functions-t3-q2",
+    "topicId": "functions",
+    "tier": 3,
+    "question": "What does this function return for is_even(7)?\n```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+    "choices": ["True", "False", "0", "7"],
+    "answerIndex": 1,
+    "explanation": "7 % 2 is 1, and 1 == 0 is False, so is_even(7) returns False."
+  },
+  {
+    "id": "functions-t3-q3",
+    "topicId": "functions",
+    "tier": 3,
+    "question": "What is the output of:\n```python\ndef describe(name, age):\n    return f\"{name} is {age} years old\"\n\nprint(describe(age=10, name=\"Cosmo\"))\n```",
+    "choices": ["Error: arguments must be in order", "Cosmo is 10 years old", "age is name years old", "10 is Cosmo years old"],
+    "answerIndex": 1,
+    "explanation": "Using name=value when calling a function (keyword arguments) lets you pass arguments in any order — Python matches them by name, not position."
+  },
+  {
+    "id": "functions-t4-q1",
+    "topicId": "functions",
+    "tier": 4,
+    "question": "```python\ndef increment(n):\n    n = n + 1\n    return n\n\nx = 5\nincrement(x)\nprint(x)\n```\nWhat does this print, and why?",
+    "choices": ["6, because increment changes x directly", "5, because n is a separate local copy and reassigning it doesn't affect x", "Error: x is read-only", "None"],
+    "answerIndex": 1,
+    "explanation": "Numbers are immutable, and n = n + 1 just rebinds the local variable n to a new value — it has no effect on the caller's x. Without using the return value (e.g. x = increment(x)), x stays 5."
+  },
+  {
+    "id": "functions-t4-q2",
+    "topicId": "functions",
+    "tier": 4,
+    "question": "```python\ndef total(*numbers):\n    return sum(numbers)\n\nprint(total(1, 2, 3, 4))\n```\nWhat does *numbers let this function do?",
+    "choices": ["Accept exactly one number", "Accept any number of positional arguments, collected into a tuple", "Multiply all arguments together", "It causes a SyntaxError"],
+    "answerIndex": 1,
+    "explanation": "*numbers collects any number of extra positional arguments into a tuple, here (1, 2, 3, 4), so sum(numbers) returns 10."
+  },
+  {
+    "id": "functions-t4-q3",
+    "topicId": "functions",
+    "tier": 4,
+    "question": "What is the output of:\n```python\ndef power(base, exponent=2):\n    return base ** exponent\n\nprint(power(3))\nprint(power(2, 3))\n```",
+    "choices": ["9 then 8", "6 then 6", "Error: power requires two arguments", "9 then 6"],
+    "answerIndex": 0,
+    "explanation": "power(3) uses the default exponent=2, giving 3 ** 2 = 9. power(2, 3) overrides the default, giving 2 ** 3 = 8."
+  },
+  {
+    "id": "functions-t5-q1",
+    "topicId": "functions",
+    "tier": 5,
+    "question": "```python\ncounter = 0\n\ndef increment():\n    counter = counter + 1\n    return counter\n\nprint(increment())\n```\nThis raises an UnboundLocalError. What's the issue?",
+    "choices": ["counter is read before it's assigned inside the function, because assigning to it makes it a local variable", "counter must be a list", "increment() needs a parameter", "+= must be used instead of ="],
+    "answerIndex": 0,
+    "explanation": "Because the function assigns to counter, Python treats counter as a local variable throughout the whole function — so counter + 1 tries to read a local variable before it has a value. Fixing this requires the global keyword (global counter) or passing/returning the value instead."
+  },
+  {
+    "id": "functions-t5-q2",
+    "topicId": "functions",
+    "tier": 5,
+    "question": "What is the output of:\n```python\ndef make_multiplier(factor):\n    def multiply(n):\n        return n * factor\n    return multiply\n\ntimes3 = make_multiplier(3)\nprint(times3(5))\n```",
+    "choices": ["15", "8", "Error: nested functions aren't allowed", "None"],
+    "answerIndex": 0,
+    "explanation": "make_multiplier(3) returns the inner multiply function, which 'remembers' factor=3 (a closure). times3(5) then computes 5 * 3 = 15."
+  },
+  {
+    "id": "functions-t5-q3",
+    "topicId": "functions",
+    "tier": 5,
+    "question": "```python\ndef tag(text, wrapper=\"<b>{}</b>\"):\n    return wrapper.format(text)\n\nprint(tag(\"hi\"))\nprint(tag(\"bye\", \"<i>{}</i>\"))\n```\nWhat is printed?",
+    "choices": ["<b>hi</b> then <i>bye</i>", "<b>{}</b> then <i>{}</i>", "hi then bye", "Error: format() is invalid here"],
+    "answerIndex": 0,
+    "explanation": "str.format() substitutes {} with the given argument. tag(\"hi\") uses the default wrapper, giving \"<b>hi</b>\"; tag(\"bye\", \"<i>{}</i>\") overrides it, giving \"<i>bye</i>\"."
+  },
+  {
+    "id": "comprehensions-lambda-t1-q1",
+    "topicId": "comprehensions-lambda",
+    "tier": 1,
+    "question": "What does [x * 2 for x in range(3)] produce?",
+    "choices": ["[0, 2, 4]", "[2, 4, 6]", "[0, 1, 2]", "[1, 2, 3]"],
+    "answerIndex": 0,
+    "explanation": "This list comprehension doubles each value from range(3) (0, 1, 2), producing [0, 2, 4]."
+  },
+  {
+    "id": "comprehensions-lambda-t1-q2",
+    "topicId": "comprehensions-lambda",
+    "tier": 1,
+    "question": "Which of these is the list comprehension equivalent of this loop?\n```python\nresult = []\nfor x in range(5):\n    result.append(x)\n```",
+    "choices": ["result = [x for x in range(5)]", "result = (x for x in range(5))", "result = {x for x in range(5)}", "result = x for x in range(5)"],
+    "answerIndex": 0,
+    "explanation": "[expression for item in iterable] builds a list by evaluating expression for each item — [x for x in range(5)] gives [0, 1, 2, 3, 4], the same as the loop."
+  },
+  {
+    "id": "comprehensions-lambda-t1-q3",
+    "topicId": "comprehensions-lambda",
+    "tier": 1,
+    "question": "What does lambda x: x + 1 create?",
+    "choices": ["A variable named lambda", "A small anonymous function that adds 1 to its input", "A list of numbers", "A syntax error"],
+    "answerIndex": 1,
+    "explanation": "lambda creates a small, unnamed function. lambda x: x + 1 is equivalent to def f(x): return x + 1, just written inline."
+  },
+  {
+    "id": "comprehensions-lambda-t2-q1",
+    "topicId": "comprehensions-lambda",
+    "tier": 2,
+    "question": "What does [x for x in range(10) if x % 2 == 0] produce?",
+    "choices": ["[0, 2, 4, 6, 8]", "[1, 3, 5, 7, 9]", "[0, 1, 2, ..., 9]", "[2, 4, 6, 8, 10]"],
+    "answerIndex": 0,
+    "explanation": "The if x % 2 == 0 filters the comprehension to only include even numbers from range(10), giving [0, 2, 4, 6, 8]."
+  },
+  {
+    "id": "comprehensions-lambda-t2-q2",
+    "topicId": "comprehensions-lambda",
+    "tier": 2,
+    "question": "What does list(map(lambda x: x * x, [1, 2, 3])) return?",
+    "choices": ["[1, 2, 3]", "[1, 4, 9]", "9", "Error"],
+    "answerIndex": 1,
+    "explanation": "map(function, iterable) applies the function to each item. lambda x: x * x squares each number, giving [1, 4, 9] after wrapping in list()."
+  },
+  {
+    "id": "comprehensions-lambda-t2-q3",
+    "topicId": "comprehensions-lambda",
+    "tier": 2,
+    "question": "What does list(filter(lambda x: x > 2, [1, 2, 3, 4])) return?",
+    "choices": ["[3, 4]", "[1, 2]", "[1, 2, 3, 4]", "True"],
+    "answerIndex": 0,
+    "explanation": "filter(function, iterable) keeps only the items where function returns True. lambda x: x > 2 keeps 3 and 4."
+  },
+  {
+    "id": "comprehensions-lambda-t3-q1",
+    "topicId": "comprehensions-lambda",
+    "tier": 3,
+    "question": "```python\nsquares = [x * x for x in range(5)\nprint(squares)\n```\nWhat's wrong with this code?",
+    "choices": ["The list comprehension is missing its closing bracket ]", "x * x is not allowed in comprehensions", "range(5) can't be used in comprehensions", "print() can't display a list"],
+    "answerIndex": 0,
+    "explanation": "The opening [ before x * x has no matching ] before the comprehension ends, causing a SyntaxError. It should read [x * x for x in range(5)]."
+  },
+  {
+    "id": "comprehensions-lambda-t3-q2",
+    "topicId": "comprehensions-lambda",
+    "tier": 3,
+    "question": "What does {x: x * x for x in range(3)} create?",
+    "choices": ["A list of squares", "A dictionary mapping each number to its square: {0: 0, 1: 1, 2: 4}", "A set of squares", "A SyntaxError, dict comprehensions don't exist"],
+    "answerIndex": 1,
+    "explanation": "{key_expr: value_expr for item in iterable} is a dict comprehension. Here it maps each x to x * x, producing {0: 0, 1: 1, 2: 4}."
+  },
+  {
+    "id": "comprehensions-lambda-t3-q3",
+    "topicId": "comprehensions-lambda",
+    "tier": 3,
+    "question": "What does sorted([\"banana\", \"kiwi\", \"fig\"], key=lambda w: len(w)) return?",
+    "choices": ["['banana', 'kiwi', 'fig']", "['fig', 'kiwi', 'banana']", "['fig', 'banana', 'kiwi']", "Error: key must be a string"],
+    "answerIndex": 1,
+    "explanation": "key=lambda w: len(w) tells sorted() to order items by their length rather than alphabetically. By length: fig (3), kiwi (4), banana (6)."
+  },
+  {
+    "id": "comprehensions-lambda-t4-q1",
+    "topicId": "comprehensions-lambda",
+    "tier": 4,
+    "question": "```python\nmatrix = [[1, 2], [3, 4], [5, 6]]\nflat = [num for row in matrix for num in row]\nprint(flat)\n```\nWhat is printed?",
+    "choices": ["[[1, 2], [3, 4], [5, 6]]", "[1, 2, 3, 4, 5, 6]", "[1, 3, 5]", "Error: nested loops not allowed in comprehensions"],
+    "answerIndex": 1,
+    "explanation": "This is a nested comprehension: for each row in matrix, it iterates over num in row, flattening the 2D list into [1, 2, 3, 4, 5, 6]."
+  },
+  {
+    "id": "comprehensions-lambda-t4-q2",
+    "topicId": "comprehensions-lambda",
+    "tier": 4,
+    "question": "What does [x if x > 0 else 0 for x in [-2, 3, -1, 5]] return?",
+    "choices": ["[-2, 3, -1, 5]", "[0, 3, 0, 5]", "[3, 5]", "Error: if/else can't be used in comprehensions"],
+    "answerIndex": 1,
+    "explanation": "x if x > 0 else 0 is a conditional expression evaluated for every item (not a filter) — negative numbers become 0, others stay the same: [0, 3, 0, 5]."
+  },
+  {
+    "id": "comprehensions-lambda-t4-q3",
+    "topicId": "comprehensions-lambda",
+    "tier": 4,
+    "question": "What is the difference between [x for x in range(1000000)] and (x for x in range(1000000))?",
+    "choices": ["No difference, they're the same", "The first builds the whole list in memory; the second is a generator that produces values lazily, one at a time", "The second is invalid syntax", "The first is faster to create for large ranges"],
+    "answerIndex": 1,
+    "explanation": "Square brackets create a list comprehension that allocates memory for every item up front. Parentheses create a generator expression, which produces each value on demand — much more memory-efficient for large sequences."
+  },
+  {
+    "id": "comprehensions-lambda-t5-q1",
+    "topicId": "comprehensions-lambda",
+    "tier": 5,
+    "question": "```python\nnames = [\"ana\", \"bob\", \"cy\"]\nadults = [n for n in names if len(n) > 2 if n[0] != \"c\"]\nprint(adults)\n```\nWhat is printed?",
+    "choices": ["['ana']", "['ana', 'bob']", "['bob', 'cy']", "['ana', 'bob', 'cy']"],
+    "answerIndex": 1,
+    "explanation": "Multiple if clauses in a comprehension act like a chained 'and' — both conditions must be true. 'ana' has len 3 > 2 and doesn't start with 'c' — included. 'bob' has len 3 > 2 and doesn't start with 'c' — included. 'cy' has len 2, which fails len(n) > 2 — excluded. Result: ['ana', 'bob']."
+  },
+  {
+    "id": "comprehensions-lambda-t5-q2",
+    "topicId": "comprehensions-lambda",
+    "tier": 5,
+    "question": "```python\nfuncs = []\nfor i in range(3):\n    funcs.append(lambda: i)\n\nprint([f() for f in funcs])\n```\nWhat is printed, and why might it surprise someone expecting [0, 1, 2]?",
+    "choices": ["[0, 1, 2] — each lambda captures its own i", "[2, 2, 2] — all the lambdas share the same variable i, which ends at 2 after the loop", "[0, 0, 0] — lambdas always see the first value", "Error: lambdas can't reference loop variables"],
+    "answerIndex": 1,
+    "explanation": "Lambdas capture variables by reference, not by value. All three lambdas refer to the same i, and by the time they're called, the loop has finished and i is 2 — so every call returns 2. A common fix is lambda i=i: i to capture the current value as a default argument."
+  },
+  {
+    "id": "comprehensions-lambda-t5-q3",
+    "topicId": "comprehensions-lambda",
+    "tier": 5,
+    "question": "What does sum(x * x for x in range(1, 4)) return?",
+    "choices": ["6", "14", "9", "Error: sum() needs a list, not a generator"],
+    "answerIndex": 1,
+    "explanation": "sum() accepts any iterable, including a generator expression. x * x for x in 1, 2, 3 gives 1, 4, 9, and 1 + 4 + 9 = 14."
+  },
+  {
+    "id": "errors-exceptions-t1-q1",
+    "topicId": "errors-exceptions",
+    "tier": 1,
+    "question": "Which keyword block lets you handle an error without crashing the program?",
+    "choices": ["try / except", "if / else", "for / while", "def / return"],
+    "answerIndex": 0,
+    "explanation": "Code that might raise an error goes in a try block; if an error happens, the matching except block runs instead of crashing the program."
+  },
+  {
+    "id": "errors-exceptions-t1-q2",
+    "topicId": "errors-exceptions",
+    "tier": 1,
+    "question": "What kind of error is raised by 10 / 0?",
+    "choices": ["TypeError", "ZeroDivisionError", "ValueError", "SyntaxError"],
+    "answerIndex": 1,
+    "explanation": "Dividing by zero raises a ZeroDivisionError, since division by zero is mathematically undefined."
+  },
+  {
+    "id": "errors-exceptions-t1-q3",
+    "topicId": "errors-exceptions",
+    "tier": 1,
+    "question": "```python\ntry:\n    print(1 / 0)\nexcept ZeroDivisionError:\n    print(\"Can't divide by zero!\")\n```\nWhat is printed?",
+    "choices": ["1 / 0", "Can't divide by zero!", "Error", "Nothing"],
+    "answerIndex": 1,
+    "explanation": "1 / 0 raises ZeroDivisionError, which matches the except clause, so its block runs and prints \"Can't divide by zero!\" instead of crashing."
+  },
+  {
+    "id": "errors-exceptions-t2-q1",
+    "topicId": "errors-exceptions",
+    "tier": 2,
+    "question": "What kind of error does int(\"abc\") raise?",
+    "choices": ["TypeError", "ValueError", "KeyError", "NameError"],
+    "answerIndex": 1,
+    "explanation": "\"abc\" doesn't look like a number, so int() raises ValueError: invalid literal for int() with base 10: 'abc'."
+  },
+  {
+    "id": "errors-exceptions-t2-q2",
+    "topicId": "errors-exceptions",
+    "tier": 2,
+    "question": "What does the finally block in a try/except/finally statement do?",
+    "choices": ["Runs only if no error occurred", "Runs only if an error occurred", "Always runs, whether or not an error occurred", "Replaces the except block"],
+    "answerIndex": 2,
+    "explanation": "finally always executes after the try (and any except) block, regardless of whether an exception was raised — commonly used for cleanup like closing files."
+  },
+  {
+    "id": "errors-exceptions-t2-q3",
+    "topicId": "errors-exceptions",
+    "tier": 2,
+    "question": "What does this code print?\n```python\ntry:\n    x = [1, 2][5]\nexcept IndexError:\n    print(\"out of range\")\nexcept ValueError:\n    print(\"bad value\")\n```",
+    "choices": ["out of range", "bad value", "Nothing", "5"],
+    "answerIndex": 0,
+    "explanation": "[1, 2][5] raises IndexError because index 5 doesn't exist. The first matching except (IndexError) handles it and prints \"out of range\"."
+  },
+  {
+    "id": "errors-exceptions-t3-q1",
+    "topicId": "errors-exceptions",
+    "tier": 3,
+    "question": "```python\ntry:\n    age = int(\"twenty\")\nexcept:\n    print(\"Something went wrong\")\n```\nThis code works, but using a bare except: like this is usually discouraged. Why?",
+    "choices": ["It catches every possible exception, including ones you didn't anticipate, making bugs harder to find", "Bare except: is a SyntaxError", "try blocks can only have one except", "except must always specify ValueError"],
+    "answerIndex": 0,
+    "explanation": "A bare except: silently swallows all errors — even unrelated bugs like a typo causing a NameError — making it harder to notice and debug real problems. It's better to catch specific exception types, like except ValueError:."
+  },
+  {
+    "id": "errors-exceptions-t3-q2",
+    "topicId": "errors-exceptions",
+    "tier": 3,
+    "question": "Which statement deliberately triggers an exception?",
+    "choices": ["throw ValueError(\"bad input\")", "raise ValueError(\"bad input\")", "except ValueError(\"bad input\")", "error ValueError(\"bad input\")"],
+    "answerIndex": 1,
+    "explanation": "raise creates and triggers an exception on purpose, e.g. raise ValueError(\"bad input\"). (Some other languages use throw, but Python uses raise.)"
+  },
+  {
+    "id": "errors-exceptions-t3-q3",
+    "topicId": "errors-exceptions",
+    "tier": 3,
+    "question": "What is the output of:\n```python\ntry:\n    print(\"start\")\n    print(1 / 0)\nexcept ZeroDivisionError:\n    print(\"caught\")\nfinally:\n    print(\"done\")\n```",
+    "choices": ["start, caught, done", "start, done", "caught, done", "start, caught"],
+    "answerIndex": 0,
+    "explanation": "\"start\" prints first, then 1 / 0 raises an error that's caught and prints \"caught\", and finally always runs last, printing \"done\"."
+  },
+  {
+    "id": "errors-exceptions-t4-q1",
+    "topicId": "errors-exceptions",
+    "tier": 4,
+    "question": "```python\ndef get_age():\n    age = input(\"Enter your age: \")\n    return int(age)\n\nuser_age = get_age()\nprint(\"Age:\", user_age)\n```\nIf the user types \"twenty\", this crashes with ValueError. What's the best fix?",
+    "choices": ["Wrap int(age) in a try/except ValueError and ask again or show a friendly message", "Change int(age) to str(age)", "Remove the print statement", "Use a while loop instead of input()"],
+    "answerIndex": 0,
+    "explanation": "Since user input can't be controlled, code that converts it (int(age)) should be wrapped in try/except ValueError so an invalid entry produces a helpful message instead of crashing the program."
+  },
+  {
+    "id": "errors-exceptions-t4-q2",
+    "topicId": "errors-exceptions",
+    "tier": 4,
+    "question": "What is the output of:\n```python\ntry:\n    result = 10 / 2\nexcept ZeroDivisionError:\n    print(\"error\")\nelse:\n    print(\"success:\", result)\n```",
+    "choices": ["error", "success: 5.0", "Nothing", "Error: else can't follow try/except"],
+    "answerIndex": 1,
+    "explanation": "The else clause on a try statement runs only if no exception occurred. 10 / 2 succeeds (result = 5.0), so \"success: 5.0\" is printed."
+  },
+  {
+    "id": "errors-exceptions-t4-q3",
+    "topicId": "errors-exceptions",
+    "tier": 4,
+    "question": "```python\ndata = {\"name\": \"Cosmo\"}\ntry:\n    print(data[\"age\"])\nexcept KeyError as e:\n    print(f\"Missing key: {e}\")\n```\nWhat is printed?",
+    "choices": ["Missing key: 'age'", "None", "Error: e is undefined", "age"],
+    "answerIndex": 0,
+    "explanation": "data[\"age\"] raises KeyError('age') because \"age\" isn't a key. except KeyError as e binds the exception to e, and the f-string prints \"Missing key: 'age'\"."
+  },
+  {
+    "id": "errors-exceptions-t5-q1",
+    "topicId": "errors-exceptions",
+    "tier": 5,
+    "question": "```python\ndef withdraw(balance, amount):\n    if amount > balance:\n        raise ValueError(\"Insufficient funds\")\n    return balance - amount\n\ntry:\n    withdraw(100, 150)\nexcept ValueError as e:\n    print(\"Transaction failed:\", e)\nprint(\"Done\")\n```\nWhat is printed?",
+    "choices": ["Transaction failed: Insufficient funds then Done", "Done only", "ValueError: Insufficient funds (program crashes)", "Transaction failed: Insufficient funds only"],
+    "answerIndex": 0,
+    "explanation": "withdraw(100, 150) raises ValueError(\"Insufficient funds\") because amount > balance. The except block catches it and prints the message, then the program continues normally and prints \"Done\"."
+  },
+  {
+    "id": "errors-exceptions-t5-q2",
+    "topicId": "errors-exceptions",
+    "tier": 5,
+    "question": "```python\nfor item in [\"3\", \"7\", \"x\", \"10\"]:\n    try:\n        print(int(item) * 2)\n    except ValueError:\n        print(\"skip\")\n```\nWhat is printed?",
+    "choices": ["6, 14, skip, 20 (each on its own line)", "6, 14, 20", "skip, skip, skip, skip", "Error: loop stops at 'x'"],
+    "answerIndex": 0,
+    "explanation": "Each item is converted and doubled inside the try. \"3\" -> 6, \"7\" -> 14, \"x\" can't convert so ValueError is caught and \"skip\" is printed, then \"10\" -> 20. The try/except inside the loop lets it continue past the bad item."
+  },
+  {
+    "id": "errors-exceptions-t5-q3",
+    "topicId": "errors-exceptions",
+    "tier": 5,
+    "question": "```python\nclass NegativeAgeError(Exception):\n    pass\n\ndef set_age(age):\n    if age < 0:\n        raise NegativeAgeError(\"Age can't be negative\")\n    return age\n\ntry:\n    set_age(-5)\nexcept NegativeAgeError as e:\n    print(\"Invalid:\", e)\n```\nWhat does this demonstrate, and what is printed?",
+    "choices": ["Custom exceptions — prints 'Invalid: Age can't be negative'", "This is invalid; you can't create your own exception types", "Prints -5 because raise is ignored for custom classes", "NegativeAgeError must inherit from ValueError, not Exception"],
+    "answerIndex": 0,
+    "explanation": "You can define your own exception types by subclassing Exception (or a more specific built-in). set_age(-5) raises NegativeAgeError(\"Age can't be negative\"), which the except NegativeAgeError block catches and prints as 'Invalid: Age can't be negative'."
+  }
+]

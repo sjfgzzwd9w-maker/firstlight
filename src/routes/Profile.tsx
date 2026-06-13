@@ -1,6 +1,6 @@
 import Mascot from '../components/Mascot';
 import { useProfile } from '../context/ProfileContext';
-import { MATH_TOPICS, BIOLOGY_TOPICS } from '../lib/engine/topics';
+import { MATH_TOPICS, BIOLOGY_TOPICS, PYTHON_TOPICS_ALL, ROBOTICS_TOPICS_ALL } from '../lib/engine/topics';
 import { totalXp } from '../lib/storage/progress';
 import { MAX_TIER } from '../types';
 import type { Topic } from '../types';
@@ -10,7 +10,7 @@ export default function Profile() {
   const xp = totalXp(profile);
 
   const badges: string[] = [];
-  for (const topic of [...MATH_TOPICS, ...BIOLOGY_TOPICS]) {
+  for (const topic of [...MATH_TOPICS, ...BIOLOGY_TOPICS, ...PYTHON_TOPICS_ALL, ...ROBOTICS_TOPICS_ALL]) {
     const p = profile.topics[topic.id];
     if (!p) continue;
     if (p.mastered) badges.push(`${topic.name} Master ⭐`);
@@ -48,6 +48,12 @@ export default function Profile() {
 
       <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Science · Biology</h2>
       <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(BIOLOGY_TOPICS)}</div>
+
+      <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Coding · Python</h2>
+      <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(PYTHON_TOPICS_ALL)}</div>
+
+      <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Robotics</h2>
+      <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(ROBOTICS_TOPICS_ALL)}</div>
 
       <div className="mt-8 w-full">
         <h2 className="text-lg font-semibold text-white">Badges</h2>

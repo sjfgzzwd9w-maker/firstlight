@@ -988,5 +988,995 @@
     "choices": ["Perfectly normal gametes every time", "Gametes with an abnormal number of chromosomes, which can lead to genetic disorders in offspring", "The cell will turn into a plant cell", "Nothing — nondisjunction has no consequences"],
     "answerIndex": 1,
     "explanation": "Nondisjunction results in gametes with too many or too few chromosomes; if fertilized, this can lead to chromosomal disorders such as Down syndrome."
+  },
+  {
+    "id": "nature-of-science-t1-q3",
+    "topicId": "nature-of-science",
+    "tier": 1,
+    "question": "Which of these best describes an 'observation' in science?",
+    "choices": ["A guess about why something happens", "Information gathered using your senses or tools, like noting that a plant's leaves turned yellow", "A final answer that can never be questioned", "An experiment's conclusion"],
+    "answerIndex": 1,
+    "explanation": "An observation is information you gather directly by seeing, measuring, or otherwise sensing something."
+  },
+  {
+    "id": "nature-of-science-t1-q4",
+    "topicId": "nature-of-science",
+    "tier": 1,
+    "question": "Scientific knowledge is built mainly through:",
+    "choices": ["Asking questions, making observations, and testing ideas with evidence", "Believing whatever sounds true", "Avoiding any kind of testing", "Memorizing facts without questioning them"],
+    "answerIndex": 0,
+    "explanation": "Science progresses through a cycle of questioning, observing, and testing ideas against evidence."
+  },
+  {
+    "id": "nature-of-science-t2-q3",
+    "topicId": "nature-of-science",
+    "tier": 2,
+    "question": "In an experiment, the variable that a scientist measures to see if it changes is called the:",
+    "choices": ["Independent variable", "Dependent variable", "Constant", "Control"],
+    "answerIndex": 1,
+    "explanation": "The dependent variable is the outcome that's measured, which may change in response to the independent variable."
+  },
+  {
+    "id": "nature-of-science-t2-q4",
+    "topicId": "nature-of-science",
+    "tier": 2,
+    "question": "Factors in an experiment that are kept the same for all groups are called:",
+    "choices": ["Independent variables", "Dependent variables", "Constants (controlled variables)", "Hypotheses"],
+    "answerIndex": 2,
+    "explanation": "Constants are kept the same across all groups so that any differences observed can be attributed to the independent variable."
+  },
+  {
+    "id": "nature-of-science-t3-q3",
+    "topicId": "nature-of-science",
+    "tier": 3,
+    "question": "A scientist tests a new fertilizer on 50 plants and compares their growth to 50 plants that received no fertilizer, with all other conditions identical. The group that received no fertilizer is the:",
+    "choices": ["Experimental group", "Control group", "Dependent variable", "Hypothesis"],
+    "answerIndex": 1,
+    "explanation": "The control group does not receive the treatment being tested and serves as a baseline for comparison."
+  },
+  {
+    "id": "nature-of-science-t3-q4",
+    "topicId": "nature-of-science",
+    "tier": 3,
+    "question": "Which of the following is the most useful trait for a hypothesis to have?",
+    "choices": ["It must be impossible to test", "It must be testable and falsifiable", "It must already be proven true", "It must agree with everyone's opinion"],
+    "answerIndex": 1,
+    "explanation": "A good hypothesis can be tested through experiments or observations, and could potentially be shown false."
+  },
+  {
+    "id": "nature-of-science-t4-q3",
+    "topicId": "nature-of-science",
+    "tier": 4,
+    "question": "Peer review, where other scientists examine research before it's published, mainly helps to:",
+    "choices": ["Guarantee that no mistakes ever happen again", "Catch errors and verify that methods and conclusions are sound", "Speed up publication regardless of quality", "Replace the need for experiments"],
+    "answerIndex": 1,
+    "explanation": "Peer review helps ensure that research methods are valid and conclusions are supported by the data before publication."
+  },
+  {
+    "id": "nature-of-science-t4-q4",
+    "topicId": "nature-of-science",
+    "tier": 4,
+    "question": "A scientific law differs from a scientific theory mainly in that a law:",
+    "choices": ["Describes a consistent pattern observed in nature, often with a mathematical relationship, while a theory explains why it happens", "Is always more important than a theory", "Can never be the foundation of a theory", "Is just someone's personal opinion"],
+    "answerIndex": 0,
+    "explanation": "A scientific law describes what happens, often mathematically, while a theory explains why it happens."
+  },
+  {
+    "id": "nature-of-science-t5-q3",
+    "topicId": "nature-of-science",
+    "tier": 5,
+    "question": "A news headline claims 'New Study Proves Chocolate Cures Colds!' based on one small, unreplicated study. What is the most scientifically sound reaction?",
+    "choices": ["Accept it immediately as proven fact", "Be skeptical until the results are replicated by other studies and reviewed by other scientists", "Ignore all science from now on", "Assume the opposite must be true"],
+    "answerIndex": 1,
+    "explanation": "Single studies can be wrong or misleading; scientific claims become more trustworthy after replication and peer review."
+  },
+  {
+    "id": "nature-of-science-t5-q4",
+    "topicId": "nature-of-science",
+    "tier": 5,
+    "question": "Why is it important for an experiment to have a large sample size?",
+    "choices": ["Larger samples are always more expensive, which proves they're better", "Larger samples help reduce the effect of random chance and make results more reliable", "Sample size has no effect on results", "Small samples are always more accurate"],
+    "answerIndex": 1,
+    "explanation": "A larger sample size reduces the influence of random variation, making the results more likely to reflect a real effect."
+  },
+  {
+    "id": "characteristics-of-life-t1-q3",
+    "topicId": "characteristics-of-life",
+    "tier": 1,
+    "question": "Which of these is an example of an organism responding to a stimulus?",
+    "choices": ["A rock sitting still in the sun", "A plant's leaves turning to face sunlight", "A river flowing downhill", "A cloud forming in the sky"],
+    "answerIndex": 1,
+    "explanation": "Responding to stimuli, like a plant growing toward light, is a key characteristic of living things."
+  },
+  {
+    "id": "characteristics-of-life-t1-q4",
+    "topicId": "characteristics-of-life",
+    "tier": 1,
+    "question": "All living things require ___ to carry out life processes.",
+    "choices": ["Energy", "A backbone", "Legs", "A brain"],
+    "answerIndex": 0,
+    "explanation": "Every living thing needs energy to grow, move, repair itself, and carry out other life processes."
+  },
+  {
+    "id": "characteristics-of-life-t2-q3",
+    "topicId": "characteristics-of-life",
+    "tier": 2,
+    "question": "A single-celled organism like an amoeba is considered alive because it:",
+    "choices": ["Has bones", "Can grow, respond to stimuli, and reproduce", "Is large", "Lives in groups only"],
+    "answerIndex": 1,
+    "explanation": "Even single-celled organisms carry out the basic processes of life, such as growth, response, and reproduction."
+  },
+  {
+    "id": "characteristics-of-life-t2-q4",
+    "topicId": "characteristics-of-life",
+    "tier": 2,
+    "question": "Which example best shows growth in a living organism?",
+    "choices": ["A puddle increasing in size after rain", "A seedling developing into a larger plant by adding new cells", "A snowball rolling downhill and getting bigger", "A balloon being inflated with air"],
+    "answerIndex": 1,
+    "explanation": "Biological growth involves an organism adding new cells and tissue, unlike non-living things simply accumulating material."
+  },
+  {
+    "id": "characteristics-of-life-t3-q3",
+    "topicId": "characteristics-of-life",
+    "tier": 3,
+    "question": "A bird migrating to a warmer climate before winter is an example of:",
+    "choices": ["A response to seasonal changes that helps it survive", "Metabolism only", "A type of mutation", "Cell division"],
+    "answerIndex": 0,
+    "explanation": "Migration is a behavioral response to environmental changes that improves an organism's chances of survival."
+  },
+  {
+    "id": "characteristics-of-life-t3-q4",
+    "topicId": "characteristics-of-life",
+    "tier": 3,
+    "question": "Which best illustrates the level of organization called an 'organ system'?",
+    "choices": ["A single muscle cell", "The heart, blood vessels, and blood working together as the circulatory system", "One protein molecule", "A single atom of carbon"],
+    "answerIndex": 1,
+    "explanation": "An organ system is a group of organs that work together to carry out a major body function, like circulation."
+  },
+  {
+    "id": "characteristics-of-life-t4-q3",
+    "topicId": "characteristics-of-life",
+    "tier": 4,
+    "question": "Why do scientists consider 'made of cells' a defining characteristic of life rather than, say, 'can move'?",
+    "choices": ["Because some living things (like plants) don't move from place to place, but all living things are made of at least one cell", "Because all living things can run", "Because movement is the only thing that matters", "Because cells can't be found in plants"],
+    "answerIndex": 0,
+    "explanation": "Not all living things move from place to place, but every living thing is made of one or more cells."
+  },
+  {
+    "id": "characteristics-of-life-t4-q4",
+    "topicId": "characteristics-of-life",
+    "tier": 4,
+    "question": "An organism that converts food into usable energy through chemical reactions is demonstrating:",
+    "choices": ["Homeostasis only", "Metabolism", "Classification", "Extinction"],
+    "answerIndex": 1,
+    "explanation": "Metabolism includes all the chemical reactions that convert food into usable energy and building blocks."
+  },
+  {
+    "id": "characteristics-of-life-t5-q3",
+    "topicId": "characteristics-of-life",
+    "tier": 5,
+    "question": "Mules (offspring of a horse and a donkey) are generally unable to reproduce. Does this mean mules are not 'alive'?",
+    "choices": ["Yes, because reproduction is required for every individual to be alive", "No — an individual can be fully alive without being able to reproduce; reproduction matters at the species level, not for every individual", "Yes, because all living things must reproduce constantly", "No, because mules aren't made of cells"],
+    "answerIndex": 1,
+    "explanation": "An individual organism can carry out all the other life processes without being able to reproduce; reproduction is essential for a species to persist, not for each individual to be 'alive'."
+  },
+  {
+    "id": "characteristics-of-life-t5-q4",
+    "topicId": "characteristics-of-life",
+    "tier": 5,
+    "question": "A computer virus can 'replicate' itself across computers. Why isn't it considered a living thing by biologists?",
+    "choices": ["It is considered fully alive", "It is not made of cells and doesn't carry out independent metabolism, growth, or homeostasis", "It moves too fast to study", "Computers are alive, so anything inside them is too"],
+    "answerIndex": 1,
+    "explanation": "Despite 'replicating', a computer virus lacks cells and the biological processes — like metabolism and homeostasis — that define life."
+  },
+  {
+    "id": "macromolecules-t1-q3",
+    "topicId": "macromolecules",
+    "tier": 1,
+    "question": "Which macromolecule provides long-term energy storage and insulation for the body?",
+    "choices": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+    "answerIndex": 1,
+    "explanation": "Lipids, such as fats, store energy efficiently for the long term and help insulate the body."
+  },
+  {
+    "id": "macromolecules-t1-q4",
+    "topicId": "macromolecules",
+    "tier": 1,
+    "question": "Which of these foods is mainly a source of carbohydrates?",
+    "choices": ["Bread and pasta", "Butter and oil", "Egg whites", "DNA"],
+    "answerIndex": 0,
+    "explanation": "Bread and pasta are rich in starches, which are carbohydrates made of chains of sugar units."
+  },
+  {
+    "id": "macromolecules-t2-q3",
+    "topicId": "macromolecules",
+    "tier": 2,
+    "question": "Which macromolecule provides structure and helps with cell signaling, transport, and defense (like antibodies)?",
+    "choices": ["Lipids", "Proteins", "Carbohydrates", "Water"],
+    "answerIndex": 1,
+    "explanation": "Proteins serve many roles, including structural support, transport, signaling, and immune defense as antibodies."
+  },
+  {
+    "id": "macromolecules-t2-q4",
+    "topicId": "macromolecules",
+    "tier": 2,
+    "question": "DNA and RNA are made up of repeating units called:",
+    "choices": ["Amino acids", "Nucleotides", "Fatty acids", "Monosaccharides"],
+    "answerIndex": 1,
+    "explanation": "Nucleotides are the building blocks of nucleic acids like DNA and RNA."
+  },
+  {
+    "id": "macromolecules-t3-q3",
+    "topicId": "macromolecules",
+    "tier": 3,
+    "question": "Which of the following is an example of a polysaccharide (a large carbohydrate made of many sugar units)?",
+    "choices": ["Glucose", "Starch", "An amino acid", "A fatty acid"],
+    "answerIndex": 1,
+    "explanation": "Starch is a polysaccharide made of many glucose units linked together."
+  },
+  {
+    "id": "macromolecules-t3-q4",
+    "topicId": "macromolecules",
+    "tier": 3,
+    "question": "A nucleotide is made up of a sugar, a phosphate group, and a:",
+    "choices": ["Nitrogenous base", "Fatty acid chain", "Amino acid", "Glycerol molecule"],
+    "answerIndex": 0,
+    "explanation": "Each nucleotide consists of a sugar, a phosphate group, and one of four nitrogenous bases."
+  },
+  {
+    "id": "macromolecules-t4-q3",
+    "topicId": "macromolecules",
+    "tier": 4,
+    "question": "Triglycerides, a common type of lipid, are made up of glycerol and three:",
+    "choices": ["Amino acids", "Fatty acids", "Nucleotides", "Monosaccharides"],
+    "answerIndex": 1,
+    "explanation": "A triglyceride consists of a glycerol backbone bonded to three fatty acid chains."
+  },
+  {
+    "id": "macromolecules-t4-q4",
+    "topicId": "macromolecules",
+    "tier": 4,
+    "question": "Which statement correctly compares saturated and unsaturated fats?",
+    "choices": ["Saturated fats have double bonds between carbons, unsaturated fats do not", "Unsaturated fats have one or more double bonds between carbons, which saturated fats lack", "They are chemically identical", "Neither type contains carbon"],
+    "answerIndex": 1,
+    "explanation": "Unsaturated fats contain at least one carbon-carbon double bond, while saturated fats have only single bonds between carbons."
+  },
+  {
+    "id": "macromolecules-t5-q3",
+    "topicId": "macromolecules",
+    "tier": 5,
+    "question": "An enzyme's shape is critical to its function because:",
+    "choices": ["The enzyme's shape allows it to bind specifically to its substrate, like a lock and key", "Shape has no effect on enzyme activity", "All enzymes have the exact same shape", "Enzymes don't interact with other molecules"],
+    "answerIndex": 0,
+    "explanation": "An enzyme's specific 3D shape allows it to bind to its substrate and catalyze a particular reaction."
+  },
+  {
+    "id": "macromolecules-t5-q4",
+    "topicId": "macromolecules",
+    "tier": 5,
+    "question": "High fevers can sometimes damage proteins in the body. This is most directly because high temperatures can cause a protein to:",
+    "choices": ["Gain new amino acids", "Denature — lose its specific shape and therefore its function", "Turn into a carbohydrate", "Become a nucleic acid"],
+    "answerIndex": 1,
+    "explanation": "Heat can break the bonds that hold a protein in its functional shape, causing it to denature and lose function."
+  },
+  {
+    "id": "cell-theory-t1-q3",
+    "topicId": "cell-theory",
+    "tier": 1,
+    "question": "Robert Hooke is credited with being among the first to observe and name:",
+    "choices": ["Atoms", "Cells, while looking at cork under a microscope", "Planets", "DNA"],
+    "answerIndex": 1,
+    "explanation": "Robert Hooke observed small box-like compartments in cork and named them 'cells.'"
+  },
+  {
+    "id": "cell-theory-t1-q4",
+    "topicId": "cell-theory",
+    "tier": 1,
+    "question": "Which statement is consistent with cell theory?",
+    "choices": ["Some living things are not made of cells", "All living things are composed of one or more cells", "Cells can be created from non-living matter spontaneously", "Cells never change over an organism's lifetime"],
+    "answerIndex": 1,
+    "explanation": "One of the core ideas of cell theory is that all living organisms are made of one or more cells."
+  },
+  {
+    "id": "cell-theory-t2-q3",
+    "topicId": "cell-theory",
+    "tier": 2,
+    "question": "Which organelle modifies, packages, and ships proteins to their destinations within or outside the cell?",
+    "choices": ["Golgi apparatus", "Nucleus", "Lysosome", "Cell wall"],
+    "answerIndex": 0,
+    "explanation": "The Golgi apparatus processes and packages proteins for transport to other parts of the cell or for export."
+  },
+  {
+    "id": "cell-theory-t2-q4",
+    "topicId": "cell-theory",
+    "tier": 2,
+    "question": "Which structure controls what substances enter and exit the cell?",
+    "choices": ["Nucleus", "Cell membrane", "Ribosome", "Cytoplasm"],
+    "answerIndex": 1,
+    "explanation": "The cell membrane is selectively permeable, regulating the movement of substances into and out of the cell."
+  },
+  {
+    "id": "cell-theory-t3-q3",
+    "topicId": "cell-theory",
+    "tier": 3,
+    "question": "Lysosomes are best known for their role in:",
+    "choices": ["Producing ATP", "Breaking down waste materials and worn-out cell parts", "Photosynthesis", "Storing genetic information"],
+    "answerIndex": 1,
+    "explanation": "Lysosomes contain digestive enzymes that break down waste, debris, and worn-out organelles."
+  },
+  {
+    "id": "cell-theory-t3-q4",
+    "topicId": "cell-theory",
+    "tier": 3,
+    "question": "The jelly-like substance that fills the cell and holds the organelles in place is the:",
+    "choices": ["Cytoplasm", "Nucleolus", "Cell wall", "Chloroplast"],
+    "answerIndex": 0,
+    "explanation": "Cytoplasm is the gel-like substance inside the cell membrane that holds the organelles in place."
+  },
+  {
+    "id": "cell-theory-t4-q3",
+    "topicId": "cell-theory",
+    "tier": 4,
+    "question": "Which of these is found in both plant and animal cells?",
+    "choices": ["Cell wall", "Chloroplast", "Mitochondria", "Large central vacuole"],
+    "answerIndex": 2,
+    "explanation": "Both plant and animal cells contain mitochondria to produce ATP; cell walls, chloroplasts, and large central vacuoles are mainly found in plant cells."
+  },
+  {
+    "id": "cell-theory-t4-q4",
+    "topicId": "cell-theory",
+    "tier": 4,
+    "question": "A mature red blood cell lacks a nucleus. This is unusual because:",
+    "choices": ["Most other human cells retain a nucleus containing their DNA", "All cells lack nuclei", "Nuclei are only found in plant cells", "This is completely typical for every cell type"],
+    "answerIndex": 0,
+    "explanation": "Mature red blood cells are an exception — most human cells keep a nucleus throughout their life."
+  },
+  {
+    "id": "cell-theory-t5-q3",
+    "topicId": "cell-theory",
+    "tier": 5,
+    "question": "Unlike most cells, skeletal muscle cells can have multiple nuclei. What is one advantage of having multiple nuclei in a large cell?",
+    "choices": ["It allows the cell to produce proteins needed across its large volume more efficiently", "It makes the cell smaller", "It prevents the cell from using mitochondria", "It eliminates the need for a cell membrane"],
+    "answerIndex": 0,
+    "explanation": "Multiple nuclei let a large cell produce and distribute the proteins it needs throughout its volume more effectively."
+  },
+  {
+    "id": "cell-theory-t5-q4",
+    "topicId": "cell-theory",
+    "tier": 5,
+    "question": "Plant cells have both a cell wall and a cell membrane. What is the main functional difference between these two structures?",
+    "choices": ["The cell wall regulates what enters and exits the cell, while the membrane provides rigid support", "The cell wall provides rigid structural support and protection, while the cell membrane regulates what enters and exits the cell", "They perform identical functions", "Only animal cells have a cell membrane"],
+    "answerIndex": 1,
+    "explanation": "The cell wall gives the cell shape and protection, while the cell membrane beneath it controls the movement of substances."
+  },
+  {
+    "id": "cell-transport-t1-q3",
+    "topicId": "cell-transport",
+    "tier": 1,
+    "question": "Which of these is an example of diffusion?",
+    "choices": ["A perfume scent spreading through a room over time", "A ball rolling down a hill", "A car driving on a highway", "A bird flying south"],
+    "answerIndex": 0,
+    "explanation": "Diffusion is the spreading out of particles from an area of higher concentration to lower concentration, like a scent filling a room."
+  },
+  {
+    "id": "cell-transport-t1-q4",
+    "topicId": "cell-transport",
+    "tier": 1,
+    "question": "Passive transport differs from active transport because passive transport:",
+    "choices": ["Always requires ATP", "Does not require the cell to use energy", "Only happens in plant cells", "Moves substances against their gradient"],
+    "answerIndex": 1,
+    "explanation": "Passive transport moves substances down their concentration gradient without the cell spending energy."
+  },
+  {
+    "id": "cell-transport-t2-q3",
+    "topicId": "cell-transport",
+    "tier": 2,
+    "question": "When the concentration of a substance is equal on both sides of a membrane, the system is said to be at:",
+    "choices": ["Equilibrium", "Active transport", "Hypertonic balance", "Cytokinesis"],
+    "answerIndex": 0,
+    "explanation": "Equilibrium is reached when concentrations are equal on both sides, so there is no net movement of the substance."
+  },
+  {
+    "id": "cell-transport-t2-q4",
+    "topicId": "cell-transport",
+    "tier": 2,
+    "question": "Which of these substances would most easily pass directly through the lipid part of a cell membrane?",
+    "choices": ["Large proteins", "Small nonpolar molecules like oxygen", "Whole cells", "DNA strands"],
+    "answerIndex": 1,
+    "explanation": "Small nonpolar molecules like oxygen and carbon dioxide can diffuse directly through the lipid bilayer."
+  },
+  {
+    "id": "cell-transport-t3-q3",
+    "topicId": "cell-transport",
+    "tier": 3,
+    "question": "A plant cell placed in a hypotonic solution (lower solute concentration outside) will likely:",
+    "choices": ["Lose water and shrink", "Gain water, but the rigid cell wall prevents it from bursting", "Immediately die", "Not be affected by water movement at all"],
+    "answerIndex": 1,
+    "explanation": "Water moves into the cell in a hypotonic solution, but the cell wall provides support so the plant cell becomes firm (turgid) instead of bursting."
+  },
+  {
+    "id": "cell-transport-t3-q4",
+    "topicId": "cell-transport",
+    "tier": 3,
+    "question": "Which transport process would a cell use to move glucose into itself when glucose is already more concentrated inside the cell?",
+    "choices": ["Simple diffusion", "Osmosis", "Active transport, using energy to move against the gradient", "No transport is needed"],
+    "answerIndex": 2,
+    "explanation": "Moving a substance against its concentration gradient requires active transport, which uses energy from ATP."
+  },
+  {
+    "id": "cell-transport-t4-q3",
+    "topicId": "cell-transport",
+    "tier": 4,
+    "question": "The process by which a cell releases materials (like hormones) to the outside by fusing a vesicle with the cell membrane is called:",
+    "choices": ["Endocytosis", "Exocytosis", "Osmosis", "Diffusion"],
+    "answerIndex": 1,
+    "explanation": "Exocytosis is when a vesicle fuses with the cell membrane to release its contents outside the cell."
+  },
+  {
+    "id": "cell-transport-t4-q4",
+    "topicId": "cell-transport",
+    "tier": 4,
+    "question": "Why do cells need both passive and active transport mechanisms?",
+    "choices": ["Active transport alone is always sufficient", "Some substances move easily down their gradient (passive), while others must be moved against their gradient (active) to maintain proper concentrations", "Passive transport alone can move all substances", "Cells don't actually need either"],
+    "answerIndex": 1,
+    "explanation": "Cells rely on passive transport for substances moving down their gradient and active transport to maintain concentrations that go against the gradient."
+  },
+  {
+    "id": "cell-transport-t5-q3",
+    "topicId": "cell-transport",
+    "tier": 5,
+    "question": "A scientist observes that a cell's mitochondria stop producing ATP. Which type of transport across the cell membrane would be affected first?",
+    "choices": ["Simple diffusion of small nonpolar molecules", "Active transport, since it directly depends on ATP", "Both would be equally affected immediately", "Neither type of transport depends on ATP"],
+    "answerIndex": 1,
+    "explanation": "Active transport depends directly on ATP, so it would be affected first if ATP production stopped; simple diffusion does not require energy."
+  },
+  {
+    "id": "cell-transport-t5-q4",
+    "topicId": "cell-transport",
+    "tier": 5,
+    "question": "Plant root cells can absorb mineral ions from the soil even when the ions are more concentrated inside the root cells than in the soil. This is possible because of:",
+    "choices": ["Simple diffusion only", "Osmosis only", "Active transport, which can move ions against their concentration gradient using energy", "The cell wall pulling ions in"],
+    "answerIndex": 2,
+    "explanation": "Moving ions against their concentration gradient requires active transport powered by ATP."
+  },
+  {
+    "id": "cellular-processes-t1-q3",
+    "topicId": "cellular-processes",
+    "tier": 1,
+    "question": "The green pigment in plant cells that absorbs light energy for photosynthesis is called:",
+    "choices": ["Hemoglobin", "Chlorophyll", "Cellulose", "Glucose"],
+    "answerIndex": 1,
+    "explanation": "Chlorophyll is the pigment in chloroplasts that captures light energy for photosynthesis."
+  },
+  {
+    "id": "cellular-processes-t1-q4",
+    "topicId": "cellular-processes",
+    "tier": 1,
+    "question": "Which gas is released as a byproduct of photosynthesis?",
+    "choices": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "answerIndex": 2,
+    "explanation": "Photosynthesis splits water molecules and releases oxygen as a byproduct."
+  },
+  {
+    "id": "cellular-processes-t2-q3",
+    "topicId": "cellular-processes",
+    "tier": 2,
+    "question": "Which of the following correctly shows the overall inputs of photosynthesis?",
+    "choices": ["Glucose and oxygen", "Carbon dioxide, water, and light energy", "ATP and carbon dioxide only", "Oxygen and nitrogen"],
+    "answerIndex": 1,
+    "explanation": "Photosynthesis uses carbon dioxide, water, and light energy as inputs to produce glucose and oxygen."
+  },
+  {
+    "id": "cellular-processes-t2-q4",
+    "topicId": "cellular-processes",
+    "tier": 2,
+    "question": "Cellular respiration occurs in which organelle (for its aerobic stages)?",
+    "choices": ["Chloroplast", "Mitochondria", "Nucleus", "Golgi apparatus"],
+    "answerIndex": 1,
+    "explanation": "Mitochondria carry out the aerobic stages of cellular respiration, producing most of the cell's ATP."
+  },
+  {
+    "id": "cellular-processes-t3-q3",
+    "topicId": "cellular-processes",
+    "tier": 3,
+    "question": "Glycolysis, the first step of cellular respiration, breaks down glucose into:",
+    "choices": ["Carbon dioxide and water directly", "Pyruvate molecules, producing a small amount of ATP", "Oxygen gas", "DNA"],
+    "answerIndex": 1,
+    "explanation": "Glycolysis breaks glucose into two pyruvate molecules and produces a small net amount of ATP."
+  },
+  {
+    "id": "cellular-processes-t3-q4",
+    "topicId": "cellular-processes",
+    "tier": 3,
+    "question": "Which statement best compares photosynthesis and cellular respiration in terms of energy?",
+    "choices": ["Photosynthesis stores energy in glucose; respiration releases that stored energy", "Both processes only release energy", "Both processes only store energy", "Neither process involves energy"],
+    "answerIndex": 0,
+    "explanation": "Photosynthesis captures light energy and stores it in glucose, while respiration breaks down glucose to release usable energy."
+  },
+  {
+    "id": "cellular-processes-t4-q3",
+    "topicId": "cellular-processes",
+    "tier": 4,
+    "question": "Yeast used in bread-making can perform alcoholic fermentation when oxygen is limited. This process is similar to lactic acid fermentation in that both:",
+    "choices": ["Require large amounts of oxygen", "Allow some ATP production to continue without oxygen, though less efficiently than aerobic respiration", "Produce identical amounts of ATP as aerobic respiration", "Only occur in animal cells"],
+    "answerIndex": 1,
+    "explanation": "Both types of fermentation let cells keep producing some ATP without oxygen, though far less efficiently than aerobic respiration."
+  },
+  {
+    "id": "cellular-processes-t4-q4",
+    "topicId": "cellular-processes",
+    "tier": 4,
+    "question": "Which of these organisms would be expected to have chloroplasts?",
+    "choices": ["A mushroom", "A human skin cell", "A leaf cell of a tree", "A bacterium that causes disease"],
+    "answerIndex": 2,
+    "explanation": "Chloroplasts, which carry out photosynthesis, are found in the cells of plants and other photosynthetic organisms, such as tree leaves."
+  },
+  {
+    "id": "cellular-processes-t5-q3",
+    "topicId": "cellular-processes",
+    "tier": 5,
+    "question": "During intense exercise, your muscles may start to feel sore due to a buildup of lactic acid. This occurs because:",
+    "choices": ["Your cells switched entirely to photosynthesis", "When oxygen supply can't keep up with demand, muscle cells use fermentation, producing lactic acid as a byproduct", "Lactic acid is produced only during sleep", "Muscles stop respiring entirely during exercise"],
+    "answerIndex": 1,
+    "explanation": "When oxygen delivery can't meet demand, muscle cells rely on lactic acid fermentation to keep producing some ATP."
+  },
+  {
+    "id": "cellular-processes-t5-q4",
+    "topicId": "cellular-processes",
+    "tier": 5,
+    "question": "If a plant's chloroplasts were damaged and couldn't perform photosynthesis, which process could the plant still briefly use to get energy, and why wouldn't this be sustainable long-term?",
+    "choices": ["Cellular respiration could break down existing stored sugars, but without photosynthesis to replace them, the plant would eventually run out of energy", "The plant would immediately switch to eating other organisms", "The plant wouldn't need energy at all", "Mitochondria would take over photosynthesis"],
+    "answerIndex": 0,
+    "explanation": "Cellular respiration can use stored sugars for a while, but without photosynthesis to produce new glucose, the plant's energy reserves would eventually run out."
+  },
+  {
+    "id": "ecosystem-energy-flow-t1-q3",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 1,
+    "question": "An organism that eats both plants and animals is called a(n):",
+    "choices": ["Herbivore", "Carnivore", "Omnivore", "Producer"],
+    "answerIndex": 2,
+    "explanation": "Omnivores eat a mix of plant and animal material."
+  },
+  {
+    "id": "ecosystem-energy-flow-t1-q4",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 1,
+    "question": "Which of these is an example of a consumer?",
+    "choices": ["Grass", "A tree", "A rabbit", "Algae"],
+    "answerIndex": 2,
+    "explanation": "A rabbit eats plants for energy, making it a consumer, while grass, trees, and algae are producers."
+  },
+  {
+    "id": "ecosystem-energy-flow-t2-q3",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 2,
+    "question": "Fungi and bacteria that break down dead organic matter play a critical role in ecosystems by:",
+    "choices": ["Producing all the oxygen on Earth", "Recycling nutrients back into the soil for producers to use", "Eating only living plants", "Preventing energy flow entirely"],
+    "answerIndex": 1,
+    "explanation": "Decomposers break down dead organisms and waste, returning nutrients to the soil where producers can use them again."
+  },
+  {
+    "id": "ecosystem-energy-flow-t2-q4",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 2,
+    "question": "An organism that hunts and eats other organisms is called a:",
+    "choices": ["Predator", "Producer", "Decomposer", "Prey only, never a hunter"],
+    "answerIndex": 0,
+    "explanation": "A predator is an organism that hunts and feeds on other organisms, called prey."
+  },
+  {
+    "id": "ecosystem-energy-flow-t3-q3",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 3,
+    "question": "Why do food chains typically have only a few (often 3-5) levels?",
+    "choices": ["There is no limit to the number of levels", "So much energy is lost as heat at each level that there usually isn't enough energy left to support many more levels", "Animals refuse to eat more than 3 other species", "Producers can only support one consumer level"],
+    "answerIndex": 1,
+    "explanation": "Because roughly 90% of energy is lost as heat at each trophic level, there usually isn't enough energy left to support many additional levels."
+  },
+  {
+    "id": "ecosystem-energy-flow-t3-q4",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 3,
+    "question": "In a food web, an organism that can be eaten by multiple different predators shows that the food web:",
+    "choices": ["Has only one possible path for energy", "Has multiple interconnected feeding relationships", "Cannot include producers", "Is the same as a food chain"],
+    "answerIndex": 1,
+    "explanation": "Food webs show the many different feeding relationships that exist among organisms, unlike a single-path food chain."
+  },
+  {
+    "id": "ecosystem-energy-flow-t4-q3",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 4,
+    "question": "If you wanted to support the largest possible human population from a fixed amount of farmland, which diet would allow more people to be fed from the same land?",
+    "choices": ["A diet based mainly on eating animals that ate grain (a higher trophic level)", "A diet based mainly on eating plants directly (a lower trophic level)", "Both diets support exactly the same number of people", "Diet has no relationship to energy pyramids"],
+    "answerIndex": 1,
+    "explanation": "Eating lower on the food chain (plants directly) wastes less energy than eating animals that ate those plants, supporting more people from the same land."
+  },
+  {
+    "id": "ecosystem-energy-flow-t4-q4",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 4,
+    "question": "Which of the following would be found at the base (bottom level) of almost every energy pyramid?",
+    "choices": ["Top predators", "Decomposers only", "Producers, like plants and algae", "Secondary consumers"],
+    "answerIndex": 2,
+    "explanation": "Producers form the base of the energy pyramid because they capture the energy that flows to all other levels."
+  },
+  {
+    "id": "ecosystem-energy-flow-t5-q3",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 5,
+    "question": "A wildfire destroys most of the producers (plants) in a grassland ecosystem. Predict the short-term effect on the herbivore population, and explain why.",
+    "choices": ["The herbivore population will likely increase due to more food", "The herbivore population will likely decrease because their primary food source (plants) has been destroyed", "Herbivores will become producers", "There will be no effect on herbivores"],
+    "answerIndex": 1,
+    "explanation": "With their main food source destroyed, herbivores will likely face food shortages and their population will decline."
+  },
+  {
+    "id": "ecosystem-energy-flow-t5-q4",
+    "topicId": "ecosystem-energy-flow",
+    "tier": 5,
+    "question": "Why is it generally true that there is far more total biomass of producers in an ecosystem than top predators?",
+    "choices": ["Predators reproduce faster than producers", "Energy decreases at each trophic level, so less energy — and therefore less biomass — can be supported at higher levels", "Producers are larger individually than predators", "Top predators don't need energy"],
+    "answerIndex": 1,
+    "explanation": "Because energy is lost at each trophic transfer, higher levels can only support a fraction of the biomass of the levels below them."
+  },
+  {
+    "id": "dna-t1-q3",
+    "topicId": "dna",
+    "tier": 1,
+    "question": "Where is most of a cell's DNA located?",
+    "choices": ["In the cytoplasm, floating freely", "In the nucleus", "In the cell wall", "In the ribosomes"],
+    "answerIndex": 1,
+    "explanation": "In eukaryotic cells, most DNA is stored inside the nucleus."
+  },
+  {
+    "id": "dna-t1-q4",
+    "topicId": "dna",
+    "tier": 1,
+    "question": "DNA stands for:",
+    "choices": ["Deoxyribonucleic acid", "Dynamic Nuclear Atom", "Direct Nucleotide Assembly", "Double Nitrogen Acid"],
+    "answerIndex": 0,
+    "explanation": "DNA is short for deoxyribonucleic acid, the molecule that stores genetic information."
+  },
+  {
+    "id": "dna-t2-q3",
+    "topicId": "dna",
+    "tier": 2,
+    "question": "The backbone of each DNA strand is made up of alternating sugar and:",
+    "choices": ["Amino acid groups", "Phosphate groups", "Lipid groups", "Glucose rings"],
+    "answerIndex": 1,
+    "explanation": "Each DNA strand has a backbone of alternating sugar and phosphate groups, with bases attached to the sugars."
+  },
+  {
+    "id": "dna-t2-q4",
+    "topicId": "dna",
+    "tier": 2,
+    "question": "In DNA, guanine always pairs with:",
+    "choices": ["Adenine", "Thymine", "Cytosine", "Another guanine"],
+    "answerIndex": 2,
+    "explanation": "Base pairing rules state that guanine pairs with cytosine, and adenine pairs with thymine."
+  },
+  {
+    "id": "dna-t3-q3",
+    "topicId": "dna",
+    "tier": 3,
+    "question": "Which enzyme is primarily responsible for adding new nucleotides to build a new DNA strand during replication?",
+    "choices": ["DNA polymerase", "Ribosome", "A lysosome enzyme", "Chlorophyll"],
+    "answerIndex": 0,
+    "explanation": "DNA polymerase reads the template strand and adds complementary nucleotides to build a new strand."
+  },
+  {
+    "id": "dna-t3-q4",
+    "topicId": "dna",
+    "tier": 3,
+    "question": "Because DNA replication produces two molecules each made of one old strand and one new strand, this is described as:",
+    "choices": ["Conservative replication", "Semi-conservative replication", "Random replication", "No replication"],
+    "answerIndex": 1,
+    "explanation": "Semi-conservative replication means each new DNA molecule retains one original strand and gains one newly synthesized strand."
+  },
+  {
+    "id": "dna-t4-q3",
+    "topicId": "dna",
+    "tier": 4,
+    "question": "A chromosome is best described as:",
+    "choices": ["A single gene", "A tightly coiled, organized structure of DNA wrapped around proteins called histones", "A type of protein with no DNA", "A part of the cell membrane"],
+    "answerIndex": 1,
+    "explanation": "A chromosome is DNA tightly coiled around histone proteins, allowing large amounts of DNA to fit inside the nucleus."
+  },
+  {
+    "id": "dna-t4-q4",
+    "topicId": "dna",
+    "tier": 4,
+    "question": "Humans have 46 chromosomes in most cells, organized into how many pairs?",
+    "choices": ["23 pairs", "46 pairs", "12 pairs", "92 pairs"],
+    "answerIndex": 0,
+    "explanation": "Human cells typically have 46 chromosomes arranged as 23 pairs, one set from each parent."
+  },
+  {
+    "id": "dna-t5-q3",
+    "topicId": "dna",
+    "tier": 5,
+    "question": "If a DNA molecule is 30% adenine, what percentage would you expect to be guanine, given standard base-pairing rules?",
+    "choices": ["30%", "70%", "20%", "10%"],
+    "answerIndex": 2,
+    "explanation": "Since adenine pairs with thymine, thymine is also 30%, leaving 40% for guanine and cytosine combined — 20% each, since they pair equally."
+  },
+  {
+    "id": "dna-t5-q4",
+    "topicId": "dna",
+    "tier": 5,
+    "question": "Telomeres are repetitive DNA sequences found at the ends of chromosomes. Based on their location, what is a reasonable hypothesis about their function?",
+    "choices": ["They code for the majority of an organism's proteins", "They may help protect the chromosome's DNA from damage during replication, similar to how the tip of a shoelace prevents fraying", "They have no possible function", "They are only found in plant cells"],
+    "answerIndex": 1,
+    "explanation": "Telomeres act as protective caps on chromosome ends, helping prevent the loss of important genetic information during replication."
+  },
+  {
+    "id": "protein-synthesis-t1-q3",
+    "topicId": "protein-synthesis",
+    "tier": 1,
+    "question": "Proteins are built from chains of:",
+    "choices": ["Amino acids", "Nucleotides", "Fatty acids", "Monosaccharides"],
+    "answerIndex": 0,
+    "explanation": "Proteins are made of long chains of amino acids folded into specific shapes."
+  },
+  {
+    "id": "protein-synthesis-t1-q4",
+    "topicId": "protein-synthesis",
+    "tier": 1,
+    "question": "The process of building a protein from an mRNA template is called:",
+    "choices": ["Transcription", "Translation", "Replication", "Mutation"],
+    "answerIndex": 1,
+    "explanation": "Translation is the process where ribosomes read mRNA and assemble amino acids into a protein."
+  },
+  {
+    "id": "protein-synthesis-t2-q3",
+    "topicId": "protein-synthesis",
+    "tier": 2,
+    "question": "Which of the following correctly describes the flow of genetic information in protein synthesis?",
+    "choices": ["Protein → RNA → DNA", "DNA → RNA → Protein", "RNA → Protein → DNA", "Protein → DNA → RNA"],
+    "answerIndex": 1,
+    "explanation": "Genetic information flows from DNA to RNA (transcription) and then from RNA to protein (translation)."
+  },
+  {
+    "id": "protein-synthesis-t2-q4",
+    "topicId": "protein-synthesis",
+    "tier": 2,
+    "question": "An enzyme called RNA polymerase is mainly responsible for:",
+    "choices": ["Building mRNA from a DNA template during transcription", "Breaking down proteins", "Copying DNA during replication", "Transporting amino acids"],
+    "answerIndex": 0,
+    "explanation": "RNA polymerase reads a DNA template and synthesizes a complementary strand of mRNA during transcription."
+  },
+  {
+    "id": "protein-synthesis-t3-q3",
+    "topicId": "protein-synthesis",
+    "tier": 3,
+    "question": "An anticodon is found on which molecule, and what does it do?",
+    "choices": ["On mRNA; it codes for the start of translation", "On tRNA; it pairs with a complementary codon on mRNA to bring the correct amino acid", "On DNA; it stores genetic information permanently", "On ribosomes; it builds the cell membrane"],
+    "answerIndex": 1,
+    "explanation": "Each tRNA has an anticodon that pairs with a specific mRNA codon, delivering the matching amino acid to the ribosome."
+  },
+  {
+    "id": "protein-synthesis-t3-q4",
+    "topicId": "protein-synthesis",
+    "tier": 3,
+    "question": "How many different amino acids are commonly used to build proteins in living things?",
+    "choices": ["About 4", "About 20", "About 100", "About 1000"],
+    "answerIndex": 1,
+    "explanation": "There are about 20 common amino acids that cells use to build proteins."
+  },
+  {
+    "id": "protein-synthesis-t4-q3",
+    "topicId": "protein-synthesis",
+    "tier": 4,
+    "question": "If an mRNA codon is UUU, which amino acid would be added to the growing protein (UUU codes for phenylalanine)?",
+    "choices": ["Phenylalanine", "Methionine", "Serine", "Stop — no amino acid is added"],
+    "answerIndex": 0,
+    "explanation": "The codon UUU specifies the amino acid phenylalanine."
+  },
+  {
+    "id": "protein-synthesis-t4-q4",
+    "topicId": "protein-synthesis",
+    "tier": 4,
+    "question": "Why can different codons sometimes code for the same amino acid?",
+    "choices": ["The genetic code is described as 'redundant' or 'degenerate' — multiple codons can specify the same amino acid", "Every codon codes for a unique amino acid with no overlap", "Amino acids don't actually depend on codons", "This never happens"],
+    "answerIndex": 0,
+    "explanation": "The genetic code is degenerate, meaning most amino acids can be specified by more than one codon."
+  },
+  {
+    "id": "protein-synthesis-t5-q3",
+    "topicId": "protein-synthesis",
+    "tier": 5,
+    "question": "A ribosome reads mRNA in groups of three bases (codons) starting from a specific start codon. If a single nucleotide is inserted near the beginning of the coding sequence, what is the most likely effect on the protein produced?",
+    "choices": ["No effect, since one base doesn't matter", "A frameshift that changes every codon read after the insertion, likely producing a very different or non-functional protein", "The mRNA will turn back into DNA", "The ribosome will skip the entire gene"],
+    "answerIndex": 1,
+    "explanation": "Inserting one base shifts the reading frame for every codon downstream, usually drastically altering the resulting protein."
+  },
+  {
+    "id": "protein-synthesis-t5-q4",
+    "topicId": "protein-synthesis",
+    "tier": 5,
+    "question": "Some antibiotics work by binding to bacterial ribosomes and blocking translation. Why would this be an effective way to fight bacterial infections without harming human cells as much?",
+    "choices": ["Human cells don't have ribosomes", "Bacterial ribosomes have a different structure than human ribosomes, so drugs can target bacterial ribosomes more specifically", "Translation doesn't happen in bacteria", "Bacteria don't need proteins"],
+    "answerIndex": 1,
+    "explanation": "Because bacterial ribosomes differ structurally from human ribosomes, some antibiotics can selectively block bacterial translation while sparing human cells."
+  },
+  {
+    "id": "mutations-t1-q3",
+    "topicId": "mutations",
+    "tier": 1,
+    "question": "A change in the number or structure of chromosomes (rather than a single base) is called a:",
+    "choices": ["Point mutation", "Chromosomal mutation", "Silent mutation", "Not a mutation at all"],
+    "answerIndex": 1,
+    "explanation": "Chromosomal mutations involve large-scale changes to chromosome structure or number, unlike point mutations which affect single bases."
+  },
+  {
+    "id": "mutations-t1-q4",
+    "topicId": "mutations",
+    "tier": 1,
+    "question": "Which of these is a possible source of mutations?",
+    "choices": ["UV radiation from the sun", "Drinking water", "Sleeping", "Wearing clothes"],
+    "answerIndex": 0,
+    "explanation": "UV radiation can damage DNA and is a known mutagen."
+  },
+  {
+    "id": "mutations-t2-q3",
+    "topicId": "mutations",
+    "tier": 2,
+    "question": "A mutation that occurs in a sex cell (egg or sperm) can be passed on to:",
+    "choices": ["No one", "Offspring, since it becomes part of the inherited genetic material", "Only the individual's own body cells", "Only plants"],
+    "answerIndex": 1,
+    "explanation": "Mutations in egg or sperm cells (germline mutations) can be inherited by offspring."
+  },
+  {
+    "id": "mutations-t2-q4",
+    "topicId": "mutations",
+    "tier": 2,
+    "question": "Which best describes an 'insertion' mutation?",
+    "choices": ["A base is removed from the DNA sequence", "One or more extra bases are added into the DNA sequence", "Two strands of DNA swap places entirely", "No change occurs to the DNA"],
+    "answerIndex": 1,
+    "explanation": "An insertion mutation adds one or more extra nucleotide bases into a DNA sequence."
+  },
+  {
+    "id": "mutations-t3-q3",
+    "topicId": "mutations",
+    "tier": 3,
+    "question": "A 'missense' mutation is a point mutation that:",
+    "choices": ["Has no effect on the protein at all", "Changes a codon so that it codes for a different amino acid", "Always creates a stop codon", "Only happens in RNA, never DNA"],
+    "answerIndex": 1,
+    "explanation": "A missense mutation changes one codon so it specifies a different amino acid, which can alter the protein's structure or function."
+  },
+  {
+    "id": "mutations-t3-q4",
+    "topicId": "mutations",
+    "tier": 3,
+    "question": "Why are mutations in the germline (egg and sperm cells) considered more significant for evolution than mutations in skin cells?",
+    "choices": ["Skin cell mutations are always more dangerous", "Germline mutations can be passed to offspring and affect future generations, while skin cell mutations generally are not inherited", "Germline cells can't mutate", "There is no difference between the two"],
+    "answerIndex": 1,
+    "explanation": "Only mutations in germline cells can be inherited by offspring, so they are the ones relevant to evolution across generations."
+  },
+  {
+    "id": "mutations-t4-q3",
+    "topicId": "mutations",
+    "tier": 4,
+    "question": "Exposure to certain chemicals, called mutagens, can increase the rate of mutations. Which of these is a well-known mutagen?",
+    "choices": ["Tobacco smoke", "Pure water", "Table salt in normal amounts", "Sunscreen"],
+    "answerIndex": 0,
+    "explanation": "Chemicals in tobacco smoke are known mutagens that can damage DNA and increase mutation rates."
+  },
+  {
+    "id": "mutations-t4-q4",
+    "topicId": "mutations",
+    "tier": 4,
+    "question": "A duplication mutation occurs when:",
+    "choices": ["A segment of DNA is copied an extra time, resulting in extra copies of certain genes", "All DNA is deleted", "DNA turns into RNA permanently", "A cell stops dividing"],
+    "answerIndex": 0,
+    "explanation": "A duplication mutation results in an extra copy of a DNA segment, which can lead to extra copies of one or more genes."
+  },
+  {
+    "id": "mutations-t5-q3",
+    "topicId": "mutations",
+    "tier": 5,
+    "question": "Some mutations create new alleles that have no immediate effect on an organism's survival but could become useful if the environment changes. These are called:",
+    "choices": ["Harmful mutations", "Neutral mutations", "Lethal mutations", "Impossible mutations"],
+    "answerIndex": 1,
+    "explanation": "Neutral mutations don't currently affect an organism's fitness but can become beneficial or harmful if conditions change."
+  },
+  {
+    "id": "mutations-t5-q4",
+    "topicId": "mutations",
+    "tier": 5,
+    "question": "Down syndrome results from an individual having three copies of chromosome 21 instead of two. This is an example of:",
+    "choices": ["A point mutation", "A chromosomal mutation caused by nondisjunction during meiosis", "A silent mutation", "No mutation — just normal variation"],
+    "answerIndex": 1,
+    "explanation": "Having an extra copy of a chromosome results from nondisjunction during meiosis and is a type of chromosomal mutation."
+  },
+  {
+    "id": "cell-division-t1-q3",
+    "topicId": "cell-division",
+    "tier": 1,
+    "question": "Before mitosis begins, a cell spends most of its time in a stage called:",
+    "choices": ["Cytokinesis", "Interphase", "Anaphase", "Telophase"],
+    "answerIndex": 1,
+    "explanation": "Cells spend most of the cell cycle in interphase, growing and copying their DNA before mitosis."
+  },
+  {
+    "id": "cell-division-t1-q4",
+    "topicId": "cell-division",
+    "tier": 1,
+    "question": "How many daughter cells result from one round of mitosis?",
+    "choices": ["One", "Two", "Three", "Four"],
+    "answerIndex": 1,
+    "explanation": "Mitosis produces two genetically identical daughter cells from one parent cell."
+  },
+  {
+    "id": "cell-division-t2-q3",
+    "topicId": "cell-division",
+    "tier": 2,
+    "question": "During which phase of mitosis does the nuclear envelope break down and chromosomes begin to condense?",
+    "choices": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answerIndex": 0,
+    "explanation": "During prophase, chromosomes condense and the nuclear envelope breaks down in preparation for division."
+  },
+  {
+    "id": "cell-division-t2-q4",
+    "topicId": "cell-division",
+    "tier": 2,
+    "question": "During anaphase, what happens to the sister chromatids?",
+    "choices": ["They condense for the first time", "They are pulled apart toward opposite ends of the cell", "They form a new nuclear envelope", "They are duplicated again"],
+    "answerIndex": 1,
+    "explanation": "In anaphase, sister chromatids separate and are pulled to opposite poles of the cell."
+  },
+  {
+    "id": "cell-division-t3-q3",
+    "topicId": "cell-division",
+    "tier": 3,
+    "question": "Meiosis consists of two rounds of division, called:",
+    "choices": ["Mitosis I and Mitosis II", "Meiosis I and Meiosis II", "Prophase and Telophase only", "Interphase I and Interphase II"],
+    "answerIndex": 1,
+    "explanation": "Meiosis involves two successive divisions, Meiosis I and Meiosis II, producing four haploid cells."
+  },
+  {
+    "id": "cell-division-t3-q4",
+    "topicId": "cell-division",
+    "tier": 3,
+    "question": "Gametes (sex cells) produced by meiosis are described as ___ because they contain half the usual chromosome number.",
+    "choices": ["Diploid", "Haploid", "Triploid", "Polyploid"],
+    "answerIndex": 1,
+    "explanation": "Haploid cells contain a single set of chromosomes, half the number found in diploid body cells."
+  },
+  {
+    "id": "cell-division-t4-q3",
+    "topicId": "cell-division",
+    "tier": 4,
+    "question": "Independent assortment during meiosis refers to:",
+    "choices": ["The random distribution of homologous chromosome pairs into different gametes", "Chromosomes always being inherited in fixed groups", "Mitosis producing identical cells", "DNA replication errors"],
+    "answerIndex": 0,
+    "explanation": "Independent assortment is the random distribution of each homologous chromosome pair into gametes, increasing genetic diversity."
+  },
+  {
+    "id": "cell-division-t4-q4",
+    "topicId": "cell-division",
+    "tier": 4,
+    "question": "Cancer can result when cell division becomes:",
+    "choices": ["Completely stopped in all cells", "Uncontrolled, due to mutations in genes that regulate the cell cycle", "Slower than normal but still controlled", "Impossible to study"],
+    "answerIndex": 1,
+    "explanation": "Cancer occurs when mutations disrupt the normal controls on the cell cycle, causing cells to divide uncontrollably."
+  },
+  {
+    "id": "cell-division-t5-q3",
+    "topicId": "cell-division",
+    "tier": 5,
+    "question": "A skin cell undergoes mitosis to repair a cut. Compare the genetic content of the resulting two cells to the original cell.",
+    "choices": ["Each new cell has half the DNA of the original", "Each new cell is genetically identical to the original cell and to each other", "The new cells have completely different DNA", "Only one new cell receives DNA"],
+    "answerIndex": 1,
+    "explanation": "Mitosis produces daughter cells that are genetically identical copies of the original cell."
+  },
+  {
+    "id": "cell-division-t5-q4",
+    "topicId": "cell-division",
+    "tier": 5,
+    "question": "Why do organisms that reproduce sexually (using meiosis and fertilization) tend to have more genetically diverse offspring than organisms that reproduce asexually (using mitosis)?",
+    "choices": ["Meiosis and fertilization combine genetic material from two parents and shuffle alleles through crossing over and independent assortment, while asexual reproduction via mitosis produces genetically identical copies", "Asexual reproduction always produces more diverse offspring", "Mitosis introduces more mutations than meiosis", "There is no difference in genetic diversity between the two"],
+    "answerIndex": 0,
+    "explanation": "Sexual reproduction combines genes from two parents and shuffles them through crossing over and independent assortment, producing offspring with new combinations of traits, while mitosis simply copies cells."
   }
 ]

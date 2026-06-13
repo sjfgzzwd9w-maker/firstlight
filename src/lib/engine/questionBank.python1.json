@@ -1,0 +1,677 @@
+[
+  {
+    "id": "python-basics-t1-q1",
+    "topicId": "python-basics",
+    "tier": 1,
+    "question": "Which function is used to display output on the screen in Python?",
+    "choices": ["display()", "print()", "echo()", "output()"],
+    "answerIndex": 1,
+    "explanation": "print() is Python's built-in function for writing text to the screen, e.g. print(\"Hello\")."
+  },
+  {
+    "id": "python-basics-t1-q2",
+    "topicId": "python-basics",
+    "tier": 1,
+    "question": "Which symbol starts a single-line comment in Python?",
+    "choices": ["//", "#", "<!--", "/* */"],
+    "answerIndex": 1,
+    "explanation": "Anything after a # on a line is ignored by Python — it's used for notes to yourself and other readers."
+  },
+  {
+    "id": "python-basics-t1-q3",
+    "topicId": "python-basics",
+    "tier": 1,
+    "question": "Which of these is a valid Python variable name?",
+    "choices": ["2cool", "my-name", "_score", "class"],
+    "answerIndex": 2,
+    "explanation": "Variable names can't start with a digit (2cool) or contain hyphens (my-name), and can't be a reserved keyword (class). _score is valid — names can start with letters or underscores."
+  },
+  {
+    "id": "python-basics-t2-q1",
+    "topicId": "python-basics",
+    "tier": 2,
+    "question": "```python\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name)\n```\nIf the user types Cosmo, what does this code print?",
+    "choices": ["Hello, name", "Hello, Cosmo", "What is your name? Cosmo", "input(Cosmo)"],
+    "answerIndex": 1,
+    "explanation": "input() returns whatever the user typed as a string, which is stored in name. Concatenating it with \"Hello, \" prints \"Hello, Cosmo\"."
+  },
+  {
+    "id": "python-basics-t2-q2",
+    "topicId": "python-basics",
+    "tier": 2,
+    "question": "If a = 3 and b = 4, what does print(a, b) output?",
+    "choices": ["3, 4", "3 4", "34", "(3, 4)"],
+    "answerIndex": 1,
+    "explanation": "When you pass multiple values to print() separated by commas, it joins them with a single space by default, giving \"3 4\"."
+  },
+  {
+    "id": "python-basics-t2-q3",
+    "topicId": "python-basics",
+    "tier": 2,
+    "question": "What determines which lines of code belong inside an if statement or loop in Python?",
+    "choices": ["Curly braces {}", "Indentation", "Semicolons", "Parentheses"],
+    "answerIndex": 1,
+    "explanation": "Python uses consistent indentation (spaces) to mark which lines are part of a block — unlike languages that use {}."
+  },
+  {
+    "id": "python-basics-t3-q1",
+    "topicId": "python-basics",
+    "tier": 3,
+    "question": "```python\nname = \"Cosmo\"\nprint(\"Hello, \" + name + \"!)\n```\nWhat's wrong with this code?",
+    "choices": ["The string \"!\" is missing its closing quote", "print() can only take one argument", "name needs to be an integer", "+ cannot join strings"],
+    "answerIndex": 0,
+    "explanation": "The final string \"!\" never gets its closing quotation mark, so Python can't tell where the string ends — this causes a SyntaxError. It should be \"!\" with a matching closing quote."
+  },
+  {
+    "id": "python-basics-t3-q2",
+    "topicId": "python-basics",
+    "tier": 3,
+    "question": "```python\nx = 5\ny = \"5\"\nprint(x == y)\n```\nWhat does this code print?",
+    "choices": ["True", "False", "5", "Error"],
+    "answerIndex": 1,
+    "explanation": "x is an int and y is a str. Python never considers values of different types equal with ==, so this prints False even though they 'look' the same."
+  },
+  {
+    "id": "python-basics-t3-q3",
+    "topicId": "python-basics",
+    "tier": 3,
+    "question": "Which of these correctly writes a multi-line comment (docstring-style) in Python?",
+    "choices": ["// comment //", "<!-- comment -->", "''' comment '''", "/* comment */"],
+    "answerIndex": 2,
+    "explanation": "Triple quotes (''' ... ''' or \"\"\" ... \"\"\") create a string that spans multiple lines, often used as a comment or docstring when it isn't assigned to anything."
+  },
+  {
+    "id": "python-basics-t4-q1",
+    "topicId": "python-basics",
+    "tier": 4,
+    "question": "```python\nage = 18\nif age >= 18\n    print(\"You can vote!\")\n```\nWhat's wrong with this code?",
+    "choices": ["Missing colon (:) after the if condition", "age should be in quotes", "print() needs two arguments", ">= is not a valid operator"],
+    "answerIndex": 0,
+    "explanation": "Every if, elif, else, for, while, and def header needs a colon at the end. Without it, Python raises a SyntaxError before the code can even run."
+  },
+  {
+    "id": "python-basics-t4-q2",
+    "topicId": "python-basics",
+    "tier": 4,
+    "question": "What will print(type(10)) output?",
+    "choices": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "10"],
+    "answerIndex": 0,
+    "explanation": "type() returns the type of a value. 10 is a whole number with no decimal point, so Python stores it as an int."
+  },
+  {
+    "id": "python-basics-t4-q3",
+    "topicId": "python-basics",
+    "tier": 4,
+    "question": "```python\nx, y = 1, 2\nx, y = y, x\nprint(x, y)\n```\nWhat does this print?",
+    "choices": ["1 2", "2 1", "Error", "1 1"],
+    "answerIndex": 1,
+    "explanation": "x, y = y, x swaps the two values in one step: Python evaluates the right side (2, 1) first, then assigns x = 2 and y = 1, printing \"2 1\"."
+  },
+  {
+    "id": "python-basics-t5-q1",
+    "topicId": "python-basics",
+    "tier": 5,
+    "question": "```python\ndef greet():\n\tprint(\"Hello\")\n        print(\"World\")\n```\nThis code raises an IndentationError. What's the most likely cause?",
+    "choices": ["Mixing tabs and spaces for indentation", "greet is a reserved word", "print is misspelled", "Functions can't contain two print statements"],
+    "answerIndex": 0,
+    "explanation": "The first line uses a tab character and the second uses spaces. Python can't reliably compare tab-based and space-based indentation, so it raises an IndentationError. Stick to spaces (usually 4) consistently."
+  },
+  {
+    "id": "python-basics-t5-q2",
+    "topicId": "python-basics",
+    "tier": 5,
+    "question": "What is the output of print(1 < 2 < 3)?",
+    "choices": ["True", "False", "Error", "1"],
+    "answerIndex": 0,
+    "explanation": "Python supports chained comparisons: 1 < 2 < 3 is evaluated as (1 < 2) and (2 < 3), which is True and True, so the result is True."
+  },
+  {
+    "id": "python-basics-t5-q3",
+    "topicId": "python-basics",
+    "tier": 5,
+    "question": "```python\nname = \"Cosmo\"\nprint(f\"Hello, {Name}!\")\n```\nThis code raises a NameError. What's wrong?",
+    "choices": ["Python is case-sensitive, so Name is different from name", "f-strings don't support variables", "print() can't use f-strings", "Hello needs to be in single quotes"],
+    "answerIndex": 0,
+    "explanation": "Python treats name and Name as completely different identifiers. Since only name was defined, referencing Name inside the f-string raises a NameError: name 'Name' is not defined."
+  },
+  {
+    "id": "data-types-t1-q1",
+    "topicId": "data-types",
+    "tier": 1,
+    "question": "Which of these values is a float in Python?",
+    "choices": ["5", "\"5\"", "5.0", "True"],
+    "answerIndex": 2,
+    "explanation": "5.0 has a decimal point, so Python stores it as a float. 5 is an int, \"5\" is a str, and True is a bool."
+  },
+  {
+    "id": "data-types-t1-q2",
+    "topicId": "data-types",
+    "tier": 1,
+    "question": "What data type is the value True in Python?",
+    "choices": ["int", "str", "bool", "float"],
+    "answerIndex": 2,
+    "explanation": "True and False are the two values of the bool (Boolean) type, used to represent yes/no or on/off conditions."
+  },
+  {
+    "id": "data-types-t1-q3",
+    "topicId": "data-types",
+    "tier": 1,
+    "question": "Which function converts the string \"42\" into an integer?",
+    "choices": ["str(\"42\")", "int(\"42\")", "float(\"42\")", "bool(\"42\")"],
+    "answerIndex": 1,
+    "explanation": "int(\"42\") parses the text \"42\" and returns the integer 42, so it can be used in math operations."
+  },
+  {
+    "id": "data-types-t2-q1",
+    "topicId": "data-types",
+    "tier": 2,
+    "question": "What is the result of 10 / 3 in Python 3?",
+    "choices": ["3", "3.3333333333333335", "3.0", "Error"],
+    "answerIndex": 1,
+    "explanation": "The / operator always performs true division and returns a float, even if the numbers divide evenly — 10 / 3 is approximately 3.3333333333333335."
+  },
+  {
+    "id": "data-types-t2-q2",
+    "topicId": "data-types",
+    "tier": 2,
+    "question": "What is the result of 10 // 3?",
+    "choices": ["3", "3.33", "4", "1"],
+    "answerIndex": 0,
+    "explanation": "// is floor division: it divides and rounds down to the nearest whole number, discarding the remainder. 10 // 3 is 3."
+  },
+  {
+    "id": "data-types-t2-q3",
+    "topicId": "data-types",
+    "tier": 2,
+    "question": "What is the result of 10 % 3?",
+    "choices": ["3", "1", "0", "3.33"],
+    "answerIndex": 1,
+    "explanation": "% is the modulo operator — it returns the remainder after division. 10 divided by 3 is 3 with a remainder of 1, so 10 % 3 is 1."
+  },
+  {
+    "id": "data-types-t3-q1",
+    "topicId": "data-types",
+    "tier": 3,
+    "question": "```python\nx = \"5\"\ny = 3\nprint(x + y)\n```\nWhat's wrong with this code?",
+    "choices": ["You can't use + between a string and an int — it raises a TypeError", "x should not be in quotes", "y must be a string too, but it would still work", "+ converts y to a string automatically"],
+    "answerIndex": 0,
+    "explanation": "Python won't silently convert between strings and numbers. Adding a str and an int with + raises TypeError: can only concatenate str (not \"int\") to str. You'd need int(x) + y or x + str(y)."
+  },
+  {
+    "id": "data-types-t3-q2",
+    "topicId": "data-types",
+    "tier": 3,
+    "question": "What does bool(0) return?",
+    "choices": ["True", "False", "0", "Error"],
+    "answerIndex": 1,
+    "explanation": "0 is one of Python's 'falsy' values — bool(0) is False. Every other number is truthy."
+  },
+  {
+    "id": "data-types-t3-q3",
+    "topicId": "data-types",
+    "tier": 3,
+    "question": "What does bool(\"\") (an empty string) return?",
+    "choices": ["True", "False", "Error", "\"\""],
+    "answerIndex": 1,
+    "explanation": "An empty string is falsy in Python, so bool(\"\") is False. Any non-empty string, like \"False\" or \" \", is truthy."
+  },
+  {
+    "id": "data-types-t4-q1",
+    "topicId": "data-types",
+    "tier": 4,
+    "question": "What is the output of print(type(5 / 2))?",
+    "choices": ["<class 'int'>", "<class 'float'>", "<class 'str'>", "<class 'double'>"],
+    "answerIndex": 1,
+    "explanation": "The / operator always returns a float in Python 3, regardless of the input types, so 5 / 2 has type float (and equals 2.5)."
+  },
+  {
+    "id": "data-types-t4-q2",
+    "topicId": "data-types",
+    "tier": 4,
+    "question": "```python\nprice = \"19.99\"\ntotal = price * 2\nprint(total)\n```\nWhat does this code actually do?",
+    "choices": ["It prints 39.98", "It raises a TypeError because you can't multiply a string by a number", "It prints \"19.9919.99\" because * repeats strings", "It prints \"39.98\" as a string"],
+    "answerIndex": 2,
+    "explanation": "Multiplying a string by an int repeats the string that many times — it does not do math. price * 2 gives \"19.9919.99\". To get 39.98, you'd need float(price) * 2."
+  },
+  {
+    "id": "data-types-t4-q3",
+    "topicId": "data-types",
+    "tier": 4,
+    "question": "Which of these correctly converts the float 3.999 to an integer using truncation (cutting off the decimal, not rounding)?",
+    "choices": ["round(3.999)", "int(3.999)", "str(3.999)", "float(3.999)"],
+    "answerIndex": 1,
+    "explanation": "int() on a float truncates toward zero, so int(3.999) is 3. round(3.999) would instead round to the nearest whole number, giving 4."
+  },
+  {
+    "id": "data-types-t5-q1",
+    "topicId": "data-types",
+    "tier": 5,
+    "question": "What is the output of print(0.1 + 0.2 == 0.3)?",
+    "choices": ["True", "False", "Error", "0.3"],
+    "answerIndex": 1,
+    "explanation": "Floats are stored in binary, and 0.1 and 0.2 can't be represented exactly. 0.1 + 0.2 actually equals 0.30000000000000004, which is not exactly equal to 0.3, so the comparison is False."
+  },
+  {
+    "id": "data-types-t5-q2",
+    "topicId": "data-types",
+    "tier": 5,
+    "question": "```python\nitems = 7\npeople = 2\naverage = items / people\nprint(\"Average:\", average)\nprint(\"Average:\", items // people)\n```\nBoth print statements run without error. What is the key difference between their outputs?",
+    "choices": ["The first gives 3.5 (true division), the second gives 3 (floor division)", "Both print exactly the same value, 3.5", "The second line raises an error because // is invalid", "The first line raises an error because / is invalid"],
+    "answerIndex": 0,
+    "explanation": "/ always performs true division (7 / 2 = 3.5), while // performs floor division, rounding down to the nearest whole number (7 // 2 = 3)."
+  },
+  {
+    "id": "data-types-t5-q3",
+    "topicId": "data-types",
+    "tier": 5,
+    "question": "What does print(int(\"3.5\")) do?",
+    "choices": ["Prints 3", "Prints 3.5", "Raises a ValueError because int() can't parse a decimal string directly", "Prints 4 (rounded)"],
+    "answerIndex": 2,
+    "explanation": "int() can only parse strings that look like whole numbers. \"3.5\" contains a decimal point, so int(\"3.5\") raises ValueError: invalid literal for int() with base 10: '3.5'. You'd need int(float(\"3.5\")) to get 3."
+  },
+  {
+    "id": "strings-t1-q1",
+    "topicId": "strings",
+    "tier": 1,
+    "question": "What is the result of \"Hello\" + \"World\"?",
+    "choices": ["Hello World", "HelloWorld", "Hello+World", "Error"],
+    "answerIndex": 1,
+    "explanation": "The + operator joins (concatenates) strings exactly as written, with no extra space, giving \"HelloWorld\"."
+  },
+  {
+    "id": "strings-t1-q2",
+    "topicId": "strings",
+    "tier": 1,
+    "question": "If word = \"Python\", how do you get its first character?",
+    "choices": ["word[1]", "word[0]", "word(0)", "word.first()"],
+    "answerIndex": 1,
+    "explanation": "Strings are indexed starting at 0, so word[0] is \"P\", the first character."
+  },
+  {
+    "id": "strings-t1-q3",
+    "topicId": "strings",
+    "tier": 1,
+    "question": "What does len(\"Python\") return?",
+    "choices": ["5", "6", "7", "Python"],
+    "answerIndex": 1,
+    "explanation": "len() counts the characters in a string. \"Python\" has 6 letters, so len(\"Python\") is 6."
+  },
+  {
+    "id": "strings-t2-q1",
+    "topicId": "strings",
+    "tier": 2,
+    "question": "What does \"Python\"[1:4] return?",
+    "choices": ["Pyt", "yth", "ytho", "ython"],
+    "answerIndex": 1,
+    "explanation": "Slicing [1:4] starts at index 1 (inclusive) and stops before index 4 (exclusive), giving the characters at positions 1, 2, and 3: \"yth\"."
+  },
+  {
+    "id": "strings-t2-q2",
+    "topicId": "strings",
+    "tier": 2,
+    "question": "What does \"hello\".upper() return?",
+    "choices": ["HELLO", "hello", "Hello", "HELLo"],
+    "answerIndex": 0,
+    "explanation": "The upper() method returns a new string with every letter converted to uppercase: \"HELLO\"."
+  },
+  {
+    "id": "strings-t2-q3",
+    "topicId": "strings",
+    "tier": 2,
+    "question": "What does \"  hi  \".strip() return?",
+    "choices": ["\"  hi  \"", "\"hi\"", "\"hi  \"", "\"  hi\""],
+    "answerIndex": 1,
+    "explanation": "strip() removes whitespace from both the start and end of a string, leaving \"hi\" with no surrounding spaces."
+  },
+  {
+    "id": "strings-t3-q1",
+    "topicId": "strings",
+    "tier": 3,
+    "question": "```python\nname = \"Cosmo\"\nprint(name[5])\n```\nWhat happens when this code runs?",
+    "choices": ["It prints an empty string", "It raises an IndexError because valid indices are 0-4", "It prints \"o\"", "It prints \"Cosmo \""],
+    "answerIndex": 1,
+    "explanation": "\"Cosmo\" has 5 characters, with valid indices 0 through 4. Index 5 is out of range, so Python raises IndexError: string index out of range."
+  },
+  {
+    "id": "strings-t3-q2",
+    "topicId": "strings",
+    "tier": 3,
+    "question": "What does \"3\" + \"4\" evaluate to?",
+    "choices": ["7", "\"34\"", "12", "Error"],
+    "answerIndex": 1,
+    "explanation": "Both \"3\" and \"4\" are strings, so + concatenates them into the string \"34\" rather than adding them as numbers."
+  },
+  {
+    "id": "strings-t3-q3",
+    "topicId": "strings",
+    "tier": 3,
+    "question": "What is the output of \"py\" * 3?",
+    "choices": ["pypypy", "py3", "ppyy", "Error"],
+    "answerIndex": 0,
+    "explanation": "Multiplying a string by an integer n repeats the string n times: \"py\" * 3 is \"pypypy\"."
+  },
+  {
+    "id": "strings-t4-q1",
+    "topicId": "strings",
+    "tier": 4,
+    "question": "If score = 95, which f-string correctly prints \"Score: 95\"?",
+    "choices": ["f\"Score: score\"", "f\"Score: {score}\"", "\"Score: \" + {score}", "f\"Score: (score)\""],
+    "answerIndex": 1,
+    "explanation": "Inside an f-string (prefixed with f), curly braces {} embed the value of an expression or variable. f\"Score: {score}\" inserts the value of score into the string."
+  },
+  {
+    "id": "strings-t4-q2",
+    "topicId": "strings",
+    "tier": 4,
+    "question": "```python\nsentence = \"the cosmos is vast\"\nprint(sentence.title)\n```\nWhat's wrong with this code?",
+    "choices": ["title is a method and needs parentheses: sentence.title()", "title is not a valid string method", "sentence should be capitalized first", "title() only works on lists"],
+    "answerIndex": 0,
+    "explanation": "sentence.title without () refers to the method itself (a function object), not its result — it prints something like <built-in method title...> instead of \"The Cosmos Is Vast\". You need to call it with sentence.title()."
+  },
+  {
+    "id": "strings-t4-q3",
+    "topicId": "strings",
+    "tier": 4,
+    "question": "What does \"Hello, World!\".replace(\"World\", \"Cosmo\") return?",
+    "choices": ["Hello, World!", "Hello, Cosmo!", "Cosmo, World!", "Error"],
+    "answerIndex": 1,
+    "explanation": "replace(old, new) returns a new string with every occurrence of old swapped for new, giving \"Hello, Cosmo!\"."
+  },
+  {
+    "id": "strings-t5-q1",
+    "topicId": "strings",
+    "tier": 5,
+    "question": "What does \"Python\"[::-1] return?",
+    "choices": ["Python", "nohtyP", "P", "Error"],
+    "answerIndex": 1,
+    "explanation": "The slice [::-1] uses a step of -1, walking through the string backwards from the end to the start, producing the reversed string \"nohtyP\"."
+  },
+  {
+    "id": "strings-t5-q2",
+    "topicId": "strings",
+    "tier": 5,
+    "question": "```python\nname = \"cosmo\"\ngreeting = \"Hello, \" + name.Capitalize() + \"!\"\nprint(greeting)\n```\nThis code raises an AttributeError. What's the issue?",
+    "choices": ["Python method names are case-sensitive — it should be name.capitalize()", "Strings cannot be capitalized", "+ cannot be used with method calls", "Capitalize() needs an argument"],
+    "answerIndex": 0,
+    "explanation": "Python's built-in string method is lowercase: capitalize(). Capitalize() with a capital C doesn't exist on strings, so Python raises AttributeError: 'str' object has no attribute 'Capitalize'."
+  },
+  {
+    "id": "strings-t5-q3",
+    "topicId": "strings",
+    "tier": 5,
+    "question": "What is the output of \"a-b-c\".split(\"-\")?",
+    "choices": ["\"a b c\"", "['a', 'b', 'c']", "('a', 'b', 'c')", "Error"],
+    "answerIndex": 1,
+    "explanation": "split(sep) breaks a string into a list of substrings wherever sep appears. \"a-b-c\".split(\"-\") returns the list ['a', 'b', 'c']."
+  },
+  {
+    "id": "operators-conditionals-t1-q1",
+    "topicId": "operators-conditionals",
+    "tier": 1,
+    "question": "What is the result of 7 % 2?",
+    "choices": ["3", "1", "3.5", "0"],
+    "answerIndex": 1,
+    "explanation": "% returns the remainder of division. 7 divided by 2 is 3 with a remainder of 1, so 7 % 2 is 1."
+  },
+  {
+    "id": "operators-conditionals-t1-q2",
+    "topicId": "operators-conditionals",
+    "tier": 1,
+    "question": "Which operator checks if two values are equal in Python?",
+    "choices": ["=", "==", "equals", "==="],
+    "answerIndex": 1,
+    "explanation": "A single = assigns a value to a variable. == compares two values and returns True or False."
+  },
+  {
+    "id": "operators-conditionals-t1-q3",
+    "topicId": "operators-conditionals",
+    "tier": 1,
+    "question": "What does not True evaluate to?",
+    "choices": ["True", "False", "None", "Error"],
+    "answerIndex": 1,
+    "explanation": "not flips a Boolean value: not True is False, and not False is True."
+  },
+  {
+    "id": "operators-conditionals-t2-q1",
+    "topicId": "operators-conditionals",
+    "tier": 2,
+    "question": "```python\nx = 7\nif x > 5:\n    print(\"big\")\nelse:\n    print(\"small\")\n```\nWhat does this print?",
+    "choices": ["big", "small", "7", "Error"],
+    "answerIndex": 0,
+    "explanation": "x is 7, and 7 > 5 is True, so the if branch runs and prints \"big\"."
+  },
+  {
+    "id": "operators-conditionals-t2-q2",
+    "topicId": "operators-conditionals",
+    "tier": 2,
+    "question": "What does 5 == 5.0 evaluate to?",
+    "choices": ["True", "False", "Error", "5"],
+    "answerIndex": 0,
+    "explanation": "== compares values, not types. An int and a float that represent the same number are considered equal, so 5 == 5.0 is True."
+  },
+  {
+    "id": "operators-conditionals-t2-q3",
+    "topicId": "operators-conditionals",
+    "tier": 2,
+    "question": "What is the result of True and False?",
+    "choices": ["True", "False", "1", "Error"],
+    "answerIndex": 1,
+    "explanation": "and returns True only if both sides are True. Since one side is False, the whole expression is False."
+  },
+  {
+    "id": "operators-conditionals-t3-q1",
+    "topicId": "operators-conditionals",
+    "tier": 3,
+    "question": "```python\nscore = 85\nif score >= 90:\n    print(\"A\")\nelif score >= 80:\n    print(\"B\")\nelif score >= 70\n    print(\"C\")\nelse:\n    print(\"F\")\n```\nWhat's wrong with this code?",
+    "choices": ["The elif on the third branch is missing a colon", "elif can only be used once", "score should be a string", "Conditions must use == not >="],
+    "answerIndex": 0,
+    "explanation": "Every elif (like every if and else) must end with a colon. elif score >= 70 is missing its : and causes a SyntaxError."
+  },
+  {
+    "id": "operators-conditionals-t3-q2",
+    "topicId": "operators-conditionals",
+    "tier": 3,
+    "question": "What does 10 != 5 evaluate to?",
+    "choices": ["True", "False", "10", "Error"],
+    "answerIndex": 0,
+    "explanation": "!= means 'not equal to'. Since 10 is not equal to 5, the expression evaluates to True."
+  },
+  {
+    "id": "operators-conditionals-t3-q3",
+    "topicId": "operators-conditionals",
+    "tier": 3,
+    "question": "```python\nx = 0\nif x:\n    print(\"yes\")\nelse:\n    print(\"no\")\n```\nWhat does this print?",
+    "choices": ["yes", "no", "0", "Error"],
+    "answerIndex": 1,
+    "explanation": "0 is treated as falsy in a Boolean context, so the if condition is False and the else branch runs, printing \"no\"."
+  },
+  {
+    "id": "operators-conditionals-t4-q1",
+    "topicId": "operators-conditionals",
+    "tier": 4,
+    "question": "What is the result of (3 > 2) or (5 < 1)?",
+    "choices": ["True", "False", "Error", "None"],
+    "answerIndex": 0,
+    "explanation": "or returns True if at least one side is True. (3 > 2) is True, so the whole expression is True regardless of the second part."
+  },
+  {
+    "id": "operators-conditionals-t4-q2",
+    "topicId": "operators-conditionals",
+    "tier": 4,
+    "question": "```python\nx = 5\nif x = 5:\n    print(\"five!\")\n```\nWhat's wrong with this code?",
+    "choices": ["= is assignment; comparison needs ==", "x should not be an integer", "if statements can't compare numbers", "print() needs a string concatenation"],
+    "answerIndex": 0,
+    "explanation": "= assigns a value and cannot be used inside a condition. Comparing for equality requires ==, so the condition should be if x == 5:."
+  },
+  {
+    "id": "operators-conditionals-t4-q3",
+    "topicId": "operators-conditionals",
+    "tier": 4,
+    "question": "What is the output of print(2 ** 3 + 1)?",
+    "choices": ["9", "16", "7", "8"],
+    "answerIndex": 0,
+    "explanation": "** (exponent) has higher precedence than +. 2 ** 3 is 8, and 8 + 1 is 9."
+  },
+  {
+    "id": "operators-conditionals-t5-q1",
+    "topicId": "operators-conditionals",
+    "tier": 5,
+    "question": "What is the output of print(5 > 3 > 1)?",
+    "choices": ["True", "False", "Error", "5"],
+    "answerIndex": 0,
+    "explanation": "Chained comparisons are evaluated as (5 > 3) and (3 > 1), which is True and True, giving True."
+  },
+  {
+    "id": "operators-conditionals-t5-q2",
+    "topicId": "operators-conditionals",
+    "tier": 5,
+    "question": "```python\nage = 20\nis_adult = True if age >= 18 else False\nprint(\"Adult\" if is_adult else \"Minor\")\nprint(\"Can vote\" if age >= 18 and age <= 17 else \"Cannot vote\")\n```\nThe second print always prints \"Cannot vote\" no matter what age is. Why?",
+    "choices": ["age >= 18 and age <= 17 can never both be true at the same time", "age is never compared correctly because of is_adult", "and should be or in that condition", "print() can only use one ternary expression"],
+    "answerIndex": 0,
+    "explanation": "No number can be both >= 18 and <= 17 at once, so age >= 18 and age <= 17 is always False — a logical contradiction. The condition needs fixing (likely to use or, or different bounds) to ever print \"Can vote\"."
+  },
+  {
+    "id": "operators-conditionals-t5-q3",
+    "topicId": "operators-conditionals",
+    "tier": 5,
+    "question": "What is the output of print(not 0)?",
+    "choices": ["True", "False", "0", "1"],
+    "answerIndex": 0,
+    "explanation": "0 is falsy, so not 0 flips it to True."
+  },
+  {
+    "id": "loops-t1-q1",
+    "topicId": "loops",
+    "tier": 1,
+    "question": "What numbers does range(5) produce when looped over?",
+    "choices": ["1,2,3,4,5", "0,1,2,3,4", "0,1,2,3,4,5", "5,4,3,2,1"],
+    "answerIndex": 1,
+    "explanation": "range(5) starts at 0 by default and stops before 5, producing 0, 1, 2, 3, 4 — five numbers total."
+  },
+  {
+    "id": "loops-t1-q2",
+    "topicId": "loops",
+    "tier": 1,
+    "question": "Which keyword starts a loop that repeats while a condition is true?",
+    "choices": ["for", "while", "if", "loop"],
+    "answerIndex": 1,
+    "explanation": "while condition: repeats its block as long as the condition stays True."
+  },
+  {
+    "id": "loops-t1-q3",
+    "topicId": "loops",
+    "tier": 1,
+    "question": "```python\nfor i in range(3):\n    print(i)\n```\nHow many times does this loop run?",
+    "choices": ["2", "3", "4", "0"],
+    "answerIndex": 1,
+    "explanation": "range(3) produces 0, 1, 2 — three values — so the loop body runs 3 times."
+  },
+  {
+    "id": "loops-t2-q1",
+    "topicId": "loops",
+    "tier": 2,
+    "question": "What does break do inside a loop?",
+    "choices": ["Skips to the next iteration", "Exits the loop immediately", "Pauses the loop", "Restarts the loop"],
+    "answerIndex": 1,
+    "explanation": "break immediately stops the loop entirely, and execution continues with the code right after the loop."
+  },
+  {
+    "id": "loops-t2-q2",
+    "topicId": "loops",
+    "tier": 2,
+    "question": "What does continue do inside a loop?",
+    "choices": ["Exits the loop immediately", "Skips the rest of the current iteration and moves to the next one", "Restarts the entire program", "Does nothing"],
+    "answerIndex": 1,
+    "explanation": "continue jumps straight to the next iteration of the loop, skipping any remaining code in the current pass."
+  },
+  {
+    "id": "loops-t2-q3",
+    "topicId": "loops",
+    "tier": 2,
+    "question": "```python\nfor i in range(1, 4):\n    print(i)\n```\nWhat is the output?",
+    "choices": ["1 2 3 (each on its own line)", "0 1 2 3", "1 2 3 4", "4"],
+    "answerIndex": 0,
+    "explanation": "range(1, 4) produces 1, 2, 3 (starting at 1, stopping before 4). Each value is printed on its own line."
+  },
+  {
+    "id": "loops-t3-q1",
+    "topicId": "loops",
+    "tier": 3,
+    "question": "```python\ni = 0\nwhile i < 5\n    print(i)\n    i += 1\n```\nWhat's wrong with this code?",
+    "choices": ["Missing colon after the while condition", "i += 1 is invalid syntax", "while loops can't use <", "range() is required for loops"],
+    "answerIndex": 0,
+    "explanation": "Like if and for, a while statement needs a colon at the end of its condition: while i < 5:. Without it, Python raises a SyntaxError."
+  },
+  {
+    "id": "loops-t3-q2",
+    "topicId": "loops",
+    "tier": 3,
+    "question": "```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)\n```\nWhat is the output?",
+    "choices": ["0 1 2", "0 1 2 3", "0 1 2 3 4", "3"],
+    "answerIndex": 0,
+    "explanation": "The loop prints 0, 1, 2, and then when i becomes 3, break exits the loop before 3 is printed."
+  },
+  {
+    "id": "loops-t3-q3",
+    "topicId": "loops",
+    "tier": 3,
+    "question": "```python\nfor i in range(5):\n    if i % 2 == 0:\n        continue\n    print(i)\n```\nWhat is the output?",
+    "choices": ["0 2 4", "1 3", "1 3 5", "0 1 2 3 4"],
+    "answerIndex": 1,
+    "explanation": "continue skips printing whenever i is even (0, 2, 4), so only the odd values 1 and 3 get printed (range(5) never reaches 5)."
+  },
+  {
+    "id": "loops-t4-q1",
+    "topicId": "loops",
+    "tier": 4,
+    "question": "```python\ntotal = 0\nfor i in range(1, 10):\n    total = i\nprint(total)\n```\nThis code is meant to sum the numbers 1 through 9, but it doesn't. What's wrong?",
+    "choices": ["total = i should be total += i to accumulate the sum", "range(1, 10) should be range(1, 9)", "for loops can't be used for sums", "print(total) should be inside the loop"],
+    "answerIndex": 0,
+    "explanation": "total = i overwrites total each time instead of adding to it, so after the loop total just holds the last value of i (9). total += i (short for total = total + i) accumulates the running sum."
+  },
+  {
+    "id": "loops-t4-q2",
+    "topicId": "loops",
+    "tier": 4,
+    "question": "Which of these creates an infinite loop?",
+    "choices": ["for i in range(10):", "while True: (with no break inside)", "for i in []:", "while False:"],
+    "answerIndex": 1,
+    "explanation": "while True: always evaluates to True, so without a break statement somewhere inside, the loop never ends."
+  },
+  {
+    "id": "loops-t4-q3",
+    "topicId": "loops",
+    "tier": 4,
+    "question": "```python\nfor letter in \"abc\":\n    print(letter)\n```\nWhat is the output?",
+    "choices": ["abc", "a b c (each on its own line)", "['a','b','c']", "Error, strings aren't iterable"],
+    "answerIndex": 1,
+    "explanation": "Strings are iterable in Python — a for loop walks through each character one at a time, printing a, then b, then c on separate lines."
+  },
+  {
+    "id": "loops-t5-q1",
+    "topicId": "loops",
+    "tier": 5,
+    "question": "```python\nfor i in range(3):\n    for j in range(2):\n        print(i, j)\n```\nWhat is the output?",
+    "choices": ["Prints 6 lines: (0,0) (0,1) (1,0) (1,1) (2,0) (2,1)", "Prints 3 lines", "Prints 2 lines", "Error: nested loops aren't allowed"],
+    "answerIndex": 0,
+    "explanation": "For each of the 3 values of i, the inner loop runs through both values of j, so print runs 3 x 2 = 6 times total, printing each (i, j) pair."
+  },
+  {
+    "id": "loops-t5-q2",
+    "topicId": "loops",
+    "tier": 5,
+    "question": "```python\nnumbers = [1, 2, 3, 4, 5]\nfor i in range(len(numbers)):\n    if numbers[i] % 2 == 0:\n        numbers.remove(numbers[i])\nprint(numbers)\n```\nThis is meant to remove all even numbers, but the output is [1, 3, 4, 5] — 4 is still there. What's the root issue?",
+    "choices": ["Modifying a list while iterating over its indices skips elements, since indices shift after a removal", "remove() doesn't work on integers", "% only works with strings", "range(len(numbers)) is invalid syntax"],
+    "answerIndex": 0,
+    "explanation": "When 2 is removed, every later element shifts left by one — so index 3, which used to point to 4, now points to 5, and 4 is skipped entirely. Looping over a copy (numbers[:]) or building a new list with a comprehension avoids this bug."
+  },
+  {
+    "id": "loops-t5-q3",
+    "topicId": "loops",
+    "tier": 5,
+    "question": "```python\nx = 10\nwhile x > 0:\n    x -= 3\nprint(x)\n```\nWhat is the output?",
+    "choices": ["1", "-2", "0", "10"],
+    "answerIndex": 1,
+    "explanation": "x goes 10 -> 7 -> 4 -> 1 -> -2. Once x is -2, the condition x > 0 is False, so the loop stops and -2 is printed — it doesn't stop exactly at 0."
+  }
+]

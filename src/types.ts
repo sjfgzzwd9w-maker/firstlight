@@ -10,13 +10,20 @@ export type Question = {
   generated?: boolean;
 };
 
-export type Subject = 'math' | 'biology';
+export type Subject = 'math' | 'biology' | 'python' | 'robotics';
+
+export type TopicResource = {
+  label: string;
+  url: string;
+};
 
 export type Topic = {
   id: string;
   name: string;
   description: string;
   subject: Subject;
+  /** Optional "learn more" links shown on the module map for this topic. */
+  resources?: TopicResource[];
 };
 
 export type TopicProgress = {
@@ -30,6 +37,19 @@ export type TopicProgress = {
 
 export type ModelSize = '1b' | '3b';
 
+/** A learner's note on a specific question, kept for review later. */
+export type QuestionNote = {
+  id: string;
+  questionId: string;
+  topicId: string;
+  subject: Subject;
+  /** Snapshot of the question text at the time the note was written. */
+  questionText: string;
+  text: string;
+  createdAt: number;
+  updatedAt: number;
+};
+
 export type UserProfile = {
   age: number | null;
   voiceEnabled: boolean;
@@ -37,6 +57,7 @@ export type UserProfile = {
   totalXp: number;
   badges: string[];
   topics: Record<string, TopicProgress>;
+  notes: QuestionNote[];
 };
 
 export type AnswerEvent = 'correct-levelUp' | 'correct' | 'incorrect-levelDown' | 'incorrect';

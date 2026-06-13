@@ -1,0 +1,842 @@
+[
+  {
+    "id": "robotics-intro-t1-q1",
+    "topicId": "robotics-intro",
+    "tier": 1,
+    "question": "What is a robot?",
+    "choices": [
+      "Any object that uses electricity",
+      "A machine that can sense its surroundings, make decisions, and act on them",
+      "A toy that looks like a person",
+      "A computer program with no physical body"
+    ],
+    "answerIndex": 1,
+    "explanation": "A robot is a machine built to sense the world around it, decide what to do based on that information, and then act — using motors or other parts to move or do work."
+  },
+  {
+    "id": "robotics-intro-t1-q2",
+    "topicId": "robotics-intro",
+    "tier": 1,
+    "question": "Which of these is the best example of a robot?",
+    "choices": [
+      "A hammer",
+      "A robot vacuum that drives around and avoids furniture on its own",
+      "A pair of scissors",
+      "A flashlight"
+    ],
+    "answerIndex": 1,
+    "explanation": "A robot vacuum senses walls and furniture, decides where to go next, and moves itself — that sense-think-act loop is what makes it a robot, unlike simple tools like a hammer or scissors."
+  },
+  {
+    "id": "robotics-intro-t1-q3",
+    "topicId": "robotics-intro",
+    "tier": 1,
+    "question": "Where are robots used in the real world?",
+    "choices": [
+      "Only in science fiction movies",
+      "Factories, hospitals, homes, and even outer space",
+      "Only inside video games",
+      "Only in research labs that nobody can visit"
+    ],
+    "answerIndex": 1,
+    "explanation": "Robots help build cars in factories, assist surgeons in hospitals, vacuum homes, and explore other planets — they're already part of everyday life."
+  },
+  {
+    "id": "robotics-intro-t2-q1",
+    "topicId": "robotics-intro",
+    "tier": 2,
+    "question": "Robotics is best described as a field that combines which subjects?",
+    "choices": [
+      "Only art and music",
+      "Mechanical engineering, electronics, and computer programming",
+      "Only history and geography",
+      "Only cooking and nutrition"
+    ],
+    "answerIndex": 1,
+    "explanation": "Building a robot means designing its body (mechanical engineering), wiring its circuits (electronics), and writing the instructions it follows (programming) — robotics blends all three."
+  },
+  {
+    "id": "robotics-intro-t2-q2",
+    "topicId": "robotics-intro",
+    "tier": 2,
+    "question": "What does it mean when people say a robot is 'automated'?",
+    "choices": [
+      "It performs a task by itself, following a set of instructions, without a person controlling every step",
+      "It is painted a bright color",
+      "It is the most expensive robot available",
+      "It can only work when plugged into a wall outlet"
+    ],
+    "answerIndex": 0,
+    "explanation": "Automation means the robot follows pre-set instructions to complete a task on its own, instead of a human directly controlling every movement."
+  },
+  {
+    "id": "robotics-intro-t2-q3",
+    "topicId": "robotics-intro",
+    "tier": 2,
+    "question": "A remote-controlled toy car that only moves when a person presses the buttons is:",
+    "choices": [
+      "A fully autonomous robot",
+      "Not a robot at all — it has no sensors and can't think for itself",
+      "An example of artificial intelligence",
+      "A self-driving car"
+    ],
+    "answerIndex": 1,
+    "explanation": "A remote-controlled car has no sensors and makes no decisions of its own — every action comes directly from the human operator, so it doesn't fit the sense-think-act definition of a robot."
+  },
+  {
+    "id": "robotics-intro-t3-q1",
+    "topicId": "robotics-intro",
+    "tier": 3,
+    "question": "What is the key difference between a robot and a simple machine like a toaster?",
+    "choices": [
+      "Robots are always bigger than simple machines",
+      "A toaster performs the exact same fixed action every time, while a robot can sense conditions and change what it does",
+      "Toasters use more electricity than robots",
+      "There is no real difference — they are the same thing"
+    ],
+    "answerIndex": 1,
+    "explanation": "A toaster just heats for a set time no matter what. A robot can use sensors to check its situation (like a vacuum detecting a wall) and adjust its behavior in response."
+  },
+  {
+    "id": "robotics-intro-t3-q2",
+    "topicId": "robotics-intro",
+    "tier": 3,
+    "question": "A factory robotic arm that welds car parts in the exact same sequence every time, regardless of its surroundings, is an example of:",
+    "choices": [
+      "A fully intelligent robot that can think like a human",
+      "An automated robot following a fixed program, with little or no sensing of its environment",
+      "A robot with no program at all",
+      "A remote-controlled vehicle"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many industrial robots repeat the same precise motions over and over based on their program — they may have some sensors for safety, but they aren't adapting their overall plan to a changing environment."
+  },
+  {
+    "id": "robotics-intro-t3-q3",
+    "topicId": "robotics-intro",
+    "tier": 3,
+    "question": "Which statement about robots and jobs is most accurate?",
+    "choices": [
+      "Robots can only ever replace human jobs and create nothing new",
+      "Robots often take over repetitive or dangerous tasks, while also creating new jobs in designing, building, and maintaining them",
+      "Robots are illegal in most workplaces",
+      "Robots can only be used for entertainment"
+    ],
+    "answerIndex": 1,
+    "explanation": "Robots are commonly used for repetitive, dangerous, or precise tasks (like welding or handling hazardous materials), while the robotics industry also creates jobs for engineers, programmers, and technicians."
+  },
+  {
+    "id": "robotics-intro-t4-q1",
+    "topicId": "robotics-intro",
+    "tier": 4,
+    "question": "What does 'autonomy' mean for a robot?",
+    "choices": [
+      "How loud the robot is",
+      "How much the robot can sense, decide, and act on its own without a human controlling each step",
+      "How many colors the robot can be painted",
+      "How heavy the robot is"
+    ],
+    "answerIndex": 1,
+    "explanation": "Autonomy describes how independently a robot can operate — a low-autonomy robot needs constant human control, while a high-autonomy robot can complete tasks with little or no human input."
+  },
+  {
+    "id": "robotics-intro-t4-q2",
+    "topicId": "robotics-intro",
+    "tier": 4,
+    "question": "NASA's Mars rovers (like Curiosity and Perseverance) are considered robots mainly because they:",
+    "choices": [
+      "Look like human astronauts",
+      "Use sensors to study their surroundings, make some decisions on their own (like avoiding rocks), and move and act using motors and tools",
+      "Are remote-controlled every second by someone on Earth",
+      "Run only on solar power"
+    ],
+    "answerIndex": 1,
+    "explanation": "Because radio signals take many minutes to travel between Earth and Mars, the rovers must use onboard sensors and software to make some decisions themselves — combined with movement and tools, that's what makes them robots."
+  },
+  {
+    "id": "robotics-intro-t4-q3",
+    "topicId": "robotics-intro",
+    "tier": 4,
+    "question": "Which scenario describes a 'semi-autonomous' robot?",
+    "choices": [
+      "A robot that does absolutely nothing without a human pressing every button for every movement",
+      "A robot that can follow a planned path and avoid obstacles on its own, but a human still chooses its destination and can take over if needed",
+      "A robot that can never be controlled by a human under any circumstances",
+      "A toy that has no sensors or motors at all"
+    ],
+    "answerIndex": 1,
+    "explanation": "Semi-autonomous robots share control with humans — they can handle some tasks (like obstacle avoidance) independently while a person still provides high-level goals or can step in."
+  },
+  {
+    "id": "robotics-intro-t5-q1",
+    "topicId": "robotics-intro",
+    "tier": 5,
+    "question": "What is the most important difference between a robot and a piece of artificial intelligence (AI) software, like a chatbot?",
+    "choices": [
+      "Robots are always smarter than AI software",
+      "A robot has a physical body that can sense and act in the physical world, while pure AI software typically only processes information without a body",
+      "AI software is always faster than robots",
+      "There is no difference between robots and AI software"
+    ],
+    "answerIndex": 1,
+    "explanation": "AI software (like a chatbot) processes information and produces text or decisions, but it has no body. A robot pairs decision-making with a physical form — sensors, actuators, and a structure — that lets it interact with the real world."
+  },
+  {
+    "id": "robotics-intro-t5-q2",
+    "topicId": "robotics-intro",
+    "tier": 5,
+    "question": "A delivery robot rolling on a sidewalk needs to handle an unexpected obstacle, like a fallen branch, that wasn't part of its map. What does this situation best illustrate?",
+    "choices": [
+      "Why robots never need sensors",
+      "Why the sense-think-act loop matters: the robot must sense the new obstacle, decide on a new path, and act by steering around it",
+      "That the robot should simply stop working forever",
+      "That maps are never useful for robots"
+    ],
+    "answerIndex": 1,
+    "explanation": "Real environments change in ways no map can fully predict. A well-designed robot continuously senses its surroundings, re-evaluates its plan, and acts accordingly — this loop is the foundation of robust robot behavior."
+  },
+  {
+    "id": "robotics-intro-t5-q3",
+    "topicId": "robotics-intro",
+    "tier": 5,
+    "question": "Why do engineers often say 'good robot design starts with understanding the task and environment, not just the technology'?",
+    "choices": [
+      "Because the environment and task shape which sensors, actuators, and software a robot actually needs to work well",
+      "Because the environment never matters for robot design",
+      "Because all robots should be designed identically no matter their job",
+      "Because technology should always be chosen before knowing what the robot will do"
+    ],
+    "answerIndex": 0,
+    "explanation": "A robot that explores the ocean needs very different sensors and materials than one that sorts mail in an office. Understanding the task and environment first helps engineers choose the right combination of sensors, actuators, and software."
+  },
+  {
+    "id": "robot-parts-t1-q1",
+    "topicId": "robot-parts",
+    "tier": 1,
+    "question": "Which three basic parts work together inside almost every robot?",
+    "choices": [
+      "Sensors, a controller (brain), and actuators",
+      "Wheels, paint, and stickers",
+      "A screen, a speaker, and a battery only",
+      "A keyboard, a mouse, and a monitor"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sensors gather information, the controller (brain) decides what to do with that information, and actuators carry out the action — together they form the core of any robot."
+  },
+  {
+    "id": "robot-parts-t1-q2",
+    "topicId": "robot-parts",
+    "tier": 1,
+    "question": "What is the main job of a sensor on a robot?",
+    "choices": [
+      "To move the robot from one place to another",
+      "To gather information about the robot or its surroundings, like distance, light, or temperature",
+      "To store the robot's power",
+      "To make the robot look nicer"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sensors are the robot's way of gathering information — like eyes, ears, or fingertips — so the controller can know what's happening around it."
+  },
+  {
+    "id": "robot-parts-t1-q3",
+    "topicId": "robot-parts",
+    "tier": 1,
+    "question": "What is an actuator?",
+    "choices": [
+      "A part that gathers information about the environment",
+      "A part that takes action, such as a motor that makes something move",
+      "A type of battery",
+      "A type of computer screen"
+    ],
+    "answerIndex": 1,
+    "explanation": "Actuators are the parts that 'do' things — motors that spin wheels, servos that move arms, or other devices that turn decisions into physical action."
+  },
+  {
+    "id": "robot-parts-t2-q1",
+    "topicId": "robot-parts",
+    "tier": 2,
+    "question": "Which of these is an example of a sensor, not an actuator?",
+    "choices": [
+      "A motor that spins a wheel",
+      "A servo that moves a robot arm",
+      "An ultrasonic distance sensor that measures how far away a wall is",
+      "A speaker that plays a sound"
+    ],
+    "answerIndex": 2,
+    "explanation": "An ultrasonic distance sensor measures information (distance to an object) — it doesn't move anything itself, which makes it a sensor rather than an actuator."
+  },
+  {
+    "id": "robot-parts-t2-q2",
+    "topicId": "robot-parts",
+    "tier": 2,
+    "question": "What is often used as the 'brain' of a small robot, like one built with Arduino?",
+    "choices": [
+      "A microcontroller that runs the robot's program and connects to sensors and actuators",
+      "A large desktop monitor",
+      "A second battery",
+      "A piece of cardboard"
+    ],
+    "answerIndex": 0,
+    "explanation": "A microcontroller is a small computer chip that runs the robot's program, reads data from sensors, and sends signals to actuators — it acts as the robot's brain."
+  },
+  {
+    "id": "robot-parts-t2-q3",
+    "topicId": "robot-parts",
+    "tier": 2,
+    "question": "Why does a robot need a controller (brain) in addition to sensors and actuators?",
+    "choices": [
+      "It doesn't — sensors and actuators can work fine without any controller",
+      "The controller decides what the robot should do based on sensor information, then tells the actuators how to respond",
+      "The controller's only job is to make the robot heavier",
+      "The controller stores spare parts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without a controller, sensor data would have nowhere to go and actuators wouldn't know what to do. The controller is the decision-making link between sensing and acting."
+  },
+  {
+    "id": "robot-parts-t3-q1",
+    "topicId": "robot-parts",
+    "tier": 3,
+    "question": "A robot bumps gently into a wall and then backs away. Which part most directly detected the wall?",
+    "choices": [
+      "An actuator, like a motor",
+      "A sensor, such as a bump (contact) sensor or distance sensor",
+      "The robot's battery",
+      "The robot's outer paint job"
+    ],
+    "answerIndex": 1,
+    "explanation": "Detecting the wall is a sensing task — a bump sensor or distance sensor provides that information to the controller, which then commands the motors (actuators) to back away."
+  },
+  {
+    "id": "robot-parts-t3-q2",
+    "topicId": "robot-parts",
+    "tier": 3,
+    "question": "In robotics, sensors are often called 'inputs' and actuators are often called 'outputs.' Why?",
+    "choices": [
+      "Because sensors and actuators are the same thing with different names",
+      "Because sensors send information into the controller (input), while actuators receive commands from the controller and act on them (output)",
+      "Because 'input' and 'output' refer only to keyboard and screen devices",
+      "Because actuators gather information and sensors perform actions"
+    ],
+    "answerIndex": 1,
+    "explanation": "Information flows from sensors into the controller (input), gets processed, and then flows out to actuators (output) as commands — this input-process-output pattern is central to how robots work."
+  },
+  {
+    "id": "robot-parts-t3-q3",
+    "topicId": "robot-parts",
+    "tier": 3,
+    "question": "What would happen to a robot that has working sensors and a working controller, but no actuators?",
+    "choices": [
+      "It would move faster than normal",
+      "It could sense and 'think,' but it could not physically move or act in the world",
+      "It would become a remote control",
+      "Nothing would change — actuators are optional for all robots"
+    ],
+    "answerIndex": 1,
+    "explanation": "Without actuators, a robot has no way to turn decisions into action — it might process data perfectly but couldn't move a wheel, arm, or any other part."
+  },
+  {
+    "id": "robot-parts-t4-q1",
+    "topicId": "robot-parts",
+    "tier": 4,
+    "question": "A warehouse robot uses a camera, a distance sensor, and wheel encoders all at once. Why might a robot use multiple sensors instead of just one?",
+    "choices": [
+      "To make the robot look more impressive with no real benefit",
+      "Different sensors provide different kinds of information, and combining them gives the controller a more complete and reliable picture",
+      "Multiple sensors always cancel each other out and provide no benefit",
+      "Robots are required by law to have at least three sensors"
+    ],
+    "answerIndex": 1,
+    "explanation": "A camera might see a shelf, a distance sensor might detect how close an object is, and wheel encoders track how far the robot has traveled — combining these gives a fuller, more dependable understanding than any one sensor alone."
+  },
+  {
+    "id": "robot-parts-t4-q2",
+    "topicId": "robot-parts",
+    "tier": 4,
+    "question": "What is the difference between a simple microcontroller (like in an Arduino) and a full computer (like a laptop) when used as a robot's brain?",
+    "choices": [
+      "There is no difference — they are interchangeable in every situation",
+      "A microcontroller is typically smaller, cheaper, and good for direct control of motors and sensors, while a full computer offers far more processing power for tasks like image recognition",
+      "A microcontroller can run a full desktop operating system, but a laptop cannot",
+      "A full computer cannot be connected to any sensors"
+    ],
+    "answerIndex": 1,
+    "explanation": "Microcontrollers are efficient for reading sensors and driving motors in real time, while full computers (like a Raspberry Pi or laptop) provide the processing power needed for more complex tasks such as analyzing camera images."
+  },
+  {
+    "id": "robot-parts-t4-q3",
+    "topicId": "robot-parts",
+    "tier": 4,
+    "question": "A line-following robot reads a light sensor, and its controller adjusts the motors so the robot stays on the line. This back-and-forth between sensing and acting is called:",
+    "choices": [
+      "A feedback loop",
+      "A power outage",
+      "A static design",
+      "An open circuit"
+    ],
+    "answerIndex": 0,
+    "explanation": "A feedback loop is when a robot continuously senses, decides, and acts, then senses again to check the result — the line-following robot constantly checks the line's position and adjusts its motors in response."
+  },
+  {
+    "id": "robot-parts-t5-q1",
+    "topicId": "robot-parts",
+    "tier": 5,
+    "question": "You're designing a robot to pick ripe strawberries without bruising them. Which combination of parts would be most important to prioritize?",
+    "choices": [
+      "A loud speaker and bright lights, since appearance matters most",
+      "Sensors that can detect ripeness and position (like cameras or color sensors), plus gentle actuators (like soft grippers) that can pick fruit without damaging it",
+      "The heaviest possible actuators, since more force is always better",
+      "No sensors at all, since strawberries don't move"
+    ],
+    "answerIndex": 1,
+    "explanation": "This task needs sensors that can identify ripe strawberries (color, position) and actuators designed for gentle, precise handling — choosing parts that match the task is a core robotics design skill."
+  },
+  {
+    "id": "robot-parts-t5-q2",
+    "topicId": "robot-parts",
+    "tier": 5,
+    "question": "A robot's distance sensor reports a value, but the controller's program has a mistake and always tells the motors to drive forward no matter what the sensor says. What is the most accurate description of this problem?",
+    "choices": [
+      "The sensor is broken and needs to be replaced",
+      "The actuators are too weak",
+      "The sensing works fine, but the controller's decision-making isn't using the sensor data correctly — the sense-think-act loop is broken at the 'think' step",
+      "The robot has too many sensors"
+    ],
+    "answerIndex": 2,
+    "explanation": "If the sensor produces correct readings but the program ignores them, the problem lies in the decision-making logic, not the sensor or the actuator — a good robotics engineer checks each part of the sense-think-act loop separately when debugging."
+  },
+  {
+    "id": "robot-parts-t5-q3",
+    "topicId": "robot-parts",
+    "tier": 5,
+    "question": "Why might engineers choose a cheaper, less accurate sensor for one robot but a more expensive, highly precise sensor for another robot?",
+    "choices": [
+      "Engineers always pick the cheapest option no matter the task",
+      "The choice depends on the task's needs: a toy robot might only need rough information, while a surgical robot needs extremely precise sensors because mistakes could be dangerous",
+      "More expensive sensors are always worse than cheap ones",
+      "Sensor cost has nothing to do with how a robot is used"
+    ],
+    "answerIndex": 1,
+    "explanation": "Sensor choice involves trade-offs between cost, precision, size, and power use. A task with high stakes — like surgery — justifies a more precise (and often pricier) sensor, while a toy robot can use simpler, cheaper parts."
+  },
+  {
+    "id": "power-energy-t1-q1",
+    "topicId": "power-energy",
+    "tier": 1,
+    "question": "What gives a robot the energy it needs to move and operate?",
+    "choices": [
+      "Its paint color",
+      "A power source, such as a battery",
+      "Its weight",
+      "The shape of its wheels"
+    ],
+    "answerIndex": 1,
+    "explanation": "Just like your body needs food for energy, a robot needs a power source — usually a battery — to run its motors, sensors, and controller."
+  },
+  {
+    "id": "power-energy-t1-q2",
+    "topicId": "power-energy",
+    "tier": 1,
+    "question": "What is the main job of a battery in a robot?",
+    "choices": [
+      "To store energy and supply electrical power to the robot's parts",
+      "To make the robot's wheels turn directly without any motor",
+      "To make decisions for the robot",
+      "To detect obstacles"
+    ],
+    "answerIndex": 0,
+    "explanation": "A battery stores chemical energy and converts it into electrical energy that powers the motors, sensors, and controller."
+  },
+  {
+    "id": "power-energy-t1-q3",
+    "topicId": "power-energy",
+    "tier": 1,
+    "question": "Which part of a robot turns electrical energy into movement?",
+    "choices": [
+      "The battery",
+      "A motor",
+      "A sensor",
+      "The frame"
+    ],
+    "answerIndex": 1,
+    "explanation": "A motor converts electrical energy from the battery into mechanical energy — spinning a shaft that can turn wheels, gears, or arms."
+  },
+  {
+    "id": "power-energy-t2-q1",
+    "topicId": "power-energy",
+    "tier": 2,
+    "question": "Why do robot builders need to think carefully about battery life?",
+    "choices": [
+      "Battery life doesn't matter for robots",
+      "If the battery runs out, the robot can't sense, think, or act anymore — so battery life limits how long a robot can complete its task",
+      "Batteries never run out of energy",
+      "Robots can run forever without any power source"
+    ],
+    "answerIndex": 1,
+    "explanation": "Every part of a robot — sensors, motors, and the controller — draws power from the battery. Once it's drained, the robot stops working, so engineers plan for how long a task will take versus how much charge the battery holds."
+  },
+  {
+    "id": "power-energy-t2-q2",
+    "topicId": "power-energy",
+    "tier": 2,
+    "question": "A robot with solar panels on top is an example of:",
+    "choices": [
+      "A robot that gets some or all of its power from sunlight instead of (or in addition to) a battery",
+      "A robot that has no power source at all",
+      "A robot that runs only at night",
+      "A robot that doesn't need any energy to work"
+    ],
+    "answerIndex": 0,
+    "explanation": "Solar panels convert sunlight into electricity, which can charge a battery or power the robot directly — useful for robots that operate outdoors for long periods, like some Mars rovers."
+  },
+  {
+    "id": "power-energy-t2-q3",
+    "topicId": "power-energy",
+    "tier": 2,
+    "question": "What is the main difference between a rechargeable battery and a disposable (single-use) battery?",
+    "choices": [
+      "Rechargeable batteries can be recharged and used many times, while disposable batteries are thrown away once empty",
+      "Disposable batteries can be recharged hundreds of times, but rechargeable batteries cannot",
+      "There is no difference between the two types",
+      "Rechargeable batteries never run out of power"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rechargeable batteries (like lithium-ion) can be plugged in and refilled with energy many times, which is why most robots use them — replacing disposable batteries constantly would be wasteful and expensive."
+  },
+  {
+    "id": "power-energy-t3-q1",
+    "topicId": "power-energy",
+    "tier": 3,
+    "question": "What typically happens to a mobile robot's behavior as its battery runs low?",
+    "choices": [
+      "The robot speeds up and becomes more accurate",
+      "The robot may slow down, lose power to its motors, or shut down entirely as voltage drops",
+      "The robot's sensors automatically become more powerful",
+      "Nothing changes until the battery is at exactly 0%"
+    ],
+    "answerIndex": 1,
+    "explanation": "As a battery discharges, the voltage it can supply often drops, which can cause motors to run weaker or sensors to behave unreliably — many robots are programmed to return to a charging station before the battery gets too low."
+  },
+  {
+    "id": "power-energy-t3-q2",
+    "topicId": "power-energy",
+    "tier": 3,
+    "question": "A robot designer wants to add a much bigger battery to make a drone fly longer. What trade-off should they consider?",
+    "choices": [
+      "Bigger batteries have no downsides at all",
+      "A bigger battery adds weight, which can make the drone less agile and require more energy just to lift the extra battery itself",
+      "Bigger batteries always make a robot lighter",
+      "Battery size never affects a flying robot's performance"
+    ],
+    "answerIndex": 1,
+    "explanation": "Every gram of extra battery is extra weight the motors must lift and move. Engineers balance battery size (more energy stored) against the added weight and its effect on performance."
+  },
+  {
+    "id": "power-energy-t3-q3",
+    "topicId": "power-energy",
+    "tier": 3,
+    "question": "Why are small DC (direct current) motors so commonly used in beginner robotics kits?",
+    "choices": [
+      "They are simple, affordable, and convert battery power directly into rotational motion for wheels or gears",
+      "They cannot be powered by batteries",
+      "They only work with solar panels",
+      "They require no electricity to operate"
+    ],
+    "answerIndex": 0,
+    "explanation": "DC motors are inexpensive, easy to control with simple circuits, and run directly off battery power — making them a go-to choice for beginner robots and hobby projects."
+  },
+  {
+    "id": "power-energy-t4-q1",
+    "topicId": "power-energy",
+    "tier": 4,
+    "question": "Why is 'energy efficiency' especially important for a mobile robot, like a delivery robot or a Mars rover?",
+    "choices": [
+      "Efficiency doesn't matter if a robot has wheels",
+      "A more efficient robot can do more work, travel farther, or operate longer on the same amount of stored energy",
+      "Efficient robots are always slower and less useful",
+      "Energy efficiency only matters for robots that never move"
+    ],
+    "answerIndex": 1,
+    "explanation": "Since mobile robots can't always plug into a wall, every bit of energy they save (through efficient motors, lightweight design, or smart power management) extends how long they can operate before recharging or running out."
+  },
+  {
+    "id": "power-energy-t4-q2",
+    "topicId": "power-energy",
+    "tier": 4,
+    "question": "In electricity, what do voltage and current together help determine?",
+    "choices": [
+      "The color of the robot",
+      "The amount of electrical power available to run the robot's motors and electronics",
+      "How many sensors a robot can have",
+      "The robot's weight"
+    ],
+    "answerIndex": 1,
+    "explanation": "Electrical power is related to both voltage (the 'push' behind the electricity) and current (the flow of electricity) — together they determine how much power is delivered to the robot's parts."
+  },
+  {
+    "id": "power-energy-t4-q3",
+    "topicId": "power-energy",
+    "tier": 4,
+    "question": "A robot designed to explore deep space for years, far from sunlight, would most likely need:",
+    "choices": [
+      "Only a small AA battery",
+      "A long-lasting power source not dependent on sunlight, such as a radioisotope thermoelectric generator (RTG), which some NASA spacecraft use",
+      "No power source — space robots don't need energy",
+      "A power cord plugged into a wall on Earth"
+    ],
+    "answerIndex": 1,
+    "explanation": "Far from the Sun, solar panels become much less effective. Some NASA missions use RTGs, which generate steady electrical power from the heat of decaying radioactive material, providing reliable energy for years."
+  },
+  {
+    "id": "power-energy-t5-q1",
+    "topicId": "power-energy",
+    "tier": 5,
+    "question": "A robotics team is designing a robot that must operate continuously for 8 hours on a single charge while carrying heavy equipment. Which combination of choices would best help meet this goal?",
+    "choices": [
+      "Choose the heaviest possible battery and the least efficient motors available",
+      "Balance battery capacity against weight, choose efficient motors, and write software that avoids wasting energy (like turning off unused sensors)",
+      "Remove the battery entirely to save weight",
+      "Add as many extra sensors as possible regardless of power use"
+    ],
+    "answerIndex": 1,
+    "explanation": "Meeting a long runtime goal usually requires balancing multiple factors at once: enough battery capacity, motors and components chosen for efficiency, and software that manages power smartly — for example, by powering down sensors that aren't currently needed."
+  },
+  {
+    "id": "power-energy-t5-q2",
+    "topicId": "power-energy",
+    "tier": 5,
+    "question": "Some electric vehicles and robots use 'regenerative braking,' where slowing down recovers some energy back into the battery. What does this best illustrate?",
+    "choices": [
+      "That braking always wastes 100% of a robot's energy with no way to recover any of it",
+      "That clever engineering can recapture some energy that would otherwise be lost, improving overall efficiency",
+      "That batteries can charge themselves with no input energy at all",
+      "That motors and brakes are unrelated to energy use"
+    ],
+    "answerIndex": 1,
+    "explanation": "When slowing down, a motor can be run in reverse as a generator, converting some of the robot's motion back into electrical energy stored in the battery — a clever way to reduce overall energy waste."
+  },
+  {
+    "id": "power-energy-t5-q3",
+    "topicId": "power-energy",
+    "tier": 5,
+    "question": "Mars rovers like Curiosity and Perseverance use RTGs instead of solar panels (unlike earlier rovers). What is the most likely reason for this design choice?",
+    "choices": [
+      "RTGs are lighter than solar panels in every case",
+      "RTGs provide steady power day and night and aren't affected by dust storms that can cover solar panels, which matters for a long, ambitious mission",
+      "Solar panels don't work anywhere in the solar system",
+      "RTGs are simply more colorful than solar panels"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mars experiences dust storms that can block sunlight for weeks and long nights with no sun at all. An RTG provides consistent power regardless of weather or time of day, which is valuable for missions designed to last many years."
+  },
+  {
+    "id": "simple-machines-t1-q1",
+    "topicId": "simple-machines",
+    "tier": 1,
+    "question": "What is a simple machine?",
+    "choices": [
+      "A basic device, like a lever or wheel, that makes a task easier by changing the size or direction of a force",
+      "A robot with a computer chip inside",
+      "Any machine that runs on batteries",
+      "A machine that can only be used once"
+    ],
+    "answerIndex": 0,
+    "explanation": "Simple machines — like levers, wheels, ramps, and gears — are basic tools that change the size or direction of a force, making tasks like lifting or moving easier."
+  },
+  {
+    "id": "simple-machines-t1-q2",
+    "topicId": "simple-machines",
+    "tier": 1,
+    "question": "Which of these is an example of a lever?",
+    "choices": [
+      "A seesaw, which pivots to lift weight on one side when you push down on the other",
+      "A flashlight beam",
+      "A puddle of water",
+      "A piece of string with nothing attached"
+    ],
+    "answerIndex": 0,
+    "explanation": "A seesaw is a classic lever: it pivots around a fixed point (the fulcrum), so pushing down on one end lifts the other end — the same idea used in tools like crowbars and robotic arms."
+  },
+  {
+    "id": "simple-machines-t1-q3",
+    "topicId": "simple-machines",
+    "tier": 1,
+    "question": "What does a wheel and axle help a robot do?",
+    "choices": [
+      "Sense light levels",
+      "Move more easily by rolling instead of dragging along the ground",
+      "Store electrical energy",
+      "Send wireless signals"
+    ],
+    "answerIndex": 1,
+    "explanation": "A wheel turning around an axle reduces friction compared to dragging an object, letting a robot move with much less effort."
+  },
+  {
+    "id": "simple-machines-t2-q1",
+    "topicId": "simple-machines",
+    "tier": 2,
+    "question": "What is the main purpose of gears in a robot?",
+    "choices": [
+      "To make the robot look more colorful",
+      "To transfer motion and force between parts, often changing speed or direction in the process",
+      "To store data",
+      "To detect light"
+    ],
+    "answerIndex": 1,
+    "explanation": "Gears are toothed wheels that mesh together to pass motion from one part to another — and depending on their sizes, they can speed up, slow down, or redirect that motion."
+  },
+  {
+    "id": "simple-machines-t2-q2",
+    "topicId": "simple-machines",
+    "tier": 2,
+    "question": "Why might a robot designer choose legs instead of wheels for a robot that needs to climb stairs?",
+    "choices": [
+      "Wheels are always better than legs in every situation",
+      "Legs can step up and over obstacles like stairs, which wheels often struggle to climb",
+      "Legs use no energy at all",
+      "Stairs are easier for wheeled robots than for legged robots"
+    ],
+    "answerIndex": 1,
+    "explanation": "Wheels are great on flat, smooth ground, but legs can lift over gaps and steps — which is why some robots (and animals!) use legs to handle rough or stepped terrain."
+  },
+  {
+    "id": "simple-machines-t2-q3",
+    "topicId": "simple-machines",
+    "tier": 2,
+    "question": "What is friction, and how does it relate to a robot's wheels?",
+    "choices": [
+      "Friction is a type of electrical signal used by sensors",
+      "Friction is a force that resists motion between surfaces — robot wheels rely on some friction with the ground to grip and move without slipping",
+      "Friction only exists in outer space",
+      "Friction makes wheels spin faster with no extra effort"
+    ],
+    "answerIndex": 1,
+    "explanation": "Friction between the wheel and the ground is what allows the wheel to push against the surface and move the robot forward — too little friction and the wheels spin in place (slipping)."
+  },
+  {
+    "id": "simple-machines-t3-q1",
+    "topicId": "simple-machines",
+    "tier": 3,
+    "question": "In a gear system, if a small gear with few teeth drives a much larger gear with many teeth, what generally happens?",
+    "choices": [
+      "The large gear spins faster than the small gear, with less force",
+      "The large gear spins slower than the small gear, but with more turning force (torque)",
+      "Both gears always spin at exactly the same speed and force",
+      "Gears have no effect on speed or force at all"
+    ],
+    "answerIndex": 1,
+    "explanation": "When a small gear drives a larger one, the larger gear turns more slowly but with greater torque — this trade-off between speed and force is a key idea in gear systems."
+  },
+  {
+    "id": "simple-machines-t3-q2",
+    "topicId": "simple-machines",
+    "tier": 3,
+    "question": "A long pry bar lets you lift a heavy rock with less effort than using your hands directly. This is an example of:",
+    "choices": [
+      "Electrical resistance",
+      "Mechanical advantage from a lever — the bar multiplies the force you apply",
+      "A computer algorithm",
+      "A type of sensor"
+    ],
+    "answerIndex": 1,
+    "explanation": "A lever provides 'mechanical advantage': by pushing down on a long bar with a pivot point near the rock, a small force from you creates a much larger force on the rock."
+  },
+  {
+    "id": "simple-machines-t3-q3",
+    "topicId": "simple-machines",
+    "tier": 3,
+    "question": "Why might a robot use a ramp (inclined plane) to move a heavy object to a higher shelf instead of lifting it straight up?",
+    "choices": [
+      "Ramps make objects heavier",
+      "A ramp lets the robot apply a smaller force over a longer distance instead of a larger force straight up — making the task easier, even though it takes more movement",
+      "Ramps remove the need for any force at all",
+      "Ramps only work for robots with wings"
+    ],
+    "answerIndex": 1,
+    "explanation": "An inclined plane spreads the work of lifting over a longer path, reducing the force needed at any one moment — a classic simple-machine trade-off between force and distance."
+  },
+  {
+    "id": "simple-machines-t4-q1",
+    "topicId": "simple-machines",
+    "tier": 4,
+    "question": "A robot designer is choosing a gear ratio for a robot's wheels. What trade-off are they balancing?",
+    "choices": [
+      "There is no trade-off — higher gear ratios always make a robot better in every way",
+      "Higher gear ratios tend to increase torque (useful for climbing or carrying loads) but reduce top speed, while lower ratios do the opposite",
+      "Gear ratios only affect the robot's color",
+      "Gear ratios determine how many sensors a robot can have"
+    ],
+    "answerIndex": 1,
+    "explanation": "Gear ratios let designers trade speed for torque (or vice versa). A robot that needs to climb ramps or carry heavy loads benefits from higher torque, even if it moves more slowly — while a racing robot might prioritize speed."
+  },
+  {
+    "id": "simple-machines-t4-q2",
+    "topicId": "simple-machines",
+    "tier": 4,
+    "question": "Many real robots combine multiple simple machines — for example, a robotic arm might use levers, gears, and wheels together. What is this combination called?",
+    "choices": [
+      "A perpetual motion machine",
+      "A compound machine — two or more simple machines working together to perform a task",
+      "A simple circuit",
+      "An impossible machine"
+    ],
+    "answerIndex": 1,
+    "explanation": "A compound machine combines simple machines (like levers and gears) to achieve more complex movements — most real robotic mechanisms are compound machines."
+  },
+  {
+    "id": "simple-machines-t4-q3",
+    "topicId": "simple-machines",
+    "tier": 4,
+    "question": "A robot's wheels are spinning rapidly but the robot isn't moving forward. What is the most likely explanation?",
+    "choices": [
+      "The robot has too much friction between its wheels and the ground",
+      "The wheels are slipping because there isn't enough friction (grip) with the surface to convert spinning into forward motion",
+      "The robot's battery is too full",
+      "The robot has too many sensors"
+    ],
+    "answerIndex": 1,
+    "explanation": "If there's too little friction — like on ice or a very smooth floor — the wheels can spin freely without gripping the surface, so the robot doesn't move forward even though the motors are working."
+  },
+  {
+    "id": "simple-machines-t5-q1",
+    "topicId": "simple-machines",
+    "tier": 5,
+    "question": "A robot's motor spins at 100 rotations per minute (RPM). It drives a gear system with a 4:1 ratio (the output gear turns once for every 4 turns of the motor gear). What is the approximate output speed, and what happens to torque?",
+    "choices": [
+      "Output speed is about 400 RPM, and torque decreases",
+      "Output speed is about 25 RPM, and torque increases",
+      "Output speed is still 100 RPM, and torque stays the same",
+      "Output speed is about 25 RPM, and torque also decreases"
+    ],
+    "answerIndex": 1,
+    "explanation": "A 4:1 gear ratio divides the speed by 4 (100 RPM → 25 RPM) while roughly multiplying the torque by 4 — gear systems trade speed for torque, not gain both for free."
+  },
+  {
+    "id": "simple-machines-t5-q2",
+    "topicId": "simple-machines",
+    "tier": 5,
+    "question": "Two teams build robots for a competition: one robot must climb a steep ramp carrying a heavy load, and the other must race across a flat track as fast as possible. How should their gear choices most likely differ?",
+    "choices": [
+      "Both robots should use identical gear ratios since gear choice never matters for competitions",
+      "The climbing robot should use a gear ratio favoring higher torque (slower but stronger), while the racing robot should favor higher speed (less torque)",
+      "The racing robot should use the highest possible torque and lowest possible speed",
+      "Gear ratios only matter for robots with cameras"
+    ],
+    "answerIndex": 1,
+    "explanation": "Climbing a steep ramp with a load requires more torque to overcome gravity and resistance, even at the cost of speed. A flat-track racer benefits more from higher speed since it doesn't need to fight gravity as much — different goals call for different gear ratios."
+  },
+  {
+    "id": "simple-machines-t5-q3",
+    "topicId": "simple-machines",
+    "tier": 5,
+    "question": "A robotic gripper uses a lever arm so that a small motor near the base can apply a strong gripping force at the fingertips, far from the pivot. What principle explains why this works?",
+    "choices": [
+      "Levers provide mechanical advantage: applying force over a longer arm near the pivot can produce a larger force at another point, depending on the lengths involved",
+      "Motors near the base are always weaker than motors at the fingertips",
+      "Lever arms have no effect on the force at the fingertips",
+      "This only works if the gripper has no pivot point at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "By placing the motor near the pivot and using lever arms of carefully chosen lengths, engineers can amplify a modest motor force into a stronger gripping force at the fingertips — the same lever principle as a pair of pliers."
+  }
+]

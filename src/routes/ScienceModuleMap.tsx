@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import SkillPath from '../components/SkillPath';
 import Mascot from '../components/Mascot';
 import { useProfile } from '../context/ProfileContext';
-import { BIOLOGY_TOPICS } from '../lib/engine/topics';
+import { BIOLOGY_TOPICS, BIOLOGY_TOPICS_PART2 } from '../lib/engine/topics';
 
 export default function ScienceModuleMap() {
   const { profile } = useProfile();
@@ -17,8 +17,22 @@ export default function ScienceModuleMap() {
       </p>
 
       <div className="mt-8 w-full">
+        <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-white/50">
+          Part 1 · Cells & Molecular Biology
+        </h2>
         <SkillPath
           topics={BIOLOGY_TOPICS}
+          progress={profile.topics}
+          onSelect={(topicId) => navigate(`/learn/science/session?topic=${topicId}`)}
+        />
+      </div>
+
+      <div className="mt-12 w-full">
+        <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-white/50">
+          Part 2 · Genetics, Evolution &amp; Ecology
+        </h2>
+        <SkillPath
+          topics={BIOLOGY_TOPICS_PART2}
           progress={profile.topics}
           onSelect={(topicId) => navigate(`/learn/science/session?topic=${topicId}`)}
         />

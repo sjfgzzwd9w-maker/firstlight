@@ -54,6 +54,62 @@ export const BIOLOGY_TRIVIA: string[] = [
   'The platypus is one of the only mammals that lays eggs instead of giving birth to live young.',
 ];
 
+/** Fun facts shown while Cosmo "thinks up" a new Python question. */
+export const PYTHON_TRIVIA: string[] = [
+  'Python was created by Guido van Rossum and first released in 1991 — he named it after the comedy group Monty Python, not the snake.',
+  "Python's official style guide, PEP 8, says code is read much more often than it's written — which is why naming and formatting matter so much.",
+  'The famous Zen of Python ("Beautiful is better than ugly", "Simple is better than complex") can be read anytime by typing `import this`.',
+  'Python uses indentation instead of curly braces to define code blocks — whitespace is actually part of the syntax.',
+  "Lists in Python are dynamic arrays: they can grow or shrink, and can even hold mixed types like numbers, strings, and other lists.",
+  'Python dictionaries have kept insertion order since Python 3.7 — before that, the order was not guaranteed.',
+  'The print() function used to be a statement in Python 2; Python 3 made it a regular function, which is why you now write print("hi") with parentheses.',
+  'Instagram, Spotify, and YouTube have all relied heavily on Python in their backend systems.',
+  'NASA has used Python for everything from analyzing data to scripting tools used by mission engineers.',
+  "Python's built-in range() doesn't create a full list in memory — it generates numbers one at a time, which saves memory for big loops.",
+  'A Python "duck" is not a bird: "duck typing" means Python cares about what an object can do, not what class it belongs to — if it walks like a duck and quacks like a duck...',
+  'The // operator in Python performs floor division — 7 // 2 gives 3, not 3.5.',
+  'Python lets you swap two variables in one line: a, b = b, a — no temporary variable needed.',
+  'List comprehensions were inspired by set-builder notation in mathematics, like {x^2 : x in naturals}.',
+  'Every Python script file is automatically called a "module," and a folder of modules with an __init__.py file becomes a "package."',
+  'f-strings, written like f"Hello {name}", were added in Python 3.6 and are now the most common way to format text.',
+  "Python's None is a singleton — there is only ever one None object in a running program, no matter how many times you write it.",
+  'The Python Package Index (PyPI) hosts hundreds of thousands of free packages you can install with pip install.',
+  'Booleans in Python are actually a subclass of integers — True equals 1 and False equals 0 under the hood.',
+  'Generators let Python produce values one at a time using yield, which is why they can represent infinite sequences without running out of memory.',
+  'The walrus operator := , added in Python 3.8, lets you assign a value to a variable as part of a larger expression.',
+  "Python's try/except blocks can also include an else clause, which runs only if no exception was raised.",
+  'Type hints in Python (like "def add(a: int, b: int) -> int:") are optional and not enforced at runtime — they exist mainly to help tools and humans.',
+  'A single underscore _ is often used in Python as a throwaway variable name for values you plan to ignore.',
+];
+
+/** Fun facts shown while Cosmo "thinks up" a new robotics question. */
+export const ROBOTICS_TRIVIA: string[] = [
+  "The word 'robot' comes from the Czech word 'robota,' meaning forced labor — it first appeared in a 1920 play by Karel Capek.",
+  'NASA\'s Mars rovers, like Curiosity and Perseverance, are essentially giant robots that can drive, dig, and analyze rocks millions of miles from Earth.',
+  'A robot needs three basic things to work: sensors to gather information, a "brain" to decide what to do, and actuators to act on that decision.',
+  'The Roomba vacuum robot uses simple sensors to detect walls and furniture, then bounces around the room in patterns until it has cleaned everything.',
+  'Some robotic arms in factories can move with precision down to a fraction of a millimeter, far more accurate than a human hand.',
+  'Boston Dynamics\' robot "Spot" uses gyroscopes and force sensors in its legs to balance itself, even on uneven ground.',
+  'The first industrial robot, called Unimate, started working on a General Motors assembly line in 1961, lifting and stacking hot metal parts.',
+  'A servo motor can rotate to a specific angle and hold it there, which is why they are used to steer wheels and move robotic arm joints.',
+  'Many robots use a sensor called a "gyroscope" to sense rotation, the same kind of sensor that helps your phone know which way is up.',
+  'Closed-loop control means a robot checks its own results and adjusts — like a thermostat that turns the heater on and off to stay at the right temperature.',
+  'A PID controller — used in everything from drones to self-driving cars — constantly nudges a system based on how far off it currently is, how long it has been off, and how fast the error is changing.',
+  'Some underwater exploration robots can dive deeper than any human diver, surviving crushing pressure to map shipwrecks and ocean trenches.',
+  'A robot\'s "degrees of freedom" describe the number of independent ways it can move — a human arm has about 7, while many robot arms have 6.',
+  'Line-following robots often use simple light sensors to detect a dark line on a light floor, steering left or right to stay on track.',
+  'The Mars rover Perseverance carries a tiny helicopter named Ingenuity, the first aircraft to achieve powered flight on another planet.',
+  'Some robots are "soft robots" made from flexible, squishy materials inspired by octopuses, letting them squeeze through tight spaces.',
+  'Robotic exoskeletons can help people who have lost the use of their legs to stand and walk again by amplifying their movements.',
+  'A breadboard lets you build and test electronic circuits without soldering, which is why it\'s a favorite tool for robotics beginners.',
+  'Arduino boards, first released in 2005, made it cheap and easy for students and hobbyists to build their own robots and gadgets.',
+  'Many warehouse robots, like those used by large shipping companies, navigate using grids of barcodes on the floor instead of cameras.',
+  'A robot vacuum that "remembers" your house is usually building an internal map using a technique called SLAM (Simultaneous Localization and Mapping).',
+  'Some robots use machine learning to get better at tasks over time, the same way you improve at a video game the more you practice.',
+  'Engineers test robot safety extensively because a robot arm moving at factory speed can be dangerous if it doesn\'t sense a person nearby.',
+  'Honda\'s ASIMO robot, one of the most famous humanoid robots, could walk, run, climb stairs, and even recognize faces and voices.',
+];
+
 /** Pick a random trivia fact from a list, optionally avoiding the most recently shown one. */
 export function randomTrivia(list: string[], exclude?: string): string {
   if (list.length <= 1) return list[0];

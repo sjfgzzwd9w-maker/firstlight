@@ -1,4 +1,4 @@
-import type { UserProfile } from '../../types';
+import type { Question, QuestionNote, UserProfile } from '../../types';
 import { ALL_TOPICS } from '../engine/topics';
 import { createTopicProgress, placementTier } from '../engine/adaptiveEngine';
 
@@ -12,6 +12,7 @@ function defaultProfile(): UserProfile {
     totalXp: 0,
     badges: [],
     topics: {},
+    notes: [],
   };
 }
 
@@ -55,4 +56,45 @@ export function totalXp(profile: UserProfile): number {
 export function awardBadgeIfNew(profile: UserProfile, badge: string): UserProfile {
   if (profile.badges.includes(badge)) return profile;
   return { ...profile, badges: [...profile.badges, badge] };
+}
+
+/**
+ * Add a new note for a question, or update the existing note for that
+ * question if one is already saved.
+ */
+export function saveNote(profile: UserProfile, question: Question, text: string): UserProfile {
+  const trimmed = text.trim();
+  const now = Date.now();
+  const existing = profile.notes.find((n) => n.questionId === question.id);
+
+  if (existing) {
+    if (!trimmed) return removeNote(profile, existing.id);
+    const notes = profile.notes.map((n) =>
+      n.id === existing.id ? { ...n, text: trimmed, updatedAt: now } : n,
+    );
+    return { ...profile, notes };
+  }
+
+  if (!trimmed) return profile;
+
+  const topic = ALL_TOPICS.find((t) => t.id === question.topicId);
+  const note: QuestionNote = {
+    id: `note-${question.id}-${now}`,
+    questionId: question.id,
+    topicId: question.topicId,
+    subject: topic?.subject ?? 'math',
+    questionText: question.question,
+    text: trimmed,
+    createdAt: now,
+    updatedAt: now,
+  };
+  return { ...profile, notes: [...profile.notes, note] };
+}
+
+export function removeNote(profile: UserProfile, noteId: string): UserProfile {
+  return { ...profile, notes: profile.notes.filter((n) => n.id !== noteId) };
+}
+
+export function noteForQuestion(profile: UserProfile, questionId: string): QuestionNote | undefined {
+  return profile.notes.find((n) => n.questionId === questionId);
 }
