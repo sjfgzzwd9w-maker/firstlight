@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Stardance Learn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An adaptive learning app for kids and teens (ages 5–18). Pick a subject, answer
+questions, and your guide **Cosmo** adjusts the difficulty as you go — leveling
+you up after a couple of correct answers in a row, or stepping back to give
+you a refresher if things get tricky.
 
-Currently, two official plugins are available:
+## Subjects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Math** — Algebra 2: linear equations, systems of equations, quadratics,
+  exponents & polynomials, functions & graphing.
+- **Biology** — nature of science, characteristics of life, macromolecules,
+  cell theory & transport, cellular processes, ecosystems & energy flow, DNA,
+  protein synthesis, mutations, mitosis & meiosis.
 
-## React Compiler
+Space and Coding modules are planned but not yet available.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How it works
 
-## Expanding the ESLint configuration
+- **Adaptive difficulty** — each topic tracks a tier (1–5). Two correct
+  answers in a row level you up; two incorrect answers in a row level you
+  down. Reaching tier 5 with a correct streak marks the topic mastered.
+- **XP & progress** — correct answers earn XP scaled by the current tier;
+  progress per topic is saved locally in the browser.
+- **AI tutor (optional)** — on devices with WebGPU, the app can run a small
+  language model (Llama 3.2, 1B or 3B) directly in the browser via
+  [WebLLM](https://github.com/mlc-ai/web-llm) to generate extra practice
+  questions and tailored explanations. Without WebGPU, the app falls back to
+  a built-in question bank — everything still works.
+- **Voice** — questions and feedback can optionally be read aloud.
+- **Privacy-friendly** — no backend; all profile data and AI inference stay
+  on-device.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Other scripts:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build    # type-check and build for production
+npm run lint     # run ESLint
+npm run preview  # preview the production build
 ```
+
+## Tech stack
+
+React, TypeScript, Vite, React Router, Tailwind CSS, and
+[@mlc-ai/web-llm](https://github.com/mlc-ai/web-llm) for in-browser AI.
