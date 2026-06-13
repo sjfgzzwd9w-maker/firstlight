@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-space-950: #0b0a18;
+  --color-space-900: #16142c;
+  --color-space-800: #221f44;
+  --color-space-700: #322c63;
+  --color-nebula-400: #c084fc;
+  --color-nebula-500: #aa3bff;
+  --color-star-400: #ffe17a;
+  --color-star-500: #ffd23f;
+  --color-comet-400: #5eead4;
+  --color-comet-500: #2dd4bf;
+  --animate-bounce-slow: bounce-slow 3s ease-in-out infinite;
+  --animate-pop: pop 0.4s ease-out;
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-space-950);
+  color: #f3f1fa;
+}

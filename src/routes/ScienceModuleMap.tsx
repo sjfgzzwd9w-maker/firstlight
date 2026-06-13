@@ -1,0 +1,28 @@
+import { useNavigate } from 'react-router-dom';
+import SkillPath from '../components/SkillPath';
+import Mascot from '../components/Mascot';
+import { useProfile } from '../context/ProfileContext';
+import { BIOLOGY_TOPICS } from '../lib/engine/topics';
+
+export default function ScienceModuleMap() {
+  const { profile } = useProfile();
+  const navigate = useNavigate();
+
+  return (
+    <div className="flex-1 flex flex-col items-center px-6 py-10 max-w-3xl mx-auto w-full text-center">
+      <Mascot mood="thinking" line="Pick a skill to practice — I'll meet you there!" />
+      <h1 className="mt-6 text-2xl sm:text-3xl font-extrabold text-white">Science · Biology</h1>
+      <p className="mt-2 text-white/60">
+        Topics unlock as you build up each skill. Tap a topic to start a session.
+      </p>
+
+      <div className="mt-8 w-full">
+        <SkillPath
+          topics={BIOLOGY_TOPICS}
+          progress={profile.topics}
+          onSelect={(topicId) => navigate(`/learn/science/session?topic=${topicId}`)}
+        />
+      </div>
+    </div>
+  );
+}
