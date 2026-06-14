@@ -110,6 +110,34 @@ export const ROBOTICS_TRIVIA: string[] = [
   'Honda\'s ASIMO robot, one of the most famous humanoid robots, could walk, run, climb stairs, and even recognize faces and voices.',
 ];
 
+/** Fun facts shown while Cosmo "thinks up" a new space science question. */
+export const SPACE_TRIVIA: string[] = [
+  'A day on Venus is longer than its year — Venus takes 243 Earth days to rotate once, but only 225 Earth days to orbit the Sun.',
+  "Neutron stars can spin hundreds of times per second — some 'pulsars' rotate faster than a kitchen blender.",
+  'The footprints astronauts left on the Moon could last millions of years, since there is no wind or water to erode them.',
+  "Saturn's rings are made mostly of ice chunks, some as small as dust grains and others as large as mountains.",
+  'One million Earths could fit inside the Sun, and the Sun itself is considered an average-sized star.',
+  "Light from the Sun takes about 8 minutes to reach Earth, so we always see the Sun as it looked 8 minutes ago.",
+  "The largest known star, UY Scuti, is so big that if it replaced the Sun, its surface would extend past Jupiter's orbit.",
+  'Space is completely silent because sound waves need a medium like air or water to travel through, and space is a near-perfect vacuum.',
+  "Olympus Mons on Mars is the largest volcano in the solar system — about 2.5 times taller than Mount Everest.",
+  "A spoonful of material from a neutron star would weigh about a billion tons on Earth.",
+  'The Great Red Spot on Jupiter is a giant storm that has been raging for at least 350 years and is larger than Earth.',
+  "Astronauts can grow up to 5 centimeters taller in space because microgravity lets the spine stretch out.",
+  'Halley\'s Comet returns to the inner solar system roughly every 76 years and was last seen in 1986.',
+  "The Voyager 1 spacecraft, launched in 1977, is now the most distant human-made object, traveling in interstellar space.",
+  'There is a planet made largely of diamond-like material, with a mass and radius slightly larger than Earth, called 55 Cancri e.',
+  "The footprints of the asteroid belt total less mass than our Moon, even though it contains millions of rocky objects.",
+  'Jupiter has at least 95 known moons, including Ganymede, which is larger than the planet Mercury.',
+  "A 'shooting star' isn't a star at all — it's a small piece of rock or dust burning up as it enters Earth's atmosphere.",
+  'The International Space Station travels at about 28,000 km/h, orbiting Earth roughly every 90 minutes.',
+  "Black holes don't actually 'suck' things in — objects can orbit them safely as long as they stay outside the event horizon.",
+  'The coldest known place in the universe naturally is the Boomerang Nebula, at about -272°C, just above absolute zero.',
+  "Mercury and Venus are the only planets in our solar system with no moons.",
+  'The Hubble Space Telescope has been operating for over 30 years and has helped measure the age of the universe at about 13.8 billion years.',
+  "If you could drive a car at highway speed to the Sun, it would take over 160 years to get there.",
+];
+
 /** Pick a random trivia fact from a list, optionally avoiding the most recently shown one. */
 export function randomTrivia(list: string[], exclude?: string): string {
   if (list.length <= 1) return list[0];

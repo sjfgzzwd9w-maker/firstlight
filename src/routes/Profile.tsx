@@ -6,6 +6,7 @@ import {
   CHEMISTRY_TOPICS_ALL,
   PYTHON_TOPICS_ALL,
   ROBOTICS_TOPICS_ALL,
+  SPACE_TOPICS_ALL,
 } from '../lib/engine/topics';
 import { totalXp } from '../lib/storage/progress';
 import { MAX_TIER } from '../types';
@@ -22,6 +23,7 @@ export default function Profile() {
     ...CHEMISTRY_TOPICS_ALL,
     ...PYTHON_TOPICS_ALL,
     ...ROBOTICS_TOPICS_ALL,
+    ...SPACE_TOPICS_ALL,
   ]) {
     const p = profile.topics[topic.id];
     if (!p) continue;
@@ -69,6 +71,9 @@ export default function Profile() {
 
       <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Robotics</h2>
       <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(ROBOTICS_TOPICS_ALL)}</div>
+
+      <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Space</h2>
+      <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(SPACE_TOPICS_ALL)}</div>
 
       <div className="mt-8 w-full">
         <h2 className="text-lg font-semibold text-white">Badges</h2>

@@ -1,0 +1,787 @@
+[
+  {
+    "id": "space-exploration-history-t1-q1",
+    "topicId": "space-exploration-history",
+    "tier": 1,
+    "question": "What was the name of the first artificial satellite launched into space?",
+    "choices": ["Sputnik 1", "Apollo 11", "Voyager 1", "Hubble"],
+    "answerIndex": 0,
+    "explanation": "Sputnik 1 was launched by the Soviet Union in 1957, becoming the first artificial satellite to orbit Earth."
+  },
+  {
+    "id": "space-exploration-history-t1-q2",
+    "topicId": "space-exploration-history",
+    "tier": 1,
+    "question": "Who was the first person to walk on the Moon?",
+    "choices": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"],
+    "answerIndex": 2,
+    "explanation": "Neil Armstrong stepped onto the Moon's surface in 1969 during the Apollo 11 mission."
+  },
+  {
+    "id": "space-exploration-history-t2-q1",
+    "topicId": "space-exploration-history",
+    "tier": 2,
+    "question": "Which Apollo mission was the first to land humans on the Moon?",
+    "choices": ["Apollo 8", "Apollo 11", "Apollo 13", "Apollo 17"],
+    "answerIndex": 1,
+    "explanation": "Apollo 11 landed Neil Armstrong and Buzz Aldrin on the Moon on July 20, 1969."
+  },
+  {
+    "id": "space-exploration-history-t2-q2",
+    "topicId": "space-exploration-history",
+    "tier": 2,
+    "question": "Who was the first human to travel into space?",
+    "choices": ["Neil Armstrong", "Yuri Gagarin", "Alan Shepard", "John Glenn"],
+    "answerIndex": 1,
+    "explanation": "Soviet cosmonaut Yuri Gagarin orbited Earth aboard Vostok 1 in 1961, becoming the first human in space."
+  },
+  {
+    "id": "space-exploration-history-t3-q1",
+    "topicId": "space-exploration-history",
+    "tier": 3,
+    "question": "What is the International Space Station (ISS)?",
+    "choices": [
+      "A telescope orbiting the Moon",
+      "A space station continuously crewed in low Earth orbit",
+      "A robotic probe sent to Mars",
+      "A satellite that broadcasts television"
+    ],
+    "answerIndex": 1,
+    "explanation": "The ISS is a habitable space station in low Earth orbit, continuously occupied by astronauts since 2000, built through international cooperation."
+  },
+  {
+    "id": "space-exploration-history-t3-q2",
+    "topicId": "space-exploration-history",
+    "tier": 3,
+    "question": "Which space agency operates the Space Shuttle program (now retired)?",
+    "choices": ["ESA", "NASA", "Roscosmos", "JAXA"],
+    "answerIndex": 1,
+    "explanation": "NASA's Space Shuttle program ran from 1981 to 2011, flying reusable spacecraft to and from orbit."
+  },
+  {
+    "id": "space-exploration-history-t4-q1",
+    "topicId": "space-exploration-history",
+    "tier": 4,
+    "question": "What event is often considered the start of the 'Space Race' between the US and USSR?",
+    "choices": [
+      "The launch of Sputnik 1 in 1957",
+      "The Moon landing in 1969",
+      "The founding of NASA in 1958",
+      "The launch of the ISS in 1998"
+    ],
+    "answerIndex": 0,
+    "explanation": "The 1957 launch of Sputnik 1 shocked the US and triggered a decades-long competition in space achievements known as the Space Race."
+  },
+  {
+    "id": "space-exploration-history-t4-q2",
+    "topicId": "space-exploration-history",
+    "tier": 4,
+    "question": "Why was the Apollo 13 mission notable, despite not landing on the Moon?",
+    "choices": [
+      "It was the first mission to use a reusable rocket",
+      "An oxygen tank explosion forced the crew to abort and they returned safely using improvised solutions",
+      "It was the first mission with an all-female crew",
+      "It tested the first space station module"
+    ],
+    "answerIndex": 1,
+    "explanation": "Apollo 13 suffered an oxygen tank explosion en route to the Moon; the crew and mission control improvised a safe return, often called a 'successful failure.'"
+  },
+  {
+    "id": "space-exploration-history-t5-q1",
+    "topicId": "space-exploration-history",
+    "tier": 5,
+    "question": "How did the 'overview effect' reported by astronauts influence space exploration history?",
+    "choices": [
+      "It led to faster rocket engines",
+      "It described a shift in perspective from seeing Earth from space, influencing environmental awareness and international cooperation",
+      "It was a navigation technique for landing on the Moon",
+      "It was a type of spacesuit material"
+    ],
+    "answerIndex": 1,
+    "explanation": "Many astronauts describe a profound shift in perspective ('overview effect') after seeing Earth as a small, fragile whole from space, which has influenced environmental movements and calls for cooperation."
+  },
+  {
+    "id": "space-exploration-history-t5-q2",
+    "topicId": "space-exploration-history",
+    "tier": 5,
+    "question": "What was a major outcome of the Apollo-Soyuz Test Project (1975)?",
+    "choices": [
+      "The first crewed Mars mission",
+      "The first docking in space between spacecraft from the US and USSR, symbolizing détente",
+      "The discovery of water on the Moon",
+      "The first reusable spacecraft launch"
+    ],
+    "answerIndex": 1,
+    "explanation": "Apollo-Soyuz was the first joint US-Soviet space mission, with American and Soviet spacecraft docking in orbit — a symbolic step toward cooperation during the Cold War."
+  },
+  {
+    "id": "rockets-spaceflight-t1-q1",
+    "topicId": "rockets-spaceflight",
+    "tier": 1,
+    "question": "What do rockets burn to produce thrust?",
+    "choices": ["Air", "Fuel and oxidizer", "Water only", "Sunlight"],
+    "answerIndex": 1,
+    "explanation": "Rockets carry both fuel and an oxidizer so they can burn propellant even where there's no air, like in space."
+  },
+  {
+    "id": "rockets-spaceflight-t1-q2",
+    "topicId": "rockets-spaceflight",
+    "tier": 1,
+    "question": "Which direction does a rocket move when hot gases shoot out the bottom?",
+    "choices": ["Sideways", "Downward", "Upward", "It doesn't move"],
+    "answerIndex": 2,
+    "explanation": "By Newton's third law, gases pushed downward and out push the rocket upward — an equal and opposite reaction."
+  },
+  {
+    "id": "rockets-spaceflight-t2-q1",
+    "topicId": "rockets-spaceflight",
+    "tier": 2,
+    "question": "What is the purpose of multiple rocket 'stages'?",
+    "choices": [
+      "To make the rocket look bigger",
+      "To drop empty fuel tanks and engines so the rocket becomes lighter as it climbs",
+      "To slow the rocket down",
+      "To provide extra seating for astronauts"
+    ],
+    "answerIndex": 1,
+    "explanation": "Staging sheds the weight of used-up tanks and engines, making the remaining rocket lighter and more efficient as it accelerates toward orbit."
+  },
+  {
+    "id": "rockets-spaceflight-t2-q2",
+    "topicId": "rockets-spaceflight",
+    "tier": 2,
+    "question": "What does 'reusable rocket' mean, as pioneered by companies like SpaceX?",
+    "choices": [
+      "A rocket made of recycled materials",
+      "A rocket booster that can land and fly again on future missions",
+      "A rocket that never runs out of fuel",
+      "A rocket that only flies in the atmosphere"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reusable rockets land back on Earth (or a ship) after launch and can be refurbished and flown again, lowering the cost of spaceflight."
+  },
+  {
+    "id": "rockets-spaceflight-t3-q1",
+    "topicId": "rockets-spaceflight",
+    "tier": 3,
+    "question": "What is 'escape velocity'?",
+    "choices": [
+      "The speed a rocket needs to orbit Earth forever",
+      "The minimum speed needed to break free of a planet's gravity without further propulsion",
+      "The speed of sound in space",
+      "The speed at which fuel burns"
+    ],
+    "answerIndex": 1,
+    "explanation": "Escape velocity is the speed an object needs to overcome a body's gravitational pull and not fall back, without additional thrust."
+  },
+  {
+    "id": "rockets-spaceflight-t3-q2",
+    "topicId": "rockets-spaceflight",
+    "tier": 3,
+    "question": "Why do rockets often launch from locations near the equator, heading eastward?",
+    "choices": [
+      "Equatorial weather is always clear",
+      "Earth's rotation gives an eastward speed boost, reducing the fuel needed to reach orbit",
+      "It's required by international law",
+      "It avoids all radio interference"
+    ],
+    "answerIndex": 1,
+    "explanation": "Earth spins fastest at the equator, so launching eastward from there gives rockets a 'free' velocity boost from Earth's rotation."
+  },
+  {
+    "id": "rockets-spaceflight-t4-q1",
+    "topicId": "rockets-spaceflight",
+    "tier": 4,
+    "question": "What is the main difference between a rocket engine's specific impulse and its thrust?",
+    "choices": [
+      "They are the same thing",
+      "Thrust measures the force produced, while specific impulse measures how efficiently the engine uses propellant",
+      "Specific impulse is only used for jet engines",
+      "Thrust is measured in degrees, specific impulse in meters"
+    ],
+    "answerIndex": 1,
+    "explanation": "Thrust is the push force an engine generates, while specific impulse measures fuel efficiency — how much thrust is produced per unit of propellant consumed."
+  },
+  {
+    "id": "rockets-spaceflight-t4-q2",
+    "topicId": "rockets-spaceflight",
+    "tier": 4,
+    "question": "Why is achieving orbit fundamentally different from simply flying very high?",
+    "choices": [
+      "Orbit just means flying above the clouds",
+      "Achieving orbit requires enough horizontal (sideways) speed that the craft's fall matches the curve of the Earth",
+      "Orbit requires no engines at all",
+      "Orbit is only possible with nuclear engines"
+    ],
+    "answerIndex": 1,
+    "explanation": "Reaching orbit isn't just about altitude — a spacecraft must travel fast enough sideways that as it falls due to gravity, it continually 'misses' the Earth, circling it instead of crashing."
+  },
+  {
+    "id": "rockets-spaceflight-t5-q1",
+    "topicId": "rockets-spaceflight",
+    "tier": 5,
+    "question": "What is the 'tyranny of the rocket equation' a reference to?",
+    "choices": [
+      "The fact that rockets are illegal in most countries",
+      "The exponential relationship meaning extra fuel to carry more fuel adds diminishing returns to a rocket's final velocity",
+      "A law requiring rockets to be painted white",
+      "The fixed cost of building any rocket"
+    ],
+    "answerIndex": 1,
+    "explanation": "The rocket equation shows that velocity gained depends on the natural log of the mass ratio, so each bit of extra fuel needed to carry more fuel yields diminishing returns — a major engineering challenge."
+  },
+  {
+    "id": "rockets-spaceflight-t5-q2",
+    "topicId": "rockets-spaceflight",
+    "tier": 5,
+    "question": "What advantage do ion thrusters offer over traditional chemical rockets for deep-space missions?",
+    "choices": [
+      "They produce much higher thrust for faster launches",
+      "They are far more fuel-efficient over long durations, despite producing very low thrust",
+      "They can only be used inside Earth's atmosphere",
+      "They eliminate the need for any propellant"
+    ],
+    "answerIndex": 1,
+    "explanation": "Ion thrusters produce very gentle thrust but use propellant extremely efficiently, allowing spacecraft to gradually build up high speeds over long deep-space journeys."
+  },
+  {
+    "id": "satellites-technology-t1-q1",
+    "topicId": "satellites-technology",
+    "tier": 1,
+    "question": "What is a satellite?",
+    "choices": [
+      "A star that explodes",
+      "An object that orbits a planet or other body",
+      "A type of rocket fuel",
+      "A telescope on the ground"
+    ],
+    "answerIndex": 1,
+    "explanation": "A satellite is any object that orbits a larger body — this can be natural (like the Moon) or artificial (built by humans)."
+  },
+  {
+    "id": "satellites-technology-t1-q2",
+    "topicId": "satellites-technology",
+    "tier": 1,
+    "question": "What does GPS stand for?",
+    "choices": [
+      "Global Positioning System",
+      "General Planet Scanner",
+      "Galactic Power Source",
+      "Ground Picture Sensor"
+    ],
+    "answerIndex": 0,
+    "explanation": "GPS, or Global Positioning System, uses a network of satellites to help devices determine their exact location on Earth."
+  },
+  {
+    "id": "satellites-technology-t2-q1",
+    "topicId": "satellites-technology",
+    "tier": 2,
+    "question": "What is a 'geostationary' satellite?",
+    "choices": [
+      "A satellite that never moves at all",
+      "A satellite that orbits at a height and speed that keeps it above the same spot on Earth",
+      "A satellite that only works at night",
+      "A satellite that orbits the Moon instead of Earth"
+    ],
+    "answerIndex": 1,
+    "explanation": "A geostationary satellite orbits at about 35,786 km above the equator, matching Earth's rotation so it stays fixed over the same location — useful for weather and communication satellites."
+  },
+  {
+    "id": "satellites-technology-t2-q2",
+    "topicId": "satellites-technology",
+    "tier": 2,
+    "question": "What is the main purpose of a space telescope, like Hubble, compared to ground telescopes?",
+    "choices": [
+      "It is closer to the stars",
+      "It avoids distortion and blocking from Earth's atmosphere, giving clearer images",
+      "It is cheaper to build",
+      "It can only take pictures of Earth"
+    ],
+    "answerIndex": 1,
+    "explanation": "Space telescopes orbit above Earth's atmosphere, which blurs and blocks certain light, so they can capture much sharper and wider-spectrum images of space."
+  },
+  {
+    "id": "satellites-technology-t3-q1",
+    "topicId": "satellites-technology",
+    "tier": 3,
+    "question": "What is 'low Earth orbit' (LEO) commonly used for?",
+    "choices": [
+      "Only for deep-space probes",
+      "Earth observation, the ISS, and many communication satellite constellations",
+      "Storing rocket fuel",
+      "Nothing — it's too dangerous to use"
+    ],
+    "answerIndex": 1,
+    "explanation": "LEO (roughly 160–2,000 km altitude) is used by the ISS, Earth-imaging satellites, and constellations like Starlink because it's relatively close, allowing strong signals and detailed imagery."
+  },
+  {
+    "id": "satellites-technology-t3-q2",
+    "topicId": "satellites-technology",
+    "tier": 3,
+    "question": "How do satellites generally get their power?",
+    "choices": [
+      "Underground cables from Earth",
+      "Solar panels that convert sunlight into electricity",
+      "Burning rocket fuel continuously",
+      "Wind turbines"
+    ],
+    "answerIndex": 1,
+    "explanation": "Most satellites use solar panels to generate electricity from sunlight, often paired with batteries for when they pass through Earth's shadow."
+  },
+  {
+    "id": "satellites-technology-t4-q1",
+    "topicId": "satellites-technology",
+    "tier": 4,
+    "question": "What problem does 'space debris' (or 'space junk') pose for satellites?",
+    "choices": [
+      "It blocks sunlight from reaching Earth",
+      "Fast-moving debris can collide with and damage or destroy operational satellites",
+      "It makes satellites heavier over time",
+      "It causes satellites to rust"
+    ],
+    "answerIndex": 1,
+    "explanation": "Defunct satellites, rocket parts, and fragments orbit at high speeds; collisions can damage active satellites and even create more debris in a cascading problem."
+  },
+  {
+    "id": "satellites-technology-t4-q2",
+    "topicId": "satellites-technology",
+    "tier": 4,
+    "question": "How does a satellite constellation like Starlink provide internet access?",
+    "choices": [
+      "A single huge satellite covers the whole planet",
+      "Many small satellites in low orbit work together, relaying signals to ground stations and user terminals",
+      "It uses underground fiber cables instead of satellites",
+      "It bounces signals off the Moon"
+    ],
+    "answerIndex": 1,
+    "explanation": "Satellite internet constellations use thousands of small satellites in low Earth orbit that communicate with ground stations and user dishes, providing coverage even in remote areas."
+  },
+  {
+    "id": "satellites-technology-t5-q1",
+    "topicId": "satellites-technology",
+    "tier": 5,
+    "question": "Why do scientists worry about the 'Kessler syndrome'?",
+    "choices": [
+      "It describes satellites running out of fuel too quickly",
+      "It's a scenario where debris collisions cascade, generating more debris and making some orbits unusable",
+      "It's a type of solar storm that disables satellites",
+      "It refers to satellites colliding with the Moon"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Kessler syndrome describes a chain reaction where collisions create debris that causes further collisions, potentially making certain orbital regions too hazardous for satellites."
+  },
+  {
+    "id": "satellites-technology-t5-q2",
+    "topicId": "satellites-technology",
+    "tier": 5,
+    "question": "How do space-based telescopes like the James Webb Space Telescope detect light from very distant, ancient galaxies?",
+    "choices": [
+      "By traveling faster than light to reach them",
+      "By detecting infrared light, which lets them see highly redshifted light from very distant, early-universe objects",
+      "By using radio waves only",
+      "By landing on the galaxies to take close-up photos"
+    ],
+    "answerIndex": 1,
+    "explanation": "Light from very distant galaxies is stretched ('redshifted') into infrared wavelengths by the universe's expansion; infrared-sensitive telescopes like JWST can detect this faint, ancient light."
+  },
+  {
+    "id": "galaxies-universe-t1-q1",
+    "topicId": "galaxies-universe",
+    "tier": 1,
+    "question": "What is a galaxy?",
+    "choices": [
+      "A single giant star",
+      "A huge collection of stars, gas, dust, and dark matter held together by gravity",
+      "A type of planet",
+      "The empty space between stars"
+    ],
+    "answerIndex": 1,
+    "explanation": "A galaxy is a massive, gravitationally bound system containing stars, stellar remnants, gas, dust, and dark matter — galaxies can contain billions to trillions of stars."
+  },
+  {
+    "id": "galaxies-universe-t1-q2",
+    "topicId": "galaxies-universe",
+    "tier": 1,
+    "question": "What is the name of the galaxy that contains our solar system?",
+    "choices": ["Andromeda", "The Milky Way", "Triangulum", "Whirlpool"],
+    "answerIndex": 1,
+    "explanation": "Our Sun and solar system are located within the Milky Way galaxy, a large spiral galaxy."
+  },
+  {
+    "id": "galaxies-universe-t2-q1",
+    "topicId": "galaxies-universe",
+    "tier": 2,
+    "question": "What shape is the Milky Way galaxy?",
+    "choices": ["A perfect sphere", "A spiral with arms", "A flat square", "A ring with a hole in the middle"],
+    "answerIndex": 1,
+    "explanation": "The Milky Way is a barred spiral galaxy, with curving arms of stars, gas, and dust spreading out from a central bulge."
+  },
+  {
+    "id": "galaxies-universe-t2-q2",
+    "topicId": "galaxies-universe",
+    "tier": 2,
+    "question": "Which galaxy is the closest large spiral galaxy to the Milky Way?",
+    "choices": ["Andromeda", "Sombrero", "Pinwheel", "Cartwheel"],
+    "answerIndex": 0,
+    "explanation": "The Andromeda Galaxy is the nearest large spiral galaxy to the Milky Way, about 2.5 million light-years away, and is on a path to eventually merge with it."
+  },
+  {
+    "id": "galaxies-universe-t3-q1",
+    "topicId": "galaxies-universe",
+    "tier": 3,
+    "question": "What does the 'Big Bang' theory describe?",
+    "choices": [
+      "A huge explosion on a single star",
+      "The origin and rapid expansion of the universe from an extremely hot, dense state",
+      "The formation of the Moon",
+      "A collision between two galaxies"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Big Bang theory describes how the universe began expanding from an extremely hot, dense initial state roughly 13.8 billion years ago, and has been expanding ever since."
+  },
+  {
+    "id": "galaxies-universe-t3-q2",
+    "topicId": "galaxies-universe",
+    "tier": 3,
+    "question": "What evidence supports the idea that the universe is expanding?",
+    "choices": [
+      "Stars are getting brighter every year",
+      "Light from distant galaxies is redshifted, showing they are moving away from us",
+      "The Moon is getting closer to Earth",
+      "Planets are changing their orbits rapidly"
+    ],
+    "answerIndex": 1,
+    "explanation": "Distant galaxies show redshifted light — their wavelengths are stretched toward red — which indicates they are moving away from us, and more distant galaxies recede faster, supporting universal expansion."
+  },
+  {
+    "id": "galaxies-universe-t4-q1",
+    "topicId": "galaxies-universe",
+    "tier": 4,
+    "question": "What is 'dark matter'?",
+    "choices": [
+      "Matter that is black in color and easy to see with telescopes",
+      "An invisible form of matter that doesn't emit light but whose gravity affects how galaxies move and hold together",
+      "Empty space between galaxies",
+      "The dust clouds that block starlight"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dark matter doesn't emit, absorb, or reflect light, but its gravitational effects — like how fast galaxies rotate — reveal that it makes up a large portion of the universe's mass."
+  },
+  {
+    "id": "galaxies-universe-t4-q2",
+    "topicId": "galaxies-universe",
+    "tier": 4,
+    "question": "What will eventually happen to the Milky Way and Andromeda galaxies, according to scientists?",
+    "choices": [
+      "They will move further apart forever",
+      "They are predicted to collide and merge in several billion years",
+      "Andromeda will disappear completely",
+      "They will swap places in the sky"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Milky Way and Andromeda are approaching each other and are predicted to collide and merge into a single larger galaxy in roughly 4-5 billion years."
+  },
+  {
+    "id": "galaxies-universe-t5-q1",
+    "topicId": "galaxies-universe",
+    "tier": 5,
+    "question": "What is 'cosmic microwave background' (CMB) radiation?",
+    "choices": [
+      "Radio signals sent by alien civilizations",
+      "Leftover radiation from the early universe, providing a snapshot of conditions shortly after the Big Bang",
+      "Heat radiated by the Sun",
+      "Microwave signals used by satellites for communication"
+    ],
+    "answerIndex": 1,
+    "explanation": "The CMB is faint radiation filling all of space, leftover from about 380,000 years after the Big Bang when the universe became transparent — it's one of the strongest pieces of evidence for the Big Bang."
+  },
+  {
+    "id": "galaxies-universe-t5-q2",
+    "topicId": "galaxies-universe",
+    "tier": 5,
+    "question": "What is 'dark energy' believed to cause?",
+    "choices": [
+      "The slowing down of the universe's expansion",
+      "The accelerating expansion of the universe",
+      "The formation of black holes",
+      "The rotation of galaxies"
+    ],
+    "answerIndex": 1,
+    "explanation": "Dark energy is a mysterious force thought to make up most of the universe's energy content, and observations show it's causing the universe's expansion to accelerate over time."
+  },
+  {
+    "id": "black-holes-extreme-t1-q1",
+    "topicId": "black-holes-extreme",
+    "tier": 1,
+    "question": "What is a black hole?",
+    "choices": [
+      "A hole in the ground on the Moon",
+      "A region of space with gravity so strong that nothing, not even light, can escape",
+      "A type of dark planet",
+      "An empty area with no stars"
+    ],
+    "answerIndex": 1,
+    "explanation": "A black hole is a region where gravity is so intense that nothing, including light, can escape once it crosses the 'event horizon.'"
+  },
+  {
+    "id": "black-holes-extreme-t1-q2",
+    "topicId": "black-holes-extreme",
+    "tier": 1,
+    "question": "Can we see a black hole directly with a normal telescope?",
+    "choices": [
+      "Yes, they are very bright",
+      "No, because no light escapes them — but we can see their effects on nearby matter",
+      "Yes, but only during the day",
+      "No, they don't actually exist"
+    ],
+    "answerIndex": 1,
+    "explanation": "Black holes themselves don't emit light, so they can't be seen directly, but scientists detect them by observing their gravitational effects on nearby stars and gas."
+  },
+  {
+    "id": "black-holes-extreme-t2-q1",
+    "topicId": "black-holes-extreme",
+    "tier": 2,
+    "question": "What is a 'neutron star'?",
+    "choices": [
+      "A star made entirely of neutrons that forms when a massive star's core collapses",
+      "A star that has not yet started burning fuel",
+      "A type of planet orbiting a black hole",
+      "A star made of pure hydrogen gas"
+    ],
+    "answerIndex": 0,
+    "explanation": "A neutron star is an extremely dense remnant left after a massive star's core collapses in a supernova, packing roughly the mass of the Sun into a sphere about 20 km across."
+  },
+  {
+    "id": "black-holes-extreme-t2-q2",
+    "topicId": "black-holes-extreme",
+    "tier": 2,
+    "question": "What is the 'event horizon' of a black hole?",
+    "choices": [
+      "The visible surface of the black hole",
+      "The boundary beyond which nothing can escape the black hole's gravity",
+      "The orbit of planets around the black hole",
+      "A type of telescope used to study black holes"
+    ],
+    "answerIndex": 1,
+    "explanation": "The event horizon is the boundary around a black hole beyond which the escape velocity exceeds the speed of light, so nothing — not even light — can escape."
+  },
+  {
+    "id": "black-holes-extreme-t3-q1",
+    "topicId": "black-holes-extreme",
+    "tier": 3,
+    "question": "How do most stellar-mass black holes form?",
+    "choices": [
+      "From the collision of two planets",
+      "From the gravitational collapse of a massive star's core after it runs out of fuel and goes supernova",
+      "From clouds of dust slowly clumping together",
+      "From the explosion of a white dwarf"
+    ],
+    "answerIndex": 1,
+    "explanation": "When a star much more massive than the Sun exhausts its fuel, its core can collapse under gravity, and if massive enough, it forms a black hole, often accompanied by a supernova explosion."
+  },
+  {
+    "id": "black-holes-extreme-t3-q2",
+    "topicId": "black-holes-extreme",
+    "tier": 3,
+    "question": "What is a 'supermassive black hole'?",
+    "choices": [
+      "A black hole found only in our solar system",
+      "An extremely massive black hole, often millions to billions of times the Sun's mass, found at the centers of most galaxies",
+      "A black hole made of dark matter only",
+      "A temporary black hole that disappears quickly"
+    ],
+    "answerIndex": 1,
+    "explanation": "Supermassive black holes, with masses millions to billions of times that of the Sun, are believed to reside at the centers of most large galaxies, including the Milky Way."
+  },
+  {
+    "id": "black-holes-extreme-t4-q1",
+    "topicId": "black-holes-extreme",
+    "tier": 4,
+    "question": "How did scientists capture the first-ever image of a black hole's shadow (in 2019)?",
+    "choices": [
+      "By sending a probe directly into the black hole",
+      "By linking radio telescopes around the world to create a virtual telescope as large as Earth (Event Horizon Telescope)",
+      "By using a single very powerful optical telescope",
+      "By calculating it purely from mathematics with no observation"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Event Horizon Telescope combined data from radio telescopes across the globe, effectively creating an Earth-sized telescope able to resolve the shadow of the black hole in galaxy M87."
+  },
+  {
+    "id": "black-holes-extreme-t4-q2",
+    "topicId": "black-holes-extreme",
+    "tier": 4,
+    "question": "What are 'gravitational waves'?",
+    "choices": [
+      "Sound waves that travel through space",
+      "Ripples in spacetime caused by massive accelerating objects, like merging black holes",
+      "Radio signals sent by satellites",
+      "Waves of light emitted by stars"
+    ],
+    "answerIndex": 1,
+    "explanation": "Gravitational waves are ripples in the fabric of spacetime caused by violent events like merging black holes or neutron stars, first directly detected by LIGO in 2015."
+  },
+  {
+    "id": "black-holes-extreme-t5-q1",
+    "topicId": "black-holes-extreme",
+    "tier": 5,
+    "question": "What does 'spaghettification' refer to near a black hole?",
+    "choices": [
+      "A type of food eaten by astronauts",
+      "The stretching of an object into a long thin shape due to extreme tidal gravitational forces near a black hole",
+      "The process of a black hole evaporating",
+      "A method for measuring a black hole's mass"
+    ],
+    "answerIndex": 1,
+    "explanation": "Near a black hole, gravity is so much stronger on the near side of an object than the far side that it gets stretched into a long thin shape — informally called 'spaghettification.'"
+  },
+  {
+    "id": "black-holes-extreme-t5-q2",
+    "topicId": "black-holes-extreme",
+    "tier": 5,
+    "question": "What is 'Hawking radiation'?",
+    "choices": [
+      "Radiation emitted by stars near a black hole",
+      "Theoretical radiation predicted to be emitted by black holes due to quantum effects near the event horizon, causing them to slowly lose mass",
+      "A type of radio wave used to detect black holes",
+      "Radiation that destroys spacecraft near black holes"
+    ],
+    "answerIndex": 1,
+    "explanation": "Physicist Stephen Hawking predicted that quantum effects near a black hole's event horizon could cause it to emit radiation and very slowly lose mass over enormous timescales."
+  },
+  {
+    "id": "exoplanets-life-t1-q1",
+    "topicId": "exoplanets-life",
+    "tier": 1,
+    "question": "What is an 'exoplanet'?",
+    "choices": [
+      "A planet that has been destroyed",
+      "A planet that orbits a star outside our solar system",
+      "A moon of Jupiter",
+      "A planet without an atmosphere"
+    ],
+    "answerIndex": 1,
+    "explanation": "An exoplanet is any planet that orbits a star other than our Sun — thousands have been discovered so far."
+  },
+  {
+    "id": "exoplanets-life-t1-q2",
+    "topicId": "exoplanets-life",
+    "tier": 1,
+    "question": "What basic ingredient do scientists look for as a sign that a planet might support life as we know it?",
+    "choices": ["Gold", "Liquid water", "Lava", "Ice caps on every planet"],
+    "answerIndex": 1,
+    "explanation": "Liquid water is essential for life as we know it, so scientists look for planets where conditions could allow water to exist in liquid form."
+  },
+  {
+    "id": "exoplanets-life-t2-q1",
+    "topicId": "exoplanets-life",
+    "tier": 2,
+    "question": "What is the 'habitable zone' (sometimes called the 'Goldilocks zone')?",
+    "choices": [
+      "The region of a galaxy with the most stars",
+      "The range of distances from a star where temperatures could allow liquid water to exist on a planet's surface",
+      "The area inside a star where planets form",
+      "Any region of space with breathable air"
+    ],
+    "answerIndex": 1,
+    "explanation": "The habitable zone is the range of orbital distances from a star where a planet could have surface temperatures allowing liquid water — not too hot, not too cold."
+  },
+  {
+    "id": "exoplanets-life-t2-q2",
+    "topicId": "exoplanets-life",
+    "tier": 2,
+    "question": "What is the 'transit method' for detecting exoplanets?",
+    "choices": [
+      "Sending a spacecraft to land on the planet",
+      "Measuring the slight dimming of a star's light when a planet passes in front of it",
+      "Listening for radio signals from the planet",
+      "Taking a direct photograph of the planet's surface"
+    ],
+    "answerIndex": 1,
+    "explanation": "The transit method detects exoplanets by observing tiny, periodic dips in a star's brightness as a planet passes ('transits') in front of it from our viewpoint."
+  },
+  {
+    "id": "exoplanets-life-t3-q1",
+    "topicId": "exoplanets-life",
+    "tier": 3,
+    "question": "What does the 'radial velocity method' detect to find exoplanets?",
+    "choices": [
+      "The planet's color",
+      "A tiny wobble in a star's motion caused by the gravitational pull of an orbiting planet",
+      "The planet's exact temperature",
+      "Sound waves from the planet"
+    ],
+    "answerIndex": 1,
+    "explanation": "An orbiting planet's gravity causes its star to wobble slightly; this wobble shifts the star's light slightly (Doppler effect), revealing the presence and mass of the planet."
+  },
+  {
+    "id": "exoplanets-life-t3-q2",
+    "topicId": "exoplanets-life",
+    "tier": 3,
+    "question": "Why are red dwarf stars often a focus in the search for habitable exoplanets?",
+    "choices": [
+      "They are the largest and brightest stars",
+      "They are extremely common, long-lived, and their habitable zones are close enough to make planets easier to detect",
+      "They never have any planets",
+      "They are the only stars with oxygen"
+    ],
+    "answerIndex": 1,
+    "explanation": "Red dwarfs are the most common type of star, live for a very long time, and their close-in habitable zones make orbiting planets relatively easier to detect with current methods."
+  },
+  {
+    "id": "exoplanets-life-t4-q1",
+    "topicId": "exoplanets-life",
+    "tier": 4,
+    "question": "What is a 'biosignature' in the search for life on other planets?",
+    "choices": [
+      "A signal sent by an alien civilization",
+      "A measurable substance or pattern, like certain gases in an atmosphere, that could indicate the presence of life",
+      "A type of telescope used only on Earth",
+      "The official name given to a newly discovered planet"
+    ],
+    "answerIndex": 1,
+    "explanation": "A biosignature is evidence — such as specific gases (like oxygen or methane) in a planet's atmosphere — that could indicate biological activity, though non-biological processes must be ruled out too."
+  },
+  {
+    "id": "exoplanets-life-t4-q2",
+    "topicId": "exoplanets-life",
+    "tier": 4,
+    "question": "How does the James Webb Space Telescope help in studying exoplanet atmospheres?",
+    "choices": [
+      "It lands on exoplanets to take soil samples",
+      "It analyzes infrared light passing through or reflected from a planet's atmosphere to identify chemical compositions",
+      "It only takes black-and-white photos",
+      "It communicates directly with the planets"
+    ],
+    "answerIndex": 1,
+    "explanation": "JWST can analyze starlight that filters through an exoplanet's atmosphere during a transit, splitting it into a spectrum that reveals which gases are present."
+  },
+  {
+    "id": "exoplanets-life-t5-q1",
+    "topicId": "exoplanets-life",
+    "tier": 5,
+    "question": "What is the 'Fermi Paradox'?",
+    "choices": [
+      "A mathematical proof that aliens don't exist",
+      "The apparent contradiction between the high likelihood of extraterrestrial civilizations and the lack of evidence or contact with them",
+      "A theory about how black holes form",
+      "A method for terraforming planets"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Fermi Paradox highlights the tension between estimates suggesting intelligent life should be common in the universe and the total absence of observed evidence for it so far."
+  },
+  {
+    "id": "exoplanets-life-t5-q2",
+    "topicId": "exoplanets-life",
+    "tier": 5,
+    "question": "Why might tidally locked exoplanets around red dwarfs pose challenges for habitability?",
+    "choices": [
+      "Tidal locking makes a planet explode",
+      "One side always faces the star (permanent day) and the other permanent night, creating extreme temperature differences that could affect climate stability",
+      "Tidally locked planets cannot have an atmosphere at all",
+      "It causes the planet to leave its orbit"
+    ],
+    "answerIndex": 1,
+    "explanation": "Tidally locked planets keep one face permanently toward their star and one in permanent darkness, potentially causing extreme temperature contrasts, though atmospheric or ocean circulation might moderate this."
+  }
+]

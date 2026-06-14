@@ -14,6 +14,8 @@ import robotics1QuestionBank from './questionBank.robotics1.json';
 import robotics2QuestionBank from './questionBank.robotics2.json';
 import robotics3QuestionBank from './questionBank.robotics3.json';
 import robotics4QuestionBank from './questionBank.robotics4.json';
+import space1QuestionBank from './questionBank.space1.json';
+import space2QuestionBank from './questionBank.space2.json';
 
 const BANK = [
   ...(mathQuestionBank as Question[]),
@@ -30,6 +32,8 @@ const BANK = [
   ...(robotics2QuestionBank as Question[]),
   ...(robotics3QuestionBank as Question[]),
   ...(robotics4QuestionBank as Question[]),
+  ...(space1QuestionBank as Question[]),
+  ...(space2QuestionBank as Question[]),
 ];
 
 export function createTopicProgress(startTier = MIN_TIER): TopicProgress {

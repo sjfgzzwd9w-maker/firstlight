@@ -5,6 +5,7 @@ import BiologyModuleMap from './routes/BiologyModuleMap';
 import ChemistryModuleMap from './routes/ChemistryModuleMap';
 import CodingModuleMap from './routes/CodingModuleMap';
 import RoboticsModuleMap from './routes/RoboticsModuleMap';
+import SpaceModuleMap from './routes/SpaceModuleMap';
 import LearnSession from './routes/LearnSession';
 import Profile from './routes/Profile';
 import Settings from './routes/Settings';
@@ -60,6 +61,8 @@ export default function App() {
           <Route path="/learn/coding/session" element={<LearnSession />} />
           <Route path="/learn/robotics" element={<RoboticsModuleMap />} />
           <Route path="/learn/robotics/session" element={<LearnSession />} />
+          <Route path="/learn/space" element={<SpaceModuleMap />} />
+          <Route path="/learn/space/session" element={<LearnSession />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/dream-gaze" element={<DreamGaze />} />
           <Route path="/profile" element={<Profile />} />

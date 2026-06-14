@@ -12,7 +12,7 @@ import type { Question } from '../types';
 import { isWebGPUAvailable } from '../lib/webllm/client';
 import { explainMistake, generateQuestion, mascotLine } from '../lib/webllm/prompts';
 import { FALLBACK_EXPLANATION_HINT, randomFallbackLine } from '../lib/webllm/fallbacks';
-import { MATH_TRIVIA, BIOLOGY_TRIVIA, PYTHON_TRIVIA, ROBOTICS_TRIVIA, randomTrivia } from '../lib/engine/trivia';
+import { MATH_TRIVIA, BIOLOGY_TRIVIA, PYTHON_TRIVIA, ROBOTICS_TRIVIA, SPACE_TRIVIA, randomTrivia } from '../lib/engine/trivia';
 import { speak, stopSpeaking } from '../lib/voice/tts';
 
 type Phase = 'loading' | 'question' | 'feedback';
@@ -34,7 +34,9 @@ export default function LearnSession() {
         ? PYTHON_TRIVIA
         : topic.subject === 'robotics'
           ? ROBOTICS_TRIVIA
-          : MATH_TRIVIA;
+          : topic.subject === 'space'
+            ? SPACE_TRIVIA
+            : MATH_TRIVIA;
   const isRobotics = topic.subject === 'robotics';
   const progress = profile.topics[topicId] ?? createTopicProgress(placementTier(profile.age));
   const webGPU = isWebGPUAvailable();

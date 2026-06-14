@@ -52,7 +52,12 @@ export default function Landing() {
           description="Robots, sensors, circuits, control systems & AI — build real-world skills"
           onClick={() => navigate('/learn/robotics')}
         />
-        <SubjectCard emoji="🚀" title="Space" description="Coming soon" comingSoon />
+        <SubjectCard
+          emoji="🚀"
+          title="Space"
+          description="Solar system, gravity, stars, galaxies, black holes & exoplanets"
+          onClick={() => navigate('/learn/space')}
+        />
       </div>
     </div>
   );
