@@ -1,6 +1,7 @@
 import type { AnswerEvent, Question, TopicProgress } from '../../types';
 import { MAX_TIER, MIN_TIER } from '../../types';
 import mathQuestionBank from './questionBank.algebra2.json';
+import mathAdvQuestionBank from './questionBank.algebra2adv.json';
 import biologyQuestionBank from './questionBank.biology.json';
 import biology2QuestionBank from './questionBank.biology2.json';
 import python1QuestionBank from './questionBank.python1.json';
@@ -13,6 +14,7 @@ import robotics4QuestionBank from './questionBank.robotics4.json';
 
 const BANK = [
   ...(mathQuestionBank as Question[]),
+  ...(mathAdvQuestionBank as Question[]),
   ...(biologyQuestionBank as Question[]),
   ...(biology2QuestionBank as Question[]),
   ...(python1QuestionBank as Question[]),

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "piecewise-functions-t1-q1",
+    "topicId": "piecewise-functions",
+    "tier": 1,
+    "question": "What is a 'piecewise function'?",
+    "choices": [
+      "A function that is defined by different expressions (rules) for different parts of its domain",
+      "A function that has no defined output for any input",
+      "A function that can only take whole-number inputs",
+      "A function that is always a straight line"
+    ],
+    "answerIndex": 0,
+    "explanation": "A piecewise function uses different formulas for different intervals of x. For example, a function might equal x+2 when x is negative, but equal x^2 when x is zero or positive."
+  },
+  {
+    "id": "piecewise-functions-t1-q2",
+    "topicId": "piecewise-functions",
+    "tier": 1,
+    "question": "Which function family does y = mx + b belong to?",
+    "choices": [
+      "Linear functions",
+      "Quadratic functions",
+      "Exponential functions",
+      "Absolute value functions"
+    ],
+    "answerIndex": 0,
+    "explanation": "y = mx + b is the slope-intercept form of a linear function — its graph is a straight line with slope m and y-intercept b."
+  },
+  {
+    "id": "piecewise-functions-t1-q3",
+    "topicId": "piecewise-functions",
+    "tier": 1,
+    "question": "Which function family does y = ax^2 + bx + c belong to (with a ≠ 0)?",
+    "choices": [
+      "Quadratic functions",
+      "Linear functions",
+      "Rational functions",
+      "Logarithmic functions"
+    ],
+    "answerIndex": 0,
+    "explanation": "y = ax^2 + bx + c is the standard form of a quadratic function — its graph is a parabola, a U-shaped (or upside-down U) curve."
+  },
+  {
+    "id": "piecewise-functions-t2-q1",
+    "topicId": "piecewise-functions",
+    "tier": 2,
+    "question": "Which function family does y = 2^x belong to?",
+    "choices": [
+      "Exponential functions",
+      "Linear functions",
+      "Quadratic functions",
+      "Absolute value functions"
+    ],
+    "answerIndex": 0,
+    "explanation": "y = 2^x has the variable in the exponent, which is the defining feature of an exponential function. Its graph grows (or decays) increasingly quickly and approaches a horizontal asymptote."
+  },
+  {
+    "id": "piecewise-functions-t2-q2",
+    "topicId": "piecewise-functions",
+    "tier": 2,
+    "question": "Which function family does y = |x - 3| belong to?",
+    "choices": [
+      "Absolute value functions",
+      "Quadratic functions",
+      "Linear functions",
+      "Exponential functions"
+    ],
+    "answerIndex": 0,
+    "explanation": "Absolute value functions have the form y = |expression|, which produces a V-shaped graph. Here, the vertex (lowest point) of the V is at x = 3."
+  },
+  {
+    "id": "piecewise-functions-t2-q3",
+    "topicId": "piecewise-functions",
+    "tier": 2,
+    "question": "A graph forms a V-shape with its lowest point (vertex) at (3, 0), and both sides go up at the same steepness. What type of function does this graph most likely represent?",
+    "choices": [
+      "An absolute value function, like y = |x - 3|",
+      "A quadratic function with a horizontal axis of symmetry",
+      "An exponential function with a vertical asymptote",
+      "A linear function with two different slopes"
+    ],
+    "answerIndex": 0,
+    "explanation": "A sharp V-shape with two straight, symmetric sides is the hallmark of an absolute value function. (A parabola would curve smoothly rather than meet at a sharp point.)"
+  },
+  {
+    "id": "piecewise-functions-t3-q1",
+    "topicId": "piecewise-functions",
+    "tier": 3,
+    "question": "A piecewise function is defined as: f(x) = x + 2 if x < 0, and f(x) = x^2 if x ≥ 0. What is f(-3)?",
+    "choices": [
+      "-1",
+      "9",
+      "-3",
+      "1"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since -3 < 0, use the first piece: f(x) = x + 2. So f(-3) = -3 + 2 = -1."
+  },
+  {
+    "id": "piecewise-functions-t3-q2",
+    "topicId": "piecewise-functions",
+    "tier": 3,
+    "question": "Using the same function f(x) = x + 2 if x < 0, and f(x) = x^2 if x ≥ 0, what is f(2)?",
+    "choices": [
+      "4",
+      "2",
+      "0",
+      "16"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since 2 ≥ 0, use the second piece: f(x) = x^2. So f(2) = 2^2 = 4."
+  },
+  {
+    "id": "piecewise-functions-t3-q3",
+    "topicId": "piecewise-functions",
+    "tier": 3,
+    "question": "A graph rises slowly at first, then increases extremely quickly, and on the other side it gets closer and closer to the x-axis without ever touching it. What type of function is this most likely?",
+    "choices": [
+      "An exponential function with a horizontal asymptote",
+      "A linear function with a positive slope",
+      "An absolute value function",
+      "A quadratic function opening downward"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rapid growth on one side combined with a horizontal asymptote (the curve approaching but never touching a horizontal line) is characteristic of exponential functions like y = 2^x."
+  },
+  {
+    "id": "piecewise-functions-t4-q1",
+    "topicId": "piecewise-functions",
+    "tier": 4,
+    "question": "A shipping company charges $5 for packages up to and including 2 lbs, and $5 plus $1.50 per additional pound for packages over 2 lbs. How much does a 5 lb package cost?",
+    "choices": [
+      "$9.50",
+      "$7.50",
+      "$5.00",
+      "$12.50"
+    ],
+    "answerIndex": 0,
+    "explanation": "A 5 lb package is over 2 lbs, so use the second piece: $5 + $1.50 × (5 - 2) = $5 + $1.50 × 3 = $5 + $4.50 = $9.50."
+  },
+  {
+    "id": "piecewise-functions-t4-q2",
+    "topicId": "piecewise-functions",
+    "tier": 4,
+    "question": "Using the same shipping rule ($5 for packages up to and including 2 lbs, $5 + $1.50 per additional pound over 2 lbs), how much does a package that weighs exactly 2 lbs cost?",
+    "choices": [
+      "$5.00",
+      "$6.50",
+      "$0.00",
+      "$1.50"
+    ],
+    "answerIndex": 0,
+    "explanation": "The phrase 'up to and including 2 lbs' means a 2 lb package falls in the first piece, which charges a flat $5.00 — paying attention to boundary wording is essential when evaluating piecewise functions."
+  },
+  {
+    "id": "piecewise-functions-t4-q3",
+    "topicId": "piecewise-functions",
+    "tier": 4,
+    "question": "A function is defined as: f(x) = 2x + 1 if x ≤ 1, and f(x) = x^2 + 1 if x > 1. What is f(1)?",
+    "choices": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since 1 ≤ 1, the first piece applies: f(x) = 2x + 1. So f(1) = 2(1) + 1 = 3. (The second piece, x > 1, does NOT include x = 1.)"
+  },
+  {
+    "id": "piecewise-functions-t5-q1",
+    "topicId": "piecewise-functions",
+    "tier": 5,
+    "question": "A function is defined as: f(x) = 3x - 1 if x < 2, and f(x) = ax + 5 if x ≥ 2. For what value of 'a' will the two pieces connect with no gap (i.e., the function is continuous) at x = 2?",
+    "choices": [
+      "a = 0",
+      "a = 1",
+      "a = 5",
+      "a = 2"
+    ],
+    "answerIndex": 0,
+    "explanation": "As x approaches 2 from the left, f(x) → 3(2) - 1 = 5. For the function to be continuous, the second piece must also equal 5 at x = 2: a(2) + 5 = 5, so 2a = 0, giving a = 0."
+  },
+  {
+    "id": "piecewise-functions-t5-q2",
+    "topicId": "piecewise-functions",
+    "tier": 5,
+    "question": "A function is defined as: f(x) = x + 3 if x ≤ 1, and f(x) = -x^2 + 5 if x > 1. What is f(3)?",
+    "choices": [
+      "-4",
+      "6",
+      "4",
+      "-9"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since 3 > 1, use the second piece: f(x) = -x^2 + 5. So f(3) = -(3^2) + 5 = -9 + 5 = -4."
+  },
+  {
+    "id": "piecewise-functions-t5-q3",
+    "topicId": "piecewise-functions",
+    "tier": 5,
+    "question": "A texting plan costs $0 for the first 100 texts in a month, and then $0.10 per text for each text beyond 100. If you send 250 texts in a month, how much do you pay?",
+    "choices": [
+      "$15.00",
+      "$25.00",
+      "$10.00",
+      "$150.00"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since 250 > 100, you're charged only for texts beyond 100: 250 - 100 = 150 extra texts. Cost = 150 × $0.10 = $15.00. The first 100 texts remain free under the first piece of the function."
+  },
+  {
+    "id": "systems-advanced-equations-t1-q1",
+    "topicId": "systems-advanced-equations",
+    "tier": 1,
+    "question": "In a system of two linear equations, what does it mean if the system has 'no solution'?",
+    "choices": [
+      "The two lines are parallel (same slope, different y-intercepts) and never intersect",
+      "The two lines are identical and overlap completely",
+      "The two lines intersect at exactly one point",
+      "Both equations are missing a variable"
+    ],
+    "answerIndex": 0,
+    "explanation": "Two lines with the same slope but different y-intercepts never cross, so there's no (x, y) pair that satisfies both equations — meaning the system has no solution."
+  },
+  {
+    "id": "systems-advanced-equations-t1-q2",
+    "topicId": "systems-advanced-equations",
+    "tier": 1,
+    "question": "What must be true about the point where two lines in a system of equations intersect?",
+    "choices": [
+      "It satisfies both equations — it lies on both lines at the same time",
+      "It satisfies only one of the two equations",
+      "It must always be the origin, (0, 0)",
+      "It must have a negative x-coordinate"
+    ],
+    "answerIndex": 0,
+    "explanation": "The solution to a system of equations is the point (or points) that make every equation in the system true at the same time — graphically, where all the lines or curves cross."
+  },
+  {
+    "id": "systems-advanced-equations-t1-q3",
+    "topicId": "systems-advanced-equations",
+    "tier": 1,
+    "question": "What is a 'rational equation'?",
+    "choices": [
+      "An equation that contains at least one fraction (rational expression) with a variable in the denominator",
+      "An equation that only contains whole numbers",
+      "An equation that has no solution",
+      "An equation that contains a square root"
+    ],
+    "answerIndex": 0,
+    "explanation": "A rational equation involves one or more rational expressions — fractions where the numerator and/or denominator contain variables, such as (x + 1)/(x - 2) = 3."
+  },
+  {
+    "id": "systems-advanced-equations-t2-q1",
+    "topicId": "systems-advanced-equations",
+    "tier": 2,
+    "question": "Solve the system: x + 2y = 8 and x - y = 2. What is the value of x?",
+    "choices": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "answerIndex": 0,
+    "explanation": "From the second equation, x = 2 + y. Substituting into the first: (2 + y) + 2y = 8 → 2 + 3y = 8 → 3y = 6 → y = 2. Then x = 2 + 2 = 4."
+  },
+  {
+    "id": "systems-advanced-equations-t2-q2",
+    "topicId": "systems-advanced-equations",
+    "tier": 2,
+    "question": "Solve for x: √(x - 1) = 3",
+    "choices": [
+      "x = 10",
+      "x = 8",
+      "x = 4",
+      "x = 9"
+    ],
+    "answerIndex": 0,
+    "explanation": "Square both sides: x - 1 = 3^2 = 9, so x = 10. Check: √(10 - 1) = √9 = 3 ✓."
+  },
+  {
+    "id": "systems-advanced-equations-t2-q3",
+    "topicId": "systems-advanced-equations",
+    "tier": 2,
+    "question": "Solve: |x + 2| = 5. What is the positive solution for x?",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "2"
+    ],
+    "answerIndex": 0,
+    "explanation": "An absolute value equation splits into two cases: x + 2 = 5 gives x = 3, and x + 2 = -5 gives x = -7. The positive solution is x = 3."
+  },
+  {
+    "id": "systems-advanced-equations-t3-q1",
+    "topicId": "systems-advanced-equations",
+    "tier": 3,
+    "question": "Solve the rational equation: (x + 1)/(x - 2) = 3. What is x?",
+    "choices": [
+      "3.5",
+      "2",
+      "7",
+      "1.5"
+    ],
+    "answerIndex": 0,
+    "explanation": "Multiply both sides by (x - 2): x + 1 = 3(x - 2) → x + 1 = 3x - 6 → 7 = 2x → x = 3.5. Check: (3.5 + 1)/(3.5 - 2) = 4.5/1.5 = 3 ✓."
+  },
+  {
+    "id": "systems-advanced-equations-t3-q2",
+    "topicId": "systems-advanced-equations",
+    "tier": 3,
+    "question": "Solve the system: 2x + 3y = 12 and x - y = 1. What is the value of y?",
+    "choices": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "answerIndex": 0,
+    "explanation": "From the second equation, x = 1 + y. Substitute into the first: 2(1 + y) + 3y = 12 → 2 + 5y = 12 → 5y = 10 → y = 2."
+  },
+  {
+    "id": "systems-advanced-equations-t3-q3",
+    "topicId": "systems-advanced-equations",
+    "tier": 3,
+    "question": "A system consists of one linear equation (a line) and one equation for a circle. At most how many solutions (intersection points) can this system have?",
+    "choices": [
+      "2 — a line can cross a circle at 0, 1, or 2 points",
+      "1 — a line and a circle can only ever touch at one point",
+      "4 — a line and a circle always cross at four points",
+      "Infinitely many, always"
+    ],
+    "answerIndex": 0,
+    "explanation": "A straight line can miss a circle entirely (0 points), be tangent to it (1 point), or pass through it (2 points) — so the maximum number of solutions for a line-circle system is 2."
+  },
+  {
+    "id": "systems-advanced-equations-t4-q1",
+    "topicId": "systems-advanced-equations",
+    "tier": 4,
+    "question": "Solve √(x + 5) = x - 1, checking for extraneous solutions. What is x?",
+    "choices": [
+      "4",
+      "-1",
+      "4 or -1",
+      "5"
+    ],
+    "answerIndex": 0,
+    "explanation": "Squaring both sides: x + 5 = x^2 - 2x + 1 → x^2 - 3x - 4 = 0 → (x - 4)(x + 1) = 0, so x = 4 or x = -1. Checking x = -1: √(4) = 2, but x - 1 = -2, and 2 ≠ -2, so x = -1 is extraneous. Checking x = 4: √9 = 3 = 4 - 1 ✓. The only valid solution is x = 4."
+  },
+  {
+    "id": "systems-advanced-equations-t4-q2",
+    "topicId": "systems-advanced-equations",
+    "tier": 4,
+    "question": "Solve the system: y = x^2 and y = x + 2. What is the positive x-value at one of the intersection points?",
+    "choices": [
+      "2",
+      "1",
+      "-1",
+      "4"
+    ],
+    "answerIndex": 0,
+    "explanation": "Set the expressions equal: x^2 = x + 2 → x^2 - x - 2 = 0 → (x - 2)(x + 1) = 0, so x = 2 or x = -1. The positive solution is x = 2."
+  },
+  {
+    "id": "systems-advanced-equations-t4-q3",
+    "topicId": "systems-advanced-equations",
+    "tier": 4,
+    "question": "Two lines are graphed: Line A is y = 2x + 1, and Line B is y = -x + 7. At what x-value do they intersect?",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "1"
+    ],
+    "answerIndex": 0,
+    "explanation": "Set the equations equal: 2x + 1 = -x + 7 → 3x = 6 → x = 2. (At x = 2, both lines give y = 5, so the intersection point is (2, 5).)"
+  },
+  {
+    "id": "systems-advanced-equations-t5-q1",
+    "topicId": "systems-advanced-equations",
+    "tier": 5,
+    "question": "Solve the system: y = x^2 - 4 and y = 2x + 1. What is the positive x-value of the intersection point, rounded to the nearest hundredth? (You may use a calculator.)",
+    "choices": [
+      "3.45",
+      "2.45",
+      "1.45",
+      "4.45"
+    ],
+    "answerIndex": 0,
+    "explanation": "Set the expressions equal: x^2 - 4 = 2x + 1 → x^2 - 2x - 5 = 0. Using the quadratic formula: x = (2 ± √(4 + 20)) / 2 = (2 ± √24) / 2 = 1 ± √6. Since √6 ≈ 2.449, the positive solution is x ≈ 1 + 2.449 ≈ 3.45."
+  },
+  {
+    "id": "systems-advanced-equations-t5-q2",
+    "topicId": "systems-advanced-equations",
+    "tier": 5,
+    "question": "Solve the rational equation: 1/(x - 1) + 1/(x + 1) = 1. What is the positive solution, rounded to the nearest hundredth? (You may use a calculator.)",
+    "choices": [
+      "2.41",
+      "1.41",
+      "3.41",
+      "0.41"
+    ],
+    "answerIndex": 0,
+    "explanation": "Combine the fractions over a common denominator: [(x + 1) + (x - 1)] / [(x - 1)(x + 1)] = 1 → 2x / (x^2 - 1) = 1 → 2x = x^2 - 1 → x^2 - 2x - 1 = 0. Using the quadratic formula: x = (2 ± √(4 + 4)) / 2 = 1 ± √2. Since √2 ≈ 1.414, the positive solution is x ≈ 1 + 1.414 ≈ 2.41."
+  },
+  {
+    "id": "systems-advanced-equations-t5-q3",
+    "topicId": "systems-advanced-equations",
+    "tier": 5,
+    "question": "A system consists of x^2 + y^2 = 25 and y = x + 1. Substituting shows the x-coordinates of the two intersection points are the solutions to x^2 + x - 12 = 0. What is the SUM of these two x-coordinates?",
+    "choices": [
+      "-1",
+      "12",
+      "1",
+      "-12"
+    ],
+    "answerIndex": 0,
+    "explanation": "For a quadratic ax^2 + bx + c = 0, the sum of its roots equals -b/a (a property from Vieta's formulas). Here a = 1 and b = 1, so the sum of the roots is -1/1 = -1. (You can verify: factoring gives (x + 4)(x - 3) = 0, so x = -4 or x = 3, and -4 + 3 = -1.)"
+  },
+  {
+    "id": "statistics-t1-q1",
+    "topicId": "statistics",
+    "tier": 1,
+    "question": "What does the 'mean' of a data set represent?",
+    "choices": [
+      "The sum of all the values divided by the number of values (the average)",
+      "The middle value when the data is arranged in order",
+      "The value that appears most often",
+      "The difference between the largest and smallest values"
+    ],
+    "answerIndex": 0,
+    "explanation": "The mean (average) is found by adding up all the data values and dividing by how many values there are."
+  },
+  {
+    "id": "statistics-t1-q2",
+    "topicId": "statistics",
+    "tier": 1,
+    "question": "What does the 'median' of a data set represent?",
+    "choices": [
+      "The middle value when the data is arranged in order (or the average of the two middle values if there's an even number of data points)",
+      "The sum of all the values divided by how many there are",
+      "The value that occurs most frequently",
+      "The total of all the values added together"
+    ],
+    "answerIndex": 0,
+    "explanation": "To find the median, arrange the data from smallest to largest and find the middle value. If there's an even number of values, average the two middle ones."
+  },
+  {
+    "id": "statistics-t1-q3",
+    "topicId": "statistics",
+    "tier": 1,
+    "question": "What does the 'range' of a data set measure?",
+    "choices": [
+      "The difference between the maximum and minimum values",
+      "The average of all the values",
+      "The most frequently occurring value",
+      "The number of values in the data set"
+    ],
+    "answerIndex": 0,
+    "explanation": "Range = maximum value − minimum value. It gives a simple measure of how spread out the data is, from the smallest to the largest value."
+  },
+  {
+    "id": "statistics-t2-q1",
+    "topicId": "statistics",
+    "tier": 2,
+    "question": "Find the mean of this data set: 2, 4, 6, 8, 10",
+    "choices": [
+      "6",
+      "5",
+      "8",
+      "30"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sum = 2 + 4 + 6 + 8 + 10 = 30. There are 5 values, so mean = 30 ÷ 5 = 6."
+  },
+  {
+    "id": "statistics-t2-q2",
+    "topicId": "statistics",
+    "tier": 2,
+    "question": "Find the median of this data set: 3, 7, 2, 9, 5",
+    "choices": [
+      "5",
+      "2",
+      "7",
+      "9"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sort the data: 2, 3, 5, 7, 9. With 5 values, the middle (3rd) value is the median: 5."
+  },
+  {
+    "id": "statistics-t2-q3",
+    "topicId": "statistics",
+    "tier": 2,
+    "question": "Find the mode of this data set: 1, 2, 2, 3, 4, 2, 5",
+    "choices": [
+      "2",
+      "1",
+      "3",
+      "There is no mode"
+    ],
+    "answerIndex": 0,
+    "explanation": "The mode is the value that appears most often. Here, 2 appears three times — more than any other value — so the mode is 2."
+  },
+  {
+    "id": "statistics-t3-q1",
+    "topicId": "statistics",
+    "tier": 3,
+    "question": "Find the range of this data set: 12, 7, 22, 3, 15",
+    "choices": [
+      "19",
+      "22",
+      "3",
+      "9"
+    ],
+    "answerIndex": 0,
+    "explanation": "Range = maximum − minimum = 22 − 3 = 19."
+  },
+  {
+    "id": "statistics-t3-q2",
+    "topicId": "statistics",
+    "tier": 3,
+    "question": "What does 'standard deviation' measure about a data set?",
+    "choices": [
+      "How spread out the values typically are from the mean",
+      "The single most common value in the data set",
+      "The total number of values in the data set",
+      "The largest value in the data set"
+    ],
+    "answerIndex": 0,
+    "explanation": "Standard deviation summarizes, on average, how far the data values are from the mean. A small standard deviation means values cluster tightly around the mean; a large one means they're more spread out."
+  },
+  {
+    "id": "statistics-t3-q3",
+    "topicId": "statistics",
+    "tier": 3,
+    "question": "Find the median of this data set: 4, 8, 15, 16, 23, 42",
+    "choices": [
+      "15.5",
+      "15",
+      "16",
+      "13.5"
+    ],
+    "answerIndex": 0,
+    "explanation": "The data is already sorted with 6 values (an even number), so the median is the average of the two middle values: (15 + 16) / 2 = 15.5."
+  },
+  {
+    "id": "statistics-t4-q1",
+    "topicId": "statistics",
+    "tier": 4,
+    "question": "A data set is: 2, 4, 4, 4, 5, 5, 7, 9. Its mean is 5. What is the (population) standard deviation, rounded to the nearest whole number? (You may use a calculator.)",
+    "choices": [
+      "2",
+      "4",
+      "1",
+      "32"
+    ],
+    "answerIndex": 0,
+    "explanation": "Find each value's squared distance from the mean (5): (2-5)²=9, (4-5)²=1 (three times, total 3), (5-5)²=0 (twice, total 0), (7-5)²=4, (9-5)²=16. Sum = 9+3+0+4+16 = 32. Divide by the number of values (8) to get the variance: 32 ÷ 8 = 4. The standard deviation is √4 = 2."
+  },
+  {
+    "id": "statistics-t4-q2",
+    "topicId": "statistics",
+    "tier": 4,
+    "question": "A test has a mean score of 70 and a standard deviation of 5. What is the z-score for a student who scored 80?",
+    "choices": [
+      "2",
+      "10",
+      "0.5",
+      "1.5"
+    ],
+    "answerIndex": 0,
+    "explanation": "A z-score measures how many standard deviations a value is from the mean: z = (value − mean) / standard deviation = (80 − 70) / 5 = 10 / 5 = 2."
+  },
+  {
+    "id": "statistics-t4-q3",
+    "topicId": "statistics",
+    "tier": 4,
+    "question": "The interquartile range (IQR) is calculated as Q3 − Q1. For a certain data set, Q1 = 4 and Q3 = 5.5. What is the IQR?",
+    "choices": [
+      "1.5",
+      "9.5",
+      "4",
+      "5.5"
+    ],
+    "answerIndex": 0,
+    "explanation": "IQR = Q3 − Q1 = 5.5 − 4 = 1.5. The IQR describes the spread of the middle 50% of the data, and is less affected by outliers than the range."
+  },
+  {
+    "id": "statistics-t5-q1",
+    "topicId": "statistics",
+    "tier": 5,
+    "question": "A data set has a mean of 100 and a standard deviation of 10. A particular value has a z-score of -1.5. What is the actual value?",
+    "choices": [
+      "85",
+      "98.5",
+      "115",
+      "10"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rearranging the z-score formula: value = mean + (z-score × standard deviation) = 100 + (-1.5 × 10) = 100 - 15 = 85."
+  },
+  {
+    "id": "statistics-t5-q2",
+    "topicId": "statistics",
+    "tier": 5,
+    "question": "A scatter plot shows that as the number of hours studied increases, test scores also tend to increase, though not perfectly. What type of correlation does this describe?",
+    "choices": [
+      "Positive correlation",
+      "Negative correlation",
+      "No correlation",
+      "Perfect correlation"
+    ],
+    "answerIndex": 0,
+    "explanation": "When two variables tend to increase together, the relationship is described as a positive correlation. (If one tended to increase while the other decreased, that would be a negative correlation.)"
+  },
+  {
+    "id": "statistics-t5-q3",
+    "topicId": "statistics",
+    "tier": 5,
+    "question": "A data set has a mean of 50 and a standard deviation of 8, and is roughly normally distributed. According to the empirical rule (68-95-99.7 rule), approximately what percentage of the data falls between 42 and 58?",
+    "choices": [
+      "About 68%",
+      "About 95%",
+      "About 50%",
+      "About 99.7%"
+    ],
+    "answerIndex": 0,
+    "explanation": "42 and 58 are each exactly one standard deviation away from the mean of 50 (50 - 8 = 42 and 50 + 8 = 58). The empirical rule states that about 68% of values in a roughly normal distribution fall within one standard deviation of the mean."
+  },
+  {
+    "id": "trigonometry-t1-q1",
+    "topicId": "trigonometry",
+    "tier": 1,
+    "question": "In a right triangle, the sine of an angle is defined as:",
+    "choices": [
+      "Opposite ÷ Hypotenuse",
+      "Adjacent ÷ Hypotenuse",
+      "Opposite ÷ Adjacent",
+      "Hypotenuse ÷ Opposite"
+    ],
+    "answerIndex": 0,
+    "explanation": "Remember 'SOH': Sine = Opposite ÷ Hypotenuse. The opposite side is the one across from the angle being considered."
+  },
+  {
+    "id": "trigonometry-t1-q2",
+    "topicId": "trigonometry",
+    "tier": 1,
+    "question": "In a right triangle, the cosine of an angle is defined as:",
+    "choices": [
+      "Adjacent ÷ Hypotenuse",
+      "Opposite ÷ Hypotenuse",
+      "Opposite ÷ Adjacent",
+      "Adjacent ÷ Opposite"
+    ],
+    "answerIndex": 0,
+    "explanation": "Remember 'CAH': Cosine = Adjacent ÷ Hypotenuse. The adjacent side is the side next to the angle (that isn't the hypotenuse)."
+  },
+  {
+    "id": "trigonometry-t1-q3",
+    "topicId": "trigonometry",
+    "tier": 1,
+    "question": "In a right triangle, the tangent of an angle is defined as:",
+    "choices": [
+      "Opposite ÷ Adjacent",
+      "Adjacent ÷ Hypotenuse",
+      "Hypotenuse ÷ Adjacent",
+      "Opposite ÷ Hypotenuse"
+    ],
+    "answerIndex": 0,
+    "explanation": "Remember 'TOA': Tangent = Opposite ÷ Adjacent. Together, SOH-CAH-TOA covers the three basic trig ratios."
+  },
+  {
+    "id": "trigonometry-t2-q1",
+    "topicId": "trigonometry",
+    "tier": 2,
+    "question": "How many radians are equivalent to 180°?",
+    "choices": [
+      "π radians",
+      "2π radians",
+      "π/2 radians",
+      "90 radians"
+    ],
+    "answerIndex": 0,
+    "explanation": "A full circle is 360°, which equals 2π radians. Half a circle, 180°, equals π radians — this is the key conversion fact between degrees and radians."
+  },
+  {
+    "id": "trigonometry-t2-q2",
+    "topicId": "trigonometry",
+    "tier": 2,
+    "question": "How many radians are equivalent to 90°?",
+    "choices": [
+      "π/2 radians",
+      "π radians",
+      "π/4 radians",
+      "2π radians"
+    ],
+    "answerIndex": 0,
+    "explanation": "Since 180° = π radians, 90° (which is half of 180°) equals π/2 radians."
+  },
+  {
+    "id": "trigonometry-t2-q3",
+    "topicId": "trigonometry",
+    "tier": 2,
+    "question": "In a right triangle, the side opposite angle θ is 3, and the hypotenuse is 5. What is sin(θ)?",
+    "choices": [
+      "0.6",
+      "0.5",
+      "1.67",
+      "3"
+    ],
+    "answerIndex": 0,
+    "explanation": "sin(θ) = Opposite ÷ Hypotenuse = 3 ÷ 5 = 0.6."
+  },
+  {
+    "id": "trigonometry-t3-q1",
+    "topicId": "trigonometry",
+    "tier": 3,
+    "question": "What is sin(30°)?",
+    "choices": [
+      "0.5",
+      "1",
+      "0.87",
+      "0"
+    ],
+    "answerIndex": 0,
+    "explanation": "30° is one of the 'special angles.' sin(30°) = 1/2 = 0.5 — a value worth memorizing since it appears often in trig problems."
+  },
+  {
+    "id": "trigonometry-t3-q2",
+    "topicId": "trigonometry",
+    "tier": 3,
+    "question": "What is cos(60°)?",
+    "choices": [
+      "0.5",
+      "1",
+      "0.87",
+      "0"
+    ],
+    "answerIndex": 0,
+    "explanation": "60° is another special angle. cos(60°) = 1/2 = 0.5. (Notice that cos(60°) = sin(30°) — the sine and cosine of complementary angles are always equal.)"
+  },
+  {
+    "id": "trigonometry-t3-q3",
+    "topicId": "trigonometry",
+    "tier": 3,
+    "question": "What is tan(45°)?",
+    "choices": [
+      "1",
+      "0",
+      "0.5",
+      "Undefined"
+    ],
+    "answerIndex": 0,
+    "explanation": "At 45°, the opposite and adjacent sides of a right triangle are equal in length, so tan(45°) = Opposite ÷ Adjacent = 1."
+  },
+  {
+    "id": "trigonometry-t4-q1",
+    "topicId": "trigonometry",
+    "tier": 4,
+    "question": "A right triangle has a hypotenuse of 10 and one angle measuring 30°. What is the length of the side opposite the 30° angle?",
+    "choices": [
+      "5",
+      "8.66",
+      "10",
+      "0.5"
+    ],
+    "answerIndex": 0,
+    "explanation": "sin(angle) = Opposite ÷ Hypotenuse, so Opposite = Hypotenuse × sin(angle) = 10 × sin(30°) = 10 × 0.5 = 5."
+  },
+  {
+    "id": "trigonometry-t4-q2",
+    "topicId": "trigonometry",
+    "tier": 4,
+    "question": "When should you use the Law of Cosines instead of the Law of Sines to solve a triangle?",
+    "choices": [
+      "When you know all three sides (SSS), or two sides and the included angle (SAS)",
+      "When you know two angles and one side (AAS)",
+      "When the triangle is always a right triangle",
+      "The Law of Cosines should never be used; the Law of Sines always works"
+    ],
+    "answerIndex": 0,
+    "explanation": "The Law of Cosines is especially useful for SSS or SAS triangles, where the Law of Sines can't get started (since it needs at least one known angle paired with its opposite side to begin)."
+  },
+  {
+    "id": "trigonometry-t4-q3",
+    "topicId": "trigonometry",
+    "tier": 4,
+    "question": "If sin(θ) = 0.5 for an angle θ between 0° and 180°, and θ is NOT 30°, what is θ?",
+    "choices": [
+      "150°",
+      "60°",
+      "120°",
+      "210°"
+    ],
+    "answerIndex": 0,
+    "explanation": "Sine is positive in both the first and second quadrants (0° to 180°). Since sin(30°) = 0.5, the other angle with the same sine value is 180° - 30° = 150°, because sin(150°) = sin(30°) = 0.5."
+  },
+  {
+    "id": "trigonometry-t5-q1",
+    "topicId": "trigonometry",
+    "tier": 5,
+    "question": "A triangle has sides b = 7 and c = 10, with the angle between them, A = 60°. Using the Law of Cosines, a² = b² + c² − 2bc·cos(A), what is the length of side a, rounded to the nearest tenth? (You may use a calculator.)",
+    "choices": [
+      "8.9",
+      "12.5",
+      "7.9",
+      "17.0"
+    ],
+    "answerIndex": 0,
+    "explanation": "a² = 7² + 10² − 2(7)(10)cos(60°) = 49 + 100 − 140(0.5) = 149 − 70 = 79. So a = √79 ≈ 8.888, which rounds to 8.9."
+  },
+  {
+    "id": "trigonometry-t5-q2",
+    "topicId": "trigonometry",
+    "tier": 5,
+    "question": "In a triangle, a = 8, angle A = 30°, and b = 12. Using the Law of Sines (a/sin(A) = b/sin(B)), what is sin(B)?",
+    "choices": [
+      "0.75",
+      "0.33",
+      "1.5",
+      "0.5"
+    ],
+    "answerIndex": 0,
+    "explanation": "Rearranging the Law of Sines: sin(B) = (b × sin(A)) / a = (12 × sin(30°)) / 8 = (12 × 0.5) / 8 = 6 / 8 = 0.75."
+  },
+  {
+    "id": "trigonometry-t5-q3",
+    "topicId": "trigonometry",
+    "tier": 5,
+    "question": "A 12-foot ladder leans against a wall, making a 65° angle with the ground. Using height = length × sin(angle), about how high up the wall does the ladder reach? (sin 65° ≈ 0.9063. You may use a calculator.)",
+    "choices": [
+      "About 10.9 feet",
+      "About 12.0 feet",
+      "About 5.1 feet",
+      "About 6.0 feet"
+    ],
+    "answerIndex": 0,
+    "explanation": "Height = length × sin(angle) = 12 × sin(65°) ≈ 12 × 0.9063 ≈ 10.876, which rounds to about 10.9 feet."
+  }
+]

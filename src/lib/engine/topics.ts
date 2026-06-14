@@ -33,6 +33,52 @@ export const MATH_TOPICS: Topic[] = [
   },
 ];
 
+export const MATH_TOPICS_PART2: Topic[] = [
+  {
+    id: 'piecewise-functions',
+    name: 'Piecewise Functions & Function Types',
+    description: 'Identify function families and evaluate piecewise-defined functions',
+    subject: 'math',
+    resources: [
+      { label: 'Piecewise function (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Piecewise' },
+      { label: 'Desmos Calculator', url: 'https://www.desmos.com/calculator' },
+    ],
+  },
+  {
+    id: 'systems-advanced-equations',
+    name: 'Systems & Advanced Equations',
+    description: 'Solve systems by graphing and algebra, plus radical, rational & nonlinear equations',
+    subject: 'math',
+    resources: [
+      { label: 'System of equations (Wikipedia)', url: 'https://en.wikipedia.org/wiki/System_of_equations' },
+      { label: 'Desmos Calculator', url: 'https://www.desmos.com/calculator' },
+    ],
+  },
+  {
+    id: 'statistics',
+    name: 'Statistics & Data Analysis',
+    description: 'Mean, median, standard deviation, z-scores & interpreting data',
+    subject: 'math',
+    resources: [
+      { label: 'Standard deviation (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Standard_deviation' },
+      { label: 'Desmos Scientific Calculator', url: 'https://www.desmos.com/scientific' },
+    ],
+  },
+  {
+    id: 'trigonometry',
+    name: 'Trigonometry',
+    description: 'Right-triangle trig, special angles, and the Law of Sines & Cosines',
+    subject: 'math',
+    resources: [
+      { label: 'Trigonometry (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Trigonometry' },
+      { label: 'Desmos Scientific Calculator', url: 'https://www.desmos.com/scientific' },
+    ],
+  },
+];
+
+/** All math topics in learning order, used for the progress sidebar. */
+export const MATH_TOPICS_ALL: Topic[] = [...MATH_TOPICS, ...MATH_TOPICS_PART2];
+
 export const BIOLOGY_TOPICS: Topic[] = [
   {
     id: 'nature-of-science',
@@ -380,7 +426,7 @@ export const ROBOTICS_TOPICS_ALL: Topic[] = [
 ];
 
 export const ALL_TOPICS: Topic[] = [
-  ...MATH_TOPICS,
+  ...MATH_TOPICS_ALL,
   ...BIOLOGY_TOPICS,
   ...BIOLOGY_TOPICS_PART2,
   ...PYTHON_TOPICS_ALL,
