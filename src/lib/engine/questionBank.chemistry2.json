@@ -1,0 +1,547 @@
+[
+  {
+    "id": "chem-atomic-history-t1-q1",
+    "topicId": "chem-atomic-history",
+    "tier": 1,
+    "question": "Who proposed that atoms are tiny, indivisible, solid spheres?",
+    "choices": ["John Dalton", "J.J. Thomson", "Ernest Rutherford", "Niels Bohr"],
+    "answerIndex": 0,
+    "explanation": "John Dalton's early atomic theory described atoms as solid, indivisible spheres — the first modern atomic model."
+  },
+  {
+    "id": "chem-atomic-history-t1-q2",
+    "topicId": "chem-atomic-history",
+    "tier": 1,
+    "question": "What did J.J. Thomson's cathode ray tube experiment discover?",
+    "choices": ["The electron", "The proton", "The neutron", "The nucleus"],
+    "answerIndex": 0,
+    "explanation": "Thomson's cathode ray tube experiments showed that atoms contain tiny, negatively charged particles — electrons."
+  },
+  {
+    "id": "chem-atomic-history-t1-q3",
+    "topicId": "chem-atomic-history",
+    "tier": 1,
+    "question": "Which atomic model is often called the \"plum pudding model\"?",
+    "choices": ["Thomson's model", "Dalton's model", "Rutherford's model", "Bohr's model"],
+    "answerIndex": 0,
+    "explanation": "Thomson pictured the atom as a sphere of positive charge with electrons scattered through it, like fruit in a pudding."
+  },
+  {
+    "id": "chem-atomic-history-t2-q1",
+    "topicId": "chem-atomic-history",
+    "tier": 2,
+    "question": "What did Rutherford's gold foil experiment reveal about the structure of the atom?",
+    "choices": ["The atom has a small, dense, positively charged nucleus", "The atom is a uniform sphere of positive charge with electrons embedded", "Electrons orbit in fixed circular paths at set energy levels", "Electrons exist only as clouds of probability"],
+    "answerIndex": 0,
+    "explanation": "The gold foil experiment showed that most of an atom's mass and positive charge is concentrated in a tiny central nucleus."
+  },
+  {
+    "id": "chem-atomic-history-t2-q2",
+    "topicId": "chem-atomic-history",
+    "tier": 2,
+    "question": "In the gold foil experiment, most alpha particles passed straight through the foil. What did this suggest?",
+    "choices": ["The atom is mostly empty space", "The atom is a solid sphere", "Gold atoms have no nucleus", "Alpha particles are negatively charged"],
+    "answerIndex": 0,
+    "explanation": "If most particles pass through undisturbed, most of the atom's volume must be empty space, with only a tiny dense nucleus occasionally in the way."
+  },
+  {
+    "id": "chem-atomic-history-t2-q3",
+    "topicId": "chem-atomic-history",
+    "tier": 2,
+    "question": "Which scientist proposed that electrons orbit the nucleus in fixed energy levels, like planets around the sun?",
+    "choices": ["Niels Bohr", "John Dalton", "J.J. Thomson", "James Chadwick"],
+    "answerIndex": 0,
+    "explanation": "Bohr's model placed electrons in specific circular orbits, each corresponding to a fixed energy level."
+  },
+  {
+    "id": "chem-atomic-history-t3-q1",
+    "topicId": "chem-atomic-history",
+    "tier": 3,
+    "question": "Which sequence correctly orders these atomic models from earliest to most recent?",
+    "choices": ["Dalton → Thomson → Rutherford → Bohr", "Thomson → Dalton → Bohr → Rutherford", "Bohr → Rutherford → Thomson → Dalton", "Rutherford → Thomson → Dalton → Bohr"],
+    "answerIndex": 0,
+    "explanation": "Dalton's solid sphere model came first, then Thomson's plum pudding model (after discovering the electron), then Rutherford's nuclear model, then Bohr's energy-level model."
+  },
+  {
+    "id": "chem-atomic-history-t3-q2",
+    "topicId": "chem-atomic-history",
+    "tier": 3,
+    "question": "In a cathode ray tube, the ray bends toward the positively charged plate when an electric field is applied. What does this tell us about the particles in the ray?",
+    "choices": ["They are negatively charged", "They are positively charged", "They have no charge", "They have the mass of a proton"],
+    "answerIndex": 0,
+    "explanation": "Opposite charges attract, so a ray bending toward the positive plate must be made of negatively charged particles — electrons."
+  },
+  {
+    "id": "chem-atomic-history-t3-q3",
+    "topicId": "chem-atomic-history",
+    "tier": 3,
+    "question": "Which discovery led scientists to add neutrons to the atomic model?",
+    "choices": ["Chadwick's discovery of the neutron", "Thomson's discovery of the electron", "Rutherford's gold foil experiment", "Bohr's energy levels"],
+    "answerIndex": 0,
+    "explanation": "James Chadwick discovered the neutron in 1932, explaining the extra mass in the nucleus that protons alone couldn't account for."
+  },
+  {
+    "id": "chem-atomic-history-t4-q1",
+    "topicId": "chem-atomic-history",
+    "tier": 4,
+    "question": "Why were a small fraction of alpha particles in the gold foil experiment deflected at large angles, with a few even bouncing straight back?",
+    "choices": ["They came close to or directly hit the small, dense, positively charged nucleus", "They passed through electrons, which are very heavy", "They were attracted to a negatively charged nucleus", "The gold foil was too thick for any particles to pass through"],
+    "answerIndex": 0,
+    "explanation": "The positively charged alpha particles were strongly repelled (or deflected) only when they passed very close to the small but dense, positively charged nucleus."
+  },
+  {
+    "id": "chem-atomic-history-t4-q2",
+    "topicId": "chem-atomic-history",
+    "tier": 4,
+    "question": "The modern (quantum mechanical) model of the atom describes electrons as existing in...",
+    "choices": ["Probability clouds (orbitals) rather than fixed paths", "Fixed, circular orbits like planets", "A uniform sea of positive charge", "Solid shells that never move"],
+    "answerIndex": 0,
+    "explanation": "The quantum mechanical model replaced Bohr's fixed orbits with orbitals — three-dimensional regions where an electron is likely to be found."
+  },
+  {
+    "id": "chem-atomic-history-t4-q3",
+    "topicId": "chem-atomic-history",
+    "tier": 4,
+    "question": "Which statement best contrasts Bohr's model with the modern quantum mechanical model?",
+    "choices": ["Bohr used fixed circular orbits at set distances; the quantum model uses probability-based orbitals", "Bohr's model had no nucleus; the quantum model added one", "Bohr's model included neutrons; the quantum model removed them", "Bohr's model and the quantum model are identical"],
+    "answerIndex": 0,
+    "explanation": "Bohr's electrons traveled in fixed circular paths at specific distances from the nucleus. The quantum model instead describes regions of probability (orbitals) where electrons are likely found."
+  },
+  {
+    "id": "chem-atomic-history-t5-q1",
+    "topicId": "chem-atomic-history",
+    "tier": 5,
+    "question": "In the gold foil experiment, most alpha particles passed straight through, a few deflected at small angles, and very few bounced straight back. Which conclusion is NOT supported by this evidence?",
+    "choices": ["The atom is a solid, uniformly dense sphere of matter", "Most of the atom's volume is empty space", "The nucleus is small compared to the size of the atom", "The nucleus carries a positive charge"],
+    "answerIndex": 0,
+    "explanation": "This evidence actually disproved the 'solid sphere' idea. The fact that most particles passed straight through shows the atom is mostly empty space with a tiny, dense, positively charged nucleus."
+  },
+  {
+    "id": "chem-atomic-history-t5-q2",
+    "topicId": "chem-atomic-history",
+    "tier": 5,
+    "question": "Which option correctly matches each scientist with their key contribution to atomic theory?",
+    "choices": [
+      "Dalton: atoms are indivisible spheres; Thomson: discovered the electron; Rutherford: discovered the nucleus; Bohr: electrons occupy fixed energy levels",
+      "Dalton: discovered the electron; Thomson: discovered the nucleus; Rutherford: atoms are indivisible spheres; Bohr: discovered the neutron",
+      "Dalton: electrons occupy fixed energy levels; Thomson: discovered the nucleus; Rutherford: discovered the electron; Bohr: atoms are indivisible spheres",
+      "Dalton: discovered the nucleus; Thomson: electrons occupy fixed energy levels; Rutherford: discovered the electron; Bohr: atoms are indivisible spheres"
+    ],
+    "answerIndex": 0,
+    "explanation": "Dalton proposed atoms as indivisible spheres, Thomson discovered the electron via cathode ray tubes, Rutherford discovered the nucleus via the gold foil experiment, and Bohr proposed electrons in fixed energy levels."
+  },
+  {
+    "id": "chem-atomic-history-t5-q3",
+    "topicId": "chem-atomic-history",
+    "tier": 5,
+    "question": "In a cathode ray tube experiment, the ray is deflected by both an electric field and a magnetic field. By carefully balancing these deflections, what two properties of the ray's particles can scientists determine?",
+    "choices": ["Their charge sign and their charge-to-mass ratio", "Their exact mass and their exact charge in coulombs", "Their color and their temperature", "Their exact position inside the nucleus"],
+    "answerIndex": 0,
+    "explanation": "By measuring how electric and magnetic fields each deflect the beam, scientists can determine the sign of the charge and the charge-to-mass ratio of the particles — this is how Thomson characterized the electron."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t1-q1",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 1,
+    "question": "Which subatomic particle has a positive charge?",
+    "choices": ["Proton", "Electron", "Neutron", "Photon"],
+    "answerIndex": 0,
+    "explanation": "Protons carry a charge of +1. Electrons are -1, neutrons are neutral, and photons are particles of light with no charge."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t1-q2",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 1,
+    "question": "Where are protons and neutrons located in an atom?",
+    "choices": ["In the nucleus", "In orbitals around the nucleus", "Outside the atom entirely", "Spread evenly throughout the electron cloud"],
+    "answerIndex": 0,
+    "explanation": "Protons and neutrons (collectively called nucleons) are packed into the small, dense nucleus at the center of the atom."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t1-q3",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 1,
+    "question": "What is the charge of a neutron?",
+    "choices": ["Neutral (0)", "Positive (+1)", "Negative (-1)", "Variable"],
+    "answerIndex": 0,
+    "explanation": "Neutrons have no electric charge — they are electrically neutral, as their name suggests."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t2-q1",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 2,
+    "question": "The atomic number of an element tells you the number of...",
+    "choices": ["Protons", "Neutrons", "Protons + neutrons", "Electrons + neutrons"],
+    "answerIndex": 0,
+    "explanation": "The atomic number is defined as the number of protons in an atom's nucleus, and it determines which element the atom is."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t2-q2",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 2,
+    "question": "An atom has 6 protons and 6 neutrons. What is its mass number?",
+    "choices": ["6", "12", "18", "0"],
+    "answerIndex": 1,
+    "explanation": "Mass number = protons + neutrons = 6 + 6 = 12."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t2-q3",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 2,
+    "question": "In a neutral atom, the number of electrons equals the number of...",
+    "choices": ["Protons", "Neutrons", "Protons + neutrons", "Mass number"],
+    "answerIndex": 0,
+    "explanation": "A neutral atom has no overall charge, so its negative electrons must exactly balance its positive protons — equal numbers of each."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t3-q1",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 3,
+    "question": "An atom of carbon has an atomic number of 6 and a mass number of 14. How many neutrons does it have?",
+    "choices": ["6", "8", "14", "20"],
+    "answerIndex": 1,
+    "explanation": "Neutrons = mass number - atomic number = 14 - 6 = 8."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t3-q2",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 3,
+    "question": "Isotopes of an element have the same number of...",
+    "choices": ["protons, but different numbers of neutrons", "neutrons, but different numbers of protons", "electrons, but different numbers of protons", "protons, but different numbers of electrons"],
+    "answerIndex": 0,
+    "explanation": "Isotopes are atoms of the same element (same number of protons, so same atomic number) that have different numbers of neutrons, giving them different mass numbers."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t3-q3",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 3,
+    "question": "Carbon-12 and Carbon-14 are isotopes of carbon (atomic number 6). How many neutrons does Carbon-14 have?",
+    "choices": ["6", "8", "12", "14"],
+    "answerIndex": 1,
+    "explanation": "Neutrons = mass number - atomic number = 14 - 6 = 8 (compared to Carbon-12, which has only 6 neutrons)."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t4-q1",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 4,
+    "question": "An atom has 17 protons, 18 neutrons, and 17 electrons. What is its mass number?",
+    "choices": ["17", "18", "35", "52"],
+    "answerIndex": 2,
+    "explanation": "Mass number = protons + neutrons = 17 + 18 = 35. (This is chlorine-35.)"
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t4-q2",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 4,
+    "question": "An ion has 11 protons and 10 electrons. What is the overall charge of this ion?",
+    "choices": ["+1", "-1", "+11", "0"],
+    "answerIndex": 0,
+    "explanation": "With 11 positive protons and only 10 negative electrons, there's one extra positive charge: the ion has a charge of +1 (this is Na⁺)."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t4-q3",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 4,
+    "question": "Element X has two isotopes: X-35 (75% abundance) and X-37 (25% abundance). Estimate its average atomic mass.",
+    "choices": ["35", "35.5", "36", "37"],
+    "answerIndex": 1,
+    "explanation": "Average atomic mass = (35 × 0.75) + (37 × 0.25) = 26.25 + 9.25 = 35.5."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t5-q1",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 5,
+    "question": "An isotope is written as ³⁵₁₇Cl (mass number 35, atomic number 17). How many protons, neutrons, and electrons does a neutral atom of this isotope have?",
+    "choices": ["17 protons, 18 neutrons, 17 electrons", "17 protons, 35 neutrons, 17 electrons", "35 protons, 17 neutrons, 35 electrons", "18 protons, 17 neutrons, 18 electrons"],
+    "answerIndex": 0,
+    "explanation": "Atomic number (17) = protons = electrons (neutral atom). Neutrons = mass number - atomic number = 35 - 17 = 18."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t5-q2",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 5,
+    "question": "Chlorine has two main isotopes: Cl-35 (mass ≈ 34.97, abundance ≈ 75.76%) and Cl-37 (mass ≈ 36.97, abundance ≈ 24.24%). Which value is closest to chlorine's average atomic mass on the periodic table?",
+    "choices": ["35.45", "35.97", "36.00", "34.97"],
+    "answerIndex": 0,
+    "explanation": "Average mass ≈ (34.97 × 0.7576) + (36.97 × 0.2424) ≈ 26.49 + 8.96 ≈ 35.45, matching chlorine's listed atomic mass of 35.45."
+  },
+  {
+    "id": "chem-atomic-structure-isotopes-t5-q3",
+    "topicId": "chem-atomic-structure-isotopes",
+    "tier": 5,
+    "question": "A neutral atom has 20 protons and a mass number of 40. If it loses 2 electrons to form an ion, what is the resulting ion, and how many electrons does it have?",
+    "choices": ["Ca²⁺ with 18 electrons", "Ca²⁻ with 22 electrons", "Ca²⁺ with 20 electrons", "Ca²⁻ with 18 electrons"],
+    "answerIndex": 0,
+    "explanation": "20 protons identifies the element as calcium (Ca). Starting with 20 electrons and losing 2 leaves 18 electrons, and losing negative charges makes the ion's charge +2: Ca²⁺."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t1-q1",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 1,
+    "question": "What particle is emitted during alpha decay?",
+    "choices": ["A helium nucleus (2 protons, 2 neutrons)", "A high-energy electron", "A photon of light", "A single proton"],
+    "answerIndex": 0,
+    "explanation": "An alpha particle is identical to a helium nucleus: 2 protons and 2 neutrons, giving it a charge of +2 and a mass number of 4."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t1-q2",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 1,
+    "question": "What is the charge of a beta particle?",
+    "choices": ["-1", "+1", "0", "+2"],
+    "answerIndex": 0,
+    "explanation": "A beta particle (beta-minus) is a high-speed electron, which has a charge of -1."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t1-q3",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 1,
+    "question": "Which type of radioactive emission has the greatest penetrating power?",
+    "choices": ["Gamma rays", "Alpha particles", "Beta particles", "All have equal penetrating power"],
+    "answerIndex": 0,
+    "explanation": "Gamma rays are high-energy photons with no mass or charge, allowing them to penetrate much further into materials than alpha or beta particles."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t2-q1",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 2,
+    "question": "Which symbol correctly represents an alpha particle?",
+    "choices": ["⁴₂He", "⁰₋₁e", "¹₁H", "⁰₀γ"],
+    "answerIndex": 0,
+    "explanation": "An alpha particle has a mass number of 4 and a charge (atomic number) of +2, identical to a helium nucleus: ⁴₂He."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t2-q2",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 2,
+    "question": "Which symbol correctly represents a beta-minus particle?",
+    "choices": ["⁰₋₁e", "⁴₂He", "¹₀n", "⁰₀γ"],
+    "answerIndex": 0,
+    "explanation": "A beta-minus particle is an electron: mass number 0 and charge -1, written as ⁰₋₁e."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t2-q3",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 2,
+    "question": "When an atom undergoes alpha decay, what happens to its mass number and atomic number?",
+    "choices": ["Mass number decreases by 4, atomic number decreases by 2", "Mass number decreases by 2, atomic number decreases by 4", "Mass number stays the same, atomic number decreases by 2", "Mass number increases by 4, atomic number increases by 2"],
+    "answerIndex": 0,
+    "explanation": "Emitting an alpha particle (⁴₂He) removes 4 from the mass number and 2 from the atomic number of the original nucleus."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t3-q1",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 3,
+    "question": "During beta-minus decay, a neutron converts into a proton and an electron is emitted. What happens to the atomic number?",
+    "choices": ["It increases by 1", "It decreases by 1", "It stays the same", "It decreases by 4"],
+    "answerIndex": 0,
+    "explanation": "Converting a neutron to a proton adds one proton to the nucleus, increasing the atomic number by 1 while the mass number stays the same."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t3-q2",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 3,
+    "question": "Complete the nuclear equation for the alpha decay of Uranium-238: ²³⁸₉₂U → ? + ⁴₂He",
+    "choices": ["²³⁴₉₀Th", "²³⁴₉₄Pu", "²³⁸₉₀Th", "²³⁴₉₂U"],
+    "answerIndex": 0,
+    "explanation": "Subtract the alpha particle's mass (4) and charge (2): mass number 238 - 4 = 234, atomic number 92 - 2 = 90, which is thorium (Th): ²³⁴₉₀Th."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t3-q3",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 3,
+    "question": "Complete the nuclear equation for the beta-minus decay of Carbon-14: ¹⁴₆C → ? + ⁰₋₁e",
+    "choices": ["¹⁴₇N", "¹⁴₅B", "¹⁰₄Be", "¹⁴₆C"],
+    "answerIndex": 0,
+    "explanation": "Mass number stays the same (14), and atomic number increases by 1 (6 → 7), which is nitrogen (N): ¹⁴₇N."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t4-q1",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 4,
+    "question": "Gamma decay often accompanies alpha or beta decay. What effect does gamma emission alone have on an atom's mass number and atomic number?",
+    "choices": ["No change to mass number or atomic number", "Decreases the mass number by 4 only", "Increases the atomic number by 1 only", "Decreases both by 1"],
+    "answerIndex": 0,
+    "explanation": "A gamma ray is a photon of energy with no mass and no charge, so emitting one doesn't change the mass number or atomic number."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t4-q2",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 4,
+    "question": "An isotope first emits an alpha particle, then emits a beta-minus particle. What is the net change in atomic number after both decays?",
+    "choices": ["-1", "-2", "-3", "+1"],
+    "answerIndex": 0,
+    "explanation": "Alpha decay decreases atomic number by 2; beta-minus decay increases it by 1. Net change: -2 + 1 = -1."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t4-q3",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 4,
+    "question": "In beta-plus (positron) decay, a proton converts into a neutron and a positron (⁰₊₁e) is emitted. What happens to the atomic number?",
+    "choices": ["It decreases by 1", "It increases by 1", "It stays the same", "It decreases by 2"],
+    "answerIndex": 0,
+    "explanation": "Converting a proton to a neutron removes one proton from the nucleus, decreasing the atomic number by 1 while the mass number stays the same."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t5-q1",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 5,
+    "question": "Uranium-238 decays through a long series of alpha and beta emissions, eventually becoming the stable isotope Lead-206. The mass number drops from 238 to 206, and each alpha decay decreases the mass number by 4 (beta decays don't change mass number). How many alpha particles are emitted in total?",
+    "choices": ["8", "6", "32", "4"],
+    "answerIndex": 0,
+    "explanation": "The total mass number decrease is 238 - 206 = 32. Since each alpha decay accounts for a decrease of 4, the number of alpha decays is 32 ÷ 4 = 8."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t5-q2",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 5,
+    "question": "In the U-238 → Pb-206 decay series, 8 alpha decays occur (each decreasing atomic number by 2, for a total decrease of 16), but the atomic number only drops from 92 to 82 (a decrease of 10). How many beta-minus decays (each increasing atomic number by 1) must occur to make up the difference?",
+    "choices": ["6", "8", "10", "16"],
+    "answerIndex": 0,
+    "explanation": "The 8 alpha decays alone would decrease the atomic number by 16, but the actual decrease is only 10. The difference (16 - 10 = 6) must be made up by 6 beta-minus decays, each adding +1 to the atomic number."
+  },
+  {
+    "id": "chem-nuclear-radioactivity-t5-q3",
+    "topicId": "chem-nuclear-radioactivity",
+    "tier": 5,
+    "question": "Write the missing particle in this balanced nuclear equation: ²²⁶₈₈Ra → ²²²₈₆Rn + ?",
+    "choices": ["⁴₂He (alpha particle)", "⁰₋₁e (beta particle)", "⁰₀γ (gamma ray)", "¹₁H (proton)"],
+    "answerIndex": 0,
+    "explanation": "The mass number drops by 4 (226 → 222) and the atomic number drops by 2 (88 → 86), which matches the loss of an alpha particle (⁴₂He)."
+  },
+  {
+    "id": "chem-half-life-t1-q1",
+    "topicId": "chem-half-life",
+    "tier": 1,
+    "question": "What is the definition of \"half-life\"?",
+    "choices": ["The time it takes for half of a radioactive sample to decay", "The total time for a sample to completely decay", "The time it takes for a sample to double in mass", "The time it takes for a single atom to decay"],
+    "answerIndex": 0,
+    "explanation": "A half-life is the amount of time required for half of the radioactive atoms in a sample to decay."
+  },
+  {
+    "id": "chem-half-life-t1-q2",
+    "topicId": "chem-half-life",
+    "tier": 1,
+    "question": "If a sample has a half-life of 10 years, how much of the original sample remains after 10 years?",
+    "choices": ["1/2", "1/4", "1/8", "All of it"],
+    "answerIndex": 0,
+    "explanation": "By definition, exactly one half-life means half of the original sample remains."
+  },
+  {
+    "id": "chem-half-life-t1-q3",
+    "topicId": "chem-half-life",
+    "tier": 1,
+    "question": "After 2 half-lives, what fraction of the original radioactive sample remains?",
+    "choices": ["1/4", "1/2", "1/8", "0"],
+    "answerIndex": 0,
+    "explanation": "Each half-life cuts the remaining amount in half: after 1 half-life, 1/2 remains; after 2 half-lives, 1/2 × 1/2 = 1/4 remains."
+  },
+  {
+    "id": "chem-half-life-t2-q1",
+    "topicId": "chem-half-life",
+    "tier": 2,
+    "question": "A sample of 100 g of a radioactive isotope has a half-life of 5 days. How much remains after 10 days?",
+    "choices": ["50 g", "25 g", "12.5 g", "0 g"],
+    "answerIndex": 1,
+    "explanation": "10 days ÷ 5 days = 2 half-lives. 100 g → 50 g (after 1) → 25 g (after 2)."
+  },
+  {
+    "id": "chem-half-life-t2-q2",
+    "topicId": "chem-half-life",
+    "tier": 2,
+    "question": "A sample has a half-life of 8 hours. How many half-lives have passed after 24 hours?",
+    "choices": ["2", "3", "4", "24"],
+    "answerIndex": 1,
+    "explanation": "24 hours ÷ 8 hours per half-life = 3 half-lives."
+  },
+  {
+    "id": "chem-half-life-t2-q3",
+    "topicId": "chem-half-life",
+    "tier": 2,
+    "question": "A 40 g sample of a radioactive isotope decays to 10 g. How many half-lives have passed?",
+    "choices": ["1", "2", "3", "4"],
+    "answerIndex": 1,
+    "explanation": "40 g → 20 g (1 half-life) → 10 g (2 half-lives)."
+  },
+  {
+    "id": "chem-half-life-t3-q1",
+    "topicId": "chem-half-life",
+    "tier": 3,
+    "question": "A radioactive sample starts at 80 g with a half-life of 3 hours. How much remains after 9 hours?",
+    "choices": ["40 g", "20 g", "10 g", "5 g"],
+    "answerIndex": 2,
+    "explanation": "9 hours ÷ 3 hours = 3 half-lives. 80 g → 40 g → 20 g → 10 g."
+  },
+  {
+    "id": "chem-half-life-t3-q2",
+    "topicId": "chem-half-life",
+    "tier": 3,
+    "question": "An isotope has a half-life of 6 years. Starting with 200 g, how much remains after 18 years?",
+    "choices": ["100 g", "50 g", "25 g", "12.5 g"],
+    "answerIndex": 2,
+    "explanation": "18 years ÷ 6 years = 3 half-lives. 200 g → 100 g → 50 g → 25 g."
+  },
+  {
+    "id": "chem-half-life-t3-q3",
+    "topicId": "chem-half-life",
+    "tier": 3,
+    "question": "A sample decays from 64 g to 8 g. If the isotope's half-life is 5 days, how many days have passed?",
+    "choices": ["5 days", "10 days", "15 days", "20 days"],
+    "answerIndex": 2,
+    "explanation": "64 g → 32 g → 16 g → 8 g is 3 half-lives. 3 × 5 days = 15 days."
+  },
+  {
+    "id": "chem-half-life-t4-q1",
+    "topicId": "chem-half-life",
+    "tier": 4,
+    "question": "Carbon-14 has a half-life of about 5730 years. A bone sample contains 1/4 of its original Carbon-14. Approximately how old is the bone?",
+    "choices": ["2,865 years", "5,730 years", "11,460 years", "22,920 years"],
+    "answerIndex": 2,
+    "explanation": "1/4 remaining = (1/2)² means 2 half-lives have passed. 2 × 5730 years = 11,460 years."
+  },
+  {
+    "id": "chem-half-life-t4-q2",
+    "topicId": "chem-half-life",
+    "tier": 4,
+    "question": "A radioactive sample has a half-life of 12 hours. Starting with 500 g, how much remains after 36 hours?",
+    "choices": ["125 g", "62.5 g", "250 g", "31.25 g"],
+    "answerIndex": 1,
+    "explanation": "36 hours ÷ 12 hours = 3 half-lives. 500 g → 250 g → 125 g → 62.5 g."
+  },
+  {
+    "id": "chem-half-life-t4-q3",
+    "topicId": "chem-half-life",
+    "tier": 4,
+    "question": "A radioactive sample's activity drops from 800 counts/min to 100 counts/min. If the half-life is 4 minutes, how much time has passed?",
+    "choices": ["4 minutes", "8 minutes", "12 minutes", "16 minutes"],
+    "answerIndex": 2,
+    "explanation": "800 → 400 → 200 → 100 is 3 half-lives. 3 × 4 minutes = 12 minutes."
+  },
+  {
+    "id": "chem-half-life-t5-q1",
+    "topicId": "chem-half-life",
+    "tier": 5,
+    "question": "A radioactive isotope has a half-life of 3 days. Using N = N₀ × (1/2)^(t / half-life), approximately what percentage of the original sample remains after 7 days?",
+    "choices": ["~20%", "~12.5%", "~25%", "~50%"],
+    "answerIndex": 0,
+    "explanation": "t / half-life = 7/3 ≈ 2.33. (1/2)^2.33 ≈ 0.1985, or about 20% of the original sample remains."
+  },
+  {
+    "id": "chem-half-life-t5-q2",
+    "topicId": "chem-half-life",
+    "tier": 5,
+    "question": "A sample initially has 1,000,000 atoms of a radioactive isotope with a half-life of 2 hours. How many atoms remain after 10 hours?",
+    "choices": ["31,250", "62,500", "15,625", "125,000"],
+    "answerIndex": 0,
+    "explanation": "10 hours ÷ 2 hours = 5 half-lives. 1,000,000 × (1/2)⁵ = 1,000,000 ÷ 32 = 31,250."
+  },
+  {
+    "id": "chem-half-life-t5-q3",
+    "topicId": "chem-half-life",
+    "tier": 5,
+    "question": "Isotopes A and B both start with the same mass. A has a half-life of 1 hour, and B has a half-life of 2 hours. After 4 hours, what is the ratio of the remaining mass of A to the remaining mass of B?",
+    "choices": ["1:4", "4:1", "1:2", "1:1"],
+    "answerIndex": 0,
+    "explanation": "After 4 hours, A has gone through 4 half-lives, leaving 1/16. B has gone through 2 half-lives, leaving 1/4. The ratio is (1/16) : (1/4) = 1:4."
+  }
+]

@@ -10,7 +10,7 @@ export type Question = {
   generated?: boolean;
 };
 
-export type Subject = 'math' | 'biology' | 'python' | 'robotics';
+export type Subject = 'math' | 'biology' | 'python' | 'robotics' | 'chemistry';
 
 export type TopicResource = {
   label: string;

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "chem-orbitals-quantum-t1-q1",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 1,
+    "question": "Which type of orbital can hold a maximum of 2 electrons in total?",
+    "choices": ["s orbital", "p orbital", "d orbital", "f orbital"],
+    "answerIndex": 0,
+    "explanation": "There is only one s orbital per energy level, and every orbital holds at most 2 electrons, so an s sublevel holds a maximum of 2 electrons total."
+  },
+  {
+    "id": "chem-orbitals-quantum-t1-q2",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 1,
+    "question": "How many individual orbitals are in a p sublevel?",
+    "choices": ["1", "3", "5", "7"],
+    "answerIndex": 1,
+    "explanation": "A p sublevel consists of 3 orbitals (px, py, pz), each oriented along a different axis."
+  },
+  {
+    "id": "chem-orbitals-quantum-t1-q3",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 1,
+    "question": "What shape is an s orbital?",
+    "choices": ["Spherical", "Dumbbell-shaped", "Cloverleaf-shaped", "Cube-shaped"],
+    "answerIndex": 0,
+    "explanation": "s orbitals are spherical, with the nucleus at the center of the sphere."
+  },
+  {
+    "id": "chem-orbitals-quantum-t2-q1",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 2,
+    "question": "How many electrons can a p sublevel hold in total?",
+    "choices": ["2", "6", "10", "14"],
+    "answerIndex": 1,
+    "explanation": "A p sublevel has 3 orbitals, and each orbital holds up to 2 electrons: 3 × 2 = 6."
+  },
+  {
+    "id": "chem-orbitals-quantum-t2-q2",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 2,
+    "question": "How many individual orbitals are in a d sublevel?",
+    "choices": ["3", "5", "7", "9"],
+    "answerIndex": 1,
+    "explanation": "A d sublevel consists of 5 orbitals with more complex shapes."
+  },
+  {
+    "id": "chem-orbitals-quantum-t2-q3",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 2,
+    "question": "What is the maximum number of electrons that can occupy a single orbital?",
+    "choices": ["1", "2", "3", "4"],
+    "answerIndex": 1,
+    "explanation": "The Pauli exclusion principle limits each orbital to 2 electrons, which must have opposite spins."
+  },
+  {
+    "id": "chem-orbitals-quantum-t3-q1",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 3,
+    "question": "How many electrons can a d sublevel hold in total?",
+    "choices": ["6", "8", "10", "14"],
+    "answerIndex": 2,
+    "explanation": "A d sublevel has 5 orbitals, each holding up to 2 electrons: 5 × 2 = 10."
+  },
+  {
+    "id": "chem-orbitals-quantum-t3-q2",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 3,
+    "question": "How many electrons can an f sublevel hold in total?",
+    "choices": ["10", "12", "14", "16"],
+    "answerIndex": 2,
+    "explanation": "An f sublevel has 7 orbitals, each holding up to 2 electrons: 7 × 2 = 14."
+  },
+  {
+    "id": "chem-orbitals-quantum-t3-q3",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 3,
+    "question": "Which is the first principal energy level (n) to contain a d sublevel?",
+    "choices": ["n=1", "n=2", "n=3", "n=4"],
+    "answerIndex": 2,
+    "explanation": "Energy level n=1 has only an s sublevel, n=2 has s and p, and n=3 is the first level to include s, p, and d sublevels."
+  },
+  {
+    "id": "chem-orbitals-quantum-t4-q1",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 4,
+    "question": "For principal energy level n=3, which sublevels are present?",
+    "choices": ["3s, 3p, 3d", "3s, 3p only", "3s only", "3s, 3p, 3d, 3f"],
+    "answerIndex": 0,
+    "explanation": "A principal energy level n contains n sublevels (up to a point): n=3 contains 3s, 3p, and 3d, but not 3f (f sublevels first appear at n=4)."
+  },
+  {
+    "id": "chem-orbitals-quantum-t4-q2",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 4,
+    "question": "In an orbital diagram, a box contains two arrows pointing in opposite directions (one up, one down). What does this represent?",
+    "choices": ["Two electrons in the same orbital with opposite spins", "Two electrons in different orbitals with the same spin", "An empty orbital", "An orbital containing a proton and an electron"],
+    "answerIndex": 0,
+    "explanation": "Each box represents one orbital. Two arrows in opposite directions show that the orbital is fully occupied by 2 electrons with opposite (paired) spins, as required by the Pauli exclusion principle."
+  },
+  {
+    "id": "chem-orbitals-quantum-t4-q3",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 4,
+    "question": "According to the quantum mechanical model, what does each orbital represent?",
+    "choices": ["A region of space with a high probability of finding an electron", "A fixed circular path for an electron", "A physical container that holds exactly one atom", "The nucleus of an atom"],
+    "answerIndex": 0,
+    "explanation": "Orbitals are three-dimensional regions of space where there is a high probability of finding an electron — not fixed paths like in Bohr's model."
+  },
+  {
+    "id": "chem-orbitals-quantum-t5-q1",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 5,
+    "question": "How many total orbitals exist in the n=4 principal energy level (4s + 4p + 4d + 4f = 1 + 3 + 5 + 7)?",
+    "choices": ["9", "16", "25", "32"],
+    "answerIndex": 1,
+    "explanation": "1 + 3 + 5 + 7 = 16 orbitals. (In general, a principal energy level n has n² total orbitals: 4² = 16.)"
+  },
+  {
+    "id": "chem-orbitals-quantum-t5-q2",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 5,
+    "question": "How many total electrons can occupy the n=3 principal energy level (3s + 3p + 3d = 2 + 6 + 10)?",
+    "choices": ["8", "10", "18", "32"],
+    "answerIndex": 2,
+    "explanation": "2 + 6 + 10 = 18 electrons. (In general, a principal energy level n holds a maximum of 2n² electrons: 2 × 3² = 18.)"
+  },
+  {
+    "id": "chem-orbitals-quantum-t5-q3",
+    "topicId": "chem-orbitals-quantum",
+    "tier": 5,
+    "question": "An orbital diagram for nitrogen's 2p sublevel (3 electrons across 3 orbitals) follows Hund's rule. Which arrangement is correct?",
+    "choices": ["One electron in each of the three 2p orbitals, all with parallel spin", "Two electrons paired in one 2p orbital, with the third orbital empty", "All three electrons paired into a single 2p orbital", "One electron in each orbital, but two with opposite spins and one orbital left empty"],
+    "answerIndex": 0,
+    "explanation": "Hund's rule states that electrons fill degenerate (equal-energy) orbitals singly, with parallel spins, before any pairing occurs. With 3 electrons and 3 orbitals, each orbital gets exactly one electron."
+  },
+  {
+    "id": "chem-electron-configuration-t1-q1",
+    "topicId": "chem-electron-configuration",
+    "tier": 1,
+    "question": "According to the Aufbau principle, electrons fill orbitals...",
+    "choices": ["Starting with the lowest energy orbitals first", "Starting with the highest energy orbitals first", "Randomly, with no particular order", "All at once, regardless of energy"],
+    "answerIndex": 0,
+    "explanation": "The Aufbau principle says electrons occupy the lowest-energy available orbitals before filling higher-energy ones."
+  },
+  {
+    "id": "chem-electron-configuration-t1-q2",
+    "topicId": "chem-electron-configuration",
+    "tier": 1,
+    "question": "The Pauli exclusion principle states that each orbital can hold at most...",
+    "choices": ["2 electrons, with opposite spins", "1 electron only", "Unlimited electrons", "2 electrons with the same spin"],
+    "answerIndex": 0,
+    "explanation": "The Pauli exclusion principle limits each orbital to 2 electrons, and those 2 electrons must have opposite spins."
+  },
+  {
+    "id": "chem-electron-configuration-t1-q3",
+    "topicId": "chem-electron-configuration",
+    "tier": 1,
+    "question": "Hund's rule states that electrons fill orbitals of equal energy...",
+    "choices": ["Singly (one at a time) before any pairing occurs", "In pairs immediately", "Only after all higher-energy orbitals are full", "Randomly with no preference"],
+    "answerIndex": 0,
+    "explanation": "Hund's rule requires that each orbital in a sublevel gets one electron before any orbital receives a second."
+  },
+  {
+    "id": "chem-electron-configuration-t2-q1",
+    "topicId": "chem-electron-configuration",
+    "tier": 2,
+    "question": "What is the electron configuration of hydrogen (atomic number 1)?",
+    "choices": ["1s¹", "1s²", "2s¹", "1s²2s¹"],
+    "answerIndex": 0,
+    "explanation": "Hydrogen has 1 electron, which goes into the lowest-energy orbital, 1s."
+  },
+  {
+    "id": "chem-electron-configuration-t2-q2",
+    "topicId": "chem-electron-configuration",
+    "tier": 2,
+    "question": "What is the electron configuration of helium (atomic number 2)?",
+    "choices": ["1s¹", "1s²", "1s²2s¹", "2s²"],
+    "answerIndex": 1,
+    "explanation": "Helium has 2 electrons, which completely fill the 1s orbital: 1s²."
+  },
+  {
+    "id": "chem-electron-configuration-t2-q3",
+    "topicId": "chem-electron-configuration",
+    "tier": 2,
+    "question": "What is the electron configuration of carbon (atomic number 6)?",
+    "choices": ["1s²2s²2p²", "1s²2s⁴", "1s²2s²2p⁴", "1s²2p⁴"],
+    "answerIndex": 0,
+    "explanation": "Carbon has 6 electrons: 2 fill 1s, 2 fill 2s, and the remaining 2 go into 2p, giving 1s²2s²2p²."
+  },
+  {
+    "id": "chem-electron-configuration-t3-q1",
+    "topicId": "chem-electron-configuration",
+    "tier": 3,
+    "question": "What is the electron configuration of neon (atomic number 10)?",
+    "choices": ["1s²2s²2p⁶", "1s²2s²2p⁴", "1s²2s⁸", "1s²2s²2p⁸"],
+    "answerIndex": 0,
+    "explanation": "Neon has 10 electrons: 2 in 1s, 2 in 2s, and 6 in 2p (which is now full), giving 1s²2s²2p⁶."
+  },
+  {
+    "id": "chem-electron-configuration-t3-q2",
+    "topicId": "chem-electron-configuration",
+    "tier": 3,
+    "question": "What is the electron configuration of sodium (atomic number 11)?",
+    "choices": ["1s²2s²2p⁶3s¹", "1s²2s²2p⁷", "1s²2s²2p⁶3s²", "1s²2s²2p⁵3s²"],
+    "answerIndex": 0,
+    "explanation": "Sodium has 11 electrons. After filling 1s²2s²2p⁶ (10 electrons), the 11th electron starts a new sublevel: 3s¹."
+  },
+  {
+    "id": "chem-electron-configuration-t3-q3",
+    "topicId": "chem-electron-configuration",
+    "tier": 3,
+    "question": "What is the electron configuration of chlorine (atomic number 17)?",
+    "choices": ["1s²2s²2p⁶3s²3p⁵", "1s²2s²2p⁶3s²3p⁴", "1s²2s²2p⁶3s²3p⁶", "1s²2s²2p⁵3s²3p⁶"],
+    "answerIndex": 0,
+    "explanation": "Chlorine has 17 electrons: 1s²2s²2p⁶3s² accounts for 12, leaving 5 for 3p: 1s²2s²2p⁶3s²3p⁵."
+  },
+  {
+    "id": "chem-electron-configuration-t4-q1",
+    "topicId": "chem-electron-configuration",
+    "tier": 4,
+    "question": "According to the Aufbau filling order, which sublevel fills immediately after 3p?",
+    "choices": ["4s", "3d", "4p", "4f"],
+    "answerIndex": 0,
+    "explanation": "The Aufbau filling order is ...3s, 3p, 4s, 3d, 4p... — the 4s sublevel is slightly lower in energy than 3d, so it fills first."
+  },
+  {
+    "id": "chem-electron-configuration-t4-q2",
+    "topicId": "chem-electron-configuration",
+    "tier": 4,
+    "question": "What is the electron configuration of calcium (atomic number 20)?",
+    "choices": ["1s²2s²2p⁶3s²3p⁶4s²", "1s²2s²2p⁶3s²3p⁶3d²", "1s²2s²2p⁶3s²3p⁸", "1s²2s²2p⁶3s²3p⁶4s¹"],
+    "answerIndex": 0,
+    "explanation": "Calcium has 20 electrons. After filling through 3p⁶ (18 electrons), the next 2 electrons go into 4s (which fills before 3d): 1s²2s²2p⁶3s²3p⁶4s²."
+  },
+  {
+    "id": "chem-electron-configuration-t4-q3",
+    "topicId": "chem-electron-configuration",
+    "tier": 4,
+    "question": "What is the electron configuration of iron (atomic number 26)?",
+    "choices": ["1s²2s²2p⁶3s²3p⁶4s²3d⁶", "1s²2s²2p⁶3s²3p⁶3d⁸", "1s²2s²2p⁶3s²3p⁶4s²3d⁴4p²", "1s²2s²2p⁶3s²3p⁶4s²4p⁶"],
+    "answerIndex": 0,
+    "explanation": "Iron has 26 electrons. After 1s²2s²2p⁶3s²3p⁶4s² (20 electrons), the remaining 6 electrons fill the 3d sublevel: ...4s²3d⁶."
+  },
+  {
+    "id": "chem-electron-configuration-t5-q1",
+    "topicId": "chem-electron-configuration",
+    "tier": 5,
+    "question": "Write the full electron configuration for bromine (atomic number 35).",
+    "choices": ["1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁵", "1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁴", "1s²2s²2p⁶3s²3p⁶4s²3d⁹4p⁶", "1s²2s²2p⁶3s²3p⁶3d¹⁰4p⁷"],
+    "answerIndex": 0,
+    "explanation": "Following the Aufbau order and adding electrons until reaching 35 total: 2+2+6+2+6+2+10+5 = 35, giving 1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁵."
+  },
+  {
+    "id": "chem-electron-configuration-t5-q2",
+    "topicId": "chem-electron-configuration",
+    "tier": 5,
+    "question": "Krypton (atomic number 36) has the configuration 1s²2s²2p⁶3s²3p⁶4s²3d¹⁰4p⁶. How many of its electrons are in the n=4 principal energy level (4s and 4p)?",
+    "choices": ["8", "18", "6", "2"],
+    "answerIndex": 0,
+    "explanation": "The n=4 electrons are 4s² and 4p⁶: 2 + 6 = 8. (The 3d¹⁰ electrons belong to n=3, even though 3d fills after 4s.)"
+  },
+  {
+    "id": "chem-electron-configuration-t5-q3",
+    "topicId": "chem-electron-configuration",
+    "tier": 5,
+    "question": "A student writes potassium's (atomic number 19) configuration as 1s²2s²2p⁶3s²3p⁷. What is the error?",
+    "choices": ["The 3p sublevel can only hold 6 electrons; the 19th electron belongs in 4s", "Potassium should have 2p⁸ instead of 2p⁶", "The configuration should start with 2s² before 1s²", "Potassium has no electrons in the third energy level"],
+    "answerIndex": 0,
+    "explanation": "A p sublevel holds a maximum of 6 electrons (3 orbitals × 2), so 3p⁷ is impossible. Once 3p is full at 6 electrons (18 total), the 19th electron starts the 4s sublevel: ...3p⁶4s¹."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t1-q1",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 1,
+    "question": "When a metal atom forms a cation (positive ion), it...",
+    "choices": ["Loses electrons", "Gains electrons", "Loses protons", "Gains protons"],
+    "answerIndex": 0,
+    "explanation": "Losing one or more negatively charged electrons leaves the atom with more protons than electrons, giving it an overall positive charge — a cation."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t1-q2",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 1,
+    "question": "When a nonmetal atom forms an anion (negative ion), it...",
+    "choices": ["Gains electrons", "Loses electrons", "Gains protons", "Loses protons"],
+    "answerIndex": 0,
+    "explanation": "Gaining one or more negatively charged electrons gives the atom more electrons than protons, producing an overall negative charge — an anion."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t1-q3",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 1,
+    "question": "In noble gas notation, the symbol of the previous noble gas in brackets (like [Ne]) represents...",
+    "choices": ["The electron configuration of all the inner, filled shells", "The total number of protons in the atom", "The atomic mass of the atom", "Only the valence electrons"],
+    "answerIndex": 0,
+    "explanation": "Noble gas notation shortens a configuration by using the nearest preceding noble gas's symbol to represent all the filled inner-shell electrons, then writes out only the remaining electrons explicitly."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t2-q1",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 2,
+    "question": "Sodium's electron configuration is 1s²2s²2p⁶3s¹. What is the electron configuration of Na⁺?",
+    "choices": ["1s²2s²2p⁶", "1s²2s²2p⁶3s¹", "1s²2s²2p⁵", "1s²2s²2p⁶3s²"],
+    "answerIndex": 0,
+    "explanation": "Forming Na⁺ means losing 1 electron. Sodium loses its single 3s electron, leaving 1s²2s²2p⁶ — the same configuration as neon."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t2-q2",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 2,
+    "question": "Chlorine's electron configuration is 1s²2s²2p⁶3s²3p⁵. What is the electron configuration of Cl⁻?",
+    "choices": ["1s²2s²2p⁶3s²3p⁶", "1s²2s²2p⁶3s²3p⁴", "1s²2s²2p⁶3s²3p⁵", "1s²2s²2p⁵3s²3p⁶"],
+    "answerIndex": 0,
+    "explanation": "Forming Cl⁻ means gaining 1 electron, which fills the 3p sublevel completely: 1s²2s²2p⁶3s²3p⁶ — the same configuration as argon."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t2-q3",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 2,
+    "question": "Write the noble gas notation for sodium (atomic number 11). The previous noble gas is neon (atomic number 10).",
+    "choices": ["[Ne]3s¹", "[Ne]3s²", "[Ar]3s¹", "[He]2s²2p⁶3s¹"],
+    "answerIndex": 0,
+    "explanation": "Sodium's full configuration is 1s²2s²2p⁶3s¹. The first 10 electrons (1s²2s²2p⁶) match neon exactly, so they're replaced with [Ne], leaving 3s¹."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t3-q1",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 3,
+    "question": "Write the noble gas notation for chlorine (atomic number 17). The previous noble gas is neon (atomic number 10).",
+    "choices": ["[Ne]3s²3p⁵", "[Ne]3s²3p⁴", "[Ar]3s²3p⁵", "[Ne]3p⁷"],
+    "answerIndex": 0,
+    "explanation": "Chlorine's full configuration is 1s²2s²2p⁶3s²3p⁵. Replacing the first 10 electrons (matching neon) with [Ne] leaves 3s²3p⁵."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t3-q2",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 3,
+    "question": "Write the noble gas notation for calcium (atomic number 20). The previous noble gas is argon (atomic number 18).",
+    "choices": ["[Ar]4s²", "[Ar]3d²", "[Ar]4s¹", "[Ne]3s²3p⁶4s²"],
+    "answerIndex": 0,
+    "explanation": "Calcium's full configuration is 1s²2s²2p⁶3s²3p⁶4s². The first 18 electrons match argon, so replacing them with [Ar] leaves 4s²."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t3-q3",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 3,
+    "question": "Magnesium's electron configuration is 1s²2s²2p⁶3s². What is the electron configuration of Mg²⁺?",
+    "choices": ["1s²2s²2p⁶", "1s²2s²2p⁶3s²", "1s²2s²2p⁴", "1s²2s²2p⁶3s¹"],
+    "answerIndex": 0,
+    "explanation": "Forming Mg²⁺ means losing 2 electrons. Magnesium loses both of its 3s electrons, leaving 1s²2s²2p⁶ — the same configuration as neon."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t4-q1",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 4,
+    "question": "When transition metals form ions, electrons are removed first from which sublevel?",
+    "choices": ["The outermost s sublevel (e.g., 4s before 3d)", "The d sublevel before the s sublevel", "Whichever sublevel has more electrons", "The innermost sublevel first"],
+    "answerIndex": 0,
+    "explanation": "Even though 4s fills before 3d, electrons in the outermost s sublevel are removed first when forming cations, because they're at a higher average energy once 3d is occupied."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t4-q2",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 4,
+    "question": "Iron's electron configuration is 1s²2s²2p⁶3s²3p⁶4s²3d⁶. What is the electron configuration of Fe²⁺?",
+    "choices": ["1s²2s²2p⁶3s²3p⁶3d⁶", "1s²2s²2p⁶3s²3p⁶4s²3d⁴", "1s²2s²2p⁶3s²3p⁶4s²3d⁶", "1s²2s²2p⁶3s²3p⁶3d⁴"],
+    "answerIndex": 0,
+    "explanation": "Forming Fe²⁺ means losing 2 electrons, which come from the 4s sublevel first: 1s²2s²2p⁶3s²3p⁶3d⁶."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t4-q3",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 4,
+    "question": "Oxygen's electron configuration is 1s²2s²2p⁴. Which noble gas notation correctly represents O²⁻?",
+    "choices": ["[Ne]", "[Ne]2p⁶", "[He]2s²2p⁴", "[Ar]"],
+    "answerIndex": 0,
+    "explanation": "O²⁻ has 8 + 2 = 10 electrons, giving the configuration 1s²2s²2p⁶ — identical to neon. So the noble gas notation is simply [Ne]."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t5-q1",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 5,
+    "question": "Chromium (atomic number 24) is an exception to the normal Aufbau order: its actual ground-state configuration is [Ar]4s¹3d⁵ instead of the \"expected\" [Ar]4s²3d⁴, because a half-filled d sublevel is extra stable. What is chromium's noble gas notation?",
+    "choices": ["[Ar]4s¹3d⁵", "[Ar]4s²3d⁴", "[Ar]3d⁶", "[Ar]4s²3d³4p¹"],
+    "answerIndex": 0,
+    "explanation": "Chromium is a known exception: having one electron in 4s and five in 3d (a half-filled, extra-stable d sublevel) gives [Ar]4s¹3d⁵ rather than the predicted [Ar]4s²3d⁴."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t5-q2",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 5,
+    "question": "Copper (atomic number 29) is also an exception: its actual configuration is [Ar]4s¹3d¹⁰ (a full d sublevel is extra stable). What is the electron configuration of Cu⁺ (losing one electron)?",
+    "choices": ["[Ar]3d¹⁰", "[Ar]4s¹3d⁹", "[Ar]3d⁹", "[Ar]4s²3d⁸"],
+    "answerIndex": 0,
+    "explanation": "Cu⁺ loses its single 4s electron, leaving the very stable, completely full 3d sublevel: [Ar]3d¹⁰."
+  },
+  {
+    "id": "chem-ion-noble-gas-config-t5-q3",
+    "topicId": "chem-ion-noble-gas-config",
+    "tier": 5,
+    "question": "The species Kr (krypton atom), Se²⁻, Br⁻, and Rb⁺ are all isoelectronic — they all have the electron configuration [Ar]3d¹⁰4s²4p⁶ (36 electrons). Which one of these is electrically NEUTRAL?",
+    "choices": ["Kr (krypton atom)", "Se²⁻", "Br⁻", "Rb⁺"],
+    "answerIndex": 0,
+    "explanation": "All four species have 36 electrons, but only krypton has 36 protons to match, making it electrically neutral. Se²⁻ (34 protons), Br⁻ (35 protons), and Rb⁺ (37 protons) are all ions."
+  },
+  {
+    "id": "chem-spectra-t1-q1",
+    "topicId": "chem-spectra",
+    "tier": 1,
+    "question": "What happens when an electron absorbs a photon of light with just the right amount of energy?",
+    "choices": ["The electron jumps to a higher energy level", "The electron is destroyed", "The nucleus gains a proton", "The electron's charge changes"],
+    "answerIndex": 0,
+    "explanation": "If a photon's energy exactly matches the gap between two energy levels, the electron absorbs it and jumps ('is excited') to the higher level."
+  },
+  {
+    "id": "chem-spectra-t1-q2",
+    "topicId": "chem-spectra",
+    "tier": 1,
+    "question": "What happens when an electron falls from a higher energy level to a lower one?",
+    "choices": ["It emits a photon of light", "It absorbs a photon of light", "It becomes a neutron", "Nothing happens"],
+    "answerIndex": 0,
+    "explanation": "When an electron drops to a lower energy level, it releases the energy difference as a photon of light."
+  },
+  {
+    "id": "chem-spectra-t1-q3",
+    "topicId": "chem-spectra",
+    "tier": 1,
+    "question": "An emission spectrum consists of...",
+    "choices": ["Bright lines of specific colors against a dark background", "A continuous rainbow of all colors", "Dark lines against a bright rainbow background", "A single white line"],
+    "answerIndex": 0,
+    "explanation": "An emission spectrum shows specific bright lines (corresponding to specific photon energies) against an otherwise dark background."
+  },
+  {
+    "id": "chem-spectra-t2-q1",
+    "topicId": "chem-spectra",
+    "tier": 2,
+    "question": "An absorption spectrum consists of...",
+    "choices": ["Dark lines against a continuous rainbow background", "Bright lines against a dark background", "A completely blank spectrum", "Only infrared light"],
+    "answerIndex": 0,
+    "explanation": "When white light passes through a gas, electrons absorb specific wavelengths, leaving dark lines at those wavelengths in the otherwise continuous rainbow spectrum."
+  },
+  {
+    "id": "chem-spectra-t2-q2",
+    "topicId": "chem-spectra",
+    "tier": 2,
+    "question": "Why does each element produce a unique line spectrum?",
+    "choices": ["Each element has a unique set of electron energy levels", "All elements have the same spectrum", "Spectra depend only on temperature, not the element", "Spectra are randomly generated"],
+    "answerIndex": 0,
+    "explanation": "The energy levels available to an atom's electrons are determined by its unique atomic structure, so the possible energy jumps — and the wavelengths of light absorbed or emitted — are unique to each element."
+  },
+  {
+    "id": "chem-spectra-t2-q3",
+    "topicId": "chem-spectra",
+    "tier": 2,
+    "question": "The energy of an emitted photon corresponds to...",
+    "choices": ["The energy difference between the initial and final energy levels", "The total energy of the atom", "The mass of the electron", "The atomic number of the element"],
+    "answerIndex": 0,
+    "explanation": "A photon's energy equals exactly the energy lost by the electron as it drops from a higher to a lower energy level."
+  },
+  {
+    "id": "chem-spectra-t3-q1",
+    "topicId": "chem-spectra",
+    "tier": 3,
+    "question": "If an electron falls from a higher energy level to a much lower one (a larger energy drop), the emitted photon will have...",
+    "choices": ["Higher energy and frequency, and a shorter wavelength", "Lower energy and frequency, and a longer wavelength", "The same energy regardless of the size of the drop", "No photon is emitted for large drops"],
+    "answerIndex": 0,
+    "explanation": "A bigger energy level drop releases a more energetic photon. Since E = hf and E = hc/λ, higher energy means higher frequency and shorter wavelength."
+  },
+  {
+    "id": "chem-spectra-t3-q2",
+    "topicId": "chem-spectra",
+    "tier": 3,
+    "question": "Which statement is true about line spectra and identifying elements?",
+    "choices": ["Each element's line spectrum is a unique fingerprint used to identify it", "All elements produce identical spectra", "Line spectra cannot be used to identify elements", "Only radioactive elements produce line spectra"],
+    "answerIndex": 0,
+    "explanation": "Because each element's energy levels are unique, its pattern of spectral lines acts like a fingerprint, allowing scientists to identify elements — even in distant stars."
+  },
+  {
+    "id": "chem-spectra-t3-q3",
+    "topicId": "chem-spectra",
+    "tier": 3,
+    "question": "In the Bohr model, why do atoms only absorb or emit specific (quantized) wavelengths of light rather than a continuous range?",
+    "choices": ["Electrons can only occupy specific, fixed energy levels, so only specific energy jumps (and wavelengths) are possible", "Electrons can absorb any amount of energy", "Atoms have no energy levels", "Photons always carry the same amount of energy"],
+    "answerIndex": 0,
+    "explanation": "Since electrons are restricted to discrete energy levels, the possible differences between levels — and therefore the possible photon energies and wavelengths — are also discrete (quantized)."
+  },
+  {
+    "id": "chem-spectra-t4-q1",
+    "topicId": "chem-spectra",
+    "tier": 4,
+    "question": "A hydrogen electron dropping from n=3 to n=2 emits a red photon (part of the Balmer series). If the electron instead dropped from n=4 to n=2, would the emitted photon have more or less energy?",
+    "choices": ["More energy, because the energy gap between n=4 and n=2 is larger", "Less energy, because n=4 is farther from the nucleus", "The same energy, because both transitions end at n=2", "No photon would be emitted"],
+    "answerIndex": 0,
+    "explanation": "The energy gap between n=4 and n=2 is larger than between n=3 and n=2, so dropping from n=4 to n=2 releases a more energetic (higher-frequency, shorter-wavelength) photon."
+  },
+  {
+    "id": "chem-spectra-t4-q2",
+    "topicId": "chem-spectra",
+    "tier": 4,
+    "question": "A heated gas gives off a bright-line emission spectrum at specific wavelengths. If white light is then passed through a cooler sample of the same gas, what would you expect in the resulting absorption spectrum?",
+    "choices": ["Dark lines at the same wavelengths as the emission lines", "Dark lines at completely different wavelengths", "A spectrum with no lines at all", "Bright lines at different wavelengths"],
+    "answerIndex": 0,
+    "explanation": "The same energy level gaps allow the gas to absorb the same wavelengths it can emit, producing dark absorption lines at exactly the same wavelengths as its emission lines."
+  },
+  {
+    "id": "chem-spectra-t4-q3",
+    "topicId": "chem-spectra",
+    "tier": 4,
+    "question": "Which electron transition would produce a photon with a longer wavelength (lower energy)?",
+    "choices": ["An electron dropping from n=3 to n=2 (smaller energy gap)", "An electron dropping from n=5 to n=1 (larger energy gap)", "Both transitions produce the same wavelength", "Wavelength doesn't depend on the size of the energy gap"],
+    "answerIndex": 0,
+    "explanation": "A smaller energy gap releases a less energetic photon, which corresponds to a longer wavelength (since energy and wavelength are inversely related)."
+  },
+  {
+    "id": "chem-spectra-t5-q1",
+    "topicId": "chem-spectra",
+    "tier": 5,
+    "question": "Using E = -13.6/n² eV for hydrogen's energy levels, an electron drops from n=2 (E ≈ -3.4 eV) to n=1 (E = -13.6 eV). How much energy is released as a photon?",
+    "choices": ["10.2 eV", "3.4 eV", "13.6 eV", "17.0 eV"],
+    "answerIndex": 0,
+    "explanation": "Energy released = |E_final - E_initial| = |-13.6 - (-3.4)| = 10.2 eV."
+  },
+  {
+    "id": "chem-spectra-t5-q2",
+    "topicId": "chem-spectra",
+    "tier": 5,
+    "question": "Using E = -13.6/n² eV, what is the energy of hydrogen's n=3 level?",
+    "choices": ["-1.51 eV", "-4.53 eV", "-1.36 eV", "-13.6 eV"],
+    "answerIndex": 0,
+    "explanation": "E = -13.6 / 3² = -13.6 / 9 ≈ -1.51 eV."
+  },
+  {
+    "id": "chem-spectra-t5-q3",
+    "topicId": "chem-spectra",
+    "tier": 5,
+    "question": "An electron drops from n=3 (E ≈ -1.51 eV) to n=2 (E = -3.4 eV). How much energy is released, and what part of the spectrum does this correspond to?",
+    "choices": ["≈1.89 eV, corresponding to the red H-alpha line of hydrogen's visible spectrum", "≈12.09 eV, corresponding to an ultraviolet line", "≈4.91 eV, corresponding to a green line", "≈0 eV — no photon is emitted"],
+    "answerIndex": 0,
+    "explanation": "Energy released = |-3.4 - (-1.51)| ≈ 1.89 eV. This is the famous H-alpha line (≈656 nm, red light) of hydrogen's Balmer series, visible to the naked eye."
+  }
+]

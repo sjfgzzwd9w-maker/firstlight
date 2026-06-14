@@ -29,10 +29,16 @@ export default function Landing() {
           onClick={() => navigate('/learn/math')}
         />
         <SubjectCard
-          emoji="🔬"
-          title="Science"
-          description="Biology: cells, DNA, ecosystems & more"
-          onClick={() => navigate('/learn/science')}
+          emoji="🧬"
+          title="Biology"
+          description="Cells, DNA, genetics, evolution & ecosystems"
+          onClick={() => navigate('/learn/biology')}
+        />
+        <SubjectCard
+          emoji="🧪"
+          title="Chemistry"
+          description="Measurement, atoms, nuclear chemistry & electron configurations"
+          onClick={() => navigate('/learn/chemistry')}
         />
         <SubjectCard
           emoji="💻"

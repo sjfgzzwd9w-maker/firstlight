@@ -1,0 +1,542 @@
+[
+  {
+    "id": "chem-metric-measurement-t1-q1",
+    "topicId": "chem-metric-measurement",
+    "tier": 1,
+    "question": "What is the base unit of length in the metric system?",
+    "choices": ["Meter", "Liter", "Gram", "Second"],
+    "answerIndex": 0,
+    "explanation": "The meter (m) is the base unit of length. Liters measure volume, grams measure mass, and seconds measure time."
+  },
+  {
+    "id": "chem-metric-measurement-t1-q2",
+    "topicId": "chem-metric-measurement",
+    "tier": 1,
+    "question": "Which metric prefix means \"one thousand\"?",
+    "choices": ["Kilo-", "Centi-", "Milli-", "Deci-"],
+    "answerIndex": 0,
+    "explanation": "Kilo- means ×1000 (e.g., 1 kilometer = 1000 meters). Centi- is ×0.01, milli- is ×0.001, and deci- is ×0.1."
+  },
+  {
+    "id": "chem-metric-measurement-t1-q3",
+    "topicId": "chem-metric-measurement",
+    "tier": 1,
+    "question": "Which unit would you use to measure the mass of an apple?",
+    "choices": ["Milligrams", "Grams", "Kilograms", "Metric tons"],
+    "answerIndex": 1,
+    "explanation": "An apple has a mass of roughly 100-200 grams. Milligrams would be far too small a unit, and kilograms or tons are far too large."
+  },
+  {
+    "id": "chem-metric-measurement-t2-q1",
+    "topicId": "chem-metric-measurement",
+    "tier": 2,
+    "question": "How many centimeters are in 1 meter?",
+    "choices": ["10", "100", "1000", "0.01"],
+    "answerIndex": 1,
+    "explanation": "Centi- means 1/100, so there are 100 centimeters in every meter."
+  },
+  {
+    "id": "chem-metric-measurement-t2-q2",
+    "topicId": "chem-metric-measurement",
+    "tier": 2,
+    "question": "Convert 5 kilometers to meters.",
+    "choices": ["0.5 m", "50 m", "500 m", "5000 m"],
+    "answerIndex": 3,
+    "explanation": "1 km = 1000 m, so 5 km × 1000 = 5000 m."
+  },
+  {
+    "id": "chem-metric-measurement-t2-q3",
+    "topicId": "chem-metric-measurement",
+    "tier": 2,
+    "question": "Convert 250 milliliters to liters.",
+    "choices": ["2.5 L", "0.25 L", "25 L", "0.025 L"],
+    "answerIndex": 1,
+    "explanation": "1 L = 1000 mL, so 250 mL ÷ 1000 = 0.25 L."
+  },
+  {
+    "id": "chem-metric-measurement-t3-q1",
+    "topicId": "chem-metric-measurement",
+    "tier": 3,
+    "question": "Convert 3.2 kg to grams.",
+    "choices": ["32 g", "320 g", "3200 g", "32000 g"],
+    "answerIndex": 2,
+    "explanation": "1 kg = 1000 g, so 3.2 kg × 1000 = 3200 g."
+  },
+  {
+    "id": "chem-metric-measurement-t3-q2",
+    "topicId": "chem-metric-measurement",
+    "tier": 3,
+    "question": "Convert 0.045 L to milliliters.",
+    "choices": ["4.5 mL", "45 mL", "450 mL", "0.45 mL"],
+    "answerIndex": 1,
+    "explanation": "1 L = 1000 mL, so 0.045 L × 1000 = 45 mL."
+  },
+  {
+    "id": "chem-metric-measurement-t3-q3",
+    "topicId": "chem-metric-measurement",
+    "tier": 3,
+    "question": "A runner covers 1500 meters. How many kilometers is that?",
+    "choices": ["0.15 km", "1.5 km", "15 km", "150 km"],
+    "answerIndex": 1,
+    "explanation": "1 km = 1000 m, so 1500 m ÷ 1000 = 1.5 km."
+  },
+  {
+    "id": "chem-metric-measurement-t4-q1",
+    "topicId": "chem-metric-measurement",
+    "tier": 4,
+    "question": "Convert 4500 cm to kilometers.",
+    "choices": ["0.045 km", "0.45 km", "4.5 km", "45 km"],
+    "answerIndex": 0,
+    "explanation": "First convert cm to m: 4500 cm ÷ 100 = 45 m. Then convert m to km: 45 m ÷ 1000 = 0.045 km."
+  },
+  {
+    "id": "chem-metric-measurement-t4-q2",
+    "topicId": "chem-metric-measurement",
+    "tier": 4,
+    "question": "Convert 2.3 L to cubic centimeters (cm³).",
+    "choices": ["0.23 cm³", "23 cm³", "230 cm³", "2300 cm³"],
+    "answerIndex": 3,
+    "explanation": "1 mL = 1 cm³, and 1 L = 1000 mL, so 2.3 L = 2300 mL = 2300 cm³."
+  },
+  {
+    "id": "chem-metric-measurement-t4-q3",
+    "topicId": "chem-metric-measurement",
+    "tier": 4,
+    "question": "A container holds 0.0067 m³ of liquid. How many liters is that?",
+    "choices": ["0.67 L", "6.7 L", "67 L", "670 L"],
+    "answerIndex": 1,
+    "explanation": "1 m³ = 1000 L, so 0.0067 m³ × 1000 = 6.7 L."
+  },
+  {
+    "id": "chem-metric-measurement-t5-q1",
+    "topicId": "chem-metric-measurement",
+    "tier": 5,
+    "question": "Convert a speed of 72 km/h to m/s.",
+    "choices": ["7.2 m/s", "20 m/s", "26.7 m/s", "200 m/s"],
+    "answerIndex": 1,
+    "explanation": "72 km/h × (1000 m / 1 km) ÷ (3600 s / 1 h) = 72000 m ÷ 3600 s = 20 m/s."
+  },
+  {
+    "id": "chem-metric-measurement-t5-q2",
+    "topicId": "chem-metric-measurement",
+    "tier": 5,
+    "question": "A box measures 20 cm × 15 cm × 10 cm. What is its volume in liters?",
+    "choices": ["0.3 L", "3 L", "30 L", "300 L"],
+    "answerIndex": 1,
+    "explanation": "Volume = 20 × 15 × 10 = 3000 cm³. Since 1000 cm³ = 1 L, 3000 cm³ = 3 L."
+  },
+  {
+    "id": "chem-metric-measurement-t5-q3",
+    "topicId": "chem-metric-measurement",
+    "tier": 5,
+    "question": "Convert a concentration of 5.5 mg/mL to g/L.",
+    "choices": ["0.0055 g/L", "0.55 g/L", "5.5 g/L", "550 g/L"],
+    "answerIndex": 2,
+    "explanation": "Both mg→g (÷1000) and mL→L (÷1000) cancel out, so a ratio in mg/mL has the same numeric value in g/L: 5.5 mg/mL = 5.5 g/L."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t1-q1",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 1,
+    "question": "Which of these numbers is correctly written in scientific notation?",
+    "choices": ["4.5 × 10³", "45 × 10²", "0.45 × 10⁴", "450 × 10¹"],
+    "answerIndex": 0,
+    "explanation": "In scientific notation, the coefficient must be between 1 and 10 (1 ≤ a < 10). Only 4.5 × 10³ meets that rule."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t1-q2",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 1,
+    "question": "How many significant figures are in the number 250?",
+    "choices": ["1", "2", "3", "4"],
+    "answerIndex": 1,
+    "explanation": "Without a decimal point, trailing zeros are not considered significant, so 250 has 2 significant figures (the 2 and the 5)."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t1-q3",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 1,
+    "question": "In scientific notation, written as a × 10ⁿ, what must be true about the coefficient \"a\"?",
+    "choices": ["1 ≤ a < 10", "0 < a < 1", "a is always a whole number", "a can be any positive number"],
+    "answerIndex": 0,
+    "explanation": "By definition, the coefficient in proper scientific notation is at least 1 but less than 10."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t2-q1",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 2,
+    "question": "Write 0.00056 in scientific notation.",
+    "choices": ["5.6 × 10⁻⁴", "5.6 × 10⁴", "0.56 × 10⁻³", "56 × 10⁻⁵"],
+    "answerIndex": 0,
+    "explanation": "Move the decimal point 4 places to the right to get 5.6, so the exponent is -4: 5.6 × 10⁻⁴."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t2-q2",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 2,
+    "question": "How many significant figures are in the number 3.0500?",
+    "choices": ["2", "3", "4", "5"],
+    "answerIndex": 3,
+    "explanation": "With a decimal point present, all digits including trailing zeros are significant: 3, 0, 5, 0, 0 — that's 5 significant figures."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t2-q3",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 2,
+    "question": "Convert 6.02 × 10²³ to standard (decimal) notation.",
+    "choices": ["602,000,000,000,000,000,000,000", "60,200,000,000,000,000,000,000", "6,020,000,000,000,000,000,000,000", "0.000000000000000000000602"],
+    "answerIndex": 0,
+    "explanation": "Move the decimal point 23 places to the right, adding zeros as needed: 6.02 × 10²³ = 602,000,000,000,000,000,000,000."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t3-q1",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 3,
+    "question": "Multiply (2.0 × 10³) × (3.0 × 10²) and express the result in scientific notation.",
+    "choices": ["6.0 × 10⁵", "6.0 × 10⁶", "6.0 × 10⁴", "0.6 × 10⁵"],
+    "answerIndex": 0,
+    "explanation": "Multiply the coefficients (2.0 × 3.0 = 6.0) and add the exponents (3 + 2 = 5): 6.0 × 10⁵."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t3-q2",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 3,
+    "question": "How many significant figures are in the number 0.00420?",
+    "choices": ["1", "2", "3", "4"],
+    "answerIndex": 2,
+    "explanation": "Leading zeros are never significant, but a trailing zero after a decimal point is significant. So 0.00420 has 3 sig figs: 4, 2, and 0."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t3-q3",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 3,
+    "question": "Round 3.456 × 10⁴ to 2 significant figures.",
+    "choices": ["3.4 × 10⁴", "3.5 × 10⁴", "3.46 × 10⁴", "35 × 10³"],
+    "answerIndex": 1,
+    "explanation": "Keeping 2 sig figs means keeping the 3 and the next digit, rounded based on the following digit (5 rounds up): 3.456 → 3.5 × 10⁴."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t4-q1",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 4,
+    "question": "Divide (8.4 × 10⁶) ÷ (2.1 × 10²) and express the result in scientific notation.",
+    "choices": ["4.0 × 10⁴", "4.0 × 10³", "40 × 10⁴", "4.0 × 10⁸"],
+    "answerIndex": 0,
+    "explanation": "Divide the coefficients (8.4 ÷ 2.1 = 4.0) and subtract the exponents (6 - 2 = 4): 4.0 × 10⁴."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t4-q2",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 4,
+    "question": "Add (3.2 × 10⁴) + (5.0 × 10³) and express the result in scientific notation.",
+    "choices": ["3.7 × 10⁴", "8.2 × 10⁴", "3.25 × 10⁴", "8.2 × 10⁷"],
+    "answerIndex": 0,
+    "explanation": "Rewrite 5.0 × 10³ as 0.50 × 10⁴ so the exponents match. Then add the coefficients: 3.2 + 0.50 = 3.7, giving 3.7 × 10⁴."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t4-q3",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 4,
+    "question": "A sample has a mass of 12.50 g and a volume of 2.5 mL. Calculate its density with the correct number of significant figures.",
+    "choices": ["5.0 g/mL", "5.00 g/mL", "5 g/mL", "5.000 g/mL"],
+    "answerIndex": 0,
+    "explanation": "12.50 ÷ 2.5 = 5.0. In multiplication/division, the answer is limited by the value with the fewest sig figs — 2.5 has only 2, so the answer rounds to 5.0 g/mL."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t5-q1",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 5,
+    "question": "Calculate (4.5 × 10⁻³) × (2.0 × 10⁵) ÷ (3.0 × 10²) and express the result in scientific notation.",
+    "choices": ["3.0 × 10⁰", "3.0 × 10²", "3.0 × 10⁻²", "9.0 × 10⁰"],
+    "answerIndex": 0,
+    "explanation": "Coefficients: (4.5 × 2.0) ÷ 3.0 = 3.0. Exponents: -3 + 5 - 2 = 0. Result: 3.0 × 10⁰."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t5-q2",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 5,
+    "question": "A rectangle measures 12.4 cm by 5.2 cm. Calculate its area with the correct number of significant figures.",
+    "choices": ["64 cm²", "64.5 cm²", "64.48 cm²", "60 cm²"],
+    "answerIndex": 0,
+    "explanation": "12.4 × 5.2 = 64.48. Since 5.2 has only 2 sig figs, the answer must be rounded to 2 sig figs: 64 cm²."
+  },
+  {
+    "id": "chem-sci-notation-sigfigs-t5-q3",
+    "topicId": "chem-sci-notation-sigfigs",
+    "tier": 5,
+    "question": "Express 0.0003040 in scientific notation, preserving the correct number of significant figures.",
+    "choices": ["3.040 × 10⁻⁴", "3.04 × 10⁻⁴", "3.040 × 10⁴", "3.04 × 10⁴"],
+    "answerIndex": 0,
+    "explanation": "0.0003040 has 4 significant figures (3, 0, 4, 0 — the trailing zero after the decimal counts). Moving the decimal 4 places gives 3.040 × 10⁻⁴, preserving all 4 sig figs."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t1-q1",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 1,
+    "question": "What is the formula for density?",
+    "choices": ["D = m / V", "D = V / m", "D = m × V", "D = m + V"],
+    "answerIndex": 0,
+    "explanation": "Density is mass divided by volume: D = m / V."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t1-q2",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 1,
+    "question": "Which of these is a common unit for the density of a liquid?",
+    "choices": ["g/mL", "m/s", "mol/L", "°C"],
+    "answerIndex": 0,
+    "explanation": "Density is mass per unit volume, so grams per milliliter (g/mL) is a typical unit for liquids."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t1-q3",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 1,
+    "question": "If an object sinks when placed in water, what does that tell you about its density compared to water (1 g/mL)?",
+    "choices": ["Greater than 1 g/mL", "Less than 1 g/mL", "Exactly 1 g/mL", "Density has no effect on sinking"],
+    "answerIndex": 0,
+    "explanation": "An object sinks in a fluid when its density is greater than the fluid's density. Water has a density of about 1 g/mL."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t2-q1",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 2,
+    "question": "A substance has a mass of 50 g and a volume of 10 mL. What is its density?",
+    "choices": ["0.2 g/mL", "2 g/mL", "5 g/mL", "500 g/mL"],
+    "answerIndex": 2,
+    "explanation": "D = m / V = 50 g ÷ 10 mL = 5 g/mL."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t2-q2",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 2,
+    "question": "An object has a volume of 25 cm³ and a density of 2 g/cm³. What is its mass?",
+    "choices": ["12.5 g", "27 g", "50 g", "100 g"],
+    "answerIndex": 2,
+    "explanation": "Rearranging D = m / V gives m = D × V = 2 g/cm³ × 25 cm³ = 50 g."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t2-q3",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 2,
+    "question": "A liquid has a density of 0.8 g/mL. What is the mass of 100 mL of it?",
+    "choices": ["0.008 g", "8 g", "80 g", "800 g"],
+    "answerIndex": 2,
+    "explanation": "m = D × V = 0.8 g/mL × 100 mL = 80 g."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t3-q1",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 3,
+    "question": "A sample has a mass of 36 g and a density of 4 g/cm³. What is its volume?",
+    "choices": ["0.11 cm³", "9 cm³", "32 cm³", "144 cm³"],
+    "answerIndex": 1,
+    "explanation": "Rearranging D = m / V gives V = m / D = 36 g ÷ 4 g/cm³ = 9 cm³."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t3-q2",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 3,
+    "question": "Convert 5 miles to kilometers, using the conversion factor 1 mile = 1.609 km.",
+    "choices": ["3.11 km", "8.05 km", "5.61 km", "9.65 km"],
+    "answerIndex": 1,
+    "explanation": "5 miles × 1.609 km/mile = 8.045 km, which rounds to 8.05 km."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t3-q3",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 3,
+    "question": "A nurse needs to convert 2.5 mg of medication to micrograms (1 mg = 1000 mcg). How many mcg is that?",
+    "choices": ["0.0025 mcg", "25 mcg", "250 mcg", "2500 mcg"],
+    "answerIndex": 3,
+    "explanation": "2.5 mg × 1000 mcg/mg = 2500 mcg."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t4-q1",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 4,
+    "question": "A car travels at 60 miles per hour. Convert this to km/h (1 mile = 1.609 km).",
+    "choices": ["37.3 km/h", "60 km/h", "96.5 km/h", "193 km/h"],
+    "answerIndex": 2,
+    "explanation": "60 miles/h × 1.609 km/mile = 96.54 km/h, which rounds to about 96.5 km/h."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t4-q2",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 4,
+    "question": "An irregularly shaped object displaces 15.0 mL of water and has a mass of 142.5 g. What is its density?",
+    "choices": ["0.105 g/mL", "9.5 g/mL", "15.8 g/mL", "2137.5 g/mL"],
+    "answerIndex": 1,
+    "explanation": "The displaced water volume equals the object's volume: D = m / V = 142.5 g ÷ 15.0 mL = 9.5 g/mL."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t4-q3",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 4,
+    "question": "How many seconds are in 2.5 days?",
+    "choices": ["3600 s", "86400 s", "216000 s", "129600 s"],
+    "answerIndex": 2,
+    "explanation": "2.5 days × 24 h/day × 3600 s/h = 2.5 × 86400 = 216,000 s."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t5-q1",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 5,
+    "question": "A metal block measures 4.0 cm × 3.0 cm × 2.0 cm and has a mass of 64.8 g. Using the densities below, identify the metal: Aluminum 2.7 g/cm³, Iron 7.9 g/cm³, Lead 11.3 g/cm³, Gold 19.3 g/cm³.",
+    "choices": ["Aluminum (2.7 g/cm³)", "Iron (7.9 g/cm³)", "Lead (11.3 g/cm³)", "Gold (19.3 g/cm³)"],
+    "answerIndex": 0,
+    "explanation": "Volume = 4.0 × 3.0 × 2.0 = 24 cm³. Density = 64.8 g ÷ 24 cm³ = 2.7 g/cm³, which matches aluminum."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t5-q2",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 5,
+    "question": "A medication dosage is 15 mg per kg of body weight. How many mg should be given to a 70 kg patient?",
+    "choices": ["15 mg", "210 mg", "1050 mg", "4.7 mg"],
+    "answerIndex": 2,
+    "explanation": "15 mg/kg × 70 kg = 1050 mg."
+  },
+  {
+    "id": "chem-density-dimensional-analysis-t5-q3",
+    "topicId": "chem-density-dimensional-analysis",
+    "tier": 5,
+    "question": "Convert a speed of 15 m/s to miles per hour (1 mile = 1609 m, 1 hour = 3600 s).",
+    "choices": ["6.7 mph", "15 mph", "33.6 mph", "54 mph"],
+    "answerIndex": 2,
+    "explanation": "15 m/s × 3600 s/h = 54,000 m/h. Then 54,000 m/h ÷ 1609 m/mile ≈ 33.6 mph."
+  },
+  {
+    "id": "chem-matter-classification-t1-q1",
+    "topicId": "chem-matter-classification",
+    "tier": 1,
+    "question": "Which of these is an example of a chemical property?",
+    "choices": ["Flammability", "Color", "Density", "Melting point"],
+    "answerIndex": 0,
+    "explanation": "Flammability describes how a substance reacts (burns) when exposed to heat or flame, which involves a chemical change. Color, density, and melting point can all be observed without changing the substance's identity."
+  },
+  {
+    "id": "chem-matter-classification-t1-q2",
+    "topicId": "chem-matter-classification",
+    "tier": 1,
+    "question": "Which of the following is a physical change?",
+    "choices": ["Melting ice", "Burning wood", "Rusting iron", "Baking a cake"],
+    "answerIndex": 0,
+    "explanation": "Melting ice changes the state of water from solid to liquid, but it's still H₂O — no new substance is formed. The other options all create new substances (chemical changes)."
+  },
+  {
+    "id": "chem-matter-classification-t1-q3",
+    "topicId": "chem-matter-classification",
+    "tier": 1,
+    "question": "What is a pure substance made of only one type of atom called?",
+    "choices": ["Element", "Compound", "Mixture", "Solution"],
+    "answerIndex": 0,
+    "explanation": "An element is a pure substance made of only one type of atom (e.g., oxygen, gold, carbon)."
+  },
+  {
+    "id": "chem-matter-classification-t2-q1",
+    "topicId": "chem-matter-classification",
+    "tier": 2,
+    "question": "Which of the following is a mixture?",
+    "choices": ["Saltwater", "Pure water (H₂O)", "Table salt (NaCl)", "Oxygen gas (O₂)"],
+    "answerIndex": 0,
+    "explanation": "Saltwater is a mixture of salt and water — the two substances are physically combined but not chemically bonded, and can be separated (e.g., by evaporation)."
+  },
+  {
+    "id": "chem-matter-classification-t2-q2",
+    "topicId": "chem-matter-classification",
+    "tier": 2,
+    "question": "Compounds are made of...",
+    "choices": ["Two or more elements chemically combined", "A single type of atom", "Two or more substances physically mixed", "Only metals"],
+    "answerIndex": 0,
+    "explanation": "A compound forms when two or more different elements bond chemically in fixed proportions, like H₂O (hydrogen and oxygen)."
+  },
+  {
+    "id": "chem-matter-classification-t2-q3",
+    "topicId": "chem-matter-classification",
+    "tier": 2,
+    "question": "What type of change occurs when a new substance is formed?",
+    "choices": ["Chemical change", "Physical change", "Phase change", "State change"],
+    "answerIndex": 0,
+    "explanation": "A chemical change rearranges atoms into new substances with different properties. Physical, phase, and state changes affect form but not chemical identity."
+  },
+  {
+    "id": "chem-matter-classification-t3-q1",
+    "topicId": "chem-matter-classification",
+    "tier": 3,
+    "question": "A student dissolves sugar in water. Is this a physical or chemical change?",
+    "choices": ["Physical change — no new substance forms", "Chemical change — a new substance forms", "Neither — nothing changed", "Both — it's a combination change"],
+    "answerIndex": 0,
+    "explanation": "Dissolved sugar is still sugar — it can be recovered by evaporating the water. Since no new substance forms and the change is reversible, this is a physical change."
+  },
+  {
+    "id": "chem-matter-classification-t3-q2",
+    "topicId": "chem-matter-classification",
+    "tier": 3,
+    "question": "Which of these is a homogeneous mixture?",
+    "choices": ["Saltwater", "Salad", "Granite", "Oil and water"],
+    "answerIndex": 0,
+    "explanation": "Saltwater has a uniform composition throughout — you can't see separate parts. Salad, granite, and oil-and-water all have visibly distinct components (heterogeneous mixtures)."
+  },
+  {
+    "id": "chem-matter-classification-t3-q3",
+    "topicId": "chem-matter-classification",
+    "tier": 3,
+    "question": "Which property can only be observed by causing a substance to undergo a chemical reaction?",
+    "choices": ["Reactivity with acid", "Density", "Boiling point", "Color"],
+    "answerIndex": 0,
+    "explanation": "Reactivity with acid is a chemical property — you must let the substance react to observe it. Density, boiling point, and color can be observed without changing the substance's identity."
+  },
+  {
+    "id": "chem-matter-classification-t4-q1",
+    "topicId": "chem-matter-classification",
+    "tier": 4,
+    "question": "A piece of iron left outside slowly turns to reddish-brown rust (iron oxide). How should this change be classified?",
+    "choices": ["Chemical change — a new substance (iron oxide) forms", "Physical change — the iron just changes shape", "Phase change — the iron melts", "No change occurs, only the appearance differs"],
+    "answerIndex": 0,
+    "explanation": "Rust (iron oxide) is a different substance from iron, formed by a reaction between iron, oxygen, and water. Forming a new substance with new properties makes this a chemical change."
+  },
+  {
+    "id": "chem-matter-classification-t4-q2",
+    "topicId": "chem-matter-classification",
+    "tier": 4,
+    "question": "\"Iron is attracted to a magnet\" describes what kind of property?",
+    "choices": ["Physical property", "Chemical property", "Both physical and chemical", "Neither — magnetism isn't a property"],
+    "answerIndex": 0,
+    "explanation": "Magnetism can be observed without changing the iron's chemical identity, so it's a physical property."
+  },
+  {
+    "id": "chem-matter-classification-t4-q3",
+    "topicId": "chem-matter-classification",
+    "tier": 4,
+    "question": "Which of these is a heterogeneous mixture?",
+    "choices": ["Salad", "Saltwater", "Air", "Sugar water"],
+    "answerIndex": 0,
+    "explanation": "A salad has visibly distinct ingredients distributed unevenly — that's a heterogeneous mixture. Saltwater, air, and sugar water are all uniform (homogeneous) mixtures, or solutions."
+  },
+  {
+    "id": "chem-matter-classification-t5-q1",
+    "topicId": "chem-matter-classification",
+    "tier": 5,
+    "question": "Which sequence correctly orders matter from simplest to most complex?",
+    "choices": ["Atom → compound → mixture", "Mixture → compound → atom", "Compound → atom → mixture", "Atom → mixture → compound"],
+    "answerIndex": 0,
+    "explanation": "Atoms are the basic building blocks. Atoms of different elements can bond to form compounds, and compounds (or elements) can be physically combined to form mixtures."
+  },
+  {
+    "id": "chem-matter-classification-t5-q2",
+    "topicId": "chem-matter-classification",
+    "tier": 5,
+    "question": "A student burns a wooden splint; it turns to ash and releases gas. What evidence indicates a chemical change occurred?",
+    "choices": ["New substances (ash and gas) form and the change can't be reversed", "The splint gets shorter", "The splint's color looks different in the light", "The splint feels warm to the touch"],
+    "answerIndex": 0,
+    "explanation": "The formation of new substances with different properties (ash, carbon dioxide, water vapor) that cannot simply be reversed back into wood is the key sign of a chemical change."
+  },
+  {
+    "id": "chem-matter-classification-t5-q3",
+    "topicId": "chem-matter-classification",
+    "tier": 5,
+    "question": "Which statement is TRUE about a pure substance?",
+    "choices": ["It has a fixed composition and constant properties like melting point", "It can be separated into its parts using only physical means", "Its composition varies from sample to sample", "It always contains more than one element"],
+    "answerIndex": 0,
+    "explanation": "Pure substances (elements and compounds) have a fixed, definite composition, giving them constant physical properties such as a specific melting or boiling point. Mixtures, by contrast, can be separated physically and vary in composition."
+  }
+]

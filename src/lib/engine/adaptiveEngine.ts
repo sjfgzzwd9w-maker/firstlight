@@ -4,6 +4,9 @@ import mathQuestionBank from './questionBank.algebra2.json';
 import mathAdvQuestionBank from './questionBank.algebra2adv.json';
 import biologyQuestionBank from './questionBank.biology.json';
 import biology2QuestionBank from './questionBank.biology2.json';
+import chemistry1QuestionBank from './questionBank.chemistry1.json';
+import chemistry2QuestionBank from './questionBank.chemistry2.json';
+import chemistry3QuestionBank from './questionBank.chemistry3.json';
 import python1QuestionBank from './questionBank.python1.json';
 import python2QuestionBank from './questionBank.python2.json';
 import python3QuestionBank from './questionBank.python3.json';
@@ -17,6 +20,9 @@ const BANK = [
   ...(mathAdvQuestionBank as Question[]),
   ...(biologyQuestionBank as Question[]),
   ...(biology2QuestionBank as Question[]),
+  ...(chemistry1QuestionBank as Question[]),
+  ...(chemistry2QuestionBank as Question[]),
+  ...(chemistry3QuestionBank as Question[]),
   ...(python1QuestionBank as Question[]),
   ...(python2QuestionBank as Question[]),
   ...(python3QuestionBank as Question[]),

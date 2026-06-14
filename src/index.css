@@ -16,9 +16,14 @@
   --color-circuit-500: #22d3ee;
   --color-circuit-600: #0891b2;
   --color-circuit-magenta: #f472b6;
+  --color-lab-300: #6ee7b7;
+  --color-lab-400: #34d399;
+  --color-lab-500: #10b981;
+  --color-lab-600: #047857;
   --animate-bounce-slow: bounce-slow 3s ease-in-out infinite;
   --animate-pop: pop 0.4s ease-out;
   --animate-scan: scan 6s linear infinite;
+  --animate-bubble: bubble 9s ease-in-out infinite;
 }
 
 @keyframes bounce-slow {
@@ -53,6 +58,15 @@
   }
 }
 
+@keyframes bubble {
+  0%, 100% {
+    background-position: 0 0, 30px 60px, -20px 120px;
+  }
+  50% {
+    background-position: 0 -40px, 30px 10px, -20px 70px;
+  }
+}
+
 /** Futuristic grid + glow backdrop used by the Robotics module map and lessons. */
 .bg-robotics {
   position: relative;
@@ -81,6 +95,27 @@
 
 .border-glow-circuit {
   box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4), 0 0 24px rgba(34, 211, 238, 0.2);
+}
+
+/** Lab-glassware backdrop with rising bubbles, used by the Chemistry module map and lessons. */
+.bg-lab {
+  position: relative;
+  isolation: isolate;
+  background-color: #06150f;
+  background-image:
+    radial-gradient(circle 10px at 20% 100%, rgba(52, 211, 153, 0.25), transparent 70%),
+    radial-gradient(circle 6px at 60% 100%, rgba(110, 231, 183, 0.3), transparent 70%),
+    radial-gradient(circle at 50% -10%, rgba(16, 185, 129, 0.35), transparent 55%);
+  background-size: 100% 100%, 100% 100%, 100% 100%;
+  animation: var(--animate-bubble);
+}
+
+.glow-lab {
+  text-shadow: 0 0 8px rgba(52, 211, 153, 0.8), 0 0 18px rgba(16, 185, 129, 0.35);
+}
+
+.border-glow-lab {
+  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.4), 0 0 24px rgba(16, 185, 129, 0.2);
 }
 
 html,

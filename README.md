@@ -1,6 +1,6 @@
 # Stardance Learn
 
-An adaptive learning app for kids and teens (ages 5–18). Pick a subject, answer
+An adaptive learning app for kids and teens (ages 12–18). Pick a subject, answer
 questions, and your guide **Cosmo** adjusts the difficulty as you go — leveling
 you up after a couple of correct answers in a row, or stepping back to give
 you a refresher if things get tricky.

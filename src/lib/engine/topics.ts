@@ -425,10 +425,147 @@ export const ROBOTICS_TOPICS_ALL: Topic[] = [
   ...ROBOTICS_TOPICS_PART4,
 ];
 
+export const CHEMISTRY_TOPICS: Topic[] = [
+  {
+    id: 'chem-metric-measurement',
+    name: 'Metric System & Conversions',
+    description: 'Metric prefixes, base units, and converting between them',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Metric system (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Metric_system' },
+      { label: 'Unit of measurement (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Unit_of_measurement' },
+    ],
+  },
+  {
+    id: 'chem-sci-notation-sigfigs',
+    name: 'Scientific Notation & Significant Figures',
+    description: 'Writing very large or small numbers and counting significant digits',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Scientific notation (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Scientific_notation' },
+      { label: 'Significant figures (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Significant_figures' },
+    ],
+  },
+  {
+    id: 'chem-density-dimensional-analysis',
+    name: 'Density & Dimensional Analysis',
+    description: 'Calculating density and converting units with conversion factors',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Density (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Density' },
+      { label: 'Dimensional analysis (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Dimensional_analysis' },
+    ],
+  },
+  {
+    id: 'chem-matter-classification',
+    name: 'Classifying Matter & Changes',
+    description: 'Physical vs. chemical changes and properties, and the types of matter',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Matter (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Matter' },
+      { label: 'Chemical change (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Chemical_change' },
+    ],
+  },
+];
+
+export const CHEMISTRY_TOPICS_PART2: Topic[] = [
+  {
+    id: 'chem-atomic-history',
+    name: 'History of the Atom',
+    description: 'Atomic models from Dalton to the modern model, plus the Gold Foil and Cathode Ray Tube experiments',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Atomic theory (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Atomic_theory' },
+      { label: "Rutherford's gold foil experiment (Wikipedia)", url: "https://en.wikipedia.org/wiki/Rutherford's_gold_foil_experiment" },
+    ],
+  },
+  {
+    id: 'chem-atomic-structure-isotopes',
+    name: 'Atomic Structure, Numbers & Isotopes',
+    description: 'Protons, neutrons, electrons, atomic number, mass number, and isotopes',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Atom (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Atom' },
+      { label: 'Isotope (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Isotope' },
+    ],
+  },
+  {
+    id: 'chem-nuclear-radioactivity',
+    name: 'Radioactivity & Nuclear Equations',
+    description: 'Alpha, beta and gamma particles, writing nuclear equations, and decay series',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Radioactive decay (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Radioactive_decay' },
+      { label: 'Decay chain (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Decay_chain' },
+    ],
+  },
+  {
+    id: 'chem-half-life',
+    name: 'Half-Life Calculations',
+    description: 'Figuring out how much of a radioactive sample remains after a number of half-lives',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Half-life (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Half-life' },
+      { label: 'Desmos Scientific Calculator', url: 'https://www.desmos.com/scientific' },
+    ],
+  },
+];
+
+export const CHEMISTRY_TOPICS_PART3: Topic[] = [
+  {
+    id: 'chem-orbitals-quantum',
+    name: 'Orbitals & Quantum Numbers',
+    description: 'Types of orbitals (s, p, d, f), orbital numbers, and orbital diagrams',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Atomic orbital (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Atomic_orbital' },
+      { label: 'Quantum number (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Quantum_number' },
+    ],
+  },
+  {
+    id: 'chem-electron-configuration',
+    name: 'Electron Configuration',
+    description: "The Aufbau principle, Hund's rule and Pauli exclusion — writing configurations from the periodic table",
+    subject: 'chemistry',
+    resources: [
+      { label: 'Electron configuration (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Electron_configuration' },
+      { label: 'Aufbau principle (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Aufbau_principle' },
+    ],
+  },
+  {
+    id: 'chem-ion-noble-gas-config',
+    name: 'Ion & Noble Gas Configurations',
+    description: 'Electron configurations for ions and noble-gas shorthand notation',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Electron configuration (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Electron_configuration' },
+      { label: 'Noble gas (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Noble_gas' },
+    ],
+  },
+  {
+    id: 'chem-spectra',
+    name: 'Absorption & Emission Spectra',
+    description: 'How electrons absorb and emit light as they jump between energy levels',
+    subject: 'chemistry',
+    resources: [
+      { label: 'Emission spectrum (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Emission_spectrum' },
+      { label: 'Absorption spectrum (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Absorption_spectrum' },
+    ],
+  },
+];
+
+/** All chemistry topics in learning order, used for the progress sidebar. */
+export const CHEMISTRY_TOPICS_ALL: Topic[] = [
+  ...CHEMISTRY_TOPICS,
+  ...CHEMISTRY_TOPICS_PART2,
+  ...CHEMISTRY_TOPICS_PART3,
+];
+
 export const ALL_TOPICS: Topic[] = [
   ...MATH_TOPICS_ALL,
   ...BIOLOGY_TOPICS,
   ...BIOLOGY_TOPICS_PART2,
+  ...CHEMISTRY_TOPICS_ALL,
   ...PYTHON_TOPICS_ALL,
   ...ROBOTICS_TOPICS_ALL,
 ];
@@ -439,12 +576,14 @@ export const SUBJECT_LABELS: Record<Subject, string> = {
   biology: 'Biology',
   python: 'Python',
   robotics: 'Robotics',
+  chemistry: 'Chemistry',
 };
 
 /** Module-map route to return to (Exit / Continue) for each subject. */
 export const SUBJECT_PATHS: Record<Subject, string> = {
   math: '/learn/math',
-  biology: '/learn/science',
+  biology: '/learn/biology',
   python: '/learn/coding',
   robotics: '/learn/robotics',
+  chemistry: '/learn/chemistry',
 };
