@@ -1,0 +1,592 @@
+[
+  {
+    "id": "solar-system-t1-q1",
+    "topicId": "solar-system",
+    "tier": 1,
+    "question": "How many planets are in our solar system?",
+    "choices": ["7", "8", "9", "10"],
+    "answerIndex": 1,
+    "explanation": "Our solar system has eight planets, from Mercury closest to the Sun out to Neptune."
+  },
+  {
+    "id": "solar-system-t1-q2",
+    "topicId": "solar-system",
+    "tier": 1,
+    "question": "Which planet is closest to the Sun?",
+    "choices": ["Venus", "Earth", "Mercury", "Mars"],
+    "answerIndex": 2,
+    "explanation": "Mercury is the smallest planet and orbits closest to the Sun."
+  },
+  {
+    "id": "solar-system-t2-q1",
+    "topicId": "solar-system",
+    "tier": 2,
+    "question": "Which planet is known as the 'Red Planet'?",
+    "choices": ["Jupiter", "Mars", "Venus", "Saturn"],
+    "answerIndex": 1,
+    "explanation": "Mars appears reddish because its surface is covered in iron oxide (rust) dust."
+  },
+  {
+    "id": "solar-system-t2-q2",
+    "topicId": "solar-system",
+    "tier": 2,
+    "question": "What is Pluto now classified as?",
+    "choices": ["A star", "A planet", "A dwarf planet", "A moon"],
+    "answerIndex": 2,
+    "explanation": "In 2006, Pluto was reclassified as a dwarf planet because it doesn't meet all the criteria of a full planet."
+  },
+  {
+    "id": "solar-system-t3-q1",
+    "topicId": "solar-system",
+    "tier": 3,
+    "question": "Which planet is the largest in our solar system?",
+    "choices": ["Earth", "Saturn", "Jupiter", "Neptune"],
+    "answerIndex": 2,
+    "explanation": "Jupiter is by far the largest planet — it could fit over 1,300 Earths inside it."
+  },
+  {
+    "id": "solar-system-t3-q2",
+    "topicId": "solar-system",
+    "tier": 3,
+    "question": "The asteroid belt is located between which two planets?",
+    "choices": ["Earth and Mars", "Mars and Jupiter", "Jupiter and Saturn", "Neptune and Pluto"],
+    "answerIndex": 1,
+    "explanation": "The asteroid belt is a region of rocky debris orbiting the Sun between Mars and Jupiter."
+  },
+  {
+    "id": "solar-system-t4-q1",
+    "topicId": "solar-system",
+    "tier": 4,
+    "question": "Why does Venus have an extremely hot surface despite not being the closest planet to the Sun?",
+    "choices": [
+      "It has a thick atmosphere of carbon dioxide that traps heat in a strong greenhouse effect",
+      "It is made entirely of lava",
+      "It has no atmosphere at all",
+      "It rotates faster than Earth"
+    ],
+    "answerIndex": 0,
+    "explanation": "Venus's thick CO2 atmosphere traps heat so effectively that its surface is hotter than Mercury's, even though Mercury is closer to the Sun."
+  },
+  {
+    "id": "solar-system-t4-q2",
+    "topicId": "solar-system",
+    "tier": 4,
+    "question": "Which of these is true about the gas giants (Jupiter, Saturn, Uranus, Neptune)?",
+    "choices": [
+      "They have solid rocky surfaces like Earth",
+      "They are made mostly of hydrogen and helium gas with no solid surface to land on",
+      "They are closer to the Sun than Mercury",
+      "They have no moons at all"
+    ],
+    "answerIndex": 1,
+    "explanation": "Gas giants lack a solid surface — they're composed mainly of hydrogen and helium, often with a small dense core."
+  },
+  {
+    "id": "solar-system-t5-q1",
+    "topicId": "solar-system",
+    "tier": 5,
+    "question": "Why do the outer gas giant planets have so many more moons than the inner rocky planets?",
+    "choices": [
+      "They formed farther from the Sun where ice could exist, and their stronger gravity captured many icy/rocky bodies",
+      "Because the inner planets are too small to have any moons at all",
+      "Because moons can only form very close to the Sun",
+      "There's no real reason — it's completely random"
+    ],
+    "answerIndex": 0,
+    "explanation": "Beyond the 'frost line,' more icy material was available to form moons, and the gas giants' immense gravity captured many of these bodies as satellites."
+  },
+  {
+    "id": "solar-system-t5-q2",
+    "topicId": "solar-system",
+    "tier": 5,
+    "question": "The 'frost line' (or snow line) in the early solar system marks the distance from the Sun beyond which:",
+    "choices": [
+      "Water and other compounds could freeze into ice, providing extra solid material for giant planets to form from",
+      "All planets immediately turned into stars",
+      "Nothing in the solar system could exist",
+      "The Sun's gravity had no effect on anything"
+    ],
+    "answerIndex": 0,
+    "explanation": "Beyond the frost line it was cold enough for ices to condense, giving the outer planets much more raw material to grow into giants."
+  },
+  {
+    "id": "moon-phases-t1-q1",
+    "topicId": "moon-phases",
+    "tier": 1,
+    "question": "What causes the different phases of the Moon?",
+    "choices": [
+      "The Moon physically changing shape",
+      "The Moon moving in and out of Earth's shadow every night",
+      "The changing relative positions of the Earth, Moon, and Sun as the Moon orbits Earth",
+      "The Moon spinning faster or slower"
+    ],
+    "answerIndex": 2,
+    "explanation": "As the Moon orbits Earth, we see different amounts of its sunlit half, creating the phases."
+  },
+  {
+    "id": "moon-phases-t1-q2",
+    "topicId": "moon-phases",
+    "tier": 1,
+    "question": "During a 'full moon,' the Moon appears:",
+    "choices": ["Completely dark", "Completely illuminated as seen from Earth", "Half illuminated", "Not visible at all"],
+    "answerIndex": 1,
+    "explanation": "At full moon, Earth is roughly between the Sun and Moon, so we see the Moon's entire sunlit side."
+  },
+  {
+    "id": "moon-phases-t2-q1",
+    "topicId": "moon-phases",
+    "tier": 2,
+    "question": "A 'new moon' occurs when:",
+    "choices": [
+      "The Moon is between the Earth and Sun, with its lit side facing away from Earth",
+      "The Moon is directly behind Earth",
+      "The Moon temporarily disappears and reforms",
+      "The Moon is at its closest point to Earth"
+    ],
+    "answerIndex": 0,
+    "explanation": "At a new moon, the side of the Moon facing Earth is unlit, so the Moon appears invisible from Earth."
+  },
+  {
+    "id": "moon-phases-t2-q2",
+    "topicId": "moon-phases",
+    "tier": 2,
+    "question": "About how long does it take the Moon to go through one complete cycle of phases (new moon to new moon)?",
+    "choices": ["About 1 day", "About 1 week", "About 29.5 days", "About 1 year"],
+    "answerIndex": 2,
+    "explanation": "The Moon takes roughly 29.5 days to go from new moon back to new moon — this cycle is the basis for the word 'month'."
+  },
+  {
+    "id": "moon-phases-t3-q1",
+    "topicId": "moon-phases",
+    "tier": 3,
+    "question": "A solar eclipse occurs when:",
+    "choices": [
+      "The Moon passes between the Sun and Earth, blocking sunlight",
+      "Earth passes between the Sun and Moon",
+      "The Moon turns red",
+      "The Sun goes dark permanently"
+    ],
+    "answerIndex": 0,
+    "explanation": "During a solar eclipse, the Moon blocks all or part of the Sun as seen from parts of Earth."
+  },
+  {
+    "id": "moon-phases-t3-q2",
+    "topicId": "moon-phases",
+    "tier": 3,
+    "question": "A lunar eclipse occurs when:",
+    "choices": [
+      "The Moon blocks the Sun from view",
+      "Earth passes between the Sun and Moon, casting its shadow on the Moon",
+      "The Moon crashes into Earth",
+      "The Sun blocks the Moon's light without Earth being involved"
+    ],
+    "answerIndex": 1,
+    "explanation": "A lunar eclipse happens at full moon, when Earth's shadow falls on the Moon."
+  },
+  {
+    "id": "moon-phases-t4-q1",
+    "topicId": "moon-phases",
+    "tier": 4,
+    "question": "Ocean tides are primarily caused by:",
+    "choices": [
+      "Wind blowing across the ocean surface",
+      "The gravitational pull of the Moon (and to a lesser extent, the Sun) on Earth's water",
+      "Earth's rotation alone, with no outside influence",
+      "Temperature changes in the ocean"
+    ],
+    "answerIndex": 1,
+    "explanation": "The Moon's gravity pulls on Earth's oceans, creating bulges of water that cause high and low tides as Earth rotates."
+  },
+  {
+    "id": "moon-phases-t4-q2",
+    "topicId": "moon-phases",
+    "tier": 4,
+    "question": "'Spring tides' (especially high and low tides) occur when:",
+    "choices": [
+      "It happens to be springtime",
+      "The Sun, Earth, and Moon are roughly aligned, so their gravitational pulls combine",
+      "The Moon is in its first quarter phase only",
+      "Tides are at their weakest point"
+    ],
+    "answerIndex": 1,
+    "explanation": "During new and full moons, the Sun and Moon align with Earth, and their combined gravity produces extra-strong 'spring' tides."
+  },
+  {
+    "id": "moon-phases-t5-q1",
+    "topicId": "moon-phases",
+    "tier": 5,
+    "question": "Why do we always see the same side of the Moon from Earth?",
+    "choices": [
+      "The Moon is tidally locked to Earth, so its rotation period matches its orbital period around Earth",
+      "The Moon doesn't rotate at all",
+      "Earth doesn't rotate, so we always face the same way",
+      "The far side of the Moon doesn't actually exist"
+    ],
+    "answerIndex": 0,
+    "explanation": "Tidal locking means the Moon rotates once on its axis in the same time it takes to orbit Earth once, so the same side always faces us."
+  },
+  {
+    "id": "moon-phases-t5-q2",
+    "topicId": "moon-phases",
+    "tier": 5,
+    "question": "The Moon's orbit is tilted slightly relative to Earth's orbit around the Sun. If it weren't tilted at all, what would happen at every new and full moon?",
+    "choices": [
+      "We would see eclipses (solar at new moon, lunar at full moon) every single month",
+      "The Moon would disappear permanently",
+      "Tides would stop completely",
+      "The Moon would change color permanently"
+    ],
+    "answerIndex": 0,
+    "explanation": "The slight tilt of the Moon's orbit is why eclipses are relatively rare — without it, the Sun, Earth, and Moon would align every month."
+  },
+  {
+    "id": "gravity-orbits-t1-q1",
+    "topicId": "gravity-orbits",
+    "tier": 1,
+    "question": "What force keeps planets orbiting the Sun?",
+    "choices": ["Magnetism", "Gravity", "Wind", "Friction"],
+    "answerIndex": 1,
+    "explanation": "Gravity is the attractive force between masses that keeps planets in orbit around the Sun."
+  },
+  {
+    "id": "gravity-orbits-t1-q2",
+    "topicId": "gravity-orbits",
+    "tier": 1,
+    "question": "An object's 'orbit' is best described as:",
+    "choices": [
+      "A straight-line path away from a planet",
+      "A curved path around another object caused by gravity",
+      "A random path with no pattern",
+      "The spinning of an object on its own axis"
+    ],
+    "answerIndex": 1,
+    "explanation": "An orbit is a repeating curved path one object follows around another due to gravitational attraction."
+  },
+  {
+    "id": "gravity-orbits-t2-q1",
+    "topicId": "gravity-orbits",
+    "tier": 2,
+    "question": "According to Newton, the strength of the gravitational attraction between two objects depends on:",
+    "choices": ["Only their color", "Their masses and the distance between them", "Only their temperature", "Nothing — gravity is the same everywhere"],
+    "answerIndex": 1,
+    "explanation": "Newton's law of gravitation says gravitational force increases with mass and decreases with distance between objects."
+  },
+  {
+    "id": "gravity-orbits-t2-q2",
+    "topicId": "gravity-orbits",
+    "tier": 2,
+    "question": "The Moon orbits Earth instead of flying off into space because:",
+    "choices": [
+      "Earth's gravity continuously pulls the Moon toward it, curving its path into an orbit",
+      "The Moon has no motion of its own",
+      "Space has air resistance that holds it in place",
+      "The Moon is attached to Earth by an invisible cable"
+    ],
+    "answerIndex": 0,
+    "explanation": "The Moon is always 'falling' toward Earth due to gravity, but its sideways motion keeps it from ever hitting the surface, resulting in an orbit."
+  },
+  {
+    "id": "gravity-orbits-t3-q1",
+    "topicId": "gravity-orbits",
+    "tier": 3,
+    "question": "According to Kepler's laws, planets orbit the Sun in paths shaped like:",
+    "choices": ["Perfect circles", "Ellipses (ovals)", "Squares", "Straight lines"],
+    "answerIndex": 1,
+    "explanation": "Kepler discovered that planetary orbits are ellipses with the Sun at one focus, not perfect circles."
+  },
+  {
+    "id": "gravity-orbits-t3-q2",
+    "topicId": "gravity-orbits",
+    "tier": 3,
+    "question": "Kepler's second law states that a planet moves faster in its orbit when it is:",
+    "choices": ["Farther from the Sun", "Closer to the Sun", "Moving at a constant speed always", "Moving away from all other planets"],
+    "answerIndex": 1,
+    "explanation": "Kepler's second law (equal areas in equal times) means a planet speeds up when closer to the Sun and slows down when farther away."
+  },
+  {
+    "id": "gravity-orbits-t4-q1",
+    "topicId": "gravity-orbits",
+    "tier": 4,
+    "question": "An object in a stable orbit around Earth, like the ISS, is constantly:",
+    "choices": [
+      "Falling toward Earth, but moving forward fast enough that it continually misses the surface",
+      "Not affected by gravity at all",
+      "Moving away from Earth at a constant rate",
+      "Held up by air pressure"
+    ],
+    "answerIndex": 0,
+    "explanation": "Orbiting objects are in continuous free-fall — gravity pulls them down, but their forward speed means they keep 'missing' the planet."
+  },
+  {
+    "id": "gravity-orbits-t4-q2",
+    "topicId": "gravity-orbits",
+    "tier": 4,
+    "question": "'Escape velocity' is the speed needed for an object to:",
+    "choices": [
+      "Orbit a planet forever without falling",
+      "Break free of a planet's gravitational pull without further propulsion",
+      "Travel at the speed of light",
+      "Stop moving completely"
+    ],
+    "answerIndex": 1,
+    "explanation": "Escape velocity is the minimum speed an object needs to overcome a planet's gravity and head off into space without further thrust."
+  },
+  {
+    "id": "gravity-orbits-t5-q1",
+    "topicId": "gravity-orbits",
+    "tier": 5,
+    "question": "According to Kepler's third law, how does a planet's orbital period relate to its distance from the Sun?",
+    "choices": [
+      "Planets farther from the Sun have longer orbital periods, following a precise relationship (period squared is proportional to distance cubed)",
+      "All planets take exactly the same time to orbit the Sun",
+      "Planets closer to the Sun take longer to orbit it",
+      "Orbital period has nothing to do with distance from the Sun"
+    ],
+    "answerIndex": 0,
+    "explanation": "Kepler's third law gives a precise mathematical relationship between a planet's orbital period and its average distance from the Sun."
+  },
+  {
+    "id": "gravity-orbits-t5-q2",
+    "topicId": "gravity-orbits",
+    "tier": 5,
+    "question": "A satellite in 'geostationary orbit' appears to stay over the same spot on Earth's surface. Why is this useful, and what does it require?",
+    "choices": [
+      "It's useful for communications and weather satellites, and requires the satellite's orbital period to match Earth's 24-hour rotation at a specific altitude above the equator",
+      "It requires the satellite to have no gravity acting on it",
+      "It's useful because the satellite doesn't move at all in space",
+      "It requires the satellite to orbit the Moon instead of Earth"
+    ],
+    "answerIndex": 0,
+    "explanation": "A geostationary satellite orbits at the exact altitude and speed needed to match Earth's rotation, so it stays above the same location — ideal for communications."
+  },
+  {
+    "id": "stars-stellar-evolution-t1-q1",
+    "topicId": "stars-stellar-evolution",
+    "tier": 1,
+    "question": "What is a star primarily made of?",
+    "choices": ["Rock and metal", "Mostly hydrogen and helium gas", "Ice", "Liquid water"],
+    "answerIndex": 1,
+    "explanation": "Stars are huge balls of mostly hydrogen and helium gas held together by gravity."
+  },
+  {
+    "id": "stars-stellar-evolution-t1-q2",
+    "topicId": "stars-stellar-evolution",
+    "tier": 1,
+    "question": "Our Sun is an example of a:",
+    "choices": ["Planet", "Moon", "Star", "Comet"],
+    "answerIndex": 2,
+    "explanation": "The Sun is a star — a massive, glowing ball of hot gas that produces its own light and heat."
+  },
+  {
+    "id": "stars-stellar-evolution-t2-q1",
+    "topicId": "stars-stellar-evolution",
+    "tier": 2,
+    "question": "Stars produce energy through a process called:",
+    "choices": ["Combustion (burning)", "Nuclear fusion", "Photosynthesis", "Evaporation"],
+    "answerIndex": 1,
+    "explanation": "Inside a star's core, nuclear fusion combines hydrogen nuclei into helium, releasing huge amounts of energy."
+  },
+  {
+    "id": "stars-stellar-evolution-t2-q2",
+    "topicId": "stars-stellar-evolution",
+    "tier": 2,
+    "question": "A star's color is most closely related to its:",
+    "choices": ["Age only", "Size only", "Surface temperature", "Distance from Earth"],
+    "answerIndex": 2,
+    "explanation": "Hotter stars appear blue or white, while cooler stars appear orange or red — color reflects surface temperature."
+  },
+  {
+    "id": "stars-stellar-evolution-t3-q1",
+    "topicId": "stars-stellar-evolution",
+    "tier": 3,
+    "question": "A star like our Sun will eventually become which of these after it runs out of hydrogen fuel?",
+    "choices": ["A black hole", "A red giant, and later a white dwarf", "A neutron star immediately", "A brand new solar system"],
+    "answerIndex": 1,
+    "explanation": "Medium-sized stars like the Sun swell into red giants and eventually shrink into white dwarfs after their fuel runs low."
+  },
+  {
+    "id": "stars-stellar-evolution-t3-q2",
+    "topicId": "stars-stellar-evolution",
+    "tier": 3,
+    "question": "Which of these stars would have the shortest lifespan?",
+    "choices": [
+      "A small, cool red dwarf star",
+      "A massive, hot blue star",
+      "There's no difference — all stars live the same length of time",
+      "A star with no fuel has the longest lifespan"
+    ],
+    "answerIndex": 1,
+    "explanation": "Massive blue stars burn through their fuel very quickly and have much shorter lifespans than small red dwarfs."
+  },
+  {
+    "id": "stars-stellar-evolution-t4-q1",
+    "topicId": "stars-stellar-evolution",
+    "tier": 4,
+    "question": "A 'supernova' is:",
+    "choices": ["The birth of a new star", "A massive explosion marking the death of a massive star", "A type of planet", "A small meteor shower"],
+    "answerIndex": 1,
+    "explanation": "A supernova is a powerful explosion that occurs when a massive star reaches the end of its life."
+  },
+  {
+    "id": "stars-stellar-evolution-t4-q2",
+    "topicId": "stars-stellar-evolution",
+    "tier": 4,
+    "question": "The Hertzsprung-Russell (H-R) diagram plots stars according to their:",
+    "choices": [
+      "Distance and age only",
+      "Temperature (or color) and brightness (luminosity)",
+      "Mass and the color of their moons",
+      "Number of planets orbiting them"
+    ],
+    "answerIndex": 1,
+    "explanation": "The H-R diagram is a key tool in astronomy that compares a star's temperature/color to its luminosity, revealing patterns in stellar life cycles."
+  },
+  {
+    "id": "stars-stellar-evolution-t5-q1",
+    "topicId": "stars-stellar-evolution",
+    "tier": 5,
+    "question": "Why do more massive stars have shorter lifespans than less massive stars, even though they have more fuel to start with?",
+    "choices": [
+      "They burn through their fuel at a dramatically faster rate due to much higher core temperatures and pressures",
+      "They actually start with less fuel than smaller stars",
+      "Mass has no effect on a star's lifespan",
+      "Massive stars don't use nuclear fusion for energy"
+    ],
+    "answerIndex": 0,
+    "explanation": "Massive stars have much higher core pressures and temperatures, causing fusion to proceed far faster — so despite having more fuel, they burn out sooner."
+  },
+  {
+    "id": "stars-stellar-evolution-t5-q2",
+    "topicId": "stars-stellar-evolution",
+    "tier": 5,
+    "question": "After a massive star goes supernova, its core may collapse into a neutron star or, if massive enough, a black hole. What determines which of these forms?",
+    "choices": [
+      "The remaining mass of the collapsed core — above a certain threshold, gravity overcomes even neutron degeneracy pressure, forming a black hole",
+      "The color of the star before it exploded",
+      "Whether the star had any orbiting planets",
+      "The star's distance from Earth"
+    ],
+    "answerIndex": 0,
+    "explanation": "If the leftover core mass is below a certain limit, it forms an extremely dense neutron star; above that limit, gravity wins completely and forms a black hole."
+  },
+  {
+    "id": "light-spectrum-t1-q1",
+    "topicId": "light-spectrum",
+    "tier": 1,
+    "question": "Visible light is just one part of a larger range of energy called the:",
+    "choices": ["Sound spectrum", "Electromagnetic spectrum", "Gravity spectrum", "Color wheel"],
+    "answerIndex": 1,
+    "explanation": "Visible light is a small slice of the electromagnetic spectrum, which also includes radio waves, infrared, ultraviolet, X-rays, and gamma rays."
+  },
+  {
+    "id": "light-spectrum-t1-q2",
+    "topicId": "light-spectrum",
+    "tier": 1,
+    "question": "Which of these is NOT a type of electromagnetic radiation?",
+    "choices": ["Radio waves", "X-rays", "Sound waves", "Infrared"],
+    "answerIndex": 2,
+    "explanation": "Sound waves are mechanical vibrations through matter, not electromagnetic radiation — they can't travel through the vacuum of space."
+  },
+  {
+    "id": "light-spectrum-t2-q1",
+    "topicId": "light-spectrum",
+    "tier": 2,
+    "question": "Telescopes that detect infrared radiation are especially useful for:",
+    "choices": [
+      "Seeing through clouds of dust to detect heat from objects like forming stars",
+      "Detecting sound in space",
+      "Measuring gravity directly",
+      "Detecting only visible light"
+    ],
+    "answerIndex": 0,
+    "explanation": "Infrared light can pass through dust clouds that block visible light, letting astronomers see objects like newly forming stars hidden inside nebulae."
+  },
+  {
+    "id": "light-spectrum-t2-q2",
+    "topicId": "light-spectrum",
+    "tier": 2,
+    "question": "A prism splits white light into a rainbow of colors because:",
+    "choices": [
+      "Different wavelengths (colors) of light bend by different amounts when passing through the prism",
+      "The prism adds color to the light",
+      "White light is colorless until it touches glass",
+      "Prisms remove all color from light"
+    ],
+    "answerIndex": 0,
+    "explanation": "White light is made of many colors/wavelengths, and a prism bends (refracts) each wavelength by a slightly different amount, spreading them apart."
+  },
+  {
+    "id": "light-spectrum-t3-q1",
+    "topicId": "light-spectrum",
+    "tier": 3,
+    "question": "Astronomers can determine what elements a star is made of by studying its:",
+    "choices": ["Size", "Spectrum — the pattern of lines in its light", "The color of its moons", "Magnetic field only"],
+    "answerIndex": 1,
+    "explanation": "Each element absorbs and emits light at specific wavelengths, producing a unique spectral 'fingerprint' that reveals a star's composition."
+  },
+  {
+    "id": "light-spectrum-t3-q2",
+    "topicId": "light-spectrum",
+    "tier": 3,
+    "question": "Which type of electromagnetic wave has the shortest wavelength and highest energy?",
+    "choices": ["Radio waves", "Visible light", "Gamma rays", "Microwaves"],
+    "answerIndex": 2,
+    "explanation": "Gamma rays have the shortest wavelengths and highest energy of all electromagnetic radiation."
+  },
+  {
+    "id": "light-spectrum-t4-q1",
+    "topicId": "light-spectrum",
+    "tier": 4,
+    "question": "The 'redshift' of light from distant galaxies is evidence that:",
+    "choices": [
+      "Those galaxies are literally painted red",
+      "The universe is expanding, and those galaxies are moving away from us",
+      "Light slows down over long distances",
+      "Red is the only color light can be in space"
+    ],
+    "answerIndex": 1,
+    "explanation": "Redshift occurs when light's wavelength stretches as its source moves away — this is key evidence that the universe is expanding."
+  },
+  {
+    "id": "light-spectrum-t4-q2",
+    "topicId": "light-spectrum",
+    "tier": 4,
+    "question": "Why do astronomers use radio telescopes in addition to optical (visible-light) telescopes?",
+    "choices": [
+      "Radio waves can pass through gas and dust clouds that block visible light, revealing otherwise hidden objects",
+      "Radio telescopes are cheaper, and that's the only reason",
+      "Radio waves travel faster than light",
+      "Optical telescopes can't be built on Earth"
+    ],
+    "answerIndex": 0,
+    "explanation": "Radio waves pass through dust and gas that block visible light, letting astronomers study objects like the centers of galaxies that are otherwise hidden."
+  },
+  {
+    "id": "light-spectrum-t5-q1",
+    "topicId": "light-spectrum",
+    "tier": 5,
+    "question": "The Doppler effect, used to detect a star's motion toward or away from us, works because:",
+    "choices": [
+      "The wavelength of light shifts — toward blue if approaching, toward red if receding — due to relative motion between source and observer",
+      "Stars physically change color when they move",
+      "Only sound waves experience this effect, not light",
+      "Motion has no effect on light at all"
+    ],
+    "answerIndex": 0,
+    "explanation": "Just like a siren sounds different as it approaches or moves away, light from a moving source is shifted toward blue (approaching) or red (receding) wavelengths."
+  },
+  {
+    "id": "light-spectrum-t5-q2",
+    "topicId": "light-spectrum",
+    "tier": 5,
+    "question": "Cosmic microwave background radiation, detected across the entire sky, is considered strong evidence for:",
+    "choices": [
+      "The Big Bang theory — it's the leftover afterglow of the early, hot, expanding universe",
+      "The existence of aliens",
+      "A static, unchanging universe",
+      "The Moon's formation"
+    ],
+    "answerIndex": 0,
+    "explanation": "The cosmic microwave background is the faint, ancient radiation left over from the early universe, and its existence strongly supports the Big Bang theory."
+  }
+]

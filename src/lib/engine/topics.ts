@@ -561,6 +561,125 @@ export const CHEMISTRY_TOPICS_ALL: Topic[] = [
   ...CHEMISTRY_TOPICS_PART3,
 ];
 
+export const SPACE_TOPICS: Topic[] = [
+  {
+    id: 'solar-system',
+    name: 'The Solar System',
+    description: 'The Sun, planets, moons, and dwarf planets',
+    subject: 'space',
+    resources: [
+      { label: 'NASA Solar System Exploration', url: 'https://solarsystem.nasa.gov' },
+      { label: 'Solar System (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Solar_System' },
+    ],
+  },
+  {
+    id: 'moon-phases',
+    name: 'The Moon & Lunar Phases',
+    description: 'Phases, eclipses, and tides',
+    subject: 'space',
+    resources: [
+      { label: 'NASA Moon', url: 'https://moon.nasa.gov' },
+      { label: 'Lunar phase (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Lunar_phase' },
+    ],
+  },
+  {
+    id: 'gravity-orbits',
+    name: 'Gravity & Orbits',
+    description: "Kepler's laws, orbits, and how things stay up",
+    subject: 'space',
+    resources: [
+      { label: 'Orbit (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Orbit' },
+      { label: "Kepler's laws (Wikipedia)", url: "https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion" },
+    ],
+  },
+  {
+    id: 'stars-stellar-evolution',
+    name: 'Stars & Stellar Evolution',
+    description: 'How stars are born, live, and die',
+    subject: 'space',
+    resources: [
+      { label: 'NASA: Stars', url: 'https://science.nasa.gov/universe/stars/' },
+      { label: 'Stellar evolution (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Stellar_evolution' },
+    ],
+  },
+  {
+    id: 'light-spectrum',
+    name: 'Light & the Electromagnetic Spectrum',
+    description: 'How astronomers use light to study space',
+    subject: 'space',
+    resources: [
+      { label: 'NASA: Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems/' },
+      { label: 'Electromagnetic spectrum (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Electromagnetic_spectrum' },
+    ],
+  },
+];
+
+export const SPACE_TOPICS_PART2: Topic[] = [
+  {
+    id: 'space-exploration-history',
+    name: 'History of Space Exploration',
+    description: 'From Sputnik to the ISS and beyond',
+    subject: 'space',
+    resources: [
+      { label: 'NASA History', url: 'https://www.nasa.gov/history/' },
+      { label: 'Space exploration (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Space_exploration' },
+    ],
+  },
+  {
+    id: 'rockets-spaceflight',
+    name: 'Rockets & Spaceflight',
+    description: 'How rockets work and reach space',
+    subject: 'space',
+    resources: [
+      { label: 'NASA', url: 'https://www.nasa.gov' },
+      { label: 'Rocket (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Rocket' },
+    ],
+  },
+  {
+    id: 'satellites-technology',
+    name: 'Satellites & Space Technology',
+    description: 'Satellites, telescopes, and GPS',
+    subject: 'space',
+    resources: [
+      { label: 'NASA', url: 'https://www.nasa.gov' },
+      { label: 'Satellite (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Satellite' },
+    ],
+  },
+  {
+    id: 'galaxies-universe',
+    name: 'Galaxies & the Universe',
+    description: 'The Milky Way, galaxy types, and the Big Bang',
+    subject: 'space',
+    resources: [
+      { label: 'NASA: Galaxies', url: 'https://science.nasa.gov/universe/galaxies/' },
+      { label: 'Galaxy (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Galaxy' },
+    ],
+  },
+  {
+    id: 'black-holes-extreme',
+    name: 'Black Holes & Extreme Objects',
+    description: 'Neutron stars, black holes, and extreme gravity',
+    subject: 'space',
+    resources: [
+      { label: 'NASA: Black Holes', url: 'https://science.nasa.gov/universe/black-holes/' },
+      { label: 'Black hole (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Black_hole' },
+    ],
+  },
+  {
+    id: 'exoplanets-life',
+    name: 'Exoplanets & the Search for Life',
+    description: 'Other worlds and the hunt for life beyond Earth',
+    subject: 'space',
+    resources: [
+      { label: 'NASA Exoplanet Exploration', url: 'https://exoplanets.nasa.gov' },
+      { label: 'Exoplanet (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Exoplanet' },
+    ],
+  },
+];
+
+/** All space topics in learning order, used for the progress sidebar. */
+export const SPACE_TOPICS_ALL: Topic[] = [...SPACE_TOPICS, ...SPACE_TOPICS_PART2];
+
 export const ALL_TOPICS: Topic[] = [
   ...MATH_TOPICS_ALL,
   ...BIOLOGY_TOPICS,
@@ -568,6 +687,7 @@ export const ALL_TOPICS: Topic[] = [
   ...CHEMISTRY_TOPICS_ALL,
   ...PYTHON_TOPICS_ALL,
   ...ROBOTICS_TOPICS_ALL,
+  ...SPACE_TOPICS_ALL,
 ];
 
 /** Friendly name used in LLM prompts for each subject. */
@@ -577,6 +697,7 @@ export const SUBJECT_LABELS: Record<Subject, string> = {
   python: 'Python',
   robotics: 'Robotics',
   chemistry: 'Chemistry',
+  space: 'Space Science',
 };
 
 /** Module-map route to return to (Exit / Continue) for each subject. */
@@ -586,4 +707,5 @@ export const SUBJECT_PATHS: Record<Subject, string> = {
   python: '/learn/coding',
   robotics: '/learn/robotics',
   chemistry: '/learn/chemistry',
+  space: '/learn/space',
 };
