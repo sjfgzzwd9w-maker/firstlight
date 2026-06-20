@@ -6,13 +6,27 @@ import ChemistryModuleMap from './routes/ChemistryModuleMap';
 import CodingModuleMap from './routes/CodingModuleMap';
 import RoboticsModuleMap from './routes/RoboticsModuleMap';
 import SpaceModuleMap from './routes/SpaceModuleMap';
+import PhysicsModuleMap from './routes/PhysicsModuleMap';
+import HackathonModuleMap from './routes/HackathonModuleMap';
 import LearnSession from './routes/LearnSession';
+import PracticeSession from './routes/PracticeSession';
 import Profile from './routes/Profile';
 import Settings from './routes/Settings';
 import Notes from './routes/Notes';
 import DreamGaze from './routes/DreamGaze';
+import PomodoroGateway from './components/PomodoroGateway';
+import { SessionProvider } from './context/SessionContext';
+import { useProfile } from './context/ProfileContext';
+import { ALL_TOPICS } from './lib/engine/topics';
 
 function NavBar() {
+  const { profile } = useProfile();
+
+  const totalMissed = ALL_TOPICS.reduce(
+    (sum, t) => sum + (profile.topics[t.id]?.missedIds?.length ?? 0),
+    0,
+  );
+
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     `whitespace-nowrap px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
       isActive ? 'bg-nebula-500 text-white' : 'text-white/70 bg-white/5 hover:bg-white/10 hover:text-white'
@@ -24,6 +38,14 @@ function NavBar() {
         <span aria-hidden="true">✦</span> Stardance Learn
       </NavLink>
       <nav className="flex flex-wrap justify-end gap-2">
+        {totalMissed > 0 && (
+          <NavLink to="/practice" className={linkClass}>
+            🎯 Practice
+            <span className="ml-1.5 inline-flex items-center justify-center h-4 min-w-4 rounded-full bg-star-400 px-1 text-[10px] font-bold text-space-950">
+              {totalMissed}
+            </span>
+          </NavLink>
+        )}
         <NavLink to="/notes" className={linkClass}>
           Notes
         </NavLink>
@@ -43,10 +65,14 @@ function NavBar() {
 
 export default function App() {
   const location = useLocation();
-  const isSession = location.pathname.endsWith('/session');
+  const isSession =
+    location.pathname.endsWith('/session') || location.pathname === '/practice';
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-space-950 via-space-900 to-space-950">
+    <SessionProvider>
+      <PomodoroGateway />
+    {/* Full-page background switches modes: Deep Work (blue-slate) in sessions, Space (purple) everywhere else */}
+    <div className={`min-h-screen flex flex-col ${isSession ? 'bg-deep-work' : 'bg-gradient-to-b from-space-950 via-space-900 to-space-950'}`}>
       {!isSession && <NavBar />}
       <main className="flex-1 flex flex-col">
         <Routes>
@@ -63,6 +89,11 @@ export default function App() {
           <Route path="/learn/robotics/session" element={<LearnSession />} />
           <Route path="/learn/space" element={<SpaceModuleMap />} />
           <Route path="/learn/space/session" element={<LearnSession />} />
+          <Route path="/learn/physics" element={<PhysicsModuleMap />} />
+          <Route path="/learn/physics/session" element={<LearnSession />} />
+          <Route path="/learn/hackathon" element={<HackathonModuleMap />} />
+          <Route path="/learn/hackathon/session" element={<LearnSession />} />
+          <Route path="/practice" element={<PracticeSession />} />
           <Route path="/notes" element={<Notes />} />
           <Route path="/dream-gaze" element={<DreamGaze />} />
           <Route path="/profile" element={<Profile />} />
@@ -70,5 +101,6 @@ export default function App() {
         </Routes>
       </main>
     </div>
+    </SessionProvider>
   );
 }

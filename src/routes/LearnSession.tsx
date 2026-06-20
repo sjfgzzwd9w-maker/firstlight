@@ -5,38 +5,52 @@ import Mascot, { type MascotMood } from '../components/Mascot';
 import QuestionCard from '../components/QuestionCard';
 import LevelUpModal from '../components/LevelUpModal';
 import NoteEditor from '../components/NoteEditor';
+import TeachItBack from '../components/TeachItBack';
 import { useProfile } from '../context/ProfileContext';
+import { useSession } from '../context/SessionContext';
 import { ALL_TOPICS, SUBJECT_LABELS, SUBJECT_PATHS } from '../lib/engine/topics';
-import { createTopicProgress, pickQuestion, placementTier, recordAnswer } from '../lib/engine/adaptiveEngine';
+import { createTopicProgress, pickBestQuestion, placementTier, recordAnswer } from '../lib/engine/adaptiveEngine';
+import { scheduleReview } from '../lib/spaced-repetition';
+import { getReflectPrompt } from '../lib/reflect-prompts';
 import type { Question } from '../types';
 import { isWebGPUAvailable } from '../lib/webllm/client';
 import { explainMistake, generateQuestion, mascotLine } from '../lib/webllm/prompts';
 import { FALLBACK_EXPLANATION_HINT, randomFallbackLine } from '../lib/webllm/fallbacks';
-import { MATH_TRIVIA, BIOLOGY_TRIVIA, PYTHON_TRIVIA, ROBOTICS_TRIVIA, SPACE_TRIVIA, randomTrivia } from '../lib/engine/trivia';
+import {
+  MATH_TRIVIA, BIOLOGY_TRIVIA, CHEMISTRY_TRIVIA, PYTHON_TRIVIA, ROBOTICS_TRIVIA,
+  SPACE_TRIVIA, PHYSICS_TRIVIA, HACKATHON_TRIVIA, randomTrivia,
+} from '../lib/engine/trivia';
 import { speak, stopSpeaking } from '../lib/voice/tts';
 
-type Phase = 'loading' | 'question' | 'feedback';
+// CogniSync: fire Teach It Back every N correct answers in a session
+const TEACHBACK_EVERY = 5;
+// CogniSync: fire a Reflect prompt every N questions answered (mix methods)
+const REFLECT_EVERY = 4;
+
+type Phase = 'loading' | 'question' | 'feedback' | 'reflect' | 'teachback';
 type LevelKind = 'levelUp' | 'levelDown' | 'mastered';
 
 export default function LearnSession() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
   const { profile, updateTopicProgress, setVoiceEnabled } = useProfile();
+  const { tickActivity } = useSession();
 
   const topicId = params.get('topic') ?? ALL_TOPICS[0].id;
   const topic = ALL_TOPICS.find((t) => t.id === topicId) ?? ALL_TOPICS[0];
   const subjectLabel = SUBJECT_LABELS[topic.subject];
   const mapPath = SUBJECT_PATHS[topic.subject];
+
   const topicTrivia =
-    topic.subject === 'biology'
-      ? BIOLOGY_TRIVIA
-      : topic.subject === 'python'
-        ? PYTHON_TRIVIA
-        : topic.subject === 'robotics'
-          ? ROBOTICS_TRIVIA
-          : topic.subject === 'space'
-            ? SPACE_TRIVIA
-            : MATH_TRIVIA;
+    topic.subject === 'biology'    ? BIOLOGY_TRIVIA
+    : topic.subject === 'chemistry' ? CHEMISTRY_TRIVIA
+    : topic.subject === 'python'    ? PYTHON_TRIVIA
+    : topic.subject === 'robotics'  ? ROBOTICS_TRIVIA
+    : topic.subject === 'space'     ? SPACE_TRIVIA
+    : topic.subject === 'physics'   ? PHYSICS_TRIVIA
+    : topic.subject === 'hackathon' ? HACKATHON_TRIVIA
+    : MATH_TRIVIA;
+
   const isRobotics = topic.subject === 'robotics';
   const progress = profile.topics[topicId] ?? createTopicProgress(placementTier(profile.age));
   const webGPU = isWebGPUAvailable();
@@ -53,6 +67,13 @@ export default function LearnSession() {
   const [levelKind, setLevelKind] = useState<LevelKind | null>(null);
   const [levelTier, setLevelTier] = useState(progress.tier);
 
+  // CogniSync counters
+  const [sessionCorrect, setSessionCorrect] = useState(0);   // correct answers this session
+  const [questionsAnswered, setQuestionsAnswered] = useState(0); // total answered this session
+  const [showTeachBack, setShowTeachBack] = useState(false);
+  const [reflectPromptIdx, setReflectPromptIdx] = useState(0);
+  const questionStartRef = useRef<number>(Date.now()); // for tickActivity
+
   const skipRef = useRef<(() => void) | null>(null);
 
   const loadQuestion = useCallback(async () => {
@@ -64,10 +85,11 @@ export default function LearnSession() {
     setMascotMood('thinking');
     setLevelKind(null);
     setCanSkip(false);
+    questionStartRef.current = Date.now();
 
     const current = profile.topics[topicId] ?? createTopicProgress(placementTier(profile.age));
 
-    const seed = pickQuestion(topicId, current.tier, current.answeredIds);
+    const seed = pickBestQuestion(topicId, current.tier, current.answeredIds);
     if (seed) {
       setQuestion(seed);
       setPhase('question');
@@ -106,18 +128,22 @@ export default function LearnSession() {
       setLoadStatus(null);
     }
 
-    const recycled = pickQuestion(topicId, current.tier, [], question?.id);
+    const recycled = pickBestQuestion(topicId, current.tier, [], question?.id);
+    if (!recycled) {
+      // No questions exist for this topic at any tier — go back to module map
+      navigate(mapPath);
+      return;
+    }
     setQuestion(recycled);
     setPhase('question');
   }, [topicId, profile.topics, profile.age, profile.modelSize, webGPU, topic.name, subjectLabel, question]);
 
   useEffect(() => {
     loadQuestion();
-    // Only reload when the chosen topic changes; loadQuestion reads fresh profile state itself.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [topicId]);
 
-  // Rotate a fun fact every few seconds while Cosmo is thinking up a question.
+  // Rotate trivia while loading
   useEffect(() => {
     if (phase !== 'loading') return;
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -130,12 +156,25 @@ export default function LearnSession() {
 
   const handleCheck = () => {
     if (selectedIndex === null || !question) return;
+
+    // CogniSync: tick active time for Pomodoro
+    tickActivity(Date.now() - questionStartRef.current);
+
     const correct = selectedIndex === question.answerIndex;
     const result = recordAnswer(progress, question.id, correct);
-    updateTopicProgress(topicId, result.progress);
 
-    // Show feedback immediately using the seed explanation + a canned mascot
-    // line, so the UI never blocks on the (slow, first-load) LLM call.
+    // CogniSync: spaced repetition — update review schedule after a correct answer
+    const updatedProgress = correct
+      ? scheduleReview(result.progress)
+      : result.progress;
+
+    updateTopicProgress(topicId, updatedProgress);
+
+    const newCorrect = correct ? sessionCorrect + 1 : sessionCorrect;
+    const newAnswered = questionsAnswered + 1;
+    setSessionCorrect(newCorrect);
+    setQuestionsAnswered(newAnswered);
+
     const fallbackExplanation = correct
       ? question.explanation
       : `${question.explanation} ${FALLBACK_EXPLANATION_HINT}`;
@@ -157,7 +196,6 @@ export default function LearnSession() {
       setLevelTier(result.progress.tier);
     }
 
-    // Progressively enhance with a personalized LLM explanation/mascot line, if available.
     if (webGPU) {
       Promise.all([
         mascotLine(profile.modelSize, { event: result.event, age: profile.age, topicName: topic.name, subjectLabel }),
@@ -178,6 +216,11 @@ export default function LearnSession() {
           console.warn('LLM feedback generation failed, keeping fallback text', err);
         });
     }
+
+    // CogniSync: trigger Teach It Back after every TEACHBACK_EVERY correct answers
+    if (correct && newCorrect % TEACHBACK_EVERY === 0) {
+      setShowTeachBack(true);
+    }
   };
 
   const handleContinue = () => {
@@ -188,109 +231,215 @@ export default function LearnSession() {
       navigate(mapPath);
       return;
     }
+
+    // CogniSync: Mix Methods — fire reflect prompt every REFLECT_EVERY questions
+    if (questionsAnswered > 0 && questionsAnswered % REFLECT_EVERY === 0 && !showTeachBack) {
+      setReflectPromptIdx((i) => i + 1);
+      setPhase('reflect');
+      return;
+    }
+
     loadQuestion();
   };
 
-  // Stop any in-progress speech if the learner leaves the session entirely.
+  const handleTeachBackDone = () => {
+    setShowTeachBack(false);
+    // After Teach It Back, check if we also need a reflect before next question
+    loadQuestion();
+  };
+
+  // Stop speech on unmount
   useEffect(() => stopSpeaking, []);
 
+  const reflectPrompt = getReflectPrompt(topic.name, topic.subject, reflectPromptIdx);
+
+  // Derive feedback tone from answer correctness for post-answer UI
+  const wasCorrect = selectedIndex !== null && question !== null && selectedIndex === question.answerIndex;
+
   return (
+    /* App root handles bg-deep-work; Robotics gets its own grid overlay */
     <div className={`flex-1 flex flex-col items-center px-6 py-8 max-w-2xl mx-auto w-full ${isRobotics ? 'bg-robotics' : ''}`}>
-      <div className="flex w-full items-center justify-between text-sm text-white/60">
+      {/* Teach It Back overlay — Action mode (warm amber wake-up) */}
+      {showTeachBack && (
+        <TeachItBack topicName={topic.name} onDone={handleTeachBackDone} />
+      )}
+
+      {/* Header bar — sits above the Deep Work zone */}
+      <div className="flex w-full items-center justify-between text-sm text-deep-text/60">
         <button
           type="button"
-          onClick={() => {
-            stopSpeaking();
-            navigate(mapPath);
-          }}
-          className="hover:text-white"
+          onClick={() => { stopSpeaking(); navigate(mapPath); }}
+          className="hover:text-deep-text"
         >
           ← Exit
         </button>
-        <span className={isRobotics ? 'glow-circuit text-circuit-300' : ''}>
+        <span className={isRobotics ? 'glow-circuit text-circuit-300' : 'text-deep-text/50'}>
           {topic.name} · Tier {progress.tier}/5
         </span>
         <button
           type="button"
-          onClick={() => {
-            if (profile.voiceEnabled) stopSpeaking();
-            setVoiceEnabled(!profile.voiceEnabled);
-          }}
+          onClick={() => { if (profile.voiceEnabled) stopSpeaking(); setVoiceEnabled(!profile.voiceEnabled); }}
           aria-label="Toggle voice"
-          className="hover:text-white"
+          className="hover:text-deep-text"
         >
           {profile.voiceEnabled ? '🔊' : '🔇'}
         </button>
       </div>
 
-      <div className="mt-8 flex flex-1 flex-col items-center gap-6 w-full">
-        <Mascot mood={mascotMood} line={phase === 'feedback' ? mascotMsg : null} />
+      {/* CogniSync: Reflect Phase — analytical, stays in Deep Work palette */}
+      {phase === 'reflect' && (
+        <ReflectPhase
+          prompt={reflectPrompt.prompt}
+          placeholder={reflectPrompt.placeholder}
+          minWords={reflectPrompt.minWords}
+          onDone={loadQuestion}
+        />
+      )}
 
-        {phase === 'loading' && (
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-white/60 text-sm animate-pulse">{loadStatus ?? 'Loading question…'}</p>
-            {trivia && (
-              <div className="max-w-md rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-center">
-                <p className="text-xs font-semibold uppercase tracking-wide text-star-400">Did you know?</p>
-                <p className="mt-2 text-sm text-white/80">{trivia}</p>
-              </div>
-            )}
-            {canSkip && (
+      {phase !== 'reflect' && (
+        <div className="mt-8 flex flex-1 flex-col items-center gap-6 w-full">
+          <Mascot mood={mascotMood} line={phase === 'feedback' ? mascotMsg : null} />
+
+          {phase === 'loading' && (
+            <div className="flex flex-col items-center gap-4">
+              <p className="text-deep-text/50 text-sm animate-pulse">{loadStatus ?? 'Loading question…'}</p>
+              {trivia && (
+                <div className="max-w-md rounded-2xl border border-deep-700 bg-deep-800/80 px-5 py-4 text-center">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-sage-400">Did you know?</p>
+                  <p className="mt-2 text-sm text-deep-text/80">{trivia}</p>
+                </div>
+              )}
+              {canSkip && (
+                <button
+                  type="button"
+                  onClick={() => skipRef.current?.()}
+                  className="text-xs text-sage-400 underline hover:text-sage-300"
+                >
+                  Skip waiting — use a practice question instead
+                </button>
+              )}
+            </div>
+          )}
+
+          {question && phase !== 'loading' && (
+            <QuestionCard
+              question={question}
+              selectedIndex={selectedIndex}
+              revealed={phase === 'feedback'}
+              onSelect={(i) => phase === 'question' && setSelectedIndex(i)}
+              codeMode={topic.subject === 'python'}
+            />
+          )}
+
+          {question && phase !== 'loading' && !question.generated && (
+            <NoteEditor key={question.id} question={question} circuit={isRobotics} />
+          )}
+
+          {/* Feedback explanation — color shifts with answer correctness */}
+          {phase === 'feedback' && (
+            <p className={`max-w-lg text-center text-sm ${wasCorrect ? 'text-comet-300' : 'text-alert-300'}`}>
+              {explanation}
+            </p>
+          )}
+
+          {/* CogniSync: upcoming Teach It Back nudge */}
+          {phase === 'question' && sessionCorrect > 0 && sessionCorrect % TEACHBACK_EVERY !== 0 && (
+            <p className="text-xs text-deep-text/25">
+              {TEACHBACK_EVERY - (sessionCorrect % TEACHBACK_EVERY)} more correct → Teach It Back checkpoint
+            </p>
+          )}
+
+          <div className="mt-2">
+            {phase === 'question' && (
               <button
                 type="button"
-                onClick={() => skipRef.current?.()}
-                className="text-xs text-comet-400 underline hover:text-comet-300"
+                disabled={selectedIndex === null}
+                onClick={handleCheck}
+                className="rounded-full bg-sage-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-sage-400 disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                Skip waiting — use a practice question instead
+                Check answer
+              </button>
+            )}
+            {phase === 'feedback' && !levelKind && (
+              <button
+                type="button"
+                onClick={handleContinue}
+                className="rounded-full bg-sage-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-sage-400"
+              >
+                Next question →
               </button>
             )}
           </div>
-        )}
-
-        {question && phase !== 'loading' && (
-          <QuestionCard
-            question={question}
-            selectedIndex={selectedIndex}
-            revealed={phase === 'feedback'}
-            onSelect={(i) => phase === 'question' && setSelectedIndex(i)}
-            codeMode={topic.subject === 'python'}
-          />
-        )}
-
-        {question && phase !== 'loading' && !question.generated && (
-          <NoteEditor key={question.id} question={question} circuit={isRobotics} />
-        )}
-
-        {phase === 'feedback' && (
-          <p className="max-w-lg text-center text-sm text-white/70">{explanation}</p>
-        )}
-
-        <div className="mt-2">
-          {phase === 'question' && (
-            <button
-              type="button"
-              disabled={selectedIndex === null}
-              onClick={handleCheck}
-              className="rounded-full bg-nebula-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-nebula-400 disabled:opacity-40 disabled:cursor-not-allowed"
-            >
-              Check answer
-            </button>
-          )}
-          {phase === 'feedback' && !levelKind && (
-            <button
-              type="button"
-              onClick={loadQuestion}
-              className="rounded-full bg-nebula-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-nebula-400"
-            >
-              Next question →
-            </button>
-          )}
         </div>
-      </div>
+      )}
 
       {levelKind && (
         <LevelUpModal kind={levelKind} topicName={topic.name} tier={levelTier} onContinue={handleContinue} />
       )}
+    </div>
+  );
+}
+
+// ── CogniSync Reflect Phase (Mix Methods) ────────────────────────────────────
+
+function ReflectPhase({
+  prompt,
+  placeholder,
+  minWords,
+  onDone,
+}: {
+  prompt: string;
+  placeholder: string;
+  minWords: number;
+  onDone: () => void;
+}) {
+  const [text, setText] = useState('');
+  const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+  const canSubmit = wordCount >= minWords;
+
+  return (
+    <div className="mt-8 flex flex-1 flex-col items-center gap-6 w-full max-w-lg">
+      {/* Deep Work mode — analytical reflection stays in cool academic palette */}
+      <div className="w-full rounded-3xl border border-deep-700 bg-deep-800 p-6">
+        <p className="text-xs font-semibold uppercase tracking-wide text-sage-400 mb-1">
+          CogniSync · Mix Methods · Reflect
+        </p>
+        <h2 className="text-base font-bold text-deep-text mb-3">{prompt}</h2>
+        <textarea
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder={placeholder}
+          rows={5}
+          autoFocus
+          className="w-full resize-none rounded-xl border border-deep-700 bg-deep-900/80 p-3 text-sm text-deep-text placeholder:text-deep-text/30 focus:outline-none focus:border-sage-400"
+        />
+        <div className="mt-2 flex items-center justify-between">
+          <span className={`text-xs ${canSubmit ? 'text-sage-400' : 'text-deep-text/30'}`}>
+            {wordCount} / {minWords} words minimum
+          </span>
+        </div>
+      </div>
+
+      <div className="flex gap-3">
+        <button
+          type="button"
+          onClick={onDone}
+          disabled={!canSubmit}
+          className="rounded-full bg-sage-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-sage-400 disabled:opacity-40 disabled:cursor-not-allowed"
+        >
+          Continue →
+        </button>
+        <button
+          type="button"
+          onClick={onDone}
+          className="rounded-full border border-deep-700 px-6 py-3 text-sm text-deep-text/50 hover:text-deep-text"
+        >
+          Skip
+        </button>
+      </div>
+      <p className="text-xs text-deep-text/30 text-center">
+        Reflection helps your brain build connections. No wrong answers — just think out loud.
+      </p>
     </div>
   );
 }

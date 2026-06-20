@@ -31,13 +31,16 @@ export function saveProfile(profile: UserProfile): void {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(profile));
 }
 
-/** Ensure every topic has a progress entry, seeded by the user's age-based placement. */
+/** Ensure every topic has a progress entry and all fields are present (handles old saved data). */
 export function ensureTopicsInitialized(profile: UserProfile): UserProfile {
   const topics = { ...profile.topics };
   let changed = false;
   for (const topic of ALL_TOPICS) {
     if (!topics[topic.id]) {
       topics[topic.id] = createTopicProgress(placementTier(profile.age));
+      changed = true;
+    } else if (!topics[topic.id].missedIds) {
+      topics[topic.id] = { ...topics[topic.id], missedIds: [] };
       changed = true;
     }
   }

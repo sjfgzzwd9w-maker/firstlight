@@ -680,6 +680,194 @@ export const SPACE_TOPICS_PART2: Topic[] = [
 /** All space topics in learning order, used for the progress sidebar. */
 export const SPACE_TOPICS_ALL: Topic[] = [...SPACE_TOPICS, ...SPACE_TOPICS_PART2];
 
+export const PHYSICS_TOPICS: Topic[] = [
+  {
+    id: 'physics-measurement',
+    name: 'Measurement & Scientific Notation',
+    description: 'SI units, significant figures, and scientific notation',
+    subject: 'physics',
+    resources: [
+      { label: 'SI Units (Wikipedia)', url: 'https://en.wikipedia.org/wiki/International_System_of_Units' },
+      { label: 'Scientific notation (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Scientific_notation' },
+    ],
+  },
+  {
+    id: 'kinematics-1d',
+    name: 'Motion in 1D',
+    description: 'Velocity, acceleration, and the kinematic equations',
+    subject: 'physics',
+    resources: [
+      { label: 'Kinematics (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Kinematics' },
+      { label: 'Desmos Calculator', url: 'https://www.desmos.com/calculator' },
+    ],
+  },
+  {
+    id: 'kinematics-2d',
+    name: 'Vectors & Projectile Motion',
+    description: 'Vector components, 2D motion, and projectile trajectories',
+    subject: 'physics',
+    resources: [
+      { label: 'Projectile motion (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Projectile_motion' },
+      { label: 'Desmos Calculator', url: 'https://www.desmos.com/calculator' },
+    ],
+  },
+];
+
+export const PHYSICS_TOPICS_PART2: Topic[] = [
+  {
+    id: 'newtons-laws',
+    name: "Newton's Laws of Motion",
+    description: 'Inertia, F = ma, and action-reaction pairs',
+    subject: 'physics',
+    resources: [
+      { label: "Newton's laws (Wikipedia)", url: 'https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion' },
+      { label: 'PhET Forces Sim', url: 'https://phet.colorado.edu/en/simulations/forces-and-motion-basics' },
+    ],
+  },
+  {
+    id: 'forces-equilibrium',
+    name: 'Friction, Normal Force & Equilibrium',
+    description: 'Static and kinetic friction, free-body diagrams, and balanced forces',
+    subject: 'physics',
+    resources: [
+      { label: 'Friction (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Friction' },
+      { label: 'Mechanical equilibrium (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Mechanical_equilibrium' },
+    ],
+  },
+  {
+    id: 'work-energy-power',
+    name: 'Work, Energy & Power',
+    description: 'Kinetic and potential energy, conservation of energy, and power',
+    subject: 'physics',
+    resources: [
+      { label: 'Conservation of energy (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Conservation_of_energy' },
+      { label: 'PhET Energy Skate Park', url: 'https://phet.colorado.edu/en/simulations/energy-skate-park' },
+    ],
+  },
+  {
+    id: 'momentum-impulse',
+    name: 'Momentum, Impulse & Collisions',
+    description: 'Conservation of momentum, impulse, elastic and inelastic collisions',
+    subject: 'physics',
+    resources: [
+      { label: 'Momentum (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Momentum' },
+      { label: 'PhET Collision Lab', url: 'https://phet.colorado.edu/en/simulations/collision-lab' },
+    ],
+  },
+];
+
+export const PHYSICS_TOPICS_PART3: Topic[] = [
+  {
+    id: 'waves-sound',
+    name: 'Waves & Sound',
+    description: 'Wave properties, interference, the Doppler effect, and resonance',
+    subject: 'physics',
+    resources: [
+      { label: 'Wave (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Wave' },
+      { label: 'PhET Wave Interference', url: 'https://phet.colorado.edu/en/simulations/wave-interference' },
+    ],
+  },
+  {
+    id: 'electricity-circuits',
+    name: 'Electricity & Circuits',
+    description: "Ohm's law, series and parallel circuits, and electric power",
+    subject: 'physics',
+    resources: [
+      { label: "Ohm's law (Wikipedia)", url: 'https://en.wikipedia.org/wiki/Ohm%27s_law' },
+      { label: 'PhET Circuit Construction Kit', url: 'https://phet.colorado.edu/en/simulations/circuit-construction-kit-dc' },
+    ],
+  },
+  {
+    id: 'magnetism',
+    name: 'Magnetism & Electromagnetism',
+    description: 'Magnetic fields, induction, transformers, and motors',
+    subject: 'physics',
+    resources: [
+      { label: 'Electromagnetism (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Electromagnetism' },
+      { label: 'Faraday\'s law (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Faraday%27s_law_of_induction' },
+    ],
+  },
+];
+
+/** All physics topics in learning order, used for the progress sidebar. */
+export const PHYSICS_TOPICS_ALL: Topic[] = [
+  ...PHYSICS_TOPICS,
+  ...PHYSICS_TOPICS_PART2,
+  ...PHYSICS_TOPICS_PART3,
+];
+
+export const HACKATHON_TOPICS: Topic[] = [
+  {
+    id: 'hackathon-beginner-skills',
+    name: 'Skills Every Beginner Needs',
+    description: 'Coding basics, design thinking, and the tools that make you ready',
+    subject: 'hackathon',
+    resources: [
+      { label: 'freeCodeCamp', url: 'https://www.freecodecamp.org' },
+      { label: 'The Odin Project', url: 'https://www.theodinproject.com' },
+    ],
+  },
+  {
+    id: 'hackathon-thinking',
+    name: 'Thinking Like a Problem Solver',
+    description: 'Ideation, breaking down problems, and finding ideas worth building',
+    subject: 'hackathon',
+    resources: [
+      { label: "IDEO Design Thinking", url: 'https://designthinking.ideo.com' },
+      { label: 'Stanford d.school', url: 'https://dschool.stanford.edu' },
+    ],
+  },
+  {
+    id: 'hackathon-mastery',
+    name: 'Mastering Your Skills',
+    description: 'Deliberate practice, building a portfolio, and leveling up fast',
+    subject: 'hackathon',
+    resources: [
+      { label: 'GitHub', url: 'https://github.com' },
+      { label: 'Devpost', url: 'https://devpost.com' },
+    ],
+  },
+];
+
+export const HACKATHON_TOPICS_PART2: Topic[] = [
+  {
+    id: 'hackathon-finding',
+    name: 'Finding Hackathons as a Teen',
+    description: 'MLH, Devpost, school events, and how to search for the right fit',
+    subject: 'hackathon',
+    resources: [
+      { label: 'Major League Hacking (MLH)', url: 'https://mlh.io' },
+      { label: 'Devpost Hackathons', url: 'https://devpost.com/hackathons' },
+    ],
+  },
+  {
+    id: 'hackathon-participating',
+    name: 'How to Participate & Win',
+    description: 'Team formation, ideation sprints, time management, and pitching',
+    subject: 'hackathon',
+    resources: [
+      { label: 'MLH Hackathon Guide', url: 'https://guide.mlh.io' },
+      { label: 'Devpost Tips', url: 'https://info.devpost.com/blog' },
+    ],
+  },
+  {
+    id: 'hackathon-learning',
+    name: 'What to Learn from Every Hackathon',
+    description: 'Retrospectives, turning projects into portfolio pieces, and networking',
+    subject: 'hackathon',
+    resources: [
+      { label: 'GitHub Student Pack', url: 'https://education.github.com/pack' },
+      { label: 'LinkedIn for Students', url: 'https://www.linkedin.com/pulse/topics/student/' },
+    ],
+  },
+];
+
+/** All hackathon topics in learning order. */
+export const HACKATHON_TOPICS_ALL: Topic[] = [
+  ...HACKATHON_TOPICS,
+  ...HACKATHON_TOPICS_PART2,
+];
+
 export const ALL_TOPICS: Topic[] = [
   ...MATH_TOPICS_ALL,
   ...BIOLOGY_TOPICS,
@@ -688,6 +876,8 @@ export const ALL_TOPICS: Topic[] = [
   ...PYTHON_TOPICS_ALL,
   ...ROBOTICS_TOPICS_ALL,
   ...SPACE_TOPICS_ALL,
+  ...PHYSICS_TOPICS_ALL,
+  ...HACKATHON_TOPICS_ALL,
 ];
 
 /** Friendly name used in LLM prompts for each subject. */
@@ -698,6 +888,8 @@ export const SUBJECT_LABELS: Record<Subject, string> = {
   robotics: 'Robotics',
   chemistry: 'Chemistry',
   space: 'Space Science',
+  physics: 'Physics',
+  hackathon: 'Hackathon',
 };
 
 /** Module-map route to return to (Exit / Continue) for each subject. */
@@ -708,4 +900,6 @@ export const SUBJECT_PATHS: Record<Subject, string> = {
   robotics: '/learn/robotics',
   chemistry: '/learn/chemistry',
   space: '/learn/space',
+  physics: '/learn/physics',
+  hackathon: '/learn/hackathon',
 };

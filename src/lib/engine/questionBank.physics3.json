@@ -1,0 +1,457 @@
+[
+  {
+    "id": "waves-sound-t1-q1",
+    "topicId": "waves-sound",
+    "tier": 1,
+    "question": "Which type of wave requires a medium (like air or water) to travel?",
+    "choices": [
+      "Electromagnetic wave",
+      "Mechanical wave",
+      "Light wave",
+      "Radio wave"
+    ],
+    "answerIndex": 1,
+    "explanation": "Mechanical waves — like sound, water waves, and seismic waves — need a medium to travel through. Electromagnetic waves (light, radio, X-rays) can travel through the vacuum of space."
+  },
+  {
+    "id": "waves-sound-t1-q2",
+    "topicId": "waves-sound",
+    "tier": 1,
+    "question": "What is the SI unit of frequency?",
+    "choices": ["Meter", "Second", "Hertz", "Newton"],
+    "answerIndex": 2,
+    "explanation": "Frequency is measured in Hertz (Hz), where 1 Hz = 1 cycle per second. It tells you how many complete wave cycles pass a point each second."
+  },
+  {
+    "id": "waves-sound-t1-q3",
+    "topicId": "waves-sound",
+    "tier": 1,
+    "question": "What is the distance between two consecutive crests (peaks) of a wave called?",
+    "choices": ["Amplitude", "Frequency", "Wavelength", "Period"],
+    "answerIndex": 2,
+    "explanation": "Wavelength (λ) is the distance between two adjacent identical points on a wave — crest to crest or trough to trough. It is measured in meters."
+  },
+  {
+    "id": "waves-sound-t2-q1",
+    "topicId": "waves-sound",
+    "tier": 2,
+    "question": "What is the relationship between wave speed (v), frequency (f), and wavelength (λ)?",
+    "choices": ["v = f + λ", "v = f / λ", "v = f × λ", "v = λ / f"],
+    "answerIndex": 2,
+    "explanation": "The wave equation: v = f × λ. Speed equals frequency times wavelength. If frequency doubles, wavelength halves (for a given medium) so speed stays constant."
+  },
+  {
+    "id": "waves-sound-t2-q2",
+    "topicId": "waves-sound",
+    "tier": 2,
+    "question": "A wave has frequency 5 Hz and wavelength 4 m. What is its speed?",
+    "choices": ["0.8 m/s", "1.25 m/s", "9 m/s", "20 m/s"],
+    "answerIndex": 3,
+    "explanation": "v = f × λ = 5 Hz × 4 m = 20 m/s."
+  },
+  {
+    "id": "waves-sound-t2-q3",
+    "topicId": "waves-sound",
+    "tier": 2,
+    "question": "What does the amplitude of a wave represent?",
+    "choices": [
+      "The speed of the wave",
+      "The number of cycles per second",
+      "The maximum displacement from equilibrium",
+      "The distance between two crests"
+    ],
+    "answerIndex": 2,
+    "explanation": "Amplitude is the maximum displacement from the rest position. For sound, greater amplitude means louder sound; for light, it relates to brightness."
+  },
+  {
+    "id": "waves-sound-t3-q1",
+    "topicId": "waves-sound",
+    "tier": 3,
+    "question": "Sound travels at 340 m/s in air. What is the wavelength of a 680 Hz sound wave?",
+    "choices": ["0.25 m", "0.5 m", "2 m", "4 m"],
+    "answerIndex": 1,
+    "explanation": "λ = v/f = 340/680 = 0.5 m. Middle A on a piano (440 Hz) has a wavelength of about 0.77 m in air."
+  },
+  {
+    "id": "waves-sound-t3-q2",
+    "topicId": "waves-sound",
+    "tier": 3,
+    "question": "When two identical waves meet exactly in phase, the result is:",
+    "choices": [
+      "Destructive interference (cancellation)",
+      "Constructive interference (doubled amplitude)",
+      "Refraction",
+      "Diffraction"
+    ],
+    "answerIndex": 1,
+    "explanation": "When two waves meet in phase (crests align with crests), their amplitudes add — constructive interference. If they are perfectly out of phase (crest meets trough), they cancel — destructive interference."
+  },
+  {
+    "id": "waves-sound-t3-q3",
+    "topicId": "waves-sound",
+    "tier": 3,
+    "question": "The Doppler effect describes the change in observed frequency when:",
+    "choices": [
+      "A wave reflects off a surface",
+      "Two waves overlap",
+      "The source or observer is moving relative to each other",
+      "A wave bends around a corner"
+    ],
+    "answerIndex": 2,
+    "explanation": "The Doppler effect: when a sound source moves toward you, waves compress and frequency (pitch) appears higher. When it moves away, frequency appears lower — heard as the classic 'eeeeow' of a passing car."
+  },
+  {
+    "id": "waves-sound-t4-q1",
+    "topicId": "waves-sound",
+    "tier": 4,
+    "question": "A guitar string vibrates at fundamental frequency f. If the string tension is increased to 4 times its original value, the new frequency is:",
+    "choices": ["f/2", "f", "2f", "4f"],
+    "answerIndex": 2,
+    "explanation": "Frequency is proportional to the square root of tension: f ∝ √T. Quadrupling the tension: new f = f × √4 = 2f. Tightening guitar strings raises their pitch."
+  },
+  {
+    "id": "waves-sound-t4-q2",
+    "topicId": "waves-sound",
+    "tier": 4,
+    "question": "An open pipe resonates at its fundamental frequency of 340 Hz (sound speed = 340 m/s). What is the pipe's length?",
+    "choices": ["0.25 m", "0.5 m", "1 m", "2 m"],
+    "answerIndex": 1,
+    "explanation": "For an open pipe, L = λ/2 at the fundamental. λ = v/f = 340/340 = 1 m. So L = 1/2 = 0.5 m."
+  },
+  {
+    "id": "waves-sound-t4-q3",
+    "topicId": "waves-sound",
+    "tier": 4,
+    "question": "A 100 dB sound has how many times the intensity of an 80 dB sound?",
+    "choices": ["2 times", "20 times", "100 times", "1000 times"],
+    "answerIndex": 2,
+    "explanation": "Every 10 dB increase means 10× the intensity. From 80 dB to 100 dB is a 20 dB increase → 10² = 100 times the intensity. Decibels are logarithmic!"
+  },
+  {
+    "id": "waves-sound-t5-q1",
+    "topicId": "waves-sound",
+    "tier": 5,
+    "question": "A train moving toward you at 34 m/s sounds a 1000 Hz horn (sound speed = 340 m/s). What frequency do you hear?",
+    "choices": ["909 Hz", "1000 Hz", "1100 Hz", "1111 Hz"],
+    "answerIndex": 3,
+    "explanation": "Doppler for approaching source: f' = f × v/(v − v_s) = 1000 × 340/(340 − 34) = 1000 × 340/306 ≈ 1111 Hz. The pitch rises as the train approaches."
+  },
+  {
+    "id": "waves-sound-t5-q2",
+    "topicId": "waves-sound",
+    "tier": 5,
+    "question": "A closed-end pipe has its first resonance (fundamental) at 85 Hz (sound speed = 340 m/s). What is its length?",
+    "choices": ["0.5 m", "1 m", "2 m", "4 m"],
+    "answerIndex": 1,
+    "explanation": "For a closed pipe, the fundamental has a node at the closed end and an antinode at the open end: L = λ/4. λ = v/f = 340/85 = 4 m. L = 4/4 = 1 m."
+  },
+  {
+    "id": "waves-sound-t5-q3",
+    "topicId": "waves-sound",
+    "tier": 5,
+    "question": "A standing wave on a string fixed at both ends has exactly 4 antinodes. Which harmonic is this?",
+    "choices": ["2nd harmonic", "3rd harmonic", "4th harmonic", "5th harmonic"],
+    "answerIndex": 2,
+    "explanation": "For a string fixed at both ends, the nth harmonic has n antinodes (and n+1 nodes including endpoints). With 4 antinodes, this is the 4th harmonic (second overtone in some terminologies)."
+  },
+  {
+    "id": "electricity-circuits-t1-q1",
+    "topicId": "electricity-circuits",
+    "tier": 1,
+    "question": "What is electric current?",
+    "choices": [
+      "The amount of charge stored",
+      "The force pushing charges",
+      "The flow of electric charge per unit time",
+      "The resistance of a material"
+    ],
+    "answerIndex": 2,
+    "explanation": "Electric current (I) is the rate of flow of electric charge: I = Q/t. The SI unit is the Ampere (A), where 1 A = 1 Coulomb per second."
+  },
+  {
+    "id": "electricity-circuits-t1-q2",
+    "topicId": "electricity-circuits",
+    "tier": 1,
+    "question": "What is the SI unit of electrical resistance?",
+    "choices": ["Ampere", "Volt", "Ohm (Ω)", "Watt"],
+    "answerIndex": 2,
+    "explanation": "The Ohm (Ω) is the unit of resistance. 1 Ω = 1 V/A. Resistance quantifies how much a material opposes the flow of current."
+  },
+  {
+    "id": "electricity-circuits-t1-q3",
+    "topicId": "electricity-circuits",
+    "tier": 1,
+    "question": "Ohm's Law states:",
+    "choices": ["V = IR", "V = I/R", "V = I + R", "V = I²R"],
+    "answerIndex": 0,
+    "explanation": "Ohm's Law: V = IR (Voltage = Current × Resistance). If you know two of the three quantities, you can find the third. It applies to ohmic (linear) conductors."
+  },
+  {
+    "id": "electricity-circuits-t2-q1",
+    "topicId": "electricity-circuits",
+    "tier": 2,
+    "question": "A circuit has a 12 V battery and a 4 Ω resistor. What is the current?",
+    "choices": ["0.33 A", "3 A", "8 A", "48 A"],
+    "answerIndex": 1,
+    "explanation": "I = V/R = 12/4 = 3 A."
+  },
+  {
+    "id": "electricity-circuits-t2-q2",
+    "topicId": "electricity-circuits",
+    "tier": 2,
+    "question": "Two resistors of 6 Ω and 6 Ω are connected in series. What is the total resistance?",
+    "choices": ["3 Ω", "6 Ω", "12 Ω", "36 Ω"],
+    "answerIndex": 2,
+    "explanation": "Series: R_total = R₁ + R₂ = 6 + 6 = 12 Ω. In series, resistances simply add up."
+  },
+  {
+    "id": "electricity-circuits-t2-q3",
+    "topicId": "electricity-circuits",
+    "tier": 2,
+    "question": "Electrical power consumed by a device is calculated as:",
+    "choices": ["P = V/I", "P = IV", "P = V − I", "P = I/V"],
+    "answerIndex": 1,
+    "explanation": "P = IV (Power = Current × Voltage). Combined with Ohm's Law: P = I²R = V²/R are equivalent forms useful when only two quantities are known."
+  },
+  {
+    "id": "electricity-circuits-t3-q1",
+    "topicId": "electricity-circuits",
+    "tier": 3,
+    "question": "Two resistors of 4 Ω and 12 Ω are connected in parallel. What is the equivalent resistance?",
+    "choices": ["3 Ω", "8 Ω", "16 Ω", "48 Ω"],
+    "answerIndex": 0,
+    "explanation": "1/R = 1/4 + 1/12 = 3/12 + 1/12 = 4/12 → R = 3 Ω. Parallel resistance is always less than the smallest individual resistor."
+  },
+  {
+    "id": "electricity-circuits-t3-q2",
+    "topicId": "electricity-circuits",
+    "tier": 3,
+    "question": "A 60 W light bulb operates at 120 V. What current does it draw?",
+    "choices": ["0.25 A", "0.5 A", "2 A", "7200 A"],
+    "answerIndex": 1,
+    "explanation": "I = P/V = 60/120 = 0.5 A."
+  },
+  {
+    "id": "electricity-circuits-t3-q3",
+    "topicId": "electricity-circuits",
+    "tier": 3,
+    "question": "In a parallel circuit, what is the same across all branches?",
+    "choices": ["Current", "Resistance", "Voltage", "Power"],
+    "answerIndex": 2,
+    "explanation": "In a parallel circuit, all branches share the same voltage (potential difference). The current divides between branches — more current flows through lower-resistance branches."
+  },
+  {
+    "id": "electricity-circuits-t4-q1",
+    "topicId": "electricity-circuits",
+    "tier": 4,
+    "question": "Three resistors (2 Ω, 3 Ω, and 6 Ω) are in parallel across a 12 V battery. What is the total current drawn?",
+    "choices": ["3 A", "6 A", "12 A", "24 A"],
+    "answerIndex": 2,
+    "explanation": "1/R = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1 → R_eq = 1 Ω. I = V/R = 12/1 = 12 A."
+  },
+  {
+    "id": "electricity-circuits-t4-q2",
+    "topicId": "electricity-circuits",
+    "tier": 4,
+    "question": "A 5 Ω and 10 Ω resistor are in series on a 30 V battery. What is the voltage across the 10 Ω resistor?",
+    "choices": ["10 V", "15 V", "20 V", "30 V"],
+    "answerIndex": 2,
+    "explanation": "Total R = 5 + 10 = 15 Ω. Current I = V/R = 30/15 = 2 A. Voltage across 10 Ω: V = IR = 2 × 10 = 20 V. (Voltage divides in proportion to resistance.)"
+  },
+  {
+    "id": "electricity-circuits-t4-q3",
+    "topicId": "electricity-circuits",
+    "tier": 4,
+    "question": "A charge of 0.1 C passes through a point in 0.05 s. What is the electric current?",
+    "choices": ["0.005 A", "0.5 A", "2 A", "5 A"],
+    "answerIndex": 2,
+    "explanation": "I = Q/t = 0.1 C / 0.05 s = 2 A."
+  },
+  {
+    "id": "electricity-circuits-t5-q1",
+    "topicId": "electricity-circuits",
+    "tier": 5,
+    "question": "A battery has emf = 10 V and internal resistance = 0.5 Ω. A 9.5 Ω external resistor is connected. What is the terminal voltage?",
+    "choices": ["9 V", "9.5 V", "10 V", "10.5 V"],
+    "answerIndex": 1,
+    "explanation": "I = emf / (R + r) = 10 / (9.5 + 0.5) = 10/10 = 1 A. Terminal voltage = emf − Ir = 10 − 1 × 0.5 = 9.5 V. Internal resistance always causes some voltage drop."
+  },
+  {
+    "id": "electricity-circuits-t5-q2",
+    "topicId": "electricity-circuits",
+    "tier": 5,
+    "question": "R1 = 3 Ω is in series with a parallel combination of R2 = 4 Ω and R3 = 12 Ω. Battery = 18 V. What is the current through R1?",
+    "choices": ["1 A", "2 A", "3 A", "6 A"],
+    "answerIndex": 2,
+    "explanation": "R_parallel = (4 × 12)/(4 + 12) = 48/16 = 3 Ω. Total R = 3 + 3 = 6 Ω. I = V/R = 18/6 = 3 A. All 3 A flows through the series resistor R1."
+  },
+  {
+    "id": "electricity-circuits-t5-q3",
+    "topicId": "electricity-circuits",
+    "tier": 5,
+    "question": "A 4 µF capacitor is charged to 50 V. What charge is stored on it?",
+    "choices": ["12.5 µC", "46 µC", "200 µC", "2000 µC"],
+    "answerIndex": 2,
+    "explanation": "Q = CV = 4 × 10⁻⁶ F × 50 V = 200 × 10⁻⁶ C = 200 µC. Capacitance (farads) × voltage = charge (coulombs)."
+  },
+  {
+    "id": "magnetism-t1-q1",
+    "topicId": "magnetism",
+    "tier": 1,
+    "question": "What are the two poles of a magnet called?",
+    "choices": ["Positive and negative", "North and south", "East and west", "Alpha and beta"],
+    "answerIndex": 1,
+    "explanation": "Every magnet has a north pole and a south pole. Like poles repel each other; opposite poles attract. You can never isolate a single pole — cutting a magnet always produces two smaller magnets with both poles."
+  },
+  {
+    "id": "magnetism-t1-q2",
+    "topicId": "magnetism",
+    "tier": 1,
+    "question": "Outside a magnet, magnetic field lines run from:",
+    "choices": [
+      "South pole to north pole",
+      "North pole to south pole",
+      "Inside the magnet only",
+      "They have no preferred direction"
+    ],
+    "answerIndex": 1,
+    "explanation": "Magnetic field lines emerge from the north pole, travel through space to the south pole, and continue inside the magnet from south back to north — forming closed loops."
+  },
+  {
+    "id": "magnetism-t1-q3",
+    "topicId": "magnetism",
+    "tier": 1,
+    "question": "Which device converts mechanical energy into electrical energy using electromagnetic induction?",
+    "choices": ["Battery", "Resistor", "Generator", "Capacitor"],
+    "answerIndex": 2,
+    "explanation": "A generator converts kinetic (mechanical) energy into electrical energy using Faraday's Law of induction — a changing magnetic flux induces an EMF. Motors do the reverse."
+  },
+  {
+    "id": "magnetism-t2-q1",
+    "topicId": "magnetism",
+    "tier": 2,
+    "question": "When a current-carrying wire is placed in a magnetic field, it experiences:",
+    "choices": [
+      "No force — only static charges feel magnetic forces",
+      "A force perpendicular to both the current and the field",
+      "A force parallel to the current",
+      "A gravitational pull"
+    ],
+    "answerIndex": 1,
+    "explanation": "A current-carrying wire in a magnetic field experiences a force F = BIL sinθ, perpendicular to both the wire direction and the magnetic field direction. This is the principle behind electric motors."
+  },
+  {
+    "id": "magnetism-t2-q2",
+    "topicId": "magnetism",
+    "tier": 2,
+    "question": "What is the SI unit of magnetic field strength (magnetic flux density)?",
+    "choices": ["Weber", "Tesla", "Henry", "Gauss"],
+    "answerIndex": 1,
+    "explanation": "The Tesla (T) is the SI unit of magnetic flux density (B). 1 T = 1 N/(A·m). Earth's magnetic field is about 50 µT; an MRI machine uses 1.5–3 T."
+  },
+  {
+    "id": "magnetism-t2-q3",
+    "topicId": "magnetism",
+    "tier": 2,
+    "question": "Faraday's Law states that a changing magnetic flux through a coil:",
+    "choices": [
+      "Creates a permanent magnet",
+      "Induces an electromotive force (EMF)",
+      "Reduces the current in the circuit",
+      "Has no electrical effect"
+    ],
+    "answerIndex": 1,
+    "explanation": "Faraday's Law: EMF = −N × ΔΦ/Δt. A changing magnetic flux (dΦ/dt) through a coil induces an EMF (and thus a current if the circuit is closed). This is the foundation of generators and transformers."
+  },
+  {
+    "id": "magnetism-t3-q1",
+    "topicId": "magnetism",
+    "tier": 3,
+    "question": "A 3 m wire carrying 2 A is perpendicular to a 0.5 T magnetic field. What force acts on the wire?",
+    "choices": ["0.33 N", "1 N", "3 N", "6 N"],
+    "answerIndex": 2,
+    "explanation": "F = BIL sinθ = 0.5 × 2 × 3 × sin90° = 3 N. Since the wire is perpendicular to the field, sin90° = 1."
+  },
+  {
+    "id": "magnetism-t3-q2",
+    "topicId": "magnetism",
+    "tier": 3,
+    "question": "Two parallel wires carry current in the same direction. They:",
+    "choices": [
+      "Repel each other",
+      "Attract each other",
+      "Have no effect on each other",
+      "Create an electric field between them"
+    ],
+    "answerIndex": 1,
+    "explanation": "Parallel wires with current in the same direction attract each other; opposite currents repel. The magnetic field of each wire exerts a force on the other's current."
+  },
+  {
+    "id": "magnetism-t3-q3",
+    "topicId": "magnetism",
+    "tier": 3,
+    "question": "A transformer is a device that:",
+    "choices": [
+      "Converts AC to DC",
+      "Stores electrical energy",
+      "Changes the voltage of an AC supply",
+      "Generates electricity from motion"
+    ],
+    "answerIndex": 2,
+    "explanation": "A transformer uses electromagnetic induction to step voltage up or down. It only works with AC because DC produces no changing flux. Step-up transformers increase voltage for long-distance transmission; step-down transformers reduce it for safe home use."
+  },
+  {
+    "id": "magnetism-t4-q1",
+    "topicId": "magnetism",
+    "tier": 4,
+    "question": "A proton (q = 1.6 × 10⁻¹⁹ C) moves at 2 × 10⁶ m/s perpendicular to a 0.3 T field. What is the magnetic force on it?",
+    "choices": ["4.8 × 10⁻¹⁴ N", "9.6 × 10⁻¹⁴ N", "1.9 × 10⁻¹³ N", "3.2 × 10⁻¹⁴ N"],
+    "answerIndex": 1,
+    "explanation": "F = qvB sinθ = 1.6×10⁻¹⁹ × 2×10⁶ × 0.3 × sin90° = 9.6×10⁻¹⁴ N. This force keeps charged particles moving in circles in magnetic fields — the basis of cyclotrons."
+  },
+  {
+    "id": "magnetism-t4-q2",
+    "topicId": "magnetism",
+    "tier": 4,
+    "question": "A 100-turn coil has its magnetic flux change by 0.02 Wb in 0.1 s. What is the induced EMF?",
+    "choices": ["0.02 V", "0.2 V", "2 V", "20 V"],
+    "answerIndex": 3,
+    "explanation": "EMF = N × ΔΦ/Δt = 100 × 0.02/0.1 = 100 × 0.2 = 20 V. More turns and faster flux changes produce larger induced EMFs."
+  },
+  {
+    "id": "magnetism-t4-q3",
+    "topicId": "magnetism",
+    "tier": 4,
+    "question": "A transformer has 200 turns in the primary and 1000 turns in the secondary. If the primary voltage is 120 V, what is the secondary voltage?",
+    "choices": ["24 V", "120 V", "600 V", "6000 V"],
+    "answerIndex": 2,
+    "explanation": "Vs/Vp = Ns/Np → Vs = 120 × (1000/200) = 120 × 5 = 600 V. This is a step-up transformer that increases the voltage by a factor of 5."
+  },
+  {
+    "id": "magnetism-t5-q1",
+    "topicId": "magnetism",
+    "tier": 5,
+    "question": "A solenoid has 500 turns per meter and carries 4 A. What is the magnetic field inside? (µ₀ = 4π × 10⁻⁷ T·m/A)",
+    "choices": ["6.28 × 10⁻⁴ T", "1.26 × 10⁻³ T", "2.51 × 10⁻³ T", "5.03 × 10⁻³ T"],
+    "answerIndex": 2,
+    "explanation": "B = µ₀nI = 4π × 10⁻⁷ × 500 × 4 = 4π × 10⁻⁷ × 2000 ≈ 2.51 × 10⁻³ T. Solenoids create uniform, strong magnetic fields — used in MRI machines and electromagnets."
+  },
+  {
+    "id": "magnetism-t5-q2",
+    "topicId": "magnetism",
+    "tier": 5,
+    "question": "A 10 Ω coil rotating in a magnetic field produces a maximum EMF of 100 V. What is the maximum current?",
+    "choices": ["1 A", "5 A", "10 A", "100 A"],
+    "answerIndex": 2,
+    "explanation": "I_max = EMF_max / R = 100/10 = 10 A. This is how AC generators work — a rotating coil in a magnetic field produces a sinusoidal EMF and current."
+  },
+  {
+    "id": "magnetism-t5-q3",
+    "topicId": "magnetism",
+    "tier": 5,
+    "question": "Two parallel wires 1 m apart each carry 1 A in opposite directions. What is the force per unit length between them? (µ₀ = 4π × 10⁻⁷ T·m/A)",
+    "choices": ["1 × 10⁻⁷ N/m repulsive", "2 × 10⁻⁷ N/m attractive", "2 × 10⁻⁷ N/m repulsive", "4 × 10⁻⁷ N/m attractive"],
+    "answerIndex": 2,
+    "explanation": "F/L = µ₀I₁I₂ / (2πd) = 4π×10⁻⁷ × 1 × 1 / (2π × 1) = 2×10⁻⁷ N/m. Opposite currents → repulsion. Same currents → attraction. This force defines the Ampere!"
+  }
+]

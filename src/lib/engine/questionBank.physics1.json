@@ -1,0 +1,427 @@
+[
+  {
+    "id": "physics-measurement-t1-q1",
+    "topicId": "physics-measurement",
+    "tier": 1,
+    "question": "What is the SI base unit of length?",
+    "choices": ["Centimeter", "Foot", "Meter", "Kilometer"],
+    "answerIndex": 2,
+    "explanation": "The meter (m) is the SI base unit of length. Centimeters and kilometers are derived from it, while feet are part of the imperial system."
+  },
+  {
+    "id": "physics-measurement-t1-q2",
+    "topicId": "physics-measurement",
+    "tier": 1,
+    "question": "What is the SI base unit of mass?",
+    "choices": ["Gram", "Pound", "Kilogram", "Ounce"],
+    "answerIndex": 2,
+    "explanation": "The kilogram (kg) is the SI base unit of mass. Note that unlike other SI units, the kilogram already has a prefix in its name — the gram alone is NOT the base unit."
+  },
+  {
+    "id": "physics-measurement-t1-q3",
+    "topicId": "physics-measurement",
+    "tier": 1,
+    "question": "Which of the following is a base SI unit of time?",
+    "choices": ["Minute", "Hour", "Millisecond", "Second"],
+    "answerIndex": 3,
+    "explanation": "The second (s) is the SI base unit of time. Minutes and hours are derived multiples, while milliseconds are sub-multiples — but the base unit is the second."
+  },
+  {
+    "id": "physics-measurement-t2-q1",
+    "topicId": "physics-measurement",
+    "tier": 2,
+    "question": "What does the metric prefix 'kilo-' mean?",
+    "choices": ["100", "1000", "0.001", "0.01"],
+    "answerIndex": 1,
+    "explanation": "Kilo- means 1000 (10³). So 1 kilometer = 1000 meters and 1 kilogram = 1000 grams."
+  },
+  {
+    "id": "physics-measurement-t2-q2",
+    "topicId": "physics-measurement",
+    "tier": 2,
+    "question": "Convert 3.5 km to meters.",
+    "choices": ["350 m", "3500 m", "35,000 m", "0.0035 m"],
+    "answerIndex": 1,
+    "explanation": "1 km = 1000 m, so 3.5 km × 1000 m/km = 3500 m."
+  },
+  {
+    "id": "physics-measurement-t2-q3",
+    "topicId": "physics-measurement",
+    "tier": 2,
+    "question": "How many centimeters are in 1 meter?",
+    "choices": ["10", "1000", "100", "0.01"],
+    "answerIndex": 2,
+    "explanation": "The prefix centi- means 10⁻², so 1 m = 100 cm. Alternatively, 1 cm = 0.01 m."
+  },
+  {
+    "id": "physics-measurement-t3-q1",
+    "topicId": "physics-measurement",
+    "tier": 3,
+    "question": "How many significant figures does the number 0.0450 have?",
+    "choices": ["1", "2", "3", "4"],
+    "answerIndex": 2,
+    "explanation": "Zeros before nonzero digits are not significant (placeholders). The digits 4, 5, and the trailing 0 after the decimal point are all significant — giving 3 significant figures."
+  },
+  {
+    "id": "physics-measurement-t3-q2",
+    "topicId": "physics-measurement",
+    "tier": 3,
+    "question": "Express 6,700,000 in correct scientific notation.",
+    "choices": ["67 × 10⁵", "6.7 × 10⁵", "6.7 × 10⁶", "0.67 × 10⁷"],
+    "answerIndex": 2,
+    "explanation": "Scientific notation requires one nonzero digit before the decimal: 6,700,000 = 6.7 × 10⁶. Option D is not in proper scientific notation (coefficient must be ≥ 1 and < 10)."
+  },
+  {
+    "id": "physics-measurement-t3-q3",
+    "topicId": "physics-measurement",
+    "tier": 3,
+    "question": "A measurement is recorded as 12.0 cm. How many significant figures does it have?",
+    "choices": ["1", "2", "3", "4"],
+    "answerIndex": 2,
+    "explanation": "All three digits (1, 2, and the trailing zero after the decimal point) are significant. Trailing zeros after a decimal point are always significant — they indicate the precision of the measurement."
+  },
+  {
+    "id": "physics-measurement-t4-q1",
+    "topicId": "physics-measurement",
+    "tier": 4,
+    "question": "Speed has units of distance/time. What are its SI units?",
+    "choices": ["km/h", "cm/s", "m/s", "m/s²"],
+    "answerIndex": 2,
+    "explanation": "In SI, distance is in meters (m) and time is in seconds (s), so the SI unit of speed is m/s (meters per second). m/s² is the unit of acceleration, not speed."
+  },
+  {
+    "id": "physics-measurement-t4-q2",
+    "topicId": "physics-measurement",
+    "tier": 4,
+    "question": "Which number has the most significant figures?",
+    "choices": ["3.00", "3.0", "300", "0.003"],
+    "answerIndex": 0,
+    "explanation": "3.00 has three significant figures (the trailing zeros after the decimal are significant). 3.0 has two, 300 has only 1 (ambiguous without a decimal point), and 0.003 has just 1."
+  },
+  {
+    "id": "physics-measurement-t4-q3",
+    "topicId": "physics-measurement",
+    "tier": 4,
+    "question": "Convert 0.00035 km to centimeters.",
+    "choices": ["0.35 cm", "3.5 cm", "35 cm", "350 cm"],
+    "answerIndex": 2,
+    "explanation": "0.00035 km × 1000 m/km = 0.35 m. Then 0.35 m × 100 cm/m = 35 cm."
+  },
+  {
+    "id": "physics-measurement-t5-q1",
+    "topicId": "physics-measurement",
+    "tier": 5,
+    "question": "Add 12.11 g + 18.0 g and express the answer with the correct number of significant figures.",
+    "choices": ["30 g", "30.1 g", "30.11 g", "30.110 g"],
+    "answerIndex": 1,
+    "explanation": "When adding, the result is limited by the least precise decimal place. 12.11 goes to the hundredths; 18.0 only goes to the tenths. So the answer rounds to the tenths: 30.11 → 30.1 g."
+  },
+  {
+    "id": "physics-measurement-t5-q2",
+    "topicId": "physics-measurement",
+    "tier": 5,
+    "question": "Which correctly expresses 0.000450 in scientific notation?",
+    "choices": ["4.5 × 10⁻⁴", "4.50 × 10⁻⁴", "45.0 × 10⁻⁵", "4.50 × 10⁴"],
+    "answerIndex": 1,
+    "explanation": "0.000450 = 4.50 × 10⁻⁴. The trailing zero must be kept because it's significant (the measurement is known to 3 sig figs). 45.0 × 10⁻⁵ is not in proper scientific notation."
+  },
+  {
+    "id": "physics-measurement-t5-q3",
+    "topicId": "physics-measurement",
+    "tier": 5,
+    "question": "A density of 8960 kg/m³ is to be converted to g/cm³. What is the result?",
+    "choices": ["0.896 g/cm³", "8.96 g/cm³", "89.6 g/cm³", "8960 g/cm³"],
+    "answerIndex": 1,
+    "explanation": "1 kg = 1000 g and 1 m³ = 10⁶ cm³. So 8960 kg/m³ × (1000 g/kg) ÷ (10⁶ cm³/m³) = 8960 × 10⁻³ g/cm³ = 8.96 g/cm³. This is the density of copper!"
+  },
+  {
+    "id": "kinematics-1d-t1-q1",
+    "topicId": "kinematics-1d",
+    "tier": 1,
+    "question": "What is the difference between distance and displacement?",
+    "choices": [
+      "Distance includes direction; displacement does not",
+      "Displacement is always larger than distance",
+      "Displacement includes direction; distance does not",
+      "They are the same thing"
+    ],
+    "answerIndex": 2,
+    "explanation": "Distance is a scalar — it measures how far an object traveled along its path. Displacement is a vector — it measures the straight-line change in position, including direction."
+  },
+  {
+    "id": "kinematics-1d-t1-q2",
+    "topicId": "kinematics-1d",
+    "tier": 1,
+    "question": "A car travels 60 m in 12 seconds at constant speed. What is its speed?",
+    "choices": ["5 m/s", "10 m/s", "0.2 m/s", "720 m/s"],
+    "answerIndex": 0,
+    "explanation": "Speed = distance ÷ time = 60 m ÷ 12 s = 5 m/s."
+  },
+  {
+    "id": "kinematics-1d-t1-q3",
+    "topicId": "kinematics-1d",
+    "tier": 1,
+    "question": "Which of these is a vector quantity?",
+    "choices": ["Speed", "Distance", "Velocity", "Time"],
+    "answerIndex": 2,
+    "explanation": "Velocity is a vector — it has both magnitude (speed) and direction (e.g., 20 m/s north). Speed, distance, and time are all scalar quantities with no direction."
+  },
+  {
+    "id": "kinematics-1d-t2-q1",
+    "topicId": "kinematics-1d",
+    "tier": 2,
+    "question": "A runner increases speed from 0 to 6 m/s in 3 seconds. What is their acceleration?",
+    "choices": ["0.5 m/s²", "2 m/s²", "18 m/s²", "3 m/s²"],
+    "answerIndex": 1,
+    "explanation": "Acceleration = Δv ÷ Δt = (6 − 0) m/s ÷ 3 s = 2 m/s²."
+  },
+  {
+    "id": "kinematics-1d-t2-q2",
+    "topicId": "kinematics-1d",
+    "tier": 2,
+    "question": "An object starts from rest and accelerates at 5 m/s² for 4 seconds. What is its final speed?",
+    "choices": ["1.25 m/s", "9 m/s", "20 m/s", "80 m/s"],
+    "answerIndex": 2,
+    "explanation": "v = v₀ + at = 0 + 5 × 4 = 20 m/s."
+  },
+  {
+    "id": "kinematics-1d-t2-q3",
+    "topicId": "kinematics-1d",
+    "tier": 2,
+    "question": "What does the slope of a velocity-time graph represent?",
+    "choices": ["Speed", "Distance", "Acceleration", "Displacement"],
+    "answerIndex": 2,
+    "explanation": "The slope of a velocity-time (v-t) graph is Δv/Δt, which is the definition of acceleration. The area under the graph represents displacement."
+  },
+  {
+    "id": "kinematics-1d-t3-q1",
+    "topicId": "kinematics-1d",
+    "tier": 3,
+    "question": "A car starts from rest and accelerates at 2 m/s² over a distance of 25 m. What is its final speed?",
+    "choices": ["5 m/s", "7.07 m/s", "10 m/s", "50 m/s"],
+    "answerIndex": 2,
+    "explanation": "Using v² = v₀² + 2as: v² = 0 + 2(2)(25) = 100, so v = 10 m/s."
+  },
+  {
+    "id": "kinematics-1d-t3-q2",
+    "topicId": "kinematics-1d",
+    "tier": 3,
+    "question": "An object moving at 20 m/s decelerates at 4 m/s². How long does it take to stop?",
+    "choices": ["2 s", "5 s", "80 s", "0.2 s"],
+    "answerIndex": 1,
+    "explanation": "v = v₀ + at → 0 = 20 − 4t → t = 20/4 = 5 s. The negative sign on acceleration means it opposes the motion."
+  },
+  {
+    "id": "kinematics-1d-t3-q3",
+    "topicId": "kinematics-1d",
+    "tier": 3,
+    "question": "What physical quantity does the area under a velocity-time graph represent?",
+    "choices": ["Speed", "Acceleration", "Displacement", "Force"],
+    "answerIndex": 2,
+    "explanation": "The area under a v-t graph is (velocity × time), which equals displacement. This is a key graphical interpretation in kinematics."
+  },
+  {
+    "id": "kinematics-1d-t4-q1",
+    "topicId": "kinematics-1d",
+    "tier": 4,
+    "question": "A ball is thrown straight upward at 20 m/s. How high does it go? (g = 10 m/s²)",
+    "choices": ["10 m", "20 m", "40 m", "200 m"],
+    "answerIndex": 1,
+    "explanation": "At maximum height, v = 0. Using v² = v₀² − 2gh: 0 = 400 − 2(10)h → h = 400/20 = 20 m."
+  },
+  {
+    "id": "kinematics-1d-t4-q2",
+    "topicId": "kinematics-1d",
+    "tier": 4,
+    "question": "An object falls from rest. After 3 seconds (g = 10 m/s²), how far has it fallen?",
+    "choices": ["15 m", "30 m", "45 m", "90 m"],
+    "answerIndex": 2,
+    "explanation": "s = v₀t + ½gt² = 0 + ½(10)(3²) = 5 × 9 = 45 m."
+  },
+  {
+    "id": "kinematics-1d-t4-q3",
+    "topicId": "kinematics-1d",
+    "tier": 4,
+    "question": "A train slows from 30 m/s to 10 m/s over a distance of 200 m. What is its acceleration?",
+    "choices": ["−2 m/s²", "−1 m/s²", "2 m/s²", "−4 m/s²"],
+    "answerIndex": 0,
+    "explanation": "v² = v₀² + 2as → 100 = 900 + 2a(200) → 400a = −800 → a = −2 m/s². The negative sign confirms it is decelerating."
+  },
+  {
+    "id": "kinematics-1d-t5-q1",
+    "topicId": "kinematics-1d",
+    "tier": 5,
+    "question": "A car traveling at 25 m/s brakes with deceleration 3 m/s². What is its minimum stopping distance?",
+    "choices": ["83 m", "96 m", "104 m", "125 m"],
+    "answerIndex": 2,
+    "explanation": "Using v² = v₀² + 2as with v = 0: 0 = 625 − 2(3)s → s = 625/6 ≈ 104 m."
+  },
+  {
+    "id": "kinematics-1d-t5-q2",
+    "topicId": "kinematics-1d",
+    "tier": 5,
+    "question": "A ball is dropped from height h and hits the ground after time t. If dropped from height 4h, how long does it take?",
+    "choices": ["t/2", "t", "2t", "4t"],
+    "answerIndex": 2,
+    "explanation": "h = ½gt² so t = √(2h/g). Doubling the height under the square root means t scales as √(4h/h) = 2 — so it takes 2t."
+  },
+  {
+    "id": "kinematics-1d-t5-q3",
+    "topicId": "kinematics-1d",
+    "tier": 5,
+    "question": "An object has initial velocity 25 m/s and constant acceleration −5 m/s². At what time does it momentarily stop and reverse direction?",
+    "choices": ["2 s", "3 s", "5 s", "7 s"],
+    "answerIndex": 2,
+    "explanation": "v = v₀ + at → 0 = 25 − 5t → t = 5 s. At this moment the velocity crosses zero; the object then accelerates back in the negative direction."
+  },
+  {
+    "id": "kinematics-2d-t1-q1",
+    "topicId": "kinematics-2d",
+    "tier": 1,
+    "question": "What defines a vector quantity?",
+    "choices": [
+      "It has magnitude only",
+      "It has both magnitude and direction",
+      "It can only be positive",
+      "It is always measured in meters"
+    ],
+    "answerIndex": 1,
+    "explanation": "A vector has both magnitude (size) and direction. Displacement, velocity, and force are vectors. Scalars like speed, distance, and mass have magnitude only."
+  },
+  {
+    "id": "kinematics-2d-t1-q2",
+    "topicId": "kinematics-2d",
+    "tier": 1,
+    "question": "A ball is launched horizontally from a cliff. Which component of its motion remains constant (ignoring air resistance)?",
+    "choices": [
+      "Vertical speed",
+      "Horizontal speed",
+      "Total speed",
+      "Downward acceleration"
+    ],
+    "answerIndex": 1,
+    "explanation": "In projectile motion, gravity only acts vertically. The horizontal component of velocity is constant because there is no horizontal force. Only horizontal speed stays the same."
+  },
+  {
+    "id": "kinematics-2d-t1-q3",
+    "topicId": "kinematics-2d",
+    "tier": 1,
+    "question": "Which of these is a vector quantity?",
+    "choices": ["Distance", "Speed", "Temperature", "Displacement"],
+    "answerIndex": 3,
+    "explanation": "Displacement is a vector — it specifies both how far and in what direction from the starting point. Distance, speed, and temperature are all scalar quantities."
+  },
+  {
+    "id": "kinematics-2d-t2-q1",
+    "topicId": "kinematics-2d",
+    "tier": 2,
+    "question": "What is the acceleration due to gravity near Earth's surface?",
+    "choices": ["9.8 m/s²", "9.4 m/s²", "10.2 m/s²", "8.9 m/s²"],
+    "answerIndex": 0,
+    "explanation": "g ≈ 9.8 m/s² downward near Earth's surface. Many physics problems round this to 10 m/s² for simpler calculation, but the standard value is 9.8 m/s²."
+  },
+  {
+    "id": "kinematics-2d-t2-q2",
+    "topicId": "kinematics-2d",
+    "tier": 2,
+    "question": "In projectile motion (ignoring air resistance), which force acts on the projectile after launch?",
+    "choices": [
+      "A horizontal push forward",
+      "Gravity only",
+      "Gravity and the launch force",
+      "No forces"
+    ],
+    "answerIndex": 1,
+    "explanation": "Once a projectile is launched, only gravity acts on it (ignoring air resistance). The launch force is only applied during the throw — it does not continue pushing the object through the air."
+  },
+  {
+    "id": "kinematics-2d-t2-q3",
+    "topicId": "kinematics-2d",
+    "tier": 2,
+    "question": "At what launch angle does a projectile achieve maximum range on level ground?",
+    "choices": ["30°", "45°", "60°", "90°"],
+    "answerIndex": 1,
+    "explanation": "Range = v²sin(2θ)/g. This is maximized when sin(2θ) = 1, i.e., 2θ = 90°, so θ = 45°. Complementary angles (30° and 60°) give the same range."
+  },
+  {
+    "id": "kinematics-2d-t3-q1",
+    "topicId": "kinematics-2d",
+    "tier": 3,
+    "question": "A ball rolls off a 20 m cliff horizontally at 15 m/s (g = 10 m/s²). How long does it take to hit the ground?",
+    "choices": ["1 s", "2 s", "3 s", "4 s"],
+    "answerIndex": 1,
+    "explanation": "Vertical fall: h = ½gt² → 20 = ½(10)t² → t² = 4 → t = 2 s. The horizontal velocity has no effect on the time to fall."
+  },
+  {
+    "id": "kinematics-2d-t3-q2",
+    "topicId": "kinematics-2d",
+    "tier": 3,
+    "question": "Using the previous scenario (cliff 20 m, speed 15 m/s, t = 2 s), how far from the base of the cliff does the ball land?",
+    "choices": ["10 m", "15 m", "30 m", "45 m"],
+    "answerIndex": 2,
+    "explanation": "Horizontal distance = v_x × t = 15 × 2 = 30 m. Horizontal motion is uniform (no horizontal acceleration), so it's simply speed × time."
+  },
+  {
+    "id": "kinematics-2d-t3-q3",
+    "topicId": "kinematics-2d",
+    "tier": 3,
+    "question": "A velocity vector of magnitude 10 m/s points at 30° above the horizontal. What is its horizontal component?",
+    "choices": ["5.0 m/s", "7.1 m/s", "8.7 m/s", "10 m/s"],
+    "answerIndex": 2,
+    "explanation": "Horizontal component = v × cos(30°) = 10 × (√3/2) ≈ 8.66 m/s ≈ 8.7 m/s. The vertical component would be v × sin(30°) = 5 m/s."
+  },
+  {
+    "id": "kinematics-2d-t4-q1",
+    "topicId": "kinematics-2d",
+    "tier": 4,
+    "question": "A projectile is launched at 60° with speed 20 m/s (g = 10 m/s²). What is the maximum height?",
+    "choices": ["10 m", "12 m", "15 m", "20 m"],
+    "answerIndex": 2,
+    "explanation": "v_y = 20 sin60° = 20 × (√3/2) = 17.3 m/s. At max height, v_y = 0. Using v² = v_y² − 2gh: 0 = 300 − 20h → h = 15 m."
+  },
+  {
+    "id": "kinematics-2d-t4-q2",
+    "topicId": "kinematics-2d",
+    "tier": 4,
+    "question": "Vector A has magnitude 5 pointing north. Vector B has magnitude 12 pointing east. What is the magnitude of A + B?",
+    "choices": ["7", "13", "17", "60"],
+    "answerIndex": 1,
+    "explanation": "Since the vectors are perpendicular, use the Pythagorean theorem: |A + B| = √(5² + 12²) = √(25 + 144) = √169 = 13."
+  },
+  {
+    "id": "kinematics-2d-t4-q3",
+    "topicId": "kinematics-2d",
+    "tier": 4,
+    "question": "A projectile is launched at 45° with speed 20 m/s (g = 10 m/s²). What is its range?",
+    "choices": ["20 m", "30 m", "40 m", "80 m"],
+    "answerIndex": 2,
+    "explanation": "Range R = v²sin(2θ)/g = (400 × sin90°)/10 = 400/10 = 40 m. At 45°, sin(2 × 45°) = sin(90°) = 1, giving the maximum range."
+  },
+  {
+    "id": "kinematics-2d-t5-q1",
+    "topicId": "kinematics-2d",
+    "tier": 5,
+    "question": "A ball is thrown at 25 m/s at 37° above horizontal (sin37° = 0.6, cos37° = 0.8, g = 10 m/s²). What is its total time of flight?",
+    "choices": ["2 s", "2.5 s", "3 s", "5 s"],
+    "answerIndex": 2,
+    "explanation": "v_y = 25 × 0.6 = 15 m/s. Time to peak: t_up = v_y/g = 1.5 s. Total time = 2 × t_up = 3 s (symmetrical flight, landing at same height as launch)."
+  },
+  {
+    "id": "kinematics-2d-t5-q2",
+    "topicId": "kinematics-2d",
+    "tier": 5,
+    "question": "Using the same ball (25 m/s at 37°, time of flight = 3 s), what is the horizontal range?",
+    "choices": ["30 m", "45 m", "60 m", "75 m"],
+    "answerIndex": 2,
+    "explanation": "v_x = 25 × cos37° = 25 × 0.8 = 20 m/s. Range = v_x × t = 20 × 3 = 60 m."
+  },
+  {
+    "id": "kinematics-2d-t5-q3",
+    "topicId": "kinematics-2d",
+    "tier": 5,
+    "question": "A river flows east at 3 m/s. A boat points north at 4 m/s relative to the water. What is the boat's speed relative to the ground?",
+    "choices": ["3.5 m/s", "4 m/s", "5 m/s", "7 m/s"],
+    "answerIndex": 2,
+    "explanation": "The river current and boat velocity are perpendicular, so use the Pythagorean theorem: v = √(3² + 4²) = √(9 + 16) = √25 = 5 m/s. The boat travels northeast at 5 m/s relative to the ground."
+  }
+]

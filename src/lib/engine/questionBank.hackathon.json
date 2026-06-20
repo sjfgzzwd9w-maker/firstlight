@@ -1,0 +1,542 @@
+[
+  {
+    "id": "hackathon-beginner-skills-t1-q1",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 1,
+    "question": "What does MVP stand for in the context of a hackathon?",
+    "choices": ["Most Valuable Programmer", "Minimum Viable Product", "Maximum Visual Prototype", "Mobile Video Platform"],
+    "answerIndex": 1,
+    "explanation": "MVP stands for Minimum Viable Product — the simplest version of your idea that still works and solves the core problem. Building an MVP first lets you demo something real in limited time."
+  },
+  {
+    "id": "hackathon-beginner-skills-t1-q2",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 1,
+    "question": "Which of these is the best first programming language for a hackathon beginner?",
+    "choices": ["Assembly", "Python", "C++", "COBOL"],
+    "answerIndex": 1,
+    "explanation": "Python is beginner-friendly, has massive libraries for web, AI, and data, and lets you prototype fast — making it ideal for first-time hackers."
+  },
+  {
+    "id": "hackathon-beginner-skills-t1-q3",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 1,
+    "question": "What is a 'tech stack'?",
+    "choices": ["A pile of broken computers", "The combination of tools and languages used to build your project", "A type of hackathon prize", "A team of only technical people"],
+    "answerIndex": 1,
+    "explanation": "Your tech stack is the set of technologies you use — for example, Python + Flask + SQLite. Choosing a familiar, simple stack early saves time during a hackathon."
+  },
+  {
+    "id": "hackathon-beginner-skills-t1-q4",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 1,
+    "question": "What should a beginner focus on MOST before attending their first hackathon?",
+    "choices": ["Memorizing algorithms", "Building small projects to practice", "Learning every framework available", "Watching hackathon highlight videos"],
+    "answerIndex": 1,
+    "explanation": "Building small projects is the single best prep. It trains you to go from idea to working code under uncertainty, which is exactly what hackathons demand."
+  },
+  {
+    "id": "hackathon-beginner-skills-t2-q1",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 2,
+    "question": "A teammate suggests spending the first 3 hours perfecting the app's design. What is the better approach?",
+    "choices": ["Agree — first impressions matter most to judges", "Build the core feature first, then polish the design", "Skip design entirely and focus only on backend", "Ask the organizers what judges prefer"],
+    "answerIndex": 1,
+    "explanation": "At a hackathon you build core function first, then layer on polish. Spending 3 hours on design before anything works is a common beginner mistake that leaves no time to finish."
+  },
+  {
+    "id": "hackathon-beginner-skills-t2-q2",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 2,
+    "question": "You have 24 hours. Which skill combination makes a team most flexible?",
+    "choices": ["Deep expertise in one obscure framework", "Coding + basic design + clear communication", "Marketing only — ideas matter more than code", "Hardware skills only"],
+    "answerIndex": 1,
+    "explanation": "Teams that can code something, make it look decent, and explain it clearly win consistently. Communication matters especially during the final pitch."
+  },
+  {
+    "id": "hackathon-beginner-skills-t2-q3",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 2,
+    "question": "What does it mean to 'scope down' your hackathon project?",
+    "choices": ["Delete all your code and start over", "Cut features to only what's essential so you can finish on time", "Make the app work on smaller screens", "Reduce your team size"],
+    "answerIndex": 1,
+    "explanation": "Scoping down means trimming your ambition to what's actually buildable in the time available. Finishing a small idea beats half-building a big one every time."
+  },
+  {
+    "id": "hackathon-beginner-skills-t3-q1",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 3,
+    "question": "Why is version control (Git) considered an essential skill for hackathon beginners?",
+    "choices": ["It makes code run faster", "It lets teammates work simultaneously without overwriting each other", "It automatically fixes bugs", "It generates project ideas"],
+    "answerIndex": 1,
+    "explanation": "Without Git, teammates working on the same file will overwrite each other's changes. Even a basic 'git commit / git push / git pull' workflow prevents hours of lost work."
+  },
+  {
+    "id": "hackathon-beginner-skills-t3-q2",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 3,
+    "question": "A beginner feels overwhelmed by the number of frameworks and tools available. What is the best mindset?",
+    "choices": ["Learn every tool so you're ready for anything", "Pick one familiar tool and use it deeply rather than skimming many", "Only use tools that judges are known to like", "Avoid tools — write everything from scratch"],
+    "answerIndex": 1,
+    "explanation": "Tool overload is a trap. One tool you know well beats five you've read about. Confidence and speed come from depth, not breadth."
+  },
+  {
+    "id": "hackathon-beginner-skills-t3-q3",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 3,
+    "question": "Why do experienced hackers recommend using APIs instead of building everything from scratch?",
+    "choices": ["APIs are always free", "APIs let you add powerful features in minutes, saving hours of build time", "Judges prefer projects that use APIs", "APIs make code easier to read"],
+    "answerIndex": 1,
+    "explanation": "An API (like a weather service, maps, or AI model) gives you a complex capability in a few lines of code. In a 24-hour event, leveraging APIs is how small teams build impressive projects."
+  },
+  {
+    "id": "hackathon-thinking-t1-q1",
+    "topicId": "hackathon-thinking",
+    "tier": 1,
+    "question": "What is 'brainstorming'?",
+    "choices": ["Studying a problem for a long time before sharing ideas", "Generating many ideas quickly without judging them", "Arguing about which idea is best", "Reading other teams' project plans"],
+    "answerIndex": 1,
+    "explanation": "Brainstorming is a creativity technique where you generate as many ideas as possible without criticism. Judgment comes later — the goal is quantity first."
+  },
+  {
+    "id": "hackathon-thinking-t1-q2",
+    "topicId": "hackathon-thinking",
+    "tier": 1,
+    "question": "What is the 'problem statement' in a hackathon?",
+    "choices": ["A list of rules from the organizers", "A clear description of the problem your project will solve", "The name of your project", "A complaint about the hackathon theme"],
+    "answerIndex": 1,
+    "explanation": "A problem statement pins down exactly what you're solving and for whom. Strong teams write this down first — it keeps everyone aligned and helps judges understand your 'why.'"
+  },
+  {
+    "id": "hackathon-thinking-t1-q3",
+    "topicId": "hackathon-thinking",
+    "tier": 1,
+    "question": "What should your team do FIRST when a hackathon theme is announced?",
+    "choices": ["Start coding immediately", "Understand who is affected by the problem before jumping to solutions", "Look up last year's winning project", "Divide the team and work on separate ideas"],
+    "answerIndex": 1,
+    "explanation": "Understanding the people behind the problem — who they are, what they need, what frustrates them — leads to better ideas than jumping straight to technology."
+  },
+  {
+    "id": "hackathon-thinking-t1-q4",
+    "topicId": "hackathon-thinking",
+    "tier": 1,
+    "question": "What does 'user empathy' mean during ideation?",
+    "choices": ["Feeling sorry for your users", "Thinking about the problem from the perspective of the people it affects", "Testing your app on real users during the hackathon", "Writing detailed user manuals"],
+    "answerIndex": 1,
+    "explanation": "Empathy means stepping into your user's shoes to understand their frustrations and goals. Projects built with empathy solve real pain points instead of imaginary ones."
+  },
+  {
+    "id": "hackathon-thinking-t2-q1",
+    "topicId": "hackathon-thinking",
+    "tier": 2,
+    "question": "Your team has 5 project ideas. What is the best way to choose one?",
+    "choices": ["Pick the most technically impressive one", "Evaluate each by feasibility, impact, and how much the team cares about it", "Vote and let the majority decide instantly", "Choose the one with the funniest name"],
+    "answerIndex": 1,
+    "explanation": "Feasibility (can we build it in time?), impact (does it solve a real problem?), and passion (do we care enough to stay up all night?) are the three filters that lead to strong projects."
+  },
+  {
+    "id": "hackathon-thinking-t2-q2",
+    "topicId": "hackathon-thinking",
+    "tier": 2,
+    "question": "A team is going in circles and can't agree on an idea. Which technique helps break the deadlock?",
+    "choices": ["Stop and take a long break", "Use 'How Might We' questions to reframe the problem", "Let the most experienced person decide alone", "Submit whatever idea was suggested first"],
+    "answerIndex": 1,
+    "explanation": "'How Might We...' (HMW) is a design thinking tool. Saying 'How might we help seniors feel less lonely?' reframes a vague theme into a solvable challenge and sparks concrete ideas."
+  },
+  {
+    "id": "hackathon-thinking-t2-q3",
+    "topicId": "hackathon-thinking",
+    "tier": 2,
+    "question": "Why is defining a specific target user more effective than building 'for everyone'?",
+    "choices": ["Judges prefer niche projects", "A specific user helps you make clear design decisions and avoid feature bloat", "More users means more complexity which impresses judges", "Targeting everyone increases chances of winning prizes"],
+    "answerIndex": 1,
+    "explanation": "When you design for 'everyone,' you end up designing for no one. A specific user — 'a 13-year-old learning to code' — tells you exactly what features matter and which to cut."
+  },
+  {
+    "id": "hackathon-thinking-t3-q1",
+    "topicId": "hackathon-thinking",
+    "tier": 3,
+    "question": "Why can constraints like limited time or restricted tools sometimes IMPROVE creativity?",
+    "choices": ["Constraints reduce the number of bugs in code", "They force focus on what matters most and prevent overthinking", "Sponsors prefer projects built with fewer tools", "Constraints make demos shorter and easier to judge"],
+    "answerIndex": 1,
+    "explanation": "Unlimited options cause analysis paralysis. A 24-hour deadline forces you to commit, simplify, and ship. Many famous products — Twitter, Instagram — started as constrained sprints."
+  },
+  {
+    "id": "hackathon-thinking-t3-q2",
+    "topicId": "hackathon-thinking",
+    "tier": 3,
+    "question": "What is the difference between a 'solution' and a 'product' in hackathon judging?",
+    "choices": ["They are the same thing", "A solution solves a problem; a product packages that solution so others can actually use it", "A product requires a business plan; a solution does not", "Solutions are for social tracks; products are for technical tracks"],
+    "answerIndex": 1,
+    "explanation": "A clever algorithm is a solution. A working app with a clear user flow that someone can actually open and use is a product. Judges reward products because they prove real-world applicability."
+  },
+  {
+    "id": "hackathon-thinking-t3-q3",
+    "topicId": "hackathon-thinking",
+    "tier": 3,
+    "question": "When is it a good sign that your team's idea is strong enough to build?",
+    "choices": ["When everyone on the team already knows how to build it", "When you can explain who uses it, what problem it solves, and why existing solutions fall short — in under 30 seconds", "When the idea sounds impressive as a title", "When the team agrees it will win first place"],
+    "answerIndex": 1,
+    "explanation": "The 30-second clarity test reveals whether your idea is sharp. If you can't explain the who, what, and why quickly, judges won't understand it either — and you may not truly understand it yourself."
+  },
+  {
+    "id": "hackathon-mastery-t1-q1",
+    "topicId": "hackathon-mastery",
+    "tier": 1,
+    "question": "What is 'deliberate practice'?",
+    "choices": ["Practicing for as many hours as possible", "Focused, intentional practice on specific skills you want to improve", "Practicing only when you feel motivated", "Repeating the same exercise until it's perfect"],
+    "answerIndex": 1,
+    "explanation": "Deliberate practice means targeting your weak spots with focused effort and getting feedback. Ten focused hours beats one hundred casual hours for skill growth."
+  },
+  {
+    "id": "hackathon-mastery-t1-q2",
+    "topicId": "hackathon-mastery",
+    "tier": 1,
+    "question": "What is 'open source' software?",
+    "choices": ["Software that is free to download but not to modify", "Code that anyone can view, use, and contribute to", "Software released without a license", "A type of hackathon judging format"],
+    "answerIndex": 1,
+    "explanation": "Open source code is publicly available for anyone to study, improve, and build upon. Contributing to open source projects is one of the best ways to develop real-world skills before a hackathon."
+  },
+  {
+    "id": "hackathon-mastery-t1-q3",
+    "topicId": "hackathon-mastery",
+    "tier": 1,
+    "question": "Which habit is BEST for improving your hackathon coding skills over time?",
+    "choices": ["Only coding during hackathons", "Reading textbooks about programming", "Building one small project every week and publishing it", "Watching coding tutorials without writing code"],
+    "answerIndex": 2,
+    "explanation": "Building and shipping regularly develops the exact muscle hackathons test: going from blank screen to working product under pressure. Publishing it adds accountability and a portfolio."
+  },
+  {
+    "id": "hackathon-mastery-t1-q4",
+    "topicId": "hackathon-mastery",
+    "tier": 1,
+    "question": "What is a coding 'portfolio'?",
+    "choices": ["A folder of screenshots of other people's projects", "A collection of your own completed projects that others can view", "A list of programming languages you want to learn", "A resume with no code samples"],
+    "answerIndex": 1,
+    "explanation": "A portfolio is a public record of what you've actually built. For teen hackers, GitHub is the standard place to keep it — every project you ship there compounds into proof of your skills."
+  },
+  {
+    "id": "hackathon-mastery-t2-q1",
+    "topicId": "hackathon-mastery",
+    "tier": 2,
+    "question": "A mentor suggests 'reading other people's code.' Why is this valuable?",
+    "choices": ["It lets you copy their work for hackathons", "Seeing how others solve problems teaches you patterns you can apply in your own projects", "It's faster than building projects yourself", "Employers check if you've read popular codebases"],
+    "answerIndex": 1,
+    "explanation": "Code is a craft. Reading well-written code exposes you to idioms, patterns, and architectural decisions that would take years to discover alone."
+  },
+  {
+    "id": "hackathon-mastery-t2-q2",
+    "topicId": "hackathon-mastery",
+    "tier": 2,
+    "question": "What is the value of participating in many smaller practice hackathons before a big competition?",
+    "choices": ["Each hackathon adds to a points total that judges track", "You build muscle memory for working fast under pressure", "Practice hackathons have easier judges", "Small hackathons give you access to better prizes"],
+    "answerIndex": 1,
+    "explanation": "Hackathon performance is a skill. The flow of ideation → scoping → building → pitching becomes automatic with repetition. Each practice event reduces the panic that hurts teams in high-stakes competitions."
+  },
+  {
+    "id": "hackathon-mastery-t2-q3",
+    "topicId": "hackathon-mastery",
+    "tier": 2,
+    "question": "What is the difference between being a generalist and a specialist on a hackathon team?",
+    "choices": ["Generalists always win; specialists often lose", "A generalist helps in many areas; a specialist goes deep in one — good teams need both", "Specialists code; generalists only design", "Generalists are beginners; specialists are experts"],
+    "answerIndex": 1,
+    "explanation": "Specialists create depth in one area. Generalists fill gaps when someone is stuck. Balance is what makes a team resilient during crunch time."
+  },
+  {
+    "id": "hackathon-mastery-t3-q1",
+    "topicId": "hackathon-mastery",
+    "tier": 3,
+    "question": "Why is 'shipping' (finishing and publishing a project) more valuable than perfecting unfinished code?",
+    "choices": ["Judges can only evaluate submitted projects", "A shipped project proves the concept works and gets real feedback; unfinished code teaches nothing about completion", "Shipping means you don't have to clean up your code", "Published projects automatically appear in hackathon directories"],
+    "answerIndex": 1,
+    "explanation": "Shipping is the hardest part of building. Every deployed project teaches you what real users think, exposes unexpected bugs, and proves to future teammates and employers that you can finish what you start."
+  },
+  {
+    "id": "hackathon-mastery-t3-q2",
+    "topicId": "hackathon-mastery",
+    "tier": 3,
+    "question": "How does a public GitHub portfolio help you specifically during a hackathon?",
+    "choices": ["It lets organizers verify your age", "It shows judges and teammates a track record of real projects, building instant credibility", "GitHub automatically submits your project to competitions", "Judges give bonus points for GitHub stars"],
+    "answerIndex": 1,
+    "explanation": "Judges read GitHub READMEs. Teammates at the event trust you faster when they can see finished projects. A strong portfolio is social proof before you write a single line of hackathon code."
+  },
+  {
+    "id": "hackathon-mastery-t3-q3",
+    "topicId": "hackathon-mastery",
+    "tier": 3,
+    "question": "Why is seeking feedback on your projects — even before they're perfect — essential for growth?",
+    "choices": ["Feedback from strangers counts toward hackathon scores", "Early feedback reveals blind spots you can't see yourself and redirects effort before bad habits form", "Feedback is mostly discouraging and should be avoided early on", "Sharing early forces you to write more comments in your code"],
+    "answerIndex": 1,
+    "explanation": "You cannot see your own assumptions. A 10-minute feedback session with a mentor or peer can save you from building the wrong thing entirely. The best hackers treat feedback as data, not judgment."
+  },
+  {
+    "id": "hackathon-finding-t1-q1",
+    "topicId": "hackathon-finding",
+    "tier": 1,
+    "question": "What is Major League Hacking (MLH)?",
+    "choices": ["A baseball team that also teaches coding", "A global organization that sanctions and supports student hackathons worldwide", "A coding bootcamp for adults", "A video game tournament series"],
+    "answerIndex": 1,
+    "explanation": "MLH is the official student hackathon league. They partner with hundreds of events globally, provide resources, and run their own hackathons specifically designed for students — including many open to high schoolers."
+  },
+  {
+    "id": "hackathon-finding-t1-q2",
+    "topicId": "hackathon-finding",
+    "tier": 1,
+    "question": "What platform lists hundreds of online and in-person hackathons you can browse and join?",
+    "choices": ["LinkedIn", "Devpost", "Coursera", "Reddit"],
+    "answerIndex": 1,
+    "explanation": "Devpost is the go-to platform for hackathon discovery and project submission. You can filter by online/in-person, date, theme, and prizes. Most serious hackathons use it for project submissions."
+  },
+  {
+    "id": "hackathon-finding-t1-q3",
+    "topicId": "hackathon-finding",
+    "tier": 1,
+    "question": "What is a 'beginner-friendly' hackathon?",
+    "choices": ["A hackathon with only easy problems", "A hackathon designed for first-timers, with mentors and workshops built in", "A hackathon with no prizes", "A hackathon for children under 10"],
+    "answerIndex": 1,
+    "explanation": "Beginner-friendly hackathons actively recruit first-timers, provide mentors and workshops, and judge on learning as much as execution. They're the right starting point — supportive, not competitive."
+  },
+  {
+    "id": "hackathon-finding-t1-q4",
+    "topicId": "hackathon-finding",
+    "tier": 1,
+    "question": "What is the advantage of starting with an online hackathon over an in-person one?",
+    "choices": ["Online hackathons always have bigger prizes", "They're accessible from anywhere, lower-stakes, and great for learning the format as a first-timer", "Online teams are always smaller", "Judges score online projects more generously"],
+    "answerIndex": 1,
+    "explanation": "Online hackathons remove travel cost, let you participate from your bedroom, and often have lower competition density. They're ideal for building confidence before you commit to an in-person event."
+  },
+  {
+    "id": "hackathon-finding-t2-q1",
+    "topicId": "hackathon-finding",
+    "tier": 2,
+    "question": "You are 15 and want to find hackathons near you. What is the best first step?",
+    "choices": ["Wait until college — hackathons are mostly for university students", "Search 'high school hackathon' + your city and check Devpost filters for age range", "Email MIT asking for an invitation", "Create a hackathon yourself"],
+    "answerIndex": 1,
+    "explanation": "A targeted search for high school hackathons in your area — combined with Devpost's age/location filters — will surface events designed for you. The high school hackathon scene is large and growing."
+  },
+  {
+    "id": "hackathon-finding-t2-q2",
+    "topicId": "hackathon-finding",
+    "tier": 2,
+    "question": "Why are school or local hackathons a better first event than a national competition?",
+    "choices": ["School hackathons give better prizes", "Smaller events have fewer participants, less pressure, and more mentors per team", "National events don't accept high schoolers", "Local events have easier judging criteria"],
+    "answerIndex": 1,
+    "explanation": "Your first hackathon should teach you the format, not terrify you. Local events have mentors who can help in real time, and the lower pressure lets you experiment without fear of losing a national title."
+  },
+  {
+    "id": "hackathon-finding-t2-q3",
+    "topicId": "hackathon-finding",
+    "tier": 2,
+    "question": "What should you look for in a hackathon listing to know it's right for your skill level?",
+    "choices": ["The biggest prize money", "Whether past winners had projects similar to your current skill level", "Which sponsors are offering the most swag", "Whether the event has a social media presence"],
+    "answerIndex": 1,
+    "explanation": "Looking at past winning projects is the best calibration. If last year's winner was a polished AI model, it's not the right event for a beginner. Find events where past winners look like the builder you are now."
+  },
+  {
+    "id": "hackathon-finding-t3-q1",
+    "topicId": "hackathon-finding",
+    "tier": 3,
+    "question": "Why do organizations like MLH specifically host student and teen hackathons?",
+    "choices": ["Student events are cheaper to run than professional ones", "To lower barriers to entry and create a supportive environment where beginners are expected", "To compete with university computer science programs", "Student hackathons have more corporate sponsors"],
+    "answerIndex": 1,
+    "explanation": "The student hackathon ecosystem exists to onboard the next generation of builders. MLH, along with thousands of school clubs, believes early exposure to building under competition creates better engineers and entrepreneurs."
+  },
+  {
+    "id": "hackathon-finding-t3-q2",
+    "topicId": "hackathon-finding",
+    "tier": 3,
+    "question": "Beyond Devpost and MLH, what is another reliable way to discover teen hackathons?",
+    "choices": ["Checking the App Store for hackathon apps", "Joining coding Discord servers and subreddits where hackers share upcoming events", "Asking your PE teacher", "Waiting for hackathon ads on TV"],
+    "answerIndex": 1,
+    "explanation": "Active coding communities on Discord and Reddit surface events that never make it to mainstream listings. Your network is a discovery engine — the people around you know about opportunities before they're announced publicly."
+  },
+  {
+    "id": "hackathon-finding-t3-q3",
+    "topicId": "hackathon-finding",
+    "tier": 3,
+    "question": "You find a hackathon with no age restriction listed. What should you do before registering?",
+    "choices": ["Register immediately — if it's not listed it means everyone is welcome", "Email the organizers to confirm you're eligible as a high schooler", "Skip it — unlisted age means adults only", "Ask a parent to register on your behalf"],
+    "answerIndex": 1,
+    "explanation": "Always confirm eligibility directly. Some events welcome high schoolers but simply forget to list it. A quick email also puts you on the organizer's radar as a motivated participant — which is never a bad thing."
+  },
+  {
+    "id": "hackathon-participating-t1-q1",
+    "topicId": "hackathon-participating",
+    "tier": 1,
+    "question": "What should your team do in the FIRST hour of a hackathon?",
+    "choices": ["Start coding whatever sounds cool", "Agree on one problem to solve and define your MVP", "Split up and work on completely separate features", "Watch other teams for inspiration"],
+    "answerIndex": 1,
+    "explanation": "The first hour sets your trajectory. Teams that align on problem + MVP in hour one build more coherent projects than those that scatter and try to stitch it together at the end."
+  },
+  {
+    "id": "hackathon-participating-t1-q2",
+    "topicId": "hackathon-participating",
+    "tier": 1,
+    "question": "What is a 'pitch' at the end of a hackathon?",
+    "choices": ["A baseball term used metaphorically for competition", "A short presentation where your team explains your project to the judges", "The technical documentation of your code", "An email you send to sponsors after the event"],
+    "answerIndex": 1,
+    "explanation": "The pitch (typically 2–5 minutes) is your only chance to show judges your idea, demo, and impact. It's often weighted as heavily as the technical project itself — a good pitch can elevate a solid product."
+  },
+  {
+    "id": "hackathon-participating-t1-q3",
+    "topicId": "hackathon-participating",
+    "tier": 1,
+    "question": "What is the ideal team size for most hackathons?",
+    "choices": ["1 person only", "2 to 4 people", "10 or more", "As large as possible"],
+    "answerIndex": 1,
+    "explanation": "Most hackathons cap teams at 4. This size gives you enough hands to divide design, frontend, backend, and presenting — without the coordination overhead that kills larger teams."
+  },
+  {
+    "id": "hackathon-participating-t1-q4",
+    "topicId": "hackathon-participating",
+    "tier": 1,
+    "question": "What does 'time-boxing' mean in a hackathon?",
+    "choices": ["Limiting how long the event runs", "Assigning fixed time limits to each task so you don't over-spend on any one thing", "A technique for sleeping during long hackathons", "Setting timers to remind you to eat"],
+    "answerIndex": 1,
+    "explanation": "Time-boxing is the discipline of saying 'we have 2 hours for this feature — whatever state it's in at hour 2, we move on.' It prevents perfectionism from consuming your build time."
+  },
+  {
+    "id": "hackathon-participating-t2-q1",
+    "topicId": "hackathon-participating",
+    "tier": 2,
+    "question": "You have 6 hours left and the core feature still doesn't work. What should you do?",
+    "choices": ["Keep pushing until it works, even if it takes all 6 hours", "Cut or simplify features to make sure something functional is ready to demo", "Submit what you have and leave early", "Ask another team to share their code"],
+    "answerIndex": 1,
+    "explanation": "A working simple demo beats an impressive broken one every time. Cut scope, make the core work flawlessly, and demo that with confidence. Judges can imagine what you'd build next — they can't judge broken code."
+  },
+  {
+    "id": "hackathon-participating-t2-q2",
+    "topicId": "hackathon-participating",
+    "tier": 2,
+    "question": "A teammate wants to add a new feature with 2 hours left. What should you suggest instead?",
+    "choices": ["Let them — more features impress judges", "Polish and test what you already have so the demo goes smoothly", "Vote on whether to add it", "Ask the organizers if extra features score more points"],
+    "answerIndex": 1,
+    "explanation": "The last 2 hours are for hardening, not expanding. New features introduced late introduce bugs. Use the time to fix edge cases, write a clear README, and rehearse the pitch."
+  },
+  {
+    "id": "hackathon-participating-t2-q3",
+    "topicId": "hackathon-participating",
+    "tier": 2,
+    "question": "How should you handle a technical blocker — being stuck on a problem for over 30 minutes?",
+    "choices": ["Keep trying the same solution — persistence always wins", "Ask a mentor, search the docs, or simplify the approach rather than struggling alone", "Skip that feature entirely with no workaround", "Tell your team you'll figure it out after the hackathon"],
+    "answerIndex": 1,
+    "explanation": "30 minutes is the unblocking threshold. Mentors exist at hackathons for exactly this reason. Asking for help is a sign of maturity, not weakness — and a 5-minute mentor conversation often unlocks hours of stuck effort."
+  },
+  {
+    "id": "hackathon-participating-t3-q1",
+    "topicId": "hackathon-participating",
+    "tier": 3,
+    "question": "Why do judges often value a simple working demo over a complex but broken one?",
+    "choices": ["Simple projects are faster to judge", "A working demo proves the concept is real; broken complexity reveals poor planning and scope management", "Judges are usually non-technical and can't evaluate complexity", "Simple demos are more visually appealing"],
+    "answerIndex": 1,
+    "explanation": "Shipping scope you can actually finish is the core skill hackathons test. Overscoping and delivering nothing is a planning failure. Judges reward teams that understood their constraints and executed within them."
+  },
+  {
+    "id": "hackathon-participating-t3-q2",
+    "topicId": "hackathon-participating",
+    "tier": 3,
+    "question": "What is the difference between a 'feature complete' project and a 'demo-ready' project?",
+    "choices": ["They are the same thing if your project is done", "Feature complete means all planned features are built; demo-ready means what you show works reliably and tells a clear story", "Demo-ready projects have better design; feature complete projects have more features", "Feature complete is for technical prizes; demo-ready is for design prizes"],
+    "answerIndex": 1,
+    "explanation": "You can be feature complete and still demo-crash because you never tested the happy path under pressure. Demo-ready means one clean user flow works perfectly, the story is rehearsed, and the slides are done."
+  },
+  {
+    "id": "hackathon-participating-t3-q3",
+    "topicId": "hackathon-participating",
+    "tier": 3,
+    "question": "What makes a hackathon pitch memorable to judges who have seen 30 projects in one day?",
+    "choices": ["Using the most technical vocabulary possible", "Leading with the human story behind the problem, showing a working demo, then explaining impact in concrete terms", "Focusing entirely on the code architecture", "Showing the most slides and data possible"],
+    "answerIndex": 1,
+    "explanation": "Judges feel 30 demos. The teams that stand out open with a person and a problem, show it working, and close with why it matters. Emotion + evidence + brevity = memorable."
+  },
+  {
+    "id": "hackathon-learning-t1-q1",
+    "topicId": "hackathon-learning",
+    "tier": 1,
+    "question": "What should you do immediately AFTER a hackathon ends?",
+    "choices": ["Delete the project — you didn't win so it has no value", "Write down what went well and what you'd do differently", "Start a new project immediately to forget about the result", "Wait a week before reflecting to get distance"],
+    "answerIndex": 1,
+    "explanation": "The 24 hours after a hackathon are when lessons are freshest. A quick retrospective — even bullet points in your notes app — locks in insights that will make your next hackathon noticeably better."
+  },
+  {
+    "id": "hackathon-learning-t1-q2",
+    "topicId": "hackathon-learning",
+    "tier": 1,
+    "question": "What is the most valuable thing to gain from a hackathon you didn't win?",
+    "choices": ["The free food and swag", "Experience, feedback, and connections made during the event", "The right to say you competed", "A lower placement to motivate you next time"],
+    "answerIndex": 1,
+    "explanation": "Winning is one data point. Not winning while getting feedback from judges, learning your team's workflow weaknesses, and meeting other builders — that's the compound return most people miss."
+  },
+  {
+    "id": "hackathon-learning-t1-q3",
+    "topicId": "hackathon-learning",
+    "tier": 1,
+    "question": "What is a 'retrospective'?",
+    "choices": ["Looking back at old photos from the event", "A structured team reflection on what worked, what didn't, and how to improve", "A judge's written evaluation of your project", "A follow-up meeting with sponsors"],
+    "answerIndex": 1,
+    "explanation": "A retrospective (retro) asks three questions: What went well? What didn't? What do we change next time? Even a 15-minute retro with your team pays dividends at future events."
+  },
+  {
+    "id": "hackathon-learning-t1-q4",
+    "topicId": "hackathon-learning",
+    "tier": 1,
+    "question": "What is the value of exchanging contact info with other hackers at an event?",
+    "choices": ["You can add them on social media for clout", "You may collaborate, learn from, or work with them in the future", "It fulfills a networking requirement for most hackathons", "Contact info is needed to split prize money"],
+    "answerIndex": 1,
+    "explanation": "The hackathon community is small and deeply connected. Today's teammate is tomorrow's co-founder, reference, or hire. Every event is also a career networking event, whether or not you think about it that way."
+  },
+  {
+    "id": "hackathon-learning-t2-q1",
+    "topicId": "hackathon-learning",
+    "tier": 2,
+    "question": "You just finished a hackathon project. How do you turn it into a strong portfolio piece?",
+    "choices": ["Leave it as-is — hackathon code is meant to be rough", "Clean up the code, write a clear README, and publish it with a short demo video", "Only share it if you won a prize", "Submit it to another hackathon immediately without changes"],
+    "answerIndex": 1,
+    "explanation": "A 30-minute cleanup session — descriptive README, fixed typos, a 60-second demo — transforms a hackathon repo from throwaway code into a credible portfolio entry any recruiter or college interviewer can evaluate."
+  },
+  {
+    "id": "hackathon-learning-t2-q2",
+    "topicId": "hackathon-learning",
+    "tier": 2,
+    "question": "A judge told you your idea was unclear during the pitch. How do you use that feedback constructively?",
+    "choices": ["Ignore it — judges don't always understand innovative ideas", "Practice pitching your next project more concisely and ask for feedback before the event ends", "Change your project idea entirely for the next hackathon", "Request a second judging session immediately"],
+    "answerIndex": 1,
+    "explanation": "'Unclear idea' usually means your framing, not your idea, was weak. The fix is practice: explain your project to five different people before the next pitch and stop when all five get it instantly."
+  },
+  {
+    "id": "hackathon-learning-t2-q3",
+    "topicId": "hackathon-learning",
+    "tier": 2,
+    "question": "Why is it worth continuing to develop your hackathon project after the event ends?",
+    "choices": ["Post-event work counts toward your final hackathon score", "Continued effort shows persistence and often turns a rough prototype into a real product or strong college application piece", "Post-event development makes you eligible for late prizes", "Judges revisit projects months later and upgrade scores"],
+    "answerIndex": 1,
+    "explanation": "Many real products started as hackathon projects. The hackathon gives you a prototype and momentum. Post-event iteration is how a 24-hour idea becomes something real."
+  },
+  {
+    "id": "hackathon-learning-t3-q1",
+    "topicId": "hackathon-learning",
+    "tier": 3,
+    "question": "What is the long-term career value of building a strong hackathon track record as a teenager?",
+    "choices": ["Hackathon wins appear on a standardized score sheet colleges receive", "It demonstrates initiative, real project experience, and the ability to ship under pressure — qualities colleges and employers actively seek", "Hackathon prizes provide college scholarship money directly", "It guarantees placement in top technology internships"],
+    "answerIndex": 1,
+    "explanation": "A portfolio of 5–10 hackathon projects built over high school signals what a GPA cannot: you build things, you learn under pressure, you iterate. Colleges and tech companies actively seek this evidence of initiative."
+  },
+  {
+    "id": "hackathon-learning-t3-q2",
+    "topicId": "hackathon-learning",
+    "tier": 3,
+    "question": "How does participating in multiple hackathons compound in value over time?",
+    "choices": ["Each hackathon adds a credential that expires after 2 years", "Each event adds skills, connections, and confidence that make every subsequent hackathon more effective", "Compound value only applies if you win consecutive events", "Multiple hackathons only matter if they are at the same organization"],
+    "answerIndex": 1,
+    "explanation": "Hackathon #1 teaches you the format. Hackathon #5 is where you start winning. By Hackathon #10 you have a network, a portfolio, and an intuition for what judges want. The compounding is real and significant."
+  },
+  {
+    "id": "hackathon-learning-t3-q3",
+    "topicId": "hackathon-learning",
+    "tier": 3,
+    "question": "What is the most important mindset shift that separates hackers who grow from those who plateau?",
+    "choices": ["Focusing only on winning rather than learning", "Treating every hackathon as a data point for improving, not a final verdict on their ability", "Specializing so narrowly that they only enter relevant-theme events", "Only entering events they are certain to win"],
+    "answerIndex": 1,
+    "explanation": "Growth mindset at hackathons means: every result — win, loss, broken demo — is feedback. The hackers who improve fastest are the ones who ask 'what did I learn?' after every event, regardless of placement."
+  }
+]

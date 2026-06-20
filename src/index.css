@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* ── Space / identity palette (nav, landing, module maps) ──────────────── */
   --color-space-950: #0b0a18;
   --color-space-900: #16142c;
   --color-space-800: #221f44;
@@ -20,6 +21,33 @@
   --color-lab-400: #34d399;
   --color-lab-500: #10b981;
   --color-lab-600: #047857;
+
+  /* ── Deep Work (reading / question / analytical state) ─────────────────── */
+  /* 60-30-10: deep-900 = 60% background, deep-800 = 30% surfaces, sage = 10% accent */
+  --color-deep-900: #131d2b;   /* foundation — cool midnight slate */
+  --color-deep-800: #1a2b3e;   /* surface — muted ocean blue */
+  --color-deep-700: #243a52;   /* border — cool steel */
+  --color-deep-600: #2f4d6a;   /* hover surface */
+  --color-deep-text: #c6d4e3;  /* body text — soft cool white (not pure white) */
+  --color-sage-300: #8fc4b5;   /* light sage accent */
+  --color-sage-400: #6aaa99;   /* sage-green accent */
+  --color-sage-500: #4a8f7e;   /* deep sage */
+
+  /* ── Action / Interactive (teach-back, breaks, progress milestones) ─────── */
+  /* Warm energetic without being neon — cognitive "wake-up" signal */
+  --color-action-200: #f5e2c0; /* cream text on action backgrounds */
+  --color-action-300: #e8a84c; /* warm highlight */
+  --color-action-400: #d4861e; /* amber accent — 10% usage */
+  --color-action-500: #b87015; /* deep amber */
+  --color-action-bg:  #1c160a; /* warm-dark foundation */
+  --color-action-surface: #261e0e; /* warm-dark surface */
+
+  /* ── Alert / Focus (wrong answers, knowledge gaps, review deadlines) ─────── */
+  /* Used EXCLUSIVELY for errors and urgency — never decorative */
+  --color-alert-300: #e8907e;  /* light muted red */
+  --color-alert-400: #d4573e;  /* brick red — primary alert */
+  --color-alert-500: #b83d27;  /* deep alert red */
+
   --animate-bounce-slow: bounce-slow 3s ease-in-out infinite;
   --animate-pop: pop 0.4s ease-out;
   --animate-scan: scan 6s linear infinite;
@@ -66,6 +94,27 @@
     background-position: 0 -40px, 30px 10px, -20px 70px;
   }
 }
+
+/**
+ * CogniSync color-mode backgrounds
+ * Deep Work  → cool academic blue-slate (reading / question phase)
+ * Action     → warm amber-dark (teach-back / break prompts / milestones)
+ * Alert      → reserved for wrong answers, knowledge gaps, due reviews
+ */
+.bg-deep-work {
+  /* Cool academic blue-slate — 60% foundation, creates calm analytical state */
+  background: #131d2b;
+}
+
+.bg-action {
+  /* Warm amber-dark — full coverage for break overlays and teach-back modals */
+  background: #1c160a;
+}
+
+/* Utility borders/glow for alert state */
+.border-alert { border-color: var(--color-alert-400); }
+.text-alert-400 { color: var(--color-alert-400); }
+.bg-alert-surface { background-color: rgba(212, 87, 62, 0.12); }
 
 /** Futuristic grid + glow backdrop used by the Robotics module map and lessons. */
 .bg-robotics {

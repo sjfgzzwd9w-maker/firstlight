@@ -58,6 +58,18 @@ export default function Landing() {
           description="Solar system, gravity, stars, galaxies, black holes & exoplanets"
           onClick={() => navigate('/learn/space')}
         />
+        <SubjectCard
+          emoji="⚛️"
+          title="Physics"
+          description="Motion, forces, energy, waves, circuits & electromagnetism"
+          onClick={() => navigate('/learn/physics')}
+        />
+        <SubjectCard
+          emoji="🏆"
+          title="Hackathon"
+          description="Beginner skills, problem-solving, finding events & winning your first hackathon as a teen"
+          onClick={() => navigate('/learn/hackathon')}
+        />
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ type ProfileContextValue = {
   setModelSize: (size: UserProfile['modelSize']) => void;
   saveQuestionNote: (question: Question, text: string) => void;
   deleteNote: (noteId: string) => void;
+  clearMissedQuestion: (topicId: string, questionId: string) => void;
 };
 
 const ProfileContext = createContext<ProfileContextValue | null>(null);
@@ -63,6 +64,20 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     setProfile((prev) => removeNote(prev, noteId));
   };
 
+  const clearMissedQuestion = (topicId: string, questionId: string) => {
+    setProfile((prev) => {
+      const tp = prev.topics[topicId];
+      if (!tp) return prev;
+      return {
+        ...prev,
+        topics: {
+          ...prev.topics,
+          [topicId]: { ...tp, missedIds: (tp.missedIds ?? []).filter((id) => id !== questionId) },
+        },
+      };
+    });
+  };
+
   return (
     <ProfileContext.Provider
       value={{
@@ -74,6 +89,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
         setModelSize,
         saveQuestionNote,
         deleteNote,
+        clearMissedQuestion,
       }}
     >
       {children}

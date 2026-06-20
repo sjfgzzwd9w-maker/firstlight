@@ -1,0 +1,607 @@
+[
+  {
+    "id": "newtons-laws-t1-q1",
+    "topicId": "newtons-laws",
+    "tier": 1,
+    "question": "Newton's First Law states that an object at rest will stay at rest unless acted on by what?",
+    "choices": [
+      "A balanced force",
+      "A net (unbalanced) force",
+      "Gravity",
+      "Friction"
+    ],
+    "answerIndex": 1,
+    "explanation": "Newton's First Law (the Law of Inertia): an object remains at rest or in uniform motion unless acted upon by a net external force. This property of resisting change in motion is called inertia."
+  },
+  {
+    "id": "newtons-laws-t1-q2",
+    "topicId": "newtons-laws",
+    "tier": 1,
+    "question": "Newton's Second Law is expressed as F = ma. What does 'a' represent?",
+    "choices": ["Area", "Amplitude", "Acceleration", "Angle"],
+    "answerIndex": 2,
+    "explanation": "In F = ma, F is the net force (Newtons), m is mass (kg), and a is acceleration (m/s²). A greater net force produces greater acceleration; greater mass produces less acceleration."
+  },
+  {
+    "id": "newtons-laws-t1-q3",
+    "topicId": "newtons-laws",
+    "tier": 1,
+    "question": "According to Newton's Third Law, when you push on a wall, the wall pushes back on you with a force that is:",
+    "choices": [
+      "Larger than your push",
+      "Smaller than your push",
+      "Equal in size but opposite in direction",
+      "In the same direction as your push"
+    ],
+    "answerIndex": 2,
+    "explanation": "Newton's Third Law: for every action there is an equal and opposite reaction. The wall exerts a force on you equal in magnitude to your push, but in the opposite direction."
+  },
+  {
+    "id": "newtons-laws-t2-q1",
+    "topicId": "newtons-laws",
+    "tier": 2,
+    "question": "A 10 kg box has a net force of 30 N applied to it. What is its acceleration?",
+    "choices": ["0.33 m/s²", "3 m/s²", "20 m/s²", "300 m/s²"],
+    "answerIndex": 1,
+    "explanation": "F = ma → a = F/m = 30 N ÷ 10 kg = 3 m/s²."
+  },
+  {
+    "id": "newtons-laws-t2-q2",
+    "topicId": "newtons-laws",
+    "tier": 2,
+    "question": "A 5 kg object rests on a table. What is its weight? (g = 10 m/s²)",
+    "choices": ["5 N", "0.5 N", "50 N", "500 N"],
+    "answerIndex": 2,
+    "explanation": "Weight = mg = 5 kg × 10 m/s² = 50 N. Weight is the gravitational force measured in Newtons, not to be confused with mass in kilograms."
+  },
+  {
+    "id": "newtons-laws-t2-q3",
+    "topicId": "newtons-laws",
+    "tier": 2,
+    "question": "A book sits on a table. What is the upward contact force the table exerts on the book called?",
+    "choices": ["Tension", "Normal force", "Friction", "Applied force"],
+    "answerIndex": 1,
+    "explanation": "The normal force is the contact force a surface exerts perpendicular to its surface. Here it acts upward, balancing gravity so the book is in equilibrium."
+  },
+  {
+    "id": "newtons-laws-t3-q1",
+    "topicId": "newtons-laws",
+    "tier": 3,
+    "question": "A net force of 12 N acts on a 3 kg object. What is the object's acceleration?",
+    "choices": ["4 m/s²", "9 m/s²", "15 m/s²", "36 m/s²"],
+    "answerIndex": 0,
+    "explanation": "a = F/m = 12 N ÷ 3 kg = 4 m/s²."
+  },
+  {
+    "id": "newtons-laws-t3-q2",
+    "topicId": "newtons-laws",
+    "tier": 3,
+    "question": "The same force is applied to two objects: one with mass m and one with mass 2m. How do their accelerations compare?",
+    "choices": [
+      "The heavier object accelerates twice as fast",
+      "Both accelerate the same",
+      "The lighter object accelerates twice as fast",
+      "The heavier object has more force"
+    ],
+    "answerIndex": 2,
+    "explanation": "a = F/m. For the heavier object, a₂ = F/(2m) = ½ a₁. So the lighter object (mass m) accelerates at twice the rate of the heavier one (mass 2m)."
+  },
+  {
+    "id": "newtons-laws-t3-q3",
+    "topicId": "newtons-laws",
+    "tier": 3,
+    "question": "A 60 kg person stands in an elevator accelerating upward at 2 m/s². What is their apparent weight? (g = 10 m/s²)",
+    "choices": ["480 N", "600 N", "720 N", "960 N"],
+    "answerIndex": 2,
+    "explanation": "The scale reads F = m(g + a) = 60 × (10 + 2) = 60 × 12 = 720 N. When the elevator accelerates upward, the floor must push harder to both support and accelerate the person."
+  },
+  {
+    "id": "newtons-laws-t4-q1",
+    "topicId": "newtons-laws",
+    "tier": 4,
+    "question": "A 5 kg object on a frictionless surface has two forces applied: 20 N east and 8 N west. What is its acceleration?",
+    "choices": ["1.6 m/s² east", "2.4 m/s² east", "4 m/s² east", "5.6 m/s² east"],
+    "answerIndex": 1,
+    "explanation": "Net force = 20 − 8 = 12 N east. a = F/m = 12/5 = 2.4 m/s² east."
+  },
+  {
+    "id": "newtons-laws-t4-q2",
+    "topicId": "newtons-laws",
+    "tier": 4,
+    "question": "Two blocks (3 kg and 2 kg) are connected by a string on a frictionless surface. A 10 N force pulls the 3 kg block. What is the system's acceleration?",
+    "choices": ["2 m/s²", "3.3 m/s²", "5 m/s²", "10 m/s²"],
+    "answerIndex": 0,
+    "explanation": "The system has total mass 3 + 2 = 5 kg. a = F/m_total = 10/5 = 2 m/s². Both blocks accelerate together."
+  },
+  {
+    "id": "newtons-laws-t4-q3",
+    "topicId": "newtons-laws",
+    "tier": 4,
+    "question": "A person is in an elevator moving downward and decelerating. Their apparent weight compared to their true weight is:",
+    "choices": [
+      "Less than their true weight",
+      "Equal to their true weight",
+      "Greater than their true weight",
+      "Zero"
+    ],
+    "answerIndex": 2,
+    "explanation": "Decelerating while moving downward means the net acceleration is upward. The floor must push with more force: F_apparent = m(g + a_upward) > mg. Apparent weight is greater than true weight."
+  },
+  {
+    "id": "newtons-laws-t5-q1",
+    "topicId": "newtons-laws",
+    "tier": 5,
+    "question": "An Atwood machine has masses 6 kg and 4 kg on either side of a frictionless pulley. What is the system's acceleration? (g = 10 m/s²)",
+    "choices": ["1 m/s²", "2 m/s²", "5 m/s²", "10 m/s²"],
+    "answerIndex": 1,
+    "explanation": "a = (m₁ − m₂)g / (m₁ + m₂) = (6 − 4)(10) / (6 + 4) = 20/10 = 2 m/s². The heavier side descends at 2 m/s²."
+  },
+  {
+    "id": "newtons-laws-t5-q2",
+    "topicId": "newtons-laws",
+    "tier": 5,
+    "question": "A 5 kg block rests on a frictionless 30° incline. What is its acceleration along the slope? (g = 10 m/s²)",
+    "choices": ["2.5 m/s²", "5 m/s²", "8.66 m/s²", "10 m/s²"],
+    "answerIndex": 1,
+    "explanation": "Along the slope, the net force is the gravity component: F = mg sin30° = 5 × 10 × 0.5 = 25 N. a = F/m = 25/5 = 5 m/s² down the slope."
+  },
+  {
+    "id": "newtons-laws-t5-q3",
+    "topicId": "newtons-laws",
+    "tier": 5,
+    "question": "A rocket ejects exhaust and accelerates forward. Which Newton's law primarily explains this?",
+    "choices": ["First Law", "Second Law only", "Third Law", "The law of gravitation"],
+    "answerIndex": 2,
+    "explanation": "The rocket pushes exhaust backward (action); the exhaust pushes the rocket forward (equal and opposite reaction) — Newton's Third Law. This thrust then causes acceleration per the Second Law."
+  },
+  {
+    "id": "forces-equilibrium-t1-q1",
+    "topicId": "forces-equilibrium",
+    "tier": 1,
+    "question": "What type of friction acts when two surfaces are sliding against each other?",
+    "choices": ["Static friction", "Kinetic friction", "Rolling friction", "Normal friction"],
+    "answerIndex": 1,
+    "explanation": "Kinetic friction acts between surfaces in relative motion. Static friction acts when the surfaces are stationary relative to each other. Kinetic friction is generally less than maximum static friction."
+  },
+  {
+    "id": "forces-equilibrium-t1-q2",
+    "topicId": "forces-equilibrium",
+    "tier": 1,
+    "question": "An object is in equilibrium. What must be true about the net force on it?",
+    "choices": [
+      "The net force is at maximum",
+      "The net force equals the weight",
+      "The net force is zero",
+      "The net force is always upward"
+    ],
+    "answerIndex": 2,
+    "explanation": "An object in equilibrium has zero acceleration (a = 0). By Newton's Second Law F = ma, the net force must therefore be zero — all forces balance each other."
+  },
+  {
+    "id": "forces-equilibrium-t1-q3",
+    "topicId": "forces-equilibrium",
+    "tier": 1,
+    "question": "Which is always true of static friction?",
+    "choices": [
+      "It always equals its maximum possible value",
+      "It can be anywhere from zero up to its maximum value",
+      "It is always greater than kinetic friction",
+      "It acts in the direction of motion"
+    ],
+    "answerIndex": 1,
+    "explanation": "Static friction adjusts to exactly cancel any applied force, up to its maximum value (μₛN). It only reaches its maximum just before the object begins to slide."
+  },
+  {
+    "id": "forces-equilibrium-t2-q1",
+    "topicId": "forces-equilibrium",
+    "tier": 2,
+    "question": "A surface has μ_k = 0.25 and normal force = 40 N. What is the kinetic friction force?",
+    "choices": ["0.625 N", "10 N", "16 N", "160 N"],
+    "answerIndex": 1,
+    "explanation": "f_k = μ_k × N = 0.25 × 40 = 10 N. Kinetic friction always opposes the direction of sliding motion."
+  },
+  {
+    "id": "forces-equilibrium-t2-q2",
+    "topicId": "forces-equilibrium",
+    "tier": 2,
+    "question": "A box moves at constant velocity when pushed with 30 N. What is the friction force?",
+    "choices": ["0 N", "15 N", "30 N", "50 N"],
+    "answerIndex": 2,
+    "explanation": "Constant velocity means zero acceleration, which means zero net force. Therefore friction must exactly balance the applied force: f = 30 N."
+  },
+  {
+    "id": "forces-equilibrium-t2-q3",
+    "topicId": "forces-equilibrium",
+    "tier": 2,
+    "question": "Which is greater: maximum static friction or kinetic friction for the same pair of surfaces?",
+    "choices": [
+      "Kinetic friction",
+      "Maximum static friction",
+      "They are always equal",
+      "It depends on speed"
+    ],
+    "answerIndex": 1,
+    "explanation": "Maximum static friction is always greater than kinetic friction. It takes more force to START an object sliding than to keep it sliding — once motion begins, friction drops."
+  },
+  {
+    "id": "forces-equilibrium-t3-q1",
+    "topicId": "forces-equilibrium",
+    "tier": 3,
+    "question": "A 10 kg box is pulled across a floor (μ_k = 0.3, g = 10 m/s²). What is the kinetic friction force?",
+    "choices": ["3 N", "13 N", "30 N", "300 N"],
+    "answerIndex": 2,
+    "explanation": "Normal force N = mg = 10 × 10 = 100 N. f_k = μ_k × N = 0.3 × 100 = 30 N."
+  },
+  {
+    "id": "forces-equilibrium-t3-q2",
+    "topicId": "forces-equilibrium",
+    "tier": 3,
+    "question": "A 6 kg block rests on a 30° ramp. What is the component of gravity along the ramp surface? (g = 10 m/s²)",
+    "choices": ["30 N", "51.96 N", "60 N", "10 N"],
+    "answerIndex": 0,
+    "explanation": "Gravity along the ramp = mg sin30° = 6 × 10 × 0.5 = 30 N. This is the force that would slide the block down the incline if not countered by friction."
+  },
+  {
+    "id": "forces-equilibrium-t3-q3",
+    "topicId": "forces-equilibrium",
+    "tier": 3,
+    "question": "A 15 kg object rests on a surface with μ_s = 0.5 (g = 10 m/s²). What is the maximum static friction force?",
+    "choices": ["30 N", "50 N", "75 N", "150 N"],
+    "answerIndex": 2,
+    "explanation": "f_s(max) = μ_s × N = μ_s × mg = 0.5 × 15 × 10 = 75 N. Any applied force greater than 75 N will start the object sliding."
+  },
+  {
+    "id": "forces-equilibrium-t4-q1",
+    "topicId": "forces-equilibrium",
+    "tier": 4,
+    "question": "A 20 kg block slides down a 37° ramp (sin37°=0.6, cos37°=0.8, μ_k=0.3, g=10 m/s²). What is the net force along the ramp?",
+    "choices": ["24 N", "48 N", "72 N", "120 N"],
+    "answerIndex": 2,
+    "explanation": "Gravity along ramp: mg sin37° = 20×10×0.6 = 120 N. Normal force: N = mg cos37° = 20×10×0.8 = 160 N. Friction (up the ramp): f = 0.3×160 = 48 N. Net force = 120 − 48 = 72 N down the ramp."
+  },
+  {
+    "id": "forces-equilibrium-t4-q2",
+    "topicId": "forces-equilibrium",
+    "tier": 4,
+    "question": "A 5 kg sign hangs from two ropes each making 45° with the ceiling. What is the tension in each rope? (g = 10 m/s²)",
+    "choices": ["25 N", "35.4 N", "50 N", "70.7 N"],
+    "answerIndex": 1,
+    "explanation": "Each rope's vertical component is T sin45°. Together they support the weight: 2T sin45° = mg = 50 N → T = 50 / (2 × 0.707) ≈ 35.4 N."
+  },
+  {
+    "id": "forces-equilibrium-t4-q3",
+    "topicId": "forces-equilibrium",
+    "tier": 4,
+    "question": "A 4 kg block is on a horizontal surface with μ_k = 0.2 (g = 10 m/s²). A 10 N horizontal force is applied. What is the block's acceleration?",
+    "choices": ["0.5 m/s²", "1.5 m/s²", "2.0 m/s²", "2.5 m/s²"],
+    "answerIndex": 0,
+    "explanation": "Normal force N = mg = 4×10 = 40 N. Friction f = μ_k × N = 0.2×40 = 8 N. Net force = 10 − 8 = 2 N. a = F/m = 2/4 = 0.5 m/s²."
+  },
+  {
+    "id": "forces-equilibrium-t5-q1",
+    "topicId": "forces-equilibrium",
+    "tier": 5,
+    "question": "A 60 kg person stands on a scale in an elevator moving downward and decelerating at 3 m/s². What does the scale read? (g = 10 m/s²)",
+    "choices": ["420 N", "600 N", "780 N", "960 N"],
+    "answerIndex": 2,
+    "explanation": "Decelerating downward means the net acceleration is upward at 3 m/s². Scale reading = m(g + a) = 60 × (10 + 3) = 780 N. The person feels heavier than normal."
+  },
+  {
+    "id": "forces-equilibrium-t5-q2",
+    "topicId": "forces-equilibrium",
+    "tier": 5,
+    "question": "A block is in equilibrium on an incline. Which expression equals the coefficient of static friction?",
+    "choices": ["cos θ", "sin θ", "tan θ", "mg sin θ"],
+    "answerIndex": 2,
+    "explanation": "At the edge of equilibrium: μ_s × N = mg sinθ, and N = mg cosθ. Dividing: μ_s = sinθ / cosθ = tanθ. This is the classic angle-of-repose relationship."
+  },
+  {
+    "id": "forces-equilibrium-t5-q3",
+    "topicId": "forces-equilibrium",
+    "tier": 5,
+    "question": "An 80 N sign is suspended by two wires — one at 30° from horizontal, one at 60° from horizontal. What is the tension in the 30° wire?",
+    "choices": ["20 N", "40 N", "60 N", "80 N"],
+    "answerIndex": 1,
+    "explanation": "Horizontal: T₁ cos30° = T₂ cos60° → T₁√3/2 = T₂/2 → T₂ = T₁√3. Vertical: T₁ sin30° + T₂ sin60° = 80 → T₁/2 + T₁√3·(√3/2) = 80 → T₁/2 + 3T₁/2 = 80 → 2T₁ = 80 → T₁ = 40 N."
+  },
+  {
+    "id": "work-energy-power-t1-q1",
+    "topicId": "work-energy-power",
+    "tier": 1,
+    "question": "In physics, work is done when:",
+    "choices": [
+      "A force acts on an object over time",
+      "A force causes displacement in the direction of the force",
+      "An object has kinetic energy",
+      "Mass times velocity increases"
+    ],
+    "answerIndex": 1,
+    "explanation": "W = F × d × cos(θ). Work is done when a force causes displacement. If the force is perpendicular to motion (θ = 90°), no work is done — like a waiter carrying a tray horizontally."
+  },
+  {
+    "id": "work-energy-power-t1-q2",
+    "topicId": "work-energy-power",
+    "tier": 1,
+    "question": "What is the SI unit of energy?",
+    "choices": ["Newton", "Watt", "Joule", "Pascal"],
+    "answerIndex": 2,
+    "explanation": "The Joule (J) is the SI unit of energy and work. 1 J = 1 N·m. The Watt is the unit of power (Joules per second)."
+  },
+  {
+    "id": "work-energy-power-t1-q3",
+    "topicId": "work-energy-power",
+    "tier": 1,
+    "question": "Which is an example of gravitational potential energy?",
+    "choices": [
+      "A moving bullet",
+      "A hot cup of coffee",
+      "A book on a high shelf",
+      "A compressed spring"
+    ],
+    "answerIndex": 2,
+    "explanation": "Gravitational PE = mgh — it depends on height. The book on the shelf has stored energy due to gravity. A compressed spring has elastic PE, not gravitational."
+  },
+  {
+    "id": "work-energy-power-t2-q1",
+    "topicId": "work-energy-power",
+    "tier": 2,
+    "question": "A 10 N force moves a box 5 m in the direction of the force. How much work is done?",
+    "choices": ["2 J", "15 J", "50 J", "500 J"],
+    "answerIndex": 2,
+    "explanation": "W = F × d = 10 N × 5 m = 50 J. Since force and displacement are parallel, cos(0°) = 1."
+  },
+  {
+    "id": "work-energy-power-t2-q2",
+    "topicId": "work-energy-power",
+    "tier": 2,
+    "question": "A 2 kg ball is held 5 m above the ground (g = 10 m/s²). What is its gravitational potential energy?",
+    "choices": ["10 J", "25 J", "100 J", "1000 J"],
+    "answerIndex": 2,
+    "explanation": "GPE = mgh = 2 × 10 × 5 = 100 J."
+  },
+  {
+    "id": "work-energy-power-t2-q3",
+    "topicId": "work-energy-power",
+    "tier": 2,
+    "question": "Power is defined as:",
+    "choices": [
+      "Force × time",
+      "Work done per unit time",
+      "Energy × distance",
+      "Mass × velocity²"
+    ],
+    "answerIndex": 1,
+    "explanation": "Power = Work / Time (P = W/t). The SI unit of power is the Watt (W), where 1 W = 1 J/s."
+  },
+  {
+    "id": "work-energy-power-t3-q1",
+    "topicId": "work-energy-power",
+    "tier": 3,
+    "question": "A 1000 kg car travels at 20 m/s. What is its kinetic energy?",
+    "choices": ["10,000 J", "20,000 J", "200,000 J", "400,000 J"],
+    "answerIndex": 2,
+    "explanation": "KE = ½mv² = ½ × 1000 × (20)² = ½ × 1000 × 400 = 200,000 J = 200 kJ."
+  },
+  {
+    "id": "work-energy-power-t3-q2",
+    "topicId": "work-energy-power",
+    "tier": 3,
+    "question": "A 500 W motor runs for 60 s. How much work does it do?",
+    "choices": ["8.33 J", "500 J", "30,000 J", "60,000 J"],
+    "answerIndex": 2,
+    "explanation": "W = P × t = 500 W × 60 s = 30,000 J = 30 kJ."
+  },
+  {
+    "id": "work-energy-power-t3-q3",
+    "topicId": "work-energy-power",
+    "tier": 3,
+    "question": "A spring with k = 200 N/m is compressed by 0.1 m. What elastic PE is stored?",
+    "choices": ["0.1 J", "1 J", "10 J", "20 J"],
+    "answerIndex": 1,
+    "explanation": "Elastic PE = ½kx² = ½ × 200 × (0.1)² = ½ × 200 × 0.01 = 1 J."
+  },
+  {
+    "id": "work-energy-power-t4-q1",
+    "topicId": "work-energy-power",
+    "tier": 4,
+    "question": "A 5 kg object falls from rest through 10 m (g = 10 m/s²). Using energy conservation, what is its speed just before impact?",
+    "choices": ["10 m/s", "12.25 m/s", "14.1 m/s", "20 m/s"],
+    "answerIndex": 2,
+    "explanation": "Energy conservation: KE = PE → ½mv² = mgh → v = √(2gh) = √(2 × 10 × 10) = √200 ≈ 14.1 m/s."
+  },
+  {
+    "id": "work-energy-power-t4-q2",
+    "topicId": "work-energy-power",
+    "tier": 4,
+    "question": "A machine does 1200 J of work in 4 s. What is its power output?",
+    "choices": ["300 W", "400 W", "480 W", "4800 W"],
+    "answerIndex": 0,
+    "explanation": "P = W/t = 1200 J / 4 s = 300 W."
+  },
+  {
+    "id": "work-energy-power-t4-q3",
+    "topicId": "work-energy-power",
+    "tier": 4,
+    "question": "A 10 N force acts on an object at 60° to its direction of motion over 6 m. How much work is done?",
+    "choices": ["30 J", "52 J", "60 J", "80 J"],
+    "answerIndex": 0,
+    "explanation": "W = F × d × cos(θ) = 10 × 6 × cos(60°) = 10 × 6 × 0.5 = 30 J. Only the component of force parallel to displacement does work."
+  },
+  {
+    "id": "work-energy-power-t5-q1",
+    "topicId": "work-energy-power",
+    "tier": 5,
+    "question": "A 60 kg person runs up stairs rising 5 m in 4 s (g = 10 m/s²). What is their power output?",
+    "choices": ["150 W", "300 W", "750 W", "1200 W"],
+    "answerIndex": 2,
+    "explanation": "Work done = mgh = 60 × 10 × 5 = 3000 J. P = W/t = 3000/4 = 750 W — roughly 1 horsepower!"
+  },
+  {
+    "id": "work-energy-power-t5-q2",
+    "topicId": "work-energy-power",
+    "tier": 5,
+    "question": "A 0.5 kg block slides down a frictionless 30° ramp of length 4 m (g = 10 m/s²). What is its speed at the bottom?",
+    "choices": ["4 m/s", "6.3 m/s", "8 m/s", "10 m/s"],
+    "answerIndex": 1,
+    "explanation": "Height h = L sin30° = 4 × 0.5 = 2 m. By energy conservation: v = √(2gh) = √(2 × 10 × 2) = √40 ≈ 6.32 m/s."
+  },
+  {
+    "id": "work-energy-power-t5-q3",
+    "topicId": "work-energy-power",
+    "tier": 5,
+    "question": "A 2 kg roller-coaster car descends 30 m (g = 10 m/s²). If 10% of the energy is lost to friction, what is the speed at the bottom?",
+    "choices": ["18.97 m/s", "20 m/s", "23.2 m/s", "24.5 m/s"],
+    "answerIndex": 2,
+    "explanation": "Initial PE = mgh = 2 × 10 × 30 = 600 J. With 10% lost to friction, available KE = 0.9 × 600 = 540 J. ½mv² = 540 → v² = 2 × 540/2 = 540 → v = √540 ≈ 23.2 m/s."
+  },
+  {
+    "id": "momentum-impulse-t1-q1",
+    "topicId": "momentum-impulse",
+    "tier": 1,
+    "question": "How is momentum (p) defined?",
+    "choices": ["p = F × t", "p = m × a", "p = m × v", "p = ½mv²"],
+    "answerIndex": 2,
+    "explanation": "Momentum p = m × v, where m is mass (kg) and v is velocity (m/s). Momentum is a vector quantity with units of kg·m/s."
+  },
+  {
+    "id": "momentum-impulse-t1-q2",
+    "topicId": "momentum-impulse",
+    "tier": 1,
+    "question": "What are the SI units of momentum?",
+    "choices": ["N·s or kg·m/s", "J/s", "kg·m/s²", "N/m"],
+    "answerIndex": 0,
+    "explanation": "Momentum = mass × velocity = kg × m/s = kg·m/s. This is equivalent to N·s since 1 N = 1 kg·m/s²."
+  },
+  {
+    "id": "momentum-impulse-t1-q3",
+    "topicId": "momentum-impulse",
+    "tier": 1,
+    "question": "Total momentum is conserved when:",
+    "choices": [
+      "All objects move at the same speed",
+      "No net external force acts on the system",
+      "All collisions are elastic",
+      "Objects have equal mass"
+    ],
+    "answerIndex": 1,
+    "explanation": "The total momentum of a system is conserved when there is no net external force — an isolated system. Total momentum before any interaction equals total momentum after."
+  },
+  {
+    "id": "momentum-impulse-t2-q1",
+    "topicId": "momentum-impulse",
+    "tier": 2,
+    "question": "A 5 kg object moves at 4 m/s. What is its momentum?",
+    "choices": ["1.25 kg·m/s", "9 kg·m/s", "20 kg·m/s", "80 kg·m/s"],
+    "answerIndex": 2,
+    "explanation": "p = mv = 5 × 4 = 20 kg·m/s."
+  },
+  {
+    "id": "momentum-impulse-t2-q2",
+    "topicId": "momentum-impulse",
+    "tier": 2,
+    "question": "Impulse equals:",
+    "choices": [
+      "Force × distance",
+      "Force × time",
+      "Mass × acceleration",
+      "Change in kinetic energy"
+    ],
+    "answerIndex": 1,
+    "explanation": "Impulse J = F × Δt. By the impulse-momentum theorem, J = Δp. This is why airbags work — they increase collision time, reducing the force on the passenger."
+  },
+  {
+    "id": "momentum-impulse-t2-q3",
+    "topicId": "momentum-impulse",
+    "tier": 2,
+    "question": "A 3 kg ball moving at 2 m/s east hits a wall and bounces back at 2 m/s west. What is the magnitude of its change in momentum?",
+    "choices": ["0 kg·m/s", "6 kg·m/s", "12 kg·m/s", "18 kg·m/s"],
+    "answerIndex": 2,
+    "explanation": "Δp = m(v_f − v_i) = 3 × (−2 − 2) = −12 kg·m/s. Magnitude = 12 kg·m/s. The direction reversal doubles the change — you must account for the sign."
+  },
+  {
+    "id": "momentum-impulse-t3-q1",
+    "topicId": "momentum-impulse",
+    "tier": 3,
+    "question": "A 1000 kg car at 20 m/s collides with and sticks to a 500 kg stationary car. What is their combined velocity after?",
+    "choices": ["6.67 m/s", "10 m/s", "13.33 m/s", "20 m/s"],
+    "answerIndex": 2,
+    "explanation": "Conservation of momentum: m₁v₁ = (m₁ + m₂)v_f → 1000 × 20 = 1500 × v_f → v_f = 20,000/1500 ≈ 13.33 m/s."
+  },
+  {
+    "id": "momentum-impulse-t3-q2",
+    "topicId": "momentum-impulse",
+    "tier": 3,
+    "question": "A 0.1 kg ball receives an impulse of 1 N·s. What is its change in velocity?",
+    "choices": ["0.1 m/s", "1 m/s", "10 m/s", "100 m/s"],
+    "answerIndex": 2,
+    "explanation": "Impulse-momentum theorem: J = mΔv → Δv = J/m = 1/0.1 = 10 m/s."
+  },
+  {
+    "id": "momentum-impulse-t3-q3",
+    "topicId": "momentum-impulse",
+    "tier": 3,
+    "question": "A 2 kg object moves at 6 m/s north. A 3 kg object moves at 2 m/s south. What is the total momentum of the system?",
+    "choices": ["6 kg·m/s south", "6 kg·m/s north", "18 kg·m/s north", "18 kg·m/s south"],
+    "answerIndex": 1,
+    "explanation": "Taking north as positive: p_total = (2 × 6) + (3 × −2) = 12 − 6 = 6 kg·m/s north."
+  },
+  {
+    "id": "momentum-impulse-t4-q1",
+    "topicId": "momentum-impulse",
+    "tier": 4,
+    "question": "A 4 kg cart moving east at 5 m/s hits a stationary 6 kg cart and they stick together. What is their final velocity?",
+    "choices": ["1 m/s east", "2 m/s east", "3 m/s east", "5 m/s east"],
+    "answerIndex": 1,
+    "explanation": "Conservation of momentum: (4 × 5) = (4 + 6) × v_f → 20 = 10v_f → v_f = 2 m/s east. This is a perfectly inelastic collision."
+  },
+  {
+    "id": "momentum-impulse-t4-q2",
+    "topicId": "momentum-impulse",
+    "tier": 4,
+    "question": "In a perfectly elastic collision between equal masses where one is at rest, what happens?",
+    "choices": [
+      "Both objects continue forward at half speed",
+      "The first bounces back; the second moves forward",
+      "The first stops completely; the second moves at the original speed",
+      "Both objects stop"
+    ],
+    "answerIndex": 2,
+    "explanation": "In a perfectly elastic collision between equal masses, momentum and kinetic energy are both conserved. The moving object stops and the stationary one moves off at the original speed — Newton's cradle demonstrates this."
+  },
+  {
+    "id": "momentum-impulse-t4-q3",
+    "topicId": "momentum-impulse",
+    "tier": 4,
+    "question": "Two ice skaters (60 kg and 40 kg) push off each other from rest. The 60 kg skater moves at 2 m/s. What is the speed of the 40 kg skater?",
+    "choices": ["1.33 m/s", "2 m/s", "3 m/s", "4 m/s"],
+    "answerIndex": 2,
+    "explanation": "Initial total momentum = 0. After: 60 × 2 + 40 × (−v) = 0 → v = 120/40 = 3 m/s in the opposite direction."
+  },
+  {
+    "id": "momentum-impulse-t5-q1",
+    "topicId": "momentum-impulse",
+    "tier": 5,
+    "question": "A 2 kg ball at 10 m/s hits a 3 kg ball at rest. After the collision, the 2 kg ball moves at 2 m/s in the same direction. What is the speed of the 3 kg ball?",
+    "choices": ["4 m/s", "5.3 m/s", "6 m/s", "8 m/s"],
+    "answerIndex": 1,
+    "explanation": "Conservation of momentum: 2 × 10 = 2 × 2 + 3 × v → 20 = 4 + 3v → v = 16/3 ≈ 5.3 m/s."
+  },
+  {
+    "id": "momentum-impulse-t5-q2",
+    "topicId": "momentum-impulse",
+    "tier": 5,
+    "question": "A 0.5 kg ball falls 5 m and bounces back to 3.2 m (g = 10 m/s²). What is the magnitude of the impulse from the floor?",
+    "choices": ["3.5 N·s", "5 N·s", "7.5 N·s", "9 N·s"],
+    "answerIndex": 3,
+    "explanation": "Speed before bounce: v₁ = √(2×10×5) = 10 m/s. Speed after bounce: v₂ = √(2×10×3.2) = √64 = 8 m/s. Impulse = m(v₂ − (−v₁)) = 0.5 × (8 + 10) = 0.5 × 18 = 9 N·s."
+  },
+  {
+    "id": "momentum-impulse-t5-q3",
+    "topicId": "momentum-impulse",
+    "tier": 5,
+    "question": "A 2 kg ball at 8 m/s east collides head-on with a 4 kg ball at 2 m/s west. They stick together. What is the final velocity?",
+    "choices": ["1.33 m/s west", "1.33 m/s east", "2 m/s east", "4 m/s west"],
+    "answerIndex": 1,
+    "explanation": "Taking east as positive: p = 2(8) + 4(−2) = 16 − 8 = 8 kg·m/s east. Combined mass = 6 kg. v_f = 8/6 = 1.33 m/s east."
+  }
+]

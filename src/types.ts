@@ -10,7 +10,7 @@ export type Question = {
   generated?: boolean;
 };
 
-export type Subject = 'math' | 'biology' | 'python' | 'robotics' | 'chemistry' | 'space';
+export type Subject = 'math' | 'biology' | 'python' | 'robotics' | 'chemistry' | 'space' | 'physics' | 'hackathon';
 
 export type TopicResource = {
   label: string;
@@ -33,6 +33,14 @@ export type TopicProgress = {
   incorrectStreak: number;
   mastered: boolean;
   answeredIds: string[];
+  /** Question IDs the learner answered incorrectly — shown again in Practice mode. */
+  missedIds: string[];
+  /** Unix ms timestamp of the last study session for this topic. */
+  lastStudiedAt?: number;
+  /** Unix ms timestamp when this topic is next due for review. */
+  nextReviewAt?: number;
+  /** How many spaced-repetition review cycles have been completed. */
+  reviewCount?: number;
 };
 
 export type ModelSize = '1b' | '3b';
