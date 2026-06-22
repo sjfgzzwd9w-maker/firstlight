@@ -5,11 +5,11 @@ type QuestionCardProps = {
   selectedIndex: number | null;
   revealed: boolean;
   onSelect: (index: number) => void;
-  /** When true, choices are rendered in a monospace code style (for Python code-flaw questions). */
   codeMode?: boolean;
+  /** Topic context shown above the question — ties the question to real-world meaning. */
+  topicContext?: { emoji: string; label: string };
 };
 
-/** Splits text on ``` fences and renders code sections in a monospace block. */
 function QuestionPrompt({ text }: { text: string }) {
   const parts = text.split('```');
   if (parts.length === 1) {
@@ -41,48 +41,53 @@ function QuestionPrompt({ text }: { text: string }) {
   );
 }
 
-export default function QuestionCard({ question, selectedIndex, revealed, onSelect, codeMode }: QuestionCardProps) {
+export default function QuestionCard({ question, selectedIndex, revealed, onSelect, codeMode, topicContext }: QuestionCardProps) {
   return (
-    /* Deep Work mode card — cool academic blue-slate per CogniSync Principle 4 */
-    <div className="w-full max-w-lg rounded-2xl border border-deep-700 bg-deep-800 p-6 shadow-lg">
-      <QuestionPrompt text={question.question} />
-      <div className="mt-5 flex flex-col gap-2">
-        {question.choices.map((choice, i) => {
-          // Default: unselected in question phase
-          let style = 'border-deep-700 bg-deep-900/60 text-deep-text hover:bg-deep-600/30 hover:border-deep-600';
+    <div className="w-full max-w-lg rounded-2xl border border-deep-700 bg-deep-800 shadow-lg overflow-hidden">
+      {/* Topic context — ties the question to its real-world purpose */}
+      {topicContext && (
+        <div className="flex items-center gap-3 border-b border-deep-700 px-5 py-3" style={{ background: '#0e1820' }}>
+          <span className="text-xl flex-shrink-0" aria-hidden>{topicContext.emoji}</span>
+          <p className="text-sm font-medium leading-snug" style={{ color: '#7ea8c0' }}>{topicContext.label}</p>
+        </div>
+      )}
 
-          if (revealed) {
-            if (i === question.answerIndex) {
-              // Correct answer — comet teal (positive signal)
-              style = 'border-comet-400 bg-comet-500/15 text-comet-300';
+      <div className="p-6">
+        <QuestionPrompt text={question.question} />
+
+        <div className="mt-5 flex flex-col gap-2">
+          {question.choices.map((choice, i) => {
+            let style = 'border-deep-700 bg-deep-900/60 text-deep-text hover:bg-deep-600/30 hover:border-deep-600';
+
+            if (revealed) {
+              if (i === question.answerIndex) {
+                style = 'border-comet-400 bg-comet-500/15 text-comet-300';
+              } else if (i === selectedIndex) {
+                style = 'border-alert-400 bg-alert-500/12 text-alert-300';
+              } else {
+                style = 'border-deep-700/40 bg-deep-900/30 text-deep-text/40 opacity-50';
+              }
             } else if (i === selectedIndex) {
-              // Wrong answer — Alert red (Focus/Precision mode — knowledge gap signal)
-              style = 'border-alert-400 bg-alert-500/12 text-alert-300';
-            } else {
-              // Unchosen distractor — fade out
-              style = 'border-deep-700/40 bg-deep-900/30 text-deep-text/40 opacity-50';
+              style = 'border-sage-400 bg-sage-500/15 text-sage-300';
             }
-          } else if (i === selectedIndex) {
-            // Actively selected before check — sage green (Deep Work selection)
-            style = 'border-sage-400 bg-sage-500/15 text-sage-300';
-          }
 
-          return (
-            <button
-              key={i}
-              type="button"
-              disabled={revealed}
-              onClick={() => onSelect(i)}
-              className={`rounded-xl border px-4 py-3 text-left text-sm transition-all duration-150 ${style}`}
-            >
-              {codeMode ? (
-                <code className="font-mono text-sm whitespace-pre-wrap">{choice}</code>
-              ) : (
-                choice
-              )}
-            </button>
-          );
-        })}
+            return (
+              <button
+                key={i}
+                type="button"
+                disabled={revealed}
+                onClick={() => onSelect(i)}
+                className={`rounded-xl border px-4 py-3 text-left text-sm transition-all duration-150 ${style}`}
+              >
+                {codeMode ? (
+                  <code className="font-mono text-sm whitespace-pre-wrap">{choice}</code>
+                ) : (
+                  choice
+                )}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

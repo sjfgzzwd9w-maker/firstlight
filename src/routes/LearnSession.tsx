@@ -6,6 +6,7 @@ import QuestionCard from '../components/QuestionCard';
 import LevelUpModal from '../components/LevelUpModal';
 import NoteEditor from '../components/NoteEditor';
 import TeachItBack from '../components/TeachItBack';
+import { getTopicContext } from '../lib/topic-contexts';
 import { useProfile } from '../context/ProfileContext';
 import { useSession } from '../context/SessionContext';
 import { ALL_TOPICS, SUBJECT_LABELS, SUBJECT_PATHS } from '../lib/engine/topics';
@@ -252,19 +253,16 @@ export default function LearnSession() {
   useEffect(() => stopSpeaking, []);
 
   const reflectPrompt = getReflectPrompt(topic.name, topic.subject, reflectPromptIdx);
-
-  // Derive feedback tone from answer correctness for post-answer UI
   const wasCorrect = selectedIndex !== null && question !== null && selectedIndex === question.answerIndex;
+  const topicContext = getTopicContext(topicId, topic.name);
 
   return (
-    /* App root handles bg-deep-work; Robotics gets its own grid overlay */
     <div className={`flex-1 flex flex-col items-center px-6 py-8 max-w-2xl mx-auto w-full ${isRobotics ? 'bg-robotics' : ''}`}>
-      {/* Teach It Back overlay — Action mode (warm amber wake-up) */}
       {showTeachBack && (
         <TeachItBack topicName={topic.name} onDone={handleTeachBackDone} />
       )}
 
-      {/* Header bar — sits above the Deep Work zone */}
+      {/* Persistent header */}
       <div className="flex w-full items-center justify-between text-sm text-deep-text/60">
         <button
           type="button"
@@ -286,7 +284,7 @@ export default function LearnSession() {
         </button>
       </div>
 
-      {/* CogniSync: Reflect Phase — analytical, stays in Deep Work palette */}
+      {/* ── REFLECT PHASE ── */}
       {phase === 'reflect' && (
         <ReflectPhase
           prompt={reflectPrompt.prompt}
@@ -296,7 +294,8 @@ export default function LearnSession() {
         />
       )}
 
-      {phase !== 'reflect' && (
+      {/* ── LOADING / QUESTION / FEEDBACK PHASES ── */}
+      {(phase === 'loading' || phase === 'question' || phase === 'feedback') && (
         <div className="mt-8 flex flex-1 flex-col items-center gap-6 w-full">
           <Mascot mood={mascotMood} line={phase === 'feedback' ? mascotMsg : null} />
 
@@ -328,6 +327,7 @@ export default function LearnSession() {
               revealed={phase === 'feedback'}
               onSelect={(i) => phase === 'question' && setSelectedIndex(i)}
               codeMode={topic.subject === 'python'}
+              topicContext={topicContext}
             />
           )}
 
@@ -335,14 +335,12 @@ export default function LearnSession() {
             <NoteEditor key={question.id} question={question} circuit={isRobotics} />
           )}
 
-          {/* Feedback explanation — color shifts with answer correctness */}
           {phase === 'feedback' && (
             <p className={`max-w-lg text-center text-sm ${wasCorrect ? 'text-comet-300' : 'text-alert-300'}`}>
               {explanation}
             </p>
           )}
 
-          {/* CogniSync: upcoming Teach It Back nudge */}
           {phase === 'question' && sessionCorrect > 0 && sessionCorrect % TEACHBACK_EVERY !== 0 && (
             <p className="text-xs text-deep-text/25">
               {TEACHBACK_EVERY - (sessionCorrect % TEACHBACK_EVERY)} more correct → Teach It Back checkpoint
