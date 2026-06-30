@@ -39,10 +39,12 @@ export default function SkillPath({ topics, progress, onSelect }: SkillPathProps
                 className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold ${
                   p?.mastered
                     ? 'border-comet-400 text-comet-400'
-                    : 'border-star-400 text-star-400'
+                    : p
+                    ? 'border-star-400 text-star-400'
+                    : 'border-white/20 text-white/30'
                 }`}
               >
-                {unlocked ? (p?.mastered ? '★' : `${p?.tier ?? 1}/${MAX_TIER}`) : '🔒'}
+                {!unlocked ? '🔒' : p?.mastered ? '★' : p ? `${p.tier}/${MAX_TIER}` : '·'}
               </div>
               <div>
                 <h3 className="font-semibold text-white">{topic.name}</h3>

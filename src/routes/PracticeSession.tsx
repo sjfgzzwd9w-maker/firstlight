@@ -5,6 +5,7 @@ import QuestionCard from '../components/QuestionCard';
 import { useProfile } from '../context/ProfileContext';
 import { ALL_TOPICS, SUBJECT_LABELS } from '../lib/engine/topics';
 import { getQuestionById } from '../lib/engine/adaptiveEngine';
+import { getTopicContext } from '../lib/topic-contexts';
 import { speak, stopSpeaking } from '../lib/voice/tts';
 import type { Question } from '../types';
 
@@ -158,6 +159,7 @@ export default function PracticeSession() {
 
   const isCorrect = phase === 'feedback' && selectedIndex === current.question.answerIndex;
   const isPython = current.question.topicId.startsWith('python') || current.question.topicId.startsWith('oop') || current.question.topicId.startsWith('modules');
+  const topicContext = getTopicContext(current.topicId, current.topicName);
 
   return (
     <div className="flex-1 flex flex-col items-center px-6 py-8 max-w-2xl mx-auto w-full">
@@ -205,6 +207,7 @@ export default function PracticeSession() {
           revealed={phase === 'feedback'}
           onSelect={(i) => phase === 'question' && setSelectedIndex(i)}
           codeMode={isPython}
+          topicContext={topicContext}
         />
 
         {phase === 'feedback' && (

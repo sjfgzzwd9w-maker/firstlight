@@ -143,7 +143,7 @@ const ROADMAP = [
 export default function DreamGaze() {
   return (
     <div className="flex-1 flex flex-col items-center px-6 py-10 max-w-4xl mx-auto w-full text-center">
-      <Mascot mood="excited" line="Let's chart your path to the stars — Berkeley & UCLA, here we come!" />
+      <Mascot mood="excited" line="Let's chart your path — clubs, competitions, and research that set you apart." />
       <h1 className="mt-6 text-3xl sm:text-4xl font-extrabold text-white">🔭 Dream Gaze Resources</h1>
       <p className="mt-3 max-w-2xl text-white/60">
         A 9th-grader's game plan for clubs, competitions, and internships that build toward a strong

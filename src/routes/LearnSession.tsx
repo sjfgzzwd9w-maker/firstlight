@@ -331,7 +331,7 @@ export default function LearnSession() {
             />
           )}
 
-          {question && phase !== 'loading' && !question.generated && (
+          {question && phase === 'feedback' && !question.generated && (
             <NoteEditor key={question.id} question={question} circuit={isRobotics} />
           )}
 
@@ -418,23 +418,14 @@ function ReflectPhase({
         </div>
       </div>
 
-      <div className="flex gap-3">
-        <button
-          type="button"
-          onClick={onDone}
-          disabled={!canSubmit}
-          className="rounded-full bg-sage-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-sage-400 disabled:opacity-40 disabled:cursor-not-allowed"
-        >
-          Continue →
-        </button>
-        <button
-          type="button"
-          onClick={onDone}
-          className="rounded-full border border-deep-700 px-6 py-3 text-sm text-deep-text/50 hover:text-deep-text"
-        >
-          Skip
-        </button>
-      </div>
+      <button
+        type="button"
+        onClick={onDone}
+        disabled={!canSubmit}
+        className="rounded-full bg-sage-500 px-8 py-3 font-semibold text-white transition-colors hover:bg-sage-400 disabled:opacity-40 disabled:cursor-not-allowed"
+      >
+        Continue →
+      </button>
       <p className="text-xs text-deep-text/30 text-center">
         Reflection helps your brain build connections. No wrong answers — just think out loud.
       </p>

@@ -10,7 +10,7 @@ export type Question = {
   generated?: boolean;
 };
 
-export type Subject = 'math' | 'biology' | 'python' | 'robotics' | 'chemistry' | 'space' | 'physics' | 'hackathon';
+export type Subject = 'math' | 'biology' | 'python' | 'robotics' | 'chemistry' | 'space' | 'physics' | 'hackathon' | 'music';
 
 export type TopicResource = {
   label: string;
@@ -58,6 +58,13 @@ export type QuestionNote = {
   updatedAt: number;
 };
 
+export type DreamGazeProgress = {
+  /** IDs of checklist items the user has ticked off */
+  checked: string[];
+  /** Freeform personal notes */
+  notes: string;
+};
+
 export type UserProfile = {
   age: number | null;
   voiceEnabled: boolean;
@@ -66,6 +73,7 @@ export type UserProfile = {
   badges: string[];
   topics: Record<string, TopicProgress>;
   notes: QuestionNote[];
+  dreamGaze?: DreamGazeProgress;
 };
 
 export type AnswerEvent = 'correct-levelUp' | 'correct' | 'incorrect-levelDown' | 'incorrect';

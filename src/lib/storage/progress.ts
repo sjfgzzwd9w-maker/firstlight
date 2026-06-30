@@ -1,6 +1,5 @@
 import type { Question, QuestionNote, UserProfile } from '../../types';
 import { ALL_TOPICS } from '../engine/topics';
-import { createTopicProgress, placementTier } from '../engine/adaptiveEngine';
 
 const STORAGE_KEY = 'stardance:profile:v1';
 
@@ -33,14 +32,14 @@ export function saveProfile(profile: UserProfile): void {
 
 /** Ensure every topic has a progress entry and all fields are present (handles old saved data). */
 export function ensureTopicsInitialized(profile: UserProfile): UserProfile {
+  // Only backfill missedIds on topics the user has already touched.
+  // Do NOT pre-create entries for untouched topics — that would make every
+  // topic appear started (Tier 3 / 0 XP) and bypass the SkillPath lock system.
   const topics = { ...profile.topics };
   let changed = false;
-  for (const topic of ALL_TOPICS) {
-    if (!topics[topic.id]) {
-      topics[topic.id] = createTopicProgress(placementTier(profile.age));
-      changed = true;
-    } else if (!topics[topic.id].missedIds) {
-      topics[topic.id] = { ...topics[topic.id], missedIds: [] };
+  for (const id of Object.keys(topics)) {
+    if (!topics[id].missedIds) {
+      topics[id] = { ...topics[id], missedIds: [] };
       changed = true;
     }
   }
