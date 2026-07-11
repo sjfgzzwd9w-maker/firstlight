@@ -1,6 +1,10 @@
 import { useState } from 'react';
+import { useProfile } from '../context/ProfileContext';
+import type { Subject } from '../types';
 
 type TeachItBackProps = {
+  topicId: string;
+  subject: Subject;
   topicName: string;
   onDone: () => void;
 };
@@ -14,7 +18,8 @@ const FOLLOW_UPS = [
   'I think I get it. One more thing — why does it matter? Who would need to know this?',
 ];
 
-export default function TeachItBack({ topicName, onDone }: TeachItBackProps) {
+export default function TeachItBack({ topicId, subject, topicName, onDone }: TeachItBackProps) {
+  const { saveTeachBack } = useProfile();
   const [phase, setPhase] = useState<'prompt' | 'followup'>('prompt');
   const [text, setText] = useState('');
   const [followUp] = useState(() => FOLLOW_UPS[Math.floor(Math.random() * FOLLOW_UPS.length)]);
@@ -106,7 +111,10 @@ export default function TeachItBack({ topicName, onDone }: TeachItBackProps) {
             <div className="mt-4">
               <button
                 type="button"
-                onClick={onDone}
+                onClick={() => {
+                  saveTeachBack(topicId, subject, topicName, text, followUp, response);
+                  onDone();
+                }}
                 className="w-full rounded-full bg-action-400 px-5 py-2.5 text-sm font-semibold text-action-bg transition-colors hover:bg-action-300"
               >
                 Done — back to studying →

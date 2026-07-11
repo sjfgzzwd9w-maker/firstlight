@@ -259,7 +259,12 @@ export default function LearnSession() {
   return (
     <div className={`flex-1 flex flex-col items-center px-6 py-8 max-w-2xl mx-auto w-full ${isRobotics ? 'bg-robotics' : ''}`}>
       {showTeachBack && (
-        <TeachItBack topicName={topic.name} onDone={handleTeachBackDone} />
+        <TeachItBack
+          topicId={topic.id}
+          subject={topic.subject}
+          topicName={topic.name}
+          onDone={handleTeachBackDone}
+        />
       )}
 
       {/* Persistent header */}
