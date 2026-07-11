@@ -181,6 +181,8 @@ export const BIOLOGY_TOPICS_PART2: Topic[] = [
   },
 ];
 
+export const BIOLOGY_TOPICS_ALL: Topic[] = [...BIOLOGY_TOPICS, ...BIOLOGY_TOPICS_PART2];
+
 export const PYTHON_TOPICS: Topic[] = [
   {
     id: 'python-basics',

@@ -4,7 +4,7 @@ import { useProfile } from '../context/ProfileContext';
 import {
   ALL_TOPICS,
   MATH_TOPICS_ALL,
-  BIOLOGY_TOPICS,
+  BIOLOGY_TOPICS_ALL,
   CHEMISTRY_TOPICS_ALL,
   PYTHON_TOPICS_ALL,
   ROBOTICS_TOPICS_ALL,
@@ -31,7 +31,7 @@ export default function Profile() {
   const badges: string[] = [];
   for (const topic of [
     ...MATH_TOPICS_ALL,
-    ...BIOLOGY_TOPICS,
+    ...BIOLOGY_TOPICS_ALL,
     ...CHEMISTRY_TOPICS_ALL,
     ...PYTHON_TOPICS_ALL,
     ...ROBOTICS_TOPICS_ALL,
@@ -161,7 +161,7 @@ export default function Profile() {
       <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(MATH_TOPICS_ALL)}</div>
 
       <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Biology</h2>
-      <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(BIOLOGY_TOPICS)}</div>
+      <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(BIOLOGY_TOPICS_ALL)}</div>
 
       <h2 className="mt-8 w-full text-left text-lg font-semibold text-white">Chemistry</h2>
       <div className="mt-3 w-full grid grid-cols-1 gap-3 sm:grid-cols-2">{renderTopics(CHEMISTRY_TOPICS_ALL)}</div>
