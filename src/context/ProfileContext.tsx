@@ -1,11 +1,13 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import type { Question, TopicProgress, UserProfile } from '../types';
+import type { Question, Subject, TopicProgress, UserProfile } from '../types';
 import {
   ensureTopicsInitialized,
   loadProfile,
   removeNote,
+  removeTeachBack,
   saveNote,
   saveProfile,
+  saveTeachBack,
   setAge,
 } from '../lib/storage/progress';
 
@@ -16,9 +18,18 @@ type ProfileContextValue = {
   updateTopicProgress: (topicId: string, progress: TopicProgress) => void;
   setVoiceEnabled: (enabled: boolean) => void;
   setModelSize: (size: UserProfile['modelSize']) => void;
-  saveQuestionNote: (question: Question, text: string) => void;
+  saveQuestionNote: (question: Question, text: string, summary?: string) => void;
   deleteNote: (noteId: string) => void;
   clearMissedQuestion: (topicId: string, questionId: string) => void;
+  saveTeachBack: (
+    topicId: string,
+    subject: Subject,
+    topicName: string,
+    explanation: string,
+    followUpPrompt: string,
+    followUpResponse: string,
+  ) => void;
+  deleteTeachBack: (topicId: string) => void;
 };
 
 const ProfileContext = createContext<ProfileContextValue | null>(null);
@@ -56,12 +67,29 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     setProfile((prev) => ({ ...prev, modelSize: size }));
   };
 
-  const saveQuestionNote = (question: Question, text: string) => {
-    setProfile((prev) => saveNote(prev, question, text));
+  const saveQuestionNote = (question: Question, text: string, summary: string = '') => {
+    setProfile((prev) => saveNote(prev, question, text, summary));
   };
 
   const deleteNote = (noteId: string) => {
     setProfile((prev) => removeNote(prev, noteId));
+  };
+
+  const saveTeachBackEntry = (
+    topicId: string,
+    subject: Subject,
+    topicName: string,
+    explanation: string,
+    followUpPrompt: string,
+    followUpResponse: string,
+  ) => {
+    setProfile((prev) =>
+      saveTeachBack(prev, topicId, subject, topicName, explanation, followUpPrompt, followUpResponse),
+    );
+  };
+
+  const deleteTeachBackEntry = (topicId: string) => {
+    setProfile((prev) => removeTeachBack(prev, topicId));
   };
 
   const clearMissedQuestion = (topicId: string, questionId: string) => {
@@ -90,6 +118,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
         saveQuestionNote,
         deleteNote,
         clearMissedQuestion,
+        saveTeachBack: saveTeachBackEntry,
+        deleteTeachBack: deleteTeachBackEntry,
       }}
     >
       {children}
