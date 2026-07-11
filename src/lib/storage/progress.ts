@@ -1,4 +1,4 @@
-import type { Question, QuestionNote, UserProfile } from '../../types';
+import type { Question, QuestionNote, Subject, TeachBackEntry, UserProfile } from '../../types';
 import { ALL_TOPICS } from '../engine/topics';
 
 const STORAGE_KEY = 'stardance:profile:v1';
@@ -106,4 +106,35 @@ export function removeNote(profile: UserProfile, noteId: string): UserProfile {
 
 export function noteForQuestion(profile: UserProfile, questionId: string): QuestionNote | undefined {
   return profile.notes.find((n) => n.questionId === questionId);
+}
+
+/**
+ * Save a Teach It Back explanation (Feynman technique) for a topic. A new
+ * submission overwrites the previous one for that topic — no history kept.
+ */
+export function saveTeachBack(
+  profile: UserProfile,
+  topicId: string,
+  subject: Subject,
+  topicName: string,
+  explanation: string,
+  followUpPrompt: string,
+  followUpResponse: string,
+): UserProfile {
+  const entry: TeachBackEntry = {
+    topicId,
+    subject,
+    topicName,
+    explanation,
+    followUpPrompt,
+    followUpResponse,
+    updatedAt: Date.now(),
+  };
+  return { ...profile, teachBacks: { ...profile.teachBacks, [topicId]: entry } };
+}
+
+export function removeTeachBack(profile: UserProfile, topicId: string): UserProfile {
+  const teachBacks = { ...profile.teachBacks };
+  delete teachBacks[topicId];
+  return { ...profile, teachBacks };
 }
