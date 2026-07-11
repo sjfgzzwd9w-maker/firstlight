@@ -890,6 +890,8 @@ export const SUBJECT_LABELS: Record<Subject, string> = {
   space: 'Space Science',
   physics: 'Physics',
   hackathon: 'Hackathon',
+  // Placeholder — no Music content/routes yet, planned for a future subject.
+  music: 'Music',
 };
 
 /** Module-map route to return to (Exit / Continue) for each subject. */
@@ -902,4 +904,6 @@ export const SUBJECT_PATHS: Record<Subject, string> = {
   space: '/learn/space',
   physics: '/learn/physics',
   hackathon: '/learn/hackathon',
+  // Placeholder — Music has no module map route yet.
+  music: '/learn/music',
 };

@@ -89,6 +89,14 @@ const SUBJECT_EXTRA: Record<Subject, ReflectPrompt[]> = {
       minWords: 15,
     },
   ],
+  // Placeholder — no Music content/routes yet, planned for a future subject.
+  music: [
+    {
+      prompt: 'Hum or describe the pattern you just studied — where would you hear it in a real piece of music?',
+      placeholder: 'Think of a song, rhythm, or instrument where this shows up…',
+      minWords: 10,
+    },
+  ],
 };
 
 /** Pick a reflection prompt for the current topic. Cycles through prompts as questionCount grows. */
