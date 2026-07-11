@@ -34,7 +34,12 @@ export default function HackathonModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-star-400">
               Unit 2 · Competing &amp; Growing
             </h2>
-            <SkillPath topics={HACKATHON_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={HACKATHON_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={HACKATHON_TOPICS[HACKATHON_TOPICS.length - 1].id}
+            />
           </div>
         </div>
 

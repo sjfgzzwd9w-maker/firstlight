@@ -33,7 +33,12 @@ export default function SpaceModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-star-400">
               Unit 2 · Exploration &amp; the Universe
             </h2>
-            <SkillPath topics={SPACE_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={SPACE_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={SPACE_TOPICS[SPACE_TOPICS.length - 1].id}
+            />
           </div>
         </div>
 

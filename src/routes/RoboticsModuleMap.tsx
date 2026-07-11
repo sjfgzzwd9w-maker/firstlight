@@ -38,21 +38,36 @@ export default function RoboticsModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-circuit-400">
               Part 2 · Building Blocks
             </h2>
-            <SkillPath topics={ROBOTICS_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={ROBOTICS_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={ROBOTICS_TOPICS[ROBOTICS_TOPICS.length - 1].id}
+            />
           </div>
 
           <div className="mt-12 w-full">
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-circuit-400">
               Part 3 · Going Further
             </h2>
-            <SkillPath topics={ROBOTICS_TOPICS_PART3} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={ROBOTICS_TOPICS_PART3}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={ROBOTICS_TOPICS_PART2[ROBOTICS_TOPICS_PART2.length - 1].id}
+            />
           </div>
 
           <div className="mt-12 w-full">
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-circuit-400">
               Part 4 · VEX Build Lab
             </h2>
-            <SkillPath topics={ROBOTICS_TOPICS_PART4} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={ROBOTICS_TOPICS_PART4}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={ROBOTICS_TOPICS_PART3[ROBOTICS_TOPICS_PART3.length - 1].id}
+            />
           </div>
         </div>
 

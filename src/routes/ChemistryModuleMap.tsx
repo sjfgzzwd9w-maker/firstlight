@@ -38,14 +38,24 @@ export default function ChemistryModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-lab-400">
               Unit 2 · Atomic &amp; Nuclear Chemistry
             </h2>
-            <SkillPath topics={CHEMISTRY_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={CHEMISTRY_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={CHEMISTRY_TOPICS[CHEMISTRY_TOPICS.length - 1].id}
+            />
           </div>
 
           <div className="mt-12 w-full">
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-lab-400">
               Unit 3 · Orbitals &amp; Electron Configuration
             </h2>
-            <SkillPath topics={CHEMISTRY_TOPICS_PART3} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={CHEMISTRY_TOPICS_PART3}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={CHEMISTRY_TOPICS_PART2[CHEMISTRY_TOPICS_PART2.length - 1].id}
+            />
           </div>
         </div>
 

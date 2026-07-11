@@ -33,14 +33,24 @@ export default function PhysicsModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-star-400">
               Unit 2 · Forces &amp; Energy
             </h2>
-            <SkillPath topics={PHYSICS_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={PHYSICS_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={PHYSICS_TOPICS[PHYSICS_TOPICS.length - 1].id}
+            />
           </div>
 
           <div className="mt-12 w-full">
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-star-400">
               Unit 3 · Waves, Sound &amp; Electromagnetism
             </h2>
-            <SkillPath topics={PHYSICS_TOPICS_PART3} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={PHYSICS_TOPICS_PART3}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={PHYSICS_TOPICS_PART2[PHYSICS_TOPICS_PART2.length - 1].id}
+            />
           </div>
         </div>
 

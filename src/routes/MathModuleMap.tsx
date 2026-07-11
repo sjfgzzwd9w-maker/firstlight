@@ -33,7 +33,12 @@ export default function MathModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-white/50">
               Part 2 · Advanced Algebra 2
             </h2>
-            <SkillPath topics={MATH_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={MATH_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={MATH_TOPICS[MATH_TOPICS.length - 1].id}
+            />
           </div>
         </div>
 

@@ -32,14 +32,24 @@ export default function CodingModuleMap() {
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-white/50">
               Part 2 · Data Structures &amp; Functions
             </h2>
-            <SkillPath topics={PYTHON_TOPICS_PART2} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={PYTHON_TOPICS_PART2}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={PYTHON_TOPICS[PYTHON_TOPICS.length - 1].id}
+            />
           </div>
 
           <div className="mt-12 w-full">
             <h2 className="mb-4 text-left text-sm font-semibold uppercase tracking-wide text-white/50">
               Part 3 · Going Further
             </h2>
-            <SkillPath topics={PYTHON_TOPICS_PART3} progress={profile.topics} onSelect={goToSession} />
+            <SkillPath
+              topics={PYTHON_TOPICS_PART3}
+              progress={profile.topics}
+              onSelect={goToSession}
+              previousTopicId={PYTHON_TOPICS_PART2[PYTHON_TOPICS_PART2.length - 1].id}
+            />
           </div>
         </div>
 

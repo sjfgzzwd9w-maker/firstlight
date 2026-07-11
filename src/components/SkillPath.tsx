@@ -7,20 +7,33 @@ type SkillPathProps = {
   topics: Topic[];
   progress: Record<string, TopicProgress>;
   onSelect: (topicId: string) => void;
+  /**
+   * ID of the topic that comes immediately before this list in the subject's
+   * overall order (e.g. the last topic of "Part 1" when rendering "Part 2").
+   * Omit for the very first section of a subject, where the first topic is
+   * always unlocked.
+   */
+  previousTopicId?: string;
 };
 
-function isUnlocked(topics: Topic[], progress: Record<string, TopicProgress>, index: number): boolean {
-  if (index === 0) return true;
-  const prev = progress[topics[index - 1].id];
+export function isUnlocked(
+  topics: Topic[],
+  progress: Record<string, TopicProgress>,
+  index: number,
+  previousTopicId?: string,
+): boolean {
+  const gateTopicId = index === 0 ? previousTopicId : topics[index - 1].id;
+  if (!gateTopicId) return true;
+  const prev = progress[gateTopicId];
   return !!prev && (prev.mastered || prev.tier >= UNLOCK_TIER);
 }
 
-export default function SkillPath({ topics, progress, onSelect }: SkillPathProps) {
+export default function SkillPath({ topics, progress, onSelect, previousTopicId }: SkillPathProps) {
   return (
     <div className="flex flex-col gap-4 w-full max-w-md mx-auto">
       {topics.map((topic, i) => {
         const p = progress[topic.id];
-        const unlocked = isUnlocked(topics, progress, i);
+        const unlocked = isUnlocked(topics, progress, i, previousTopicId);
         const align = i % 2 === 0 ? 'self-start' : 'self-end';
 
         return (

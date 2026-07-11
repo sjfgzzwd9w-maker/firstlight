@@ -35,6 +35,7 @@ export default function BiologyModuleMap() {
           topics={BIOLOGY_TOPICS_PART2}
           progress={profile.topics}
           onSelect={(topicId) => navigate(`/learn/biology/session?topic=${topicId}`)}
+          previousTopicId={BIOLOGY_TOPICS[BIOLOGY_TOPICS.length - 1].id}
         />
       </div>
     </div>
