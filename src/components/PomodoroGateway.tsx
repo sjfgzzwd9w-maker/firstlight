@@ -79,6 +79,14 @@ export default function PomodoroGateway() {
           <p className="text-xs text-action-200/40">Unlocks automatically when the timer ends</p>
         </div>
 
+        <button
+          type="button"
+          onClick={endBreak}
+          className="mt-6 text-xs text-action-200/50 underline hover:text-action-200"
+        >
+          Skip break
+        </button>
+
         {/* Activity suggestions — warm-surface cards */}
         <div className="mt-8 grid grid-cols-1 gap-2 text-left">
           {ACTIVITIES.map((a) => (
