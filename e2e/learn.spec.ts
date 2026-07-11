@@ -15,7 +15,7 @@ async function dismissOnboarding(page: import('@playwright/test').Page) {
 test.describe('Landing page', () => {
   test('shows onboarding modal on first visit', async ({ page }) => {
     await page.goto('/');
-    await expect(page.getByText('Welcome to Stardance Learn!')).toBeVisible();
+    await expect(page.getByText('Welcome to First Light!')).toBeVisible();
     await expect(page.getByText("Let's go!")).toBeVisible();
   });
 

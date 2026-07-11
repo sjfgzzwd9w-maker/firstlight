@@ -1,4 +1,6 @@
-# Stardance Learn
+# First Light
+
+Built during Hack Club's [Stardance](https://stardance.hackclub.com/) summer engineering program.
 
 An adaptive learning app for kids and teens (ages 12–18). Pick a subject, answer
 questions, and your guide **Cosmo** adjusts the difficulty as you go — leveling

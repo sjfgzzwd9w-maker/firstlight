@@ -1,7 +1,7 @@
 import type { Question, QuestionNote, Subject, TeachBackEntry, UserProfile } from '../../types';
 import { ALL_TOPICS } from '../engine/topics';
 
-const STORAGE_KEY = 'stardance:profile:v1';
+const STORAGE_KEY = 'firstlight:profile:v1';
 
 function defaultProfile(): UserProfile {
   return {

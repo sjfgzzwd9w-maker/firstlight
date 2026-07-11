@@ -12,7 +12,7 @@ export default function AgeGate({ onSubmit }: AgeGateProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-space-950/80 backdrop-blur-sm px-4">
       <div className="w-full max-w-sm rounded-3xl border border-nebula-500/30 bg-space-900 p-6 text-center shadow-2xl animate-pop">
         <Mascot mood="excited" />
-        <h2 className="mt-4 text-xl font-bold text-white">Welcome to Stardance Learn!</h2>
+        <h2 className="mt-4 text-xl font-bold text-white">Welcome to First Light!</h2>
         <p className="mt-2 text-sm text-white/60">
           How old are you? This helps Cosmo pick the right starting point and explain things just for you.
         </p>

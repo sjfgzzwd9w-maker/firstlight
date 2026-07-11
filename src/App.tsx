@@ -35,7 +35,7 @@ function NavBar() {
   return (
     <header className="flex flex-wrap items-center justify-between gap-y-2 px-6 py-4 max-w-5xl mx-auto w-full">
       <NavLink to="/" className="flex items-center gap-2 text-lg font-bold text-star-400">
-        <span aria-hidden="true">✦</span> Stardance Learn
+        <span aria-hidden="true">✦</span> First Light
       </NavLink>
       <nav className="flex flex-wrap justify-end gap-2">
         {totalMissed > 0 && (

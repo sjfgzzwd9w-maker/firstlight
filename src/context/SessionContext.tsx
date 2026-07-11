@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 
 const BREAK_THRESHOLD_MS = 45 * 60 * 1000;  // 45 minutes active learning
 const BREAK_DURATION_MS  =  5 * 60 * 1000;  // 5-minute mandatory break
-const STORAGE_KEY = 'stardance:session:v1';
+const STORAGE_KEY = 'firstlight:session:v1';
 
 interface SessionState {
   activeMs: number;       // accumulated active-learning milliseconds
