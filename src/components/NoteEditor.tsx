@@ -18,6 +18,7 @@ export default function NoteEditor({ question, circuit }: NoteEditorProps) {
   const existing = profile.notes.find((n) => n.questionId === question.id);
   const [open, setOpen] = useState(false);
   const [text, setText] = useState(existing?.text ?? '');
+  const [summary, setSummary] = useState(existing?.summary ?? '');
   const [saved, setSaved] = useState(false);
 
   // Deep Work palette — analytical note-taking stays in cool academic tones.
@@ -57,7 +58,7 @@ export default function NoteEditor({ question, circuit }: NoteEditorProps) {
       };
 
   const handleSave = () => {
-    saveQuestionNote(question, text);
+    saveQuestionNote(question, text, summary);
     setSaved(true);
     setTimeout(() => setSaved(false), 1500);
   };
@@ -65,6 +66,7 @@ export default function NoteEditor({ question, circuit }: NoteEditorProps) {
   const handleDelete = () => {
     if (existing) deleteNote(existing.id);
     setText('');
+    setSummary('');
   };
 
   const handlePrint = () => {
@@ -91,7 +93,7 @@ export default function NoteEditor({ question, circuit }: NoteEditorProps) {
         <td class="cue"><div class="col-label">Cues / Keywords</div><div class="content"> </div></td>
         <td class="notes"><div class="col-label">Notes</div><div class="content">${text || ' '}</div></td>
       </tr></table>
-      <div class="summary"><div class="col-label">Summary — explain it in your own words</div><div class="content"> </div></div>
+      <div class="summary"><div class="col-label">Summary — explain it in your own words</div><div class="content">${summary || ' '}</div></div>
     </body></html>`);
     win.document.close();
     win.focus();
@@ -150,6 +152,8 @@ export default function NoteEditor({ question, circuit }: NoteEditorProps) {
             </p>
             <input
               type="text"
+              value={summary}
+              onChange={(e) => setSummary(e.target.value)}
               placeholder="In my own words, this means…"
               className={`w-full rounded-lg border ${a.inputBorder} ${a.inputBg} px-2 py-1.5 text-xs ${a.inputText} placeholder:opacity-30 focus:outline-none ${a.inputFocus}`}
             />
