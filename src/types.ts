@@ -54,7 +54,20 @@ export type QuestionNote = {
   /** Snapshot of the question text at the time the note was written. */
   questionText: string;
   text: string;
+  /** One-sentence Cornell-method summary, in the student's own words. */
+  summary?: string;
   createdAt: number;
+  updatedAt: number;
+};
+
+/** A "Teach It Back" entry — the learner's Feynman-technique explanation of a topic. */
+export type TeachBackEntry = {
+  topicId: string;
+  subject: Subject;
+  topicName: string;
+  explanation: string;
+  followUpPrompt: string;
+  followUpResponse: string;
   updatedAt: number;
 };
 
@@ -73,6 +86,8 @@ export type UserProfile = {
   badges: string[];
   topics: Record<string, TopicProgress>;
   notes: QuestionNote[];
+  /** Teach It Back entries, keyed by topicId. A new submission overwrites the previous one for that topic. */
+  teachBacks: Record<string, TeachBackEntry>;
   dreamGaze?: DreamGazeProgress;
 };
 

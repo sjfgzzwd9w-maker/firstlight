@@ -12,6 +12,7 @@ function defaultProfile(): UserProfile {
     badges: [],
     topics: {},
     notes: [],
+    teachBacks: {},
   };
 }
 
