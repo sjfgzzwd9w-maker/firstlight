@@ -90,6 +90,42 @@
     "explanation": "An API (like a weather service, maps, or AI model) gives you a complex capability in a few lines of code. In a 24-hour event, leveraging APIs is how small teams build impressive projects."
   },
   {
+    "id": "hackathon-beginner-skills-t4-q1",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 4,
+    "question": "Why do experienced hackers write a short README even for a 24-hour project?",
+    "choices": ["READMEs are required by every hackathon's rules", "It forces you to clarify your project's purpose and helps judges and teammates understand it fast", "READMEs improve how fast your code runs", "Judges only read READMEs, never watch demos"],
+    "answerIndex": 1,
+    "explanation": "Writing a README forces you to explain your own project clearly — often surfacing gaps in the idea itself. It's also the first thing a judge opens when your team isn't there to explain in person."
+  },
+  {
+    "id": "hackathon-beginner-skills-t4-q2",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 4,
+    "question": "You're debugging a crash 2 hours before submission. What's the most effective strategy?",
+    "choices": ["Rewrite the whole feature from scratch", "Isolate the smallest piece of code that reproduces the bug and test it alone", "Have the whole team stop and watch you debug", "Comment out random lines until it stops crashing"],
+    "answerIndex": 1,
+    "explanation": "Isolating the smallest reproducible case turns a scary crash into a small, testable problem. Random changes under time pressure usually create new bugs faster than they fix the old one."
+  },
+  {
+    "id": "hackathon-beginner-skills-t5-q1",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 5,
+    "question": "Your team's app works locally but breaks right after deploying it for judging. What's the most likely thing to check first?",
+    "choices": ["The judges' wifi connection", "Environment differences, like missing environment variables or mismatched dependency versions", "Whether your Devpost submission page loaded", "Which laptop brand your teammate used"],
+    "answerIndex": 1,
+    "explanation": "\"Works on my machine\" bugs are almost always environment differences — a missing API key, a different Node/Python version, or a config file that never got committed. Checking environment parity first saves the most time."
+  },
+  {
+    "id": "hackathon-beginner-skills-t5-q2",
+    "topicId": "hackathon-beginner-skills",
+    "tier": 5,
+    "question": "What is \"technical debt,\" and why does it matter even in a 24-hour hackathon?",
+    "choices": ["Money owed to sponsors for using their API", "Shortcuts taken now that cost more time to fix later — even a shortcut from hour 2 can block you by hour 20", "The time a mentor spends helping your team", "Extra features you didn't get to build"],
+    "answerIndex": 1,
+    "explanation": "A hardcoded value or copy-pasted function feels harmless at hour 2, but it can silently block a feature you need at hour 20. Even in a short hackathon, a few minutes of cleanup can prevent hours of late-night confusion."
+  },
+  {
     "id": "hackathon-thinking-t1-q1",
     "topicId": "hackathon-thinking",
     "tier": 1,
@@ -178,6 +214,42 @@
     "choices": ["When everyone on the team already knows how to build it", "When you can explain who uses it, what problem it solves, and why existing solutions fall short — in under 30 seconds", "When the idea sounds impressive as a title", "When the team agrees it will win first place"],
     "answerIndex": 1,
     "explanation": "The 30-second clarity test reveals whether your idea is sharp. If you can't explain the who, what, and why quickly, judges won't understand it either — and you may not truly understand it yourself."
+  },
+  {
+    "id": "hackathon-thinking-t4-q1",
+    "topicId": "hackathon-thinking",
+    "tier": 4,
+    "question": "Your team has confirmed a real user has the problem you want to solve. What should you validate NEXT before building?",
+    "choices": ["That the app will win a prize", "That your proposed solution is something that user would actually use", "The color scheme of the app", "That no other team is building something similar"],
+    "answerIndex": 1,
+    "explanation": "Confirming a problem is real is step one. Step two is confirming your specific solution actually addresses it — teams sometimes build a technically impressive answer to the wrong question."
+  },
+  {
+    "id": "hackathon-thinking-t4-q2",
+    "topicId": "hackathon-thinking",
+    "tier": 4,
+    "question": "What is a 'devil's advocate' pass on an idea, and why do strong teams do it?",
+    "choices": ["Assigning someone to insult the idea for fun", "Deliberately arguing against your own idea to surface weaknesses before judges do", "Taking a vote on whether to cancel the idea", "Asking sponsors to publicly critique it"],
+    "answerIndex": 1,
+    "explanation": "Finding the holes in your own idea in hour 2 is far cheaper than a judge finding them in hour 24. A quick devil's-advocate round often reveals a scoping fix that saves the whole project."
+  },
+  {
+    "id": "hackathon-thinking-t5-q1",
+    "topicId": "hackathon-thinking",
+    "tier": 5,
+    "question": "Two teammates disagree on which of two strong ideas to build, and the clock is ticking. What's the most effective way to resolve it?",
+    "choices": ["Flip a coin", "Time-box a 10-minute debate weighing feasibility and impact, then commit as a team", "Build both ideas in parallel with half the team on each", "Let whoever is loudest decide without discussion"],
+    "answerIndex": 1,
+    "explanation": "A time-boxed, criteria-based debate gets you a decision fast without dragging the disagreement into build time. Splitting the team to build two ideas in parallel almost always means neither one finishes."
+  },
+  {
+    "id": "hackathon-thinking-t5-q2",
+    "topicId": "hackathon-thinking",
+    "tier": 5,
+    "question": "Why do the strongest hackathon ideas often come from narrow, specific problems rather than broad, ambitious ones?",
+    "choices": ["Narrow problems are always easier to code", "A specific problem lets you build a complete, convincing solution in the time available, instead of a shallow attempt at something huge", "Judges are instructed to prefer small projects", "Broad ideas always require more team members"],
+    "answerIndex": 1,
+    "explanation": "\"An app that fixes healthcare\" can't be finished in 24 hours. \"An app that reminds a specific patient to take a specific medication\" can — and a complete small solution beats an unfinished big one every time."
   },
   {
     "id": "hackathon-mastery-t1-q1",
@@ -270,6 +342,42 @@
     "explanation": "You cannot see your own assumptions. A 10-minute feedback session with a mentor or peer can save you from building the wrong thing entirely. The best hackers treat feedback as data, not judgment."
   },
   {
+    "id": "hackathon-mastery-t4-q1",
+    "topicId": "hackathon-mastery",
+    "tier": 4,
+    "question": "You want to get better at hackathons faster than just attending more of them. What accelerates growth the most?",
+    "choices": ["Only ever teaming with people better than you", "Reviewing your own past project code and identifying concrete weak spots to drill on", "Watching other teams' final pitches only", "Avoiding hackathons you might not win"],
+    "answerIndex": 1,
+    "explanation": "Deliberate practice means targeting specific, identified weaknesses — not just showing up more. Reviewing your own old code honestly is one of the fastest ways to find exactly what to work on next."
+  },
+  {
+    "id": "hackathon-mastery-t4-q2",
+    "topicId": "hackathon-mastery",
+    "tier": 4,
+    "question": "What is the benefit of contributing to someone else's open-source project before your next hackathon?",
+    "choices": ["It guarantees you an internship", "It teaches you to read unfamiliar code and collaborate through pull requests — both transfer directly to hackathon teamwork", "It replaces the need to practice coding on your own", "Open-source contributions are scored directly by judges"],
+    "answerIndex": 1,
+    "explanation": "Hackathons constantly require reading code you didn't write and merging work with teammates under pressure. Open-source contribution is low-stakes practice for exactly that skill."
+  },
+  {
+    "id": "hackathon-mastery-t5-q1",
+    "topicId": "hackathon-mastery",
+    "tier": 5,
+    "question": "A hacker who has competed in 15 events still doesn't place well, despite strong solo coding skills. What is the most likely missing skill?",
+    "choices": ["They need to learn a new programming language", "Team collaboration, scoping, and pitching — skills that don't show up in solo practice", "They need more sleep before each event", "They should stop competing entirely"],
+    "answerIndex": 1,
+    "explanation": "Hackathons test more than individual coding ability. Scoping a project to fit the time, coordinating with teammates, and pitching clearly are separate skills that only improve with deliberate attention, not just more solo reps."
+  },
+  {
+    "id": "hackathon-mastery-t5-q2",
+    "topicId": "hackathon-mastery",
+    "tier": 5,
+    "question": "What does being 'T-shaped' mean, and why do mentors recommend it for hackathon growth?",
+    "choices": ["Wearing your team's branded T-shirt at every event", "Having broad working knowledge across many areas plus deep expertise in one — broad enough to help anywhere, deep enough to lead somewhere", "Only learning skills that start with the letter T", "Switching your specialty at every hackathon you attend"],
+    "answerIndex": 1,
+    "explanation": "A T-shaped hacker can pitch in on design, backend, or presenting when a teammate is stuck, while still being the go-to person for one area. That combination of breadth and depth is what makes someone valuable on any team."
+  },
+  {
     "id": "hackathon-finding-t1-q1",
     "topicId": "hackathon-finding",
     "tier": 1,
@@ -358,6 +466,42 @@
     "choices": ["Register immediately — if it's not listed it means everyone is welcome", "Email the organizers to confirm you're eligible as a high schooler", "Skip it — unlisted age means adults only", "Ask a parent to register on your behalf"],
     "answerIndex": 1,
     "explanation": "Always confirm eligibility directly. Some events welcome high schoolers but simply forget to list it. A quick email also puts you on the organizer's radar as a motivated participant — which is never a bad thing."
+  },
+  {
+    "id": "hackathon-finding-t4-q1",
+    "topicId": "hackathon-finding",
+    "tier": 4,
+    "question": "A hackathon's rules page mentions a 'code of conduct' and 'eligibility requirements.' Why should you read both before registering?",
+    "choices": ["They're just legal formalities nobody actually reads", "They confirm you're allowed to compete and set expectations for respectful behavior — skipping them risks disqualification or a bad experience", "Only teachers need to read them, not students", "They list the prize money breakdown"],
+    "answerIndex": 1,
+    "explanation": "Eligibility rules can quietly exclude you (age, school status, region) if you don't check first, and the code of conduct sets the ground rules for a safe, respectful event. Both are worth the two minutes it takes to read them."
+  },
+  {
+    "id": "hackathon-finding-t4-q2",
+    "topicId": "hackathon-finding",
+    "tier": 4,
+    "question": "You've outgrown beginner-friendly hackathons. What's a sign it's time to try a more competitive event?",
+    "choices": ["You've attended exactly one hackathon so far", "You can consistently ship a working demo and want more technical challenge or a more competitive pitch environment", "You want an easier chance at winning", "Your friends happen to be attending one"],
+    "answerIndex": 1,
+    "explanation": "Beginner-friendly events are for learning the format. Once shipping a demo is no longer your main challenge, a more competitive event gives you the stretch you need to keep growing."
+  },
+  {
+    "id": "hackathon-finding-t5-q1",
+    "topicId": "hackathon-finding",
+    "tier": 5,
+    "question": "Why might a specialized hackathon (e.g. focused on healthcare or climate) be a better strategic choice for an experienced hacker than a general one?",
+    "choices": ["Specialized hackathons never have real judging", "Domain-focused events attract judges and mentors with deep expertise in that area, letting you build something more credible and get sharper feedback", "They always have smaller prize pools than general events", "They only accept college students, not teens"],
+    "answerIndex": 1,
+    "explanation": "A judge who works in healthcare will push you on questions a generalist judge wouldn't think to ask, forcing a more credible, well-researched project — and giving you feedback that's actually useful."
+  },
+  {
+    "id": "hackathon-finding-t5-q2",
+    "topicId": "hackathon-finding",
+    "tier": 5,
+    "question": "As you gain experience, how should your strategy for choosing which hackathons to attend evolve?",
+    "choices": ["Always pick the biggest event regardless of fit", "Shift from 'any event to learn the format' toward events matching your specific interests, skill level, and goals (portfolio, networking, or competition)", "Stop attending hackathons entirely once you've won one", "Only attend events that offer cash prizes"],
+    "answerIndex": 1,
+    "explanation": "Early on, any hackathon teaches you the format. Later, the best use of your time is picking events deliberately — for the specific skill, network, or portfolio piece you're trying to build next."
   },
   {
     "id": "hackathon-participating-t1-q1",
@@ -450,6 +594,42 @@
     "explanation": "Judges feel 30 demos. The teams that stand out open with a person and a problem, show it working, and close with why it matters. Emotion + evidence + brevity = memorable."
   },
   {
+    "id": "hackathon-participating-t4-q1",
+    "topicId": "hackathon-participating",
+    "tier": 4,
+    "question": "Your team is deciding roles for a 24-hour event. What's the most effective way to assign them?",
+    "choices": ["Randomly, to keep it fair", "Match roles to each person's strongest skill while leaving room to help each other when someone is blocked", "Let the most talkative person choose first", "Rotate every role every hour"],
+    "answerIndex": 1,
+    "explanation": "Playing to strengths gets work done fastest, but the best teams also stay flexible — if the designer finishes early, they can jump in to help debug. Rigid roles with no flexibility slow a team down when someone gets stuck."
+  },
+  {
+    "id": "hackathon-participating-t4-q2",
+    "topicId": "hackathon-participating",
+    "tier": 4,
+    "question": "Two hours before submission, your demo works but looks rough. What should get the remaining time?",
+    "choices": ["Adding one more feature to impress judges", "Rehearsing the pitch and fixing the parts of the demo flow most likely to break live", "Refactoring the codebase for readability", "Writing unit tests for every function"],
+    "answerIndex": 1,
+    "explanation": "The last two hours are for hardening what you have, not expanding it. A rehearsed pitch and a demo flow you've tested end-to-end prevents the most common failure: something breaking live in front of judges."
+  },
+  {
+    "id": "hackathon-participating-t5-q1",
+    "topicId": "hackathon-participating",
+    "tier": 5,
+    "question": "During judging, a judge asks a tough technical question your team can't fully answer. What's the best response?",
+    "choices": ["Make up a confident-sounding answer", "Honestly say what you don't know yet and explain how you'd find out — judges respect honesty over bluffing", "Change the subject back to the pitch", "Blame a teammate who isn't present"],
+    "answerIndex": 1,
+    "explanation": "Judges have seen every version of a bluffed answer and can usually tell. Saying \"we haven't solved that yet, and here's how we'd approach it\" shows technical judgment, which judges often value more than a lucky guess."
+  },
+  {
+    "id": "hackathon-participating-t5-q2",
+    "topicId": "hackathon-participating",
+    "tier": 5,
+    "question": "What separates teams that consistently place well across multiple hackathons from teams that got lucky once?",
+    "choices": ["Having a bigger team every time", "A repeatable process — fast scoping, clear roles, and a rehearsed pitch — applied at every event instead of reinvented each time", "Always choosing the exact same project idea", "Avoiding working with new teammates"],
+    "answerIndex": 1,
+    "explanation": "One good result can be luck: the right idea, the right judge, the right day. Consistent placing comes from a process a team can repeat and refine — scoping fast, dividing roles clearly, and rehearsing the pitch every single time."
+  },
+  {
     "id": "hackathon-learning-t1-q1",
     "topicId": "hackathon-learning",
     "tier": 1,
@@ -538,5 +718,41 @@
     "choices": ["Focusing only on winning rather than learning", "Treating every hackathon as a data point for improving, not a final verdict on their ability", "Specializing so narrowly that they only enter relevant-theme events", "Only entering events they are certain to win"],
     "answerIndex": 1,
     "explanation": "Growth mindset at hackathons means: every result — win, loss, broken demo — is feedback. The hackers who improve fastest are the ones who ask 'what did I learn?' after every event, regardless of placement."
+  },
+  {
+    "id": "hackathon-learning-t4-q1",
+    "topicId": "hackathon-learning",
+    "tier": 4,
+    "question": "Six months after a hackathon, you want to reuse part of that project for a college application. What should you have kept from the event?",
+    "choices": ["Nothing — hackathon projects aren't reusable", "The GitHub repo, a written retrospective, and notes on your specific contribution — these turn a memory into evidence", "Only the prize certificate", "The swag you received"],
+    "answerIndex": 1,
+    "explanation": "Memory fades fast. A saved repo plus a few written notes on what you specifically built means you can speak concretely about the project months later, instead of vaguely remembering \"we built an app once.\""
+  },
+  {
+    "id": "hackathon-learning-t4-q2",
+    "topicId": "hackathon-learning",
+    "tier": 4,
+    "question": "After several hackathons, you notice the same mistake keeps happening (e.g. underestimating how long features take). What's the most effective fix?",
+    "choices": ["Ignore it — it's just bad luck each time", "Write it into your pre-hackathon checklist so future-you is forced to plan around it", "Stop attending hackathons", "Blame your teammates for the recurring issue"],
+    "answerIndex": 1,
+    "explanation": "A recurring mistake is a pattern, not bad luck. Writing it into a checklist you actually read before your next event turns a vague lesson into a concrete plan you'll follow under time pressure."
+  },
+  {
+    "id": "hackathon-learning-t5-q1",
+    "topicId": "hackathon-learning",
+    "tier": 5,
+    "question": "How should the way you reflect after a hackathon change as you become more experienced?",
+    "choices": ["It shouldn't change at all", "Early on, reflect on basics like time management; later, reflect on subtler things like team dynamics, scope judgment, and pitch framing", "Stop reflecting once you've won an event", "Only reflect after losses, never after wins"],
+    "answerIndex": 1,
+    "explanation": "A beginner's biggest lessons are usually logistical — time management, scoping. An experienced hacker has already solved those, so their growth comes from sharper reflection on judgment calls: which idea to pick, how to frame a pitch, how a team dynamic helped or hurt."
+  },
+  {
+    "id": "hackathon-learning-t5-q2",
+    "topicId": "hackathon-learning",
+    "tier": 5,
+    "question": "What is the deeper reason mentors say 'the real prize is what you learn,' even to teams chasing first place?",
+    "choices": ["It's just something said to comfort teams that lost", "Skills and judgment compound across every event, so long-term growth from consistent participation outweighs any single placement", "Prizes are rarely given out at most hackathons", "Judges track a lifetime learning score for each hacker"],
+    "answerIndex": 1,
+    "explanation": "Any single hackathon result is one data point, shaped partly by luck — the theme, the judges, the competition that day. The skills, instincts, and network built through repeated participation compound over years and matter far more than any one placement."
   }
 ]
