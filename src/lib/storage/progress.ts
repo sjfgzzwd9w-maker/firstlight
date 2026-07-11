@@ -65,7 +65,12 @@ export function awardBadgeIfNew(profile: UserProfile, badge: string): UserProfil
  * Add a new note for a question, or update the existing note for that
  * question if one is already saved.
  */
-export function saveNote(profile: UserProfile, question: Question, text: string): UserProfile {
+export function saveNote(
+  profile: UserProfile,
+  question: Question,
+  text: string,
+  summary: string = '',
+): UserProfile {
   const trimmed = text.trim();
   const now = Date.now();
   const existing = profile.notes.find((n) => n.questionId === question.id);
@@ -73,7 +78,7 @@ export function saveNote(profile: UserProfile, question: Question, text: string)
   if (existing) {
     if (!trimmed) return removeNote(profile, existing.id);
     const notes = profile.notes.map((n) =>
-      n.id === existing.id ? { ...n, text: trimmed, updatedAt: now } : n,
+      n.id === existing.id ? { ...n, text: trimmed, summary, updatedAt: now } : n,
     );
     return { ...profile, notes };
   }
@@ -88,6 +93,7 @@ export function saveNote(profile: UserProfile, question: Question, text: string)
     subject: topic?.subject ?? 'math',
     questionText: question.question,
     text: trimmed,
+    summary,
     createdAt: now,
     updatedAt: now,
   };
