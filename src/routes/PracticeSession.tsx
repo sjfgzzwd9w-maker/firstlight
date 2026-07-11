@@ -7,12 +7,13 @@ import { ALL_TOPICS, SUBJECT_LABELS } from '../lib/engine/topics';
 import { getQuestionById } from '../lib/engine/adaptiveEngine';
 import { getTopicContext } from '../lib/topic-contexts';
 import { speak, stopSpeaking } from '../lib/voice/tts';
-import type { Question } from '../types';
+import type { Question, Subject } from '../types';
 
 type PracticeItem = {
   question: Question;
   topicId: string;
   topicName: string;
+  subject: Subject;
   subjectLabel: string;
 };
 
@@ -42,6 +43,7 @@ export default function PracticeSession() {
             question,
             topicId: topic.id,
             topicName: topic.name,
+            subject: topic.subject,
             subjectLabel: SUBJECT_LABELS[topic.subject],
           });
         }
@@ -158,7 +160,7 @@ export default function PracticeSession() {
   }
 
   const isCorrect = phase === 'feedback' && selectedIndex === current.question.answerIndex;
-  const isPython = current.question.topicId.startsWith('python') || current.question.topicId.startsWith('oop') || current.question.topicId.startsWith('modules');
+  const isPython = current.subject === 'python';
   const topicContext = getTopicContext(current.topicId, current.topicName);
 
   return (
