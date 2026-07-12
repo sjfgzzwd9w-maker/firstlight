@@ -31,8 +31,9 @@ SKILL.md files over time and have Claude reliably discover and apply them.
 ## Non-goals
 
 - Not replacing or modifying superpowers itself.
-- Not writing any real domain skills yet — only one placeholder example skill to
-  prove the mechanism works end-to-end.
+- Not writing any brand-new domain skills yet — the plugin is seeded with a few
+  skills copied from superpowers as working templates/references, not original
+  content.
 - Not publishing to a public marketplace — this is a local-only plugin for one user.
 
 ## Design
@@ -50,8 +51,29 @@ dev-skills/
   skills/
     using-dev-skills/
       SKILL.md
-    example-skill/
+    writing-skills/         # whole dir copied from superpowers, unmodified
       SKILL.md
+      testing-skills-with-subagents.md
+      anthropic-best-practices.md
+      persuasion-principles.md
+      render-graphs.js
+      graphviz-conventions.dot
+      examples/
+    test-driven-development/  # whole dir copied from superpowers, unmodified
+      SKILL.md
+      testing-anti-patterns.md
+    systematic-debugging/     # whole dir copied from superpowers, unmodified
+      SKILL.md
+      root-cause-tracing.md
+      condition-based-waiting.md
+      condition-based-waiting-example.ts
+      defense-in-depth.md
+      find-polluter.sh
+      test-pressure-1.md
+      test-pressure-2.md
+      test-pressure-3.md
+      test-academic.md
+      CREATION-LOG.md
 ```
 
 ### `.claude-plugin/plugin.json`
@@ -94,13 +116,21 @@ already applies globally once injected by superpowers). Content:
 - Body: the invocation rule + red-flag table, adapted from superpowers' version,
   pointing at the user's own skills instead.
 
-### `skills/example-skill/SKILL.md`
+### Seed skills: `writing-skills`, `test-driven-development`, `systematic-debugging`
 
-A trivial placeholder skill (e.g., triggers on "say hello via dev-skills") whose
-only purpose is to prove the end-to-end flow: plugin loads → hook injects →
-Claude sees `example-skill` in the available-skills reminder → invoking it via the
-`Skill` tool returns its body. The user deletes or replaces it once they've
-verified the flow and started writing real skills.
+Each of these three directories is copied verbatim (all files, not just
+`SKILL.md`) from `~/superpowers/skills/<name>` into
+`~/dev-skills/skills/<name>`. They're unmodified — same frontmatter, same
+`name:` field — so they serve as both working references for how a real skill
+is structured and immediately-usable copies in their own right.
+
+**Known tradeoff — name collision:** because dev-skills runs alongside
+superpowers, both plugins will register a skill literally named
+`writing-skills` (and the other two). Claude Code namespaces skill
+invocations by plugin (`superpowers:writing-skills` vs. `dev-skills:writing-skills`),
+so this doesn't break anything, but both will appear in the available-skills
+list, which is redundant until the user diverges the `dev-skills` copies from
+the originals or removes ones they don't need.
 
 ### Registration
 
@@ -114,9 +144,12 @@ verified the flow and started writing real skills.
 
 - Manually run `hooks/session-start` and confirm it emits valid JSON with the
   expected `additionalContext` field.
-- Start a fresh session and confirm the system reminder shows `example-skill`
-  under available skills.
-- Invoke `example-skill` via the `Skill` tool and confirm its body is returned.
+- Start a fresh session and confirm the system reminder shows
+  `dev-skills:writing-skills`, `dev-skills:test-driven-development`, and
+  `dev-skills:systematic-debugging` under available skills, alongside
+  superpowers' own copies.
+- Invoke one (e.g. `dev-skills:writing-skills`) via the `Skill` tool and confirm
+  its body is returned correctly.
 - Confirm superpowers' skills are still listed and functional alongside it.
 
 ## Future work
